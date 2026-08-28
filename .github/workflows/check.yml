@@ -1,0 +1,106 @@
+name: SEVs Register check
+
+on:
+  schedule:
+    # 22:00 UTC = 8am Melbourne in winter, 9am in daylight saving.
+    - cron: "0 22 * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "What to run"
+        required: false
+        default: normal
+        type: choice
+        options: [normal, dry-run, self-test, notify-test, rebuild]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sev-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Report configuration
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          {
+            echo "## Diagnostics"
+            echo ""
+            echo "- mode: ${{ inputs.mode || 'normal (scheduled)' }}"
+            if [ -z "$NTFY_TOPIC" ]; then
+              echo "- NTFY_TOPIC: **NOT SET** - notifications cannot be sent"
+            else
+              echo "- NTFY_TOPIC: set, ${#NTFY_TOPIC} characters"
+            fi
+            if [ -f state.json ]; then
+              echo "- state.json: present"
+            else
+              echo "- state.json: absent - this run rebuilds the baseline and stays silent"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Run checker
+        run: |
+          set -o pipefail
+          case "${{ inputs.mode || 'normal' }}" in
+            dry-run)     python checker.py --dry-run     2>&1 | tee run.log ;;
+            self-test)   python checker.py --self-test   2>&1 | tee run.log ;;
+            notify-test) python checker.py --notify-test 2>&1 | tee run.log ;;
+            rebuild)     python checker.py --rebuild     2>&1 | tee run.log ;;
+            *)           python checker.py               2>&1 | tee run.log ;;
+          esac
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NTFY_SERVER: ${{ secrets.NTFY_SERVER }}
+          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+
+      - name: Report checker output
+        if: always()
+        run: |
+          {
+            echo ""
+            echo "## Checker output"
+            echo ""
+            echo '```'
+            tail -n 60 run.log 2>/dev/null || echo "(the checker produced no output)"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit results
+        if: ${{ success() && inputs.mode != 'dry-run' && inputs.mode != 'self-test' && inputs.mode != 'notify-test' }}
+        run: |
+          git config user.name  "sev-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for f in state.json docs/data.json config.json; do
+            if [ -f "$f" ]; then git add "$f"; fi
+          done
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "SEVs check $(date -u '+%Y-%m-%d %H:%M UTC')"
+            if git pull --rebase --autostash origin "${GITHUB_REF_NAME}"; then
+              git push
+            else
+              git rebase --abort || true
+              echo "::warning::Skipped commit — origin moved under us; will retry next run."
+            fi
+          fi

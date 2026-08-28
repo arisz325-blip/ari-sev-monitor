@@ -1,0 +1,48 @@
+{
+  "source": {
+    "base": "https://www.rover.infrastructure.gov.au",
+    "list_path": "/PublishedApprovals/SEVApprovals",
+    "detail_path": "/PublishedApprovals/SEVDetails/?id=",
+    "views": {
+      "in_force": "Portal View - SEV Entries In Force",
+      "expired": "Portal View - SEV Entries Expired"
+    },
+    "page_size": 100,
+    "max_pages": 40
+  },
+  "notify": {
+    "new": true,
+    "returned": true,
+    "under_review": true,
+    "removed": true,
+    "expired": false,
+    "review_cleared": false,
+    "expiry_changed": false,
+    "updated": false,
+    "max_per_run": 12
+  },
+  "watch": {
+    "notify_watched_only": false,
+    "makes": [],
+    "keywords": [],
+    "categories": []
+  },
+  "enrich": {
+    "enabled": true,
+    "max_per_run": 15
+  },
+  "sanity": {
+    "min_expected_entries": 200,
+    "max_shrink_ratio": 0.15
+  },
+  "dashboard": {
+    "recent_days": 30,
+    "expiring_soon_days": 120
+  },
+  "http": {
+    "request_delay_seconds": 1.0,
+    "timeout_seconds": 90,
+    "max_retries": 3,
+    "user_agent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Mobile Safari/537.36"
+  }
+}
