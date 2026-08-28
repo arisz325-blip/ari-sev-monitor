@@ -98,6 +98,35 @@
   .card .holder { color: var(--muted); font-size: 12.5px; margin-top: 4px; }
   .card .holder b { color: var(--text-secondary); font-weight: 500; }
 
+  .toggle-btn {
+    background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px;
+    color: var(--text-secondary); font: inherit; font-size: 13px; padding: 7px 12px;
+    min-height: 38px; cursor: pointer; white-space: nowrap;
+  }
+  .toggle-btn[aria-pressed="true"] { background: var(--accent); color: #fff; border-color: transparent; }
+
+  details.group { padding: 0; }
+  details.group > summary {
+    list-style: none; cursor: pointer; padding: 12px 30px 12px 13px; position: relative;
+  }
+  details.group > summary::-webkit-details-marker { display: none; }
+  details.group > summary::after {
+    content: ""; position: absolute; right: 13px; top: 17px;
+    width: 7px; height: 7px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted);
+    transform: rotate(45deg); transition: transform .15s;
+  }
+  details.group[open] > summary::after { transform: rotate(-135deg); top: 20px; }
+  .variants { border-top: 1px solid var(--border); }
+  a.variant {
+    display: block; text-decoration: none; padding: 10px 13px;
+    border-bottom: 1px solid var(--border);
+  }
+  a.variant:last-child { border-bottom: 0; }
+  a.variant:hover { background: var(--surface-2); }
+  .vtop { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+  .vcode { font-weight: 600; font-size: 14px; letter-spacing: -0.01em; }
+  .vdesc { color: var(--text-secondary); font-size: 13px; margin-top: 2px; }
+
   .feed { list-style: none; margin: 0; padding: 0; }
   .feed li { display: flex; gap: 9px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13.5px; }
   .feed li:last-child { border-bottom: 0; }
@@ -146,6 +175,7 @@
       <option value="yes">Has model report</option>
       <option value="no">No model report</option>
     </select>
+    <button class="toggle-btn" id="group" aria-pressed="true">Group variants</button>
   </div>
   <div class="controls">
     <input type="search" id="q" placeholder="Search model, model code, workshop…" autocomplete="off">
@@ -173,7 +203,8 @@
 </div>
 
 <script>
-const STATE = { data: null, filter: "new", query: "", make: "", report: "", shown: 0 };
+const STATE = { data: null, filter: "new", query: "", make: "", report: "",
+                group: true, shown: 0 };
 const PAGE = 60;
 
 const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
@@ -268,17 +299,97 @@ function cardHTML(e) {
     + "</a>";
 }
 
+// One SEV entry is one *variant*, and the register lists them separately:
+// five "NISSAN Stagea M35 SERIES" rows are HM35 / M35 / NM35 / PM35 / PNM35.
+// Grouping on make + model + model code keeps generations apart (Skyline R
+// series, V35, V36 … stay separate cards) while collapsing the variants of one
+// generation into one.
+function groupKey(e) {
+  return [(e.make || "").toUpperCase().trim(),
+          (e.model || "").toUpperCase().trim(),
+          (e.model_code || "").toUpperCase().trim()].join("|");
+}
+
+// Filter first, then group, so a group only ever shows the members that match
+// what was asked for — and its "3 of 5" line counts those same members.
+function buildItems(rows) {
+  if (!STATE.group) return rows.map(e => [e]);
+  const map = new Map();
+  for (const e of rows) {
+    const k = groupKey(e), bucket = map.get(k);
+    if (bucket) bucket.push(e); else map.set(k, [e]);
+  }
+  return [...map.values()];
+}
+
+function combinedRange(members) {
+  const froms = members.map(e => e.build_from_iso).filter(Boolean).sort();
+  if (!froms.length) return buildRange(members[0]);
+  const tos = members.map(e => e.build_to_iso);
+  if (tos.some(t => !t)) return monthYear(froms[0]) + " – no end date";
+  return monthYear(froms[0]) + " – " + monthYear(tos.filter(Boolean).sort().pop());
+}
+
+function variantHTML(e) {
+  const live = inForceReports(e);
+  const label = (e.variant && e.variant.toUpperCase() !== "ALL") ? e.variant : e.sev;
+  const desc = e.variant_details || e.notes || "";
+  const holders = [...new Set(live.map(r => r.holder).filter(Boolean))];
+  const badges = [];
+  if (e.is_new) badges.push('<span class="badge new">New</span>');
+  if (live.length) badges.push('<span class="badge ok">Model report</span>');
+  else if (e.status === "in_force") badges.push('<span class="badge warn">No model report</span>');
+  if (e.status === "expired") badges.push('<span class="badge crit">Expired</span>');
+  if (e.status === "in_force" && e.under_review) badges.push('<span class="badge warn">Under review</span>');
+
+  return '<a class="variant" href="' + esc(e.url || "#") + '" target="_blank" rel="noopener">'
+    + '<div class="vtop"><span class="vcode">' + esc(label) + '</span>'
+    + '<span class="sev">' + esc(e.sev) + '</span></div>'
+    + (desc ? '<div class="vdesc">' + esc(desc.slice(0, 130)) + '</div>' : "")
+    + (holders.length ? '<div class="holder">' + esc(holders.slice(0, 2).join(", "))
+        + (holders.length > 2 ? " +" + (holders.length - 2) : "") + "</div>" : "")
+    + (badges.length ? '<div class="badges">' + badges.join("") + "</div>" : "")
+    + "</a>";
+}
+
+function groupHTML(members) {
+  const first = members[0];
+  const live = members.filter(e => e.status === "in_force");
+  const covered = members.filter(e => e.has_report).length;
+  const badges = [];
+  if (members.some(e => e.is_new)) badges.push('<span class="badge new">New</span>');
+  if (covered === members.length) badges.push('<span class="badge ok">All have a model report</span>');
+  else if (covered) badges.push('<span class="badge ok">' + covered + " of " + members.length + " have a model report</span>");
+  else if (live.length) badges.push('<span class="badge warn">No model report</span>');
+  if (members.some(e => e.status === "in_force" && e.under_review)) badges.push('<span class="badge warn">Under review</span>');
+  if (members.some(e => e.expiring_soon)) badges.push('<span class="badge warn">Expiring</span>');
+  if (!live.length) badges.push('<span class="badge crit">Expired</span>');
+  const criteria = [...new Set(members.map(e => e.criterion).filter(Boolean))];
+  if (criteria.length === 1) badges.push('<span class="badge dim">' + esc(criteria[0].replace(/ Criterion$/i, "")) + "</span>");
+
+  const meta = [combinedRange(members), first.category, first.model_code]
+    .filter(Boolean).map(esc).join('<span class="dot">·</span>');
+
+  return '<details class="card group"><summary>'
+    + '<div class="top"><span class="name">' + esc(nameOf(first)) + "</span>"
+    + '<span class="sev">' + members.length + " variants</span></div>"
+    + '<div class="meta">' + meta + "</div>"
+    + (badges.length ? '<div class="badges">' + badges.join("") + "</div>" : "")
+    + "</summary><div class=\"variants\">" + members.map(variantHTML).join("") + "</div></details>";
+}
+
 function render(reset) {
   const list = document.getElementById("list");
-  const rows = STATE.data.entries.filter(matches);
+  const items = buildItems(STATE.data.entries.filter(matches));
   if (reset) STATE.shown = 0;
-  STATE.shown = Math.min(rows.length, STATE.shown + PAGE);
-  list.innerHTML = rows.length
-    ? rows.slice(0, STATE.shown).map(cardHTML).join("")
+  STATE.shown = Math.min(items.length, STATE.shown + PAGE);
+  list.innerHTML = items.length
+    ? items.slice(0, STATE.shown)
+        .map(m => (m.length === 1 ? cardHTML(m[0]) : groupHTML(m))).join("")
     : '<div class="empty">Nothing matches that.</div>';
   const more = document.getElementById("more");
-  more.hidden = STATE.shown >= rows.length;
-  more.textContent = "Show more (" + (rows.length - STATE.shown) + " left)";
+  more.hidden = STATE.shown >= items.length;
+  more.textContent = "Show more (" + (items.length - STATE.shown) + " left)";
 }
 
 function renderFeed(events) {
@@ -357,6 +468,11 @@ document.getElementById("make").addEventListener("change", ev => {
 });
 document.getElementById("report").addEventListener("change", ev => {
   STATE.report = ev.target.value;
+  render(true);
+});
+document.getElementById("group").addEventListener("click", ev => {
+  STATE.group = !STATE.group;
+  ev.currentTarget.setAttribute("aria-pressed", String(STATE.group));
   render(true);
 });
 document.getElementById("more").addEventListener("click", () => render(false));

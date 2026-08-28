@@ -29,7 +29,7 @@ docs/index.html                dashboard
 docs/data.json                 generated — what the dashboard reads
 .github/workflows/check.yml    daily cron; writes diagnostics to the run Summary
 .github/workflows/tests.yml    offline suite on every push
-tests/                         86 checks against a mock ROVER portal, no network
+tests/                         100 checks against a mock ROVER portal, no network
 ```
 
 ## What it tells you
@@ -72,12 +72,14 @@ Everything is recorded on the dashboard regardless; the toggles in
    nothing — otherwise it would fire a thousand pushes. Every run after that
    only reports what changed.
 
-5. **Link the model reports.** Each report says which SEV entries it covers
-   only on its own page, so the ~950 existing ones have to be read once.
-   Locally, `python checker.py --backfill` does the lot in one go (~35 min);
-   otherwise every scheduled run links another `link_budget_per_run` (60) and
-   it settles itself within a couple of weeks. Newly published reports always
-   jump the queue, so pushes are never delayed by the backfill.
+5. **Read the pages the grid cannot give you.** Two things exist only on an
+   approval's own page: which SEV entries a model report covers, and which
+   *variant* an entry is (HM35 vs PNM35). That is ~950 report pages and ~1100
+   entry pages, once. Locally, `python checker.py --backfill` does the lot
+   (~70 min); otherwise each scheduled run works through another 60 of each and
+   settles itself within a few weeks. Newly published reports and brand-new
+   entries always jump the queue, so notifications are never delayed by the
+   backfill.
 
 6. **Check the push works.** Run the workflow again with mode `notify-test`.
 
@@ -93,7 +95,7 @@ python checker.py --dry-run      # check + report, send nothing, save nothing
 python checker.py --self-test    # is the portal still shaped as we expect?
 python checker.py --notify-test  # one test push (needs NTFY_TOPIC)
 python checker.py --rebuild      # discard the baseline and re-seed it silently
-python checker.py --backfill     # link every outstanding model report at once
+python checker.py --backfill     # read every outstanding detail page at once
 python -m tests.test_checker     # offline suite, no network
 ```
 
@@ -123,7 +125,10 @@ the whole register.
 | Key | Does |
 |---|---|
 | `notify.max_per_run` | cap on pushes per run; the last one says how many were held back |
-| `enrich.max_per_run` | how many new entries get their detail page fetched for criterion/variant/notes |
+| `notify.group_same_model` | one push per model instead of one per variant (default on) |
+| `details.budget_per_run` | entry detail pages read per run while backfilling variants |
+| `details.max_new_per_run` | never-seen entries read ahead of the backfill queue |
+| `details.include_expired` | read detail pages for expired entries too |
 | `sanity.max_shrink_ratio` | how much the register may shrink in one run before disappearances are treated as a portal glitch rather than removals |
 | `dashboard.recent_days` | how long an entry counts as "new" |
 | `dashboard.expiring_soon_days` | how far ahead the "Expiring" tile looks |
@@ -135,15 +140,26 @@ the whole register.
 
 Filter row one picks the slice (New / In force / Expiring / Expired / All).
 Row two is the **brand picker** — every make in the register with how many
-entries it has and how many of those have a model report — and the **model
-report filter** (any / has one / has none). The search box also matches model
-codes, criteria, MRE numbers and workshop names, so `sydney` finds everything
-one workshop can build.
+entries it has and how many of those have a model report — the **model report
+filter** (any / has one / has none), and the **Group variants** toggle. The
+search box also matches model codes, criteria, MRE numbers and workshop names,
+so `sydney` finds everything one workshop can build.
+
+**One entry is one variant, not one car.** Five register entries reading
+"NISSAN Stagea · M35 SERIES" are HM35 300RX, M35 Axis 350S, NM35 250T, PM35
+350RX and PNM35 350RX FOUR — the grid's model code is the *series*, and the
+chassis code is only on each entry's own page. With grouping on (the default)
+those collapse into one card, "NISSAN Stagea · 5 variants · 4 of 5 have a model
+report"; open it and each variant is listed with its engine, its SEV number and
+its own report badge. Grouping is by make + model + model code, so generations
+stay apart: Skyline R series, V35, V36, J50 and RV37 remain five cards. In-force
+goes from 585 rows to 479. Turn the toggle off for the flat one-row-per-SEV
+list.
 
 Each card shows the build date range, category, model code, the variant
 condition where there is one, and either a green **Model report** badge naming
 the workshop that holds it or an amber **No model report** badge. Tapping a
-card opens the entry on ROVER.
+card (or a variant inside a group) opens that entry on ROVER.
 
 ## Reading the register
 
@@ -171,6 +187,8 @@ routine and rarely urgent.
 - 网页看板部署在 GitHub Pages，手机上可搜索、按**品牌**筛选、按有无 model report 筛选，还有 新增 / 有效 / 即将到期 / 已过期 的分类。
 - 部署三步：把仓库推到 GitHub → 在仓库 Secrets 里加 `NTFY_TOPIC`（手机 ntfy App 订阅同一个 topic）→ Settings → Pages 选 `main` 分支的 `/docs` 目录。
 - 第一次运行只建立基线、不推送（否则会一次推一千条）；之后每天只推变化。
-- Model report 和 SEV 条目的对应关系只写在每份 report 自己的页面上，所以约 950 份要各抓一次：本地跑一次 `python checker.py --backfill`（约 35 分钟）可以一次补完，不跑也会每天补 60 份自动收敛；新发布的 report 永远排在队首，不会因为补数据而延迟推送。
+- **同车型多条 SEV 编号不是重复**，是不同变体：列表里的 model code 是「系列」（M35 SERIES），真正的底盘代号（HM35 / PNM35）只在每条自己的详情页上。看板默认按 品牌+车型+model code 合并成一张卡（585 条变 479 张），点开列出每个变体的底盘代号、发动机、SEV 编号和各自的 report 状态；右上角「Group variants」可以关掉看平铺列表。
+- 同一次运行里同一车型的多个新增会**合成一条推送**（「NISSAN Stagea ×5」并列出各变体），不会连推 5 条；`config.json` 里 `notify.group_same_model` 设 false 可恢复逐条推送。
+- Model report 的归属、以及条目的变体信息，都只写在各自的详情页上（约 950 + 1100 页），本地跑一次 `python checker.py --backfill`（约 70 分钟）可以一次补完，不跑也会每天各补 60 份自动收敛；新发布的 report 和新条目永远排在队首，不会因为补数据而延迟推送。
 - 只想收特定品牌的推送，改 `config.json` 的 `watch`：把 `notify_watched_only` 设为 `true`，在 `makes` / `keywords` 里填关键词。
 - 名录上有条目 ≠ 已获批进口，仍需另行申请；买车前请以 ROVER 官网条目为准。

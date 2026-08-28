@@ -101,7 +101,10 @@ def run_checker(work: Path, base_url: str, extra: list[str] | None = None,
         [sys.executable, str(work / "checker.py"), *(extra or [])],
         cwd=work, env=env, capture_output=True, text=True, timeout=180,
         encoding="utf-8", errors="replace")
-    if result.returncode not in (0, 1):
+    # Exit 1 is a legitimate result (--self-test failing), so returncode alone
+    # cannot tell a crash from a verdict — a swallowed traceback here made
+    # three unrelated checks fail with no clue why.
+    if result.returncode not in (0, 1) or "Traceback" in result.stderr:
         print(result.stdout)
         print(result.stderr)
     return result
@@ -416,6 +419,99 @@ def main() -> int:
               [m["key"] for m in data_of(brands)["makes"]][0] == "NISSAN",
               str([m["key"] for m in data_of(brands)["makes"]][:3]))
 
+        # -- entry detail backfill -------------------------------------------
+        print("\nEntry details")
+        variants = {
+            "SEV-000100": entry("NISSAN", "Stagea", model_code="M35 SERIES",
+                                variant="HM35",
+                                variant_details="300RX, 3.0lt V6 VQ30DD 191 kW"),
+            "SEV-000101": entry("NISSAN", "Stagea", model_code="M35 SERIES",
+                                variant="PNM35",
+                                variant_details="350RX FOUR, 3.5lt V6 VQ35DE"),
+            "SEV-000102": entry("Toyota", "Crown", model_code="S20",
+                                variant="GRS204"),
+        }
+        mock_rover.set_register(variants)
+        mock_rover.set_reports({})
+        details_dir = workdir(tmp, base, details={"budget_per_run": 2},
+                              sanity={"min_expected_entries": 1})
+        mock_rover.reset_ntfy()
+        run_checker(details_dir, base)
+        read = [h for h in mock_rover.DETAIL_HITS if h.startswith("SEV")]
+        check("the detail backfill honours its per-run budget",
+              len(read) == 2, str(read))
+
+        mock_rover.reset_ntfy()
+        run_checker(details_dir, base)
+        read = [h for h in mock_rover.DETAIL_HITS if h.startswith("SEV")]
+        stored = state_of(details_dir)["entries"]
+        check("the rest are picked up on the next run",
+              len(read) == 1 and all(stored[s].get("detailed")
+                                     for s in ("SEV-000100", "SEV-000101",
+                                               "SEV-000102")),
+              str(read))
+        check("the variant that tells look-alikes apart is stored",
+              stored["SEV-000100"].get("variant") == "HM35",
+              str(stored["SEV-000100"].get("variant")))
+        check("so is what the variant actually is",
+              "VQ30DD" in (stored["SEV-000100"].get("variant_details") or ""),
+              str(stored["SEV-000100"].get("variant_details")))
+        check("the criterion now comes with every entry, not just notified ones",
+              stored["SEV-000100"].get("criterion") == "Rarity Criterion",
+              str(stored["SEV-000100"].get("criterion")))
+        check("the dashboard gets the variant",
+              {e["sev"]: e for e in data_of(details_dir)["entries"]}
+              ["SEV-000100"].get("variant") == "HM35")
+        mock_rover.reset_ntfy()
+        run_checker(details_dir, base)
+        check("a page already read is never fetched again",
+              not [h for h in mock_rover.DETAIL_HITS if h.startswith("SEV")],
+              str(mock_rover.DETAIL_HITS))
+
+        flooded = dict(variants)
+        for n in range(4):
+            flooded[f"SEV-0006{n:02d}"] = entry("Mazda", "RX-8", model_code="SE3P",
+                                                variant=f"VAR{n}")
+        mock_rover.set_register(flooded)
+        mock_rover.reset_ntfy()
+        run_checker(details_dir, base)
+        check("brand-new entries jump the queue past the budget",
+              len([h for h in mock_rover.DETAIL_HITS if h.startswith("SEV-0006")]) == 4,
+              str(mock_rover.DETAIL_HITS))
+
+        # -- one push per model, not per variant -----------------------------
+        print("\nBundled notifications")
+        check("four new variants of one model make one notification",
+              len(mock_rover.NTFY_POSTS) == 1, str(titles_pushed()))
+        push = mock_rover.NTFY_POSTS[0]
+        check("the notification says how many variants",
+              push["headers"]["Title"] == "New SEV approval: Mazda RX-8 ×4",
+              push["headers"]["Title"])
+        check("it lists the variants", push["body"].count("VAR") == 4,
+              push["body"])
+        check("it lists their SEV numbers", "SEV-000600" in push["body"]
+              and "SEV-000603" in push["body"], push["body"])
+
+        split = dict(flooded)
+        split["SEV-000700"] = entry("Honda", "S2000", model_code="AP1")
+        split["SEV-000701"] = entry("Honda", "S2000", model_code="AP2")
+        mock_rover.set_register(split)
+        mock_rover.reset_ntfy()
+        run_checker(details_dir, base)
+        check("different model codes stay separate notifications",
+              len(mock_rover.NTFY_POSTS) == 2, str(titles_pushed()))
+
+        ungrouped = workdir(tmp, base, notify={"group_same_model": False},
+                            sanity={"min_expected_entries": 1})
+        mock_rover.set_register(variants)
+        mock_rover.reset_ntfy()
+        run_checker(ungrouped, base)                   # baseline
+        mock_rover.set_register(flooded)
+        mock_rover.reset_ntfy()
+        run_checker(ungrouped, base)
+        check("grouping can be turned off",
+              len(mock_rover.NTFY_POSTS) == 4, str(titles_pushed()))
+
         # -- notification budget -------------------------------------------
         print("\nNotification budget")
         mock_rover.set_register(BASE_REGISTER)
@@ -461,6 +557,7 @@ def main() -> int:
         print("\nPaging and self-test")
         paged = workdir(tmp, base, source={"page_size": 3})
         mock_rover.set_register(BASE_REGISTER)
+        mock_rover.set_reports(BASE_REPORTS)
         mock_rover.reset_ntfy()
         run_checker(paged, base)
         check("a register larger than one page is read in full",

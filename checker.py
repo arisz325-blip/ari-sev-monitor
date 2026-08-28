@@ -104,6 +104,12 @@ REPORT_FIELD_MAP = {
     "rvr_mrebuilddaterange":  "build_range",
 }
 
+# What an entry's own page adds that the grid does not have. `variant` is the
+# important one: the grid's model code is the *series* ("M35 SERIES", "S20"),
+# and this is the chassis code that tells five otherwise identical listings
+# apart ("HM35", "PNM35", "GRS204").
+DETAIL_CARRY = ("criterion", "variant", "variant_details", "notes", "build_range")
+
 # Detail-page fields, keyed by the element id ROVER gives them.
 DETAIL_FIELDS = {
     "SEVApprovalNo":     "sev",
@@ -803,10 +809,9 @@ def apply_events(state: dict, rows: dict[str, dict], events: list[dict],
         # the next run — lighting up all 1000+ entries as new.
         stored["first_seen"] = previous["first_seen"] if "first_seen" in previous \
             else stamp
-        # Detail-page extras are fetched only for new entries; keep whatever we
-        # learned earlier rather than dropping it on the next plain run.
-        for field in ("criterion", "variant", "variant_details", "notes",
-                      "build_range"):
+        # Detail-page extras are read once and then carried, so a run that did
+        # not fetch this entry's page does not drop what we already know.
+        for field in (*DETAIL_CARRY, "detailed"):
             if row.get(field):
                 stored[field] = row[field]
             elif previous.get(field):
@@ -843,23 +848,82 @@ def header_safe(text: str) -> str:
     return text.encode("latin-1", "replace").decode("latin-1")
 
 
+def model_key(row: dict) -> tuple[str, str, str]:
+    """What counts as "the same car" for grouping."""
+    return ((row.get("make") or "").upper().strip(),
+            (row.get("model") or "").upper().strip(),
+            (row.get("model_code") or "").upper().strip())
+
+
+def bundle_events(events: list[dict], cfg: dict) -> list[dict]:
+    """Collapse same-kind events on the same model into one notification.
+
+    The department publishes a model's variants in one batch — five Stagea
+    entries landed together on 2026-08-23 — and five separate pushes saying
+    "NISSAN STAGEA" are five interruptions carrying one piece of news.
+    Bundling happens at the notification layer only: the dashboard's activity
+    feed still lists every event separately.
+    """
+    if not cfg.get("notify", {}).get("group_same_model", True):
+        return [{"type": e["type"], "rows": [e["row"]], "detail": e["detail"]}
+                for e in events]
+    bundles: list[dict] = []
+    index: dict[tuple, dict] = {}
+    for event in events:
+        key = (event["type"], *model_key(event["row"]))
+        bundle = index.get(key)
+        if bundle is None:
+            bundle = {"type": event["type"], "rows": [], "detail": event["detail"]}
+            index[key] = bundle
+            bundles.append(bundle)
+        bundle["rows"].append(event["row"])
+    return bundles
+
+
+def variant_line(row: dict) -> str:
+    """`HM35 — 300RX, 3.0lt V6 VQ30DD 191 kW`, as far as we know it."""
+    variant = (row.get("variant") or "").strip()
+    details = (row.get("variant_details") or "").strip()
+    if variant.upper() == "ALL":
+        variant = ""
+    if variant and details:
+        return f"{variant} — {details[:90]}"
+    return variant or details[:110] or row.get("sev", "")
+
+
 def notification_body(event: dict) -> str:
-    row = event["row"]
-    bits = [f"{row['title']} ({row.get('sev', '')})".strip(), build_range(row)]
+    rows = event["rows"]
+    row = rows[0]
+    if len(rows) > 1:
+        bits = [f"{row['title']} — {len(rows)} variants",
+                build_range(row)]
+    else:
+        bits = [f"{row['title']} ({row.get('sev', '')})".strip(), build_range(row)]
     line = " · ".join(p for p in (row.get("category"), row.get("model_code")) if p)
     if line:
         bits.append(line)
     if row.get("criterion"):
         bits.append(f"Criterion: {row['criterion']}")
-    if row.get("variant") and row["variant"].upper() != "ALL":
-        bits.append(f"Variant: {row['variant']}")
-    if row.get("variant_details"):
-        bits.append(row["variant_details"][:200])
+    if len(rows) > 1:
+        for member in rows[:6]:
+            bits.append(f"· {variant_line(member)}")
+        if len(rows) > 6:
+            bits.append(f"· +{len(rows) - 6} more")
+        bits.append(", ".join(r.get("sev", "") for r in rows[:8]))
+    else:
+        if row.get("variant") and row["variant"].upper() != "ALL":
+            bits.append(f"Variant: {row['variant']}")
+        if row.get("variant_details"):
+            bits.append(row["variant_details"][:200])
     # The register listing is only half the answer: without an in-force model
     # report, no workshop can actually import the car yet.
-    if "has_report" in row:
-        holders = report_holders(row)
-        if holders:
+    if any("has_report" in r for r in rows):
+        covered = [r for r in rows if r.get("has_report")]
+        holders = sorted({h for r in covered for h in report_holders(r)})
+        if len(rows) > 1:
+            bits.append(f"Model report: {len(covered)} of {len(rows)}"
+                        + (f" — {', '.join(holders[:2])}" if holders else ""))
+        elif holders:
             bits.append(f"Model report: {', '.join(holders[:3])}")
         elif row.get("reports"):
             bits.append("Model report: none in force (one exists but is not)")
@@ -871,32 +935,36 @@ def notification_body(event: dict) -> str:
     return "\n".join(b for b in bits if b)
 
 
-def send_ntfy(events: list[dict], dry_run: bool, extra: int = 0) -> int:
+def send_ntfy(bundles: list[dict], dry_run: bool, extra: int = 0) -> int:
     topic = os.environ.get("NTFY_TOPIC", "").strip()
     server = (os.environ.get("NTFY_SERVER") or "https://ntfy.sh").strip().rstrip("/")
     token = os.environ.get("NTFY_TOKEN", "").strip()
 
-    if not events:
+    if not bundles:
         return 0
     if dry_run:
-        for event in events:
-            log(f"  [dry-run] would notify: {event['type']} — "
-                f"{event['row'].get('sev')} {event['row']['title']}")
+        for bundle in bundles:
+            rows = bundle["rows"]
+            log(f"  [dry-run] would notify: {bundle['type']} — "
+                f"{rows[0].get('sev')} {rows[0]['title']}"
+                + (f" (+{len(rows) - 1} variants)" if len(rows) > 1 else ""))
         return 0
     if not topic:
         log("  NTFY_TOPIC is not set — skipping notifications")
         return 0
 
     sent = 0
-    for index, event in enumerate(events):
-        row = event["row"]
+    for index, event in enumerate(bundles):
+        row = event["rows"][0]
+        count = len(event["rows"])
         title, tag, priority = EVENT_META.get(event["type"],
                                               ("SEVs Register", "bell", 3))
+        title = f"{title}: {row['title']}" + (f" ×{count}" if count > 1 else "")
         body = notification_body(event)
-        if extra and index == len(events) - 1:
+        if extra and index == len(bundles) - 1:
             body += f"\n\n(+{extra} more changes this run — see the dashboard)"
         headers = {k: header_safe(v) for k, v in {
-            "Title": f"{title}: {row['title']}",
+            "Title": title,
             "Priority": str(priority),
             "Tags": tag,
         }.items()}
@@ -921,7 +989,7 @@ def send_ntfy(events: list[dict], dry_run: bool, extra: int = 0) -> int:
                     log(f"  notification FAILED after {attempt} attempts: {exc}")
                 else:
                     time.sleep(2 * attempt)
-    log(f"  sent {sent}/{len(events)} notifications")
+    log(f"  sent {sent}/{len(bundles)} notifications")
     return sent
 
 
@@ -1046,32 +1114,70 @@ def write_dashboard_data(state: dict, warnings: list[str], started: str,
 # runs
 # --------------------------------------------------------------------------
 
-def enrich(rover: Rover, cfg: dict, events: list[dict]) -> None:
-    """Pull criterion / variant / notes for the entries worth an extra request.
+def backfill_details(rover: Rover, cfg: dict, rows: dict[str, dict],
+                     state: dict) -> None:
+    """Read each entry's own page once, for the fields the grid does not carry.
 
-    Only entries the user will actually be told about get enriched — a detail
-    page is ~450 KB, so fetching all 1000+ of them every run would be absurd.
+    Half the in-force register shares a make and model with something else, and
+    148 entries are indistinguishable from the grid columns alone — five NISSAN
+    Stagea rows all reading "M35 SERIES" are really HM35 300RX, M35 Axis 350S,
+    NM35 250T, PM35 350RX and PNM35 350RX FOUR. Only the entry page says so.
+
+    ~1100 pages at ~450 KB each, so it is paced by `details.budget_per_run` and
+    the result is carried in state forever. Entries never seen before jump the
+    queue: their notification is worth nothing without the variant in it.
     """
-    enrich_cfg = cfg.get("enrich", {})
-    if not enrich_cfg.get("enabled", True):
+    dcfg = cfg.get("details", {})
+    if not dcfg.get("enabled", True):
         return
-    wanted = [e for e in events if e["type"] in ("new", "returned")]
-    budget = int(enrich_cfg.get("max_per_run", 15))
-    for event in wanted[:budget]:
-        row = event["row"]
+    known = state.get("entries", {})
+    # On the first run every entry is "never seen before"; queue-jumping them
+    # all would mean 1100 page fetches in one go, inside a 25-minute Actions
+    # job. A baseline run is plain backfill, paced like any other.
+    first_ever = not known
+    budget = int(dcfg.get("budget_per_run", 60))
+    new_cap = int(dcfg.get("max_new_per_run", 25))
+    include_expired = bool(dcfg.get("include_expired", True))
+
+    fresh: list[dict] = []
+    live: list[dict] = []
+    rest: list[dict] = []
+    for sev, row in rows.items():
+        before = known.get(sev)
+        if before and before.get("detailed"):
+            for field in DETAIL_CARRY:
+                if before.get(field):
+                    row[field] = before[field]
+            row["detailed"] = True
+            continue
         if not row.get("id"):
             continue
+        if before is None and not first_ever:
+            fresh.append(row)
+        elif row["status"] == "in_force":
+            live.append(row)
+        elif include_expired:
+            rest.append(row)
+
+    fresh = fresh[:new_cap]
+    queue = fresh + live + rest
+    if not queue:
+        return
+    take = max(budget, len(fresh))
+    for row in queue[:take]:
         try:
             extra = rover.detail(cfg["source"]["detail_path"], row["id"])
         except PortalError as exc:
             log(f"    detail fetch failed for {row.get('sev')}: {exc}")
             continue
-        for field in ("criterion", "variant", "variant_details", "notes",
-                      "build_range"):
+        for field in DETAIL_CARRY:
             if extra.get(field):
                 row[field] = extra[field]
-    if len(wanted) > budget:
-        log(f"    enriched {budget} of {len(wanted)} new entries (budget)")
+        row["detailed"] = True
+    outstanding = max(0, len(queue) - take)
+    tail = "" if not outstanding else \
+        f" — {outstanding} still to read, rerun or use --backfill"
+    log(f"  read {min(len(queue), take)} entry detail page(s){tail}")
 
 
 def run(args: argparse.Namespace) -> int:
@@ -1090,6 +1196,7 @@ def run(args: argparse.Namespace) -> int:
 
     if args.backfill:
         cfg.setdefault("model_reports", {})["link_budget_per_run"] = 100000
+        cfg.setdefault("details", {})["budget_per_run"] = 100000
 
     log(f"SEVs Register check — {melbourne_time(started)} (Melbourne)")
     rover = Rover(cfg)
@@ -1105,6 +1212,9 @@ def run(args: argparse.Namespace) -> int:
     reports, reports_trusted, merge_warnings = reconcile_reports(state, reports, cfg)
     warnings += merge_warnings
     attach_reports(rows, reports)
+    # Before the diff, so that a notification about a brand-new entry already
+    # knows which variant it is about.
+    backfill_details(rover, cfg, rows, state)
     unsettled = frozenset(sev for mre in backfilled
                           for sev in reports.get(mre, {}).get("sev", []))
 
@@ -1122,14 +1232,14 @@ def run(args: argparse.Namespace) -> int:
     else:
         log(f"  {len(rows)} entries, {with_report} with a model report, "
             f"{len(events)} changes")
-        enrich(rover, cfg, events)
 
     notify_cfg = cfg.get("notify", {})
     watch = cfg.get("watch", {})
     watched_only = bool(watch.get("notify_watched_only"))
-    to_send = [e for e in events
-               if notify_cfg.get(e["type"], False)
-               and (not watched_only or matches_watch(e["row"], watch))]
+    to_send = bundle_events(
+        [e for e in events
+         if notify_cfg.get(e["type"], False)
+         and (not watched_only or matches_watch(e["row"], watch))], cfg)
     cap = int(notify_cfg.get("max_per_run", 12))
     overflow = max(0, len(to_send) - cap)
 
@@ -1227,13 +1337,13 @@ def self_test() -> int:
 def notify_test() -> int:
     fake = {
         "type": "new",
-        "row": {"sev": "SEV-000000", "title": "Test Motors Example GT-R",
-                "make": "Test Motors", "model": "Example GT-R",
-                "category": "MA - Passenger Vehicle", "model_code": "TEST-1",
-                "build_from_iso": "1999-01-01", "build_to_iso": "2002-12-01",
-                "criterion": "Performance Criterion", "expiry": "01/01/2030",
-                "url": "https://www.rover.infrastructure.gov.au"
-                       "/PublishedApprovals/SEVApprovals"},
+        "rows": [{"sev": "SEV-000000", "title": "Test Motors Example GT-R",
+                  "make": "Test Motors", "model": "Example GT-R",
+                  "category": "MA - Passenger Vehicle", "model_code": "TEST-1",
+                  "build_from_iso": "1999-01-01", "build_to_iso": "2002-12-01",
+                  "criterion": "Performance Criterion", "expiry": "01/01/2030",
+                  "url": "https://www.rover.infrastructure.gov.au"
+                         "/PublishedApprovals/SEVApprovals"}],
         "detail": "this is a test notification from the SEVs monitor",
     }
     return 0 if send_ntfy([fake], dry_run=False) else 1

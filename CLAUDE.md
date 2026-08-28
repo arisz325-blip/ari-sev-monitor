@@ -117,6 +117,50 @@ report register comes back empty or shrunk past `max_shrink_ratio`, the
 previous map is kept and report events are switched off for the run. Otherwise
 one bad response says "no workshop can build any of these any more".
 
+## Variants: why one model has ten SEV numbers
+
+**A SEV entry is a variant, not a car.** Half the in-force register shares a
+make and model with another entry, and 148 entries across 53 clusters are
+*indistinguishable* using only the grid's columns — make, model, model code and
+build range all identical. They are not duplicates. The five `NISSAN STAGEA ·
+M35 SERIES` rows are HM35 300RX (VQ30DD), M35 Axis 350S, NM35 250T (turbo
+VQ25DET), PM35 350RX and PNM35 350RX FOUR; six `Toyota Crown · S20` rows are
+GRS202 3.0 RWD, GRS203 3.0 4WD, GRS204 3.5 RWD and so on; six `Nuts RV Toyota
+Camroad` rows are different camper conversions.
+
+**The grid's model code is the *series*; the chassis code is the detail page's
+`Variant` field**, with the engine and drivetrain in `Variant details`. That is
+why `backfill_details` reads all ~1100 entry pages once: without it the
+dashboard shows five identical cards and a notification cannot say which
+variant it means.
+
+**Grouping is by make + model + model code, and that choice matters.** Grouping
+on make + model alone gives 377 cards but throws a Skyline R34 and a V36 into
+one; adding the model code gives 479 and splits Skyline into R SERIES / V35 /
+V36 / J50 / RV37 / HV37, which is what a buyer means by "the same car". Adding
+the build range on top only moves 479 to 490 and is not worth the extra
+splitting. Grouping happens **in the dashboard**, not in the data: `data.json`
+stays one row per SEV entry, so the toggle can turn it off and the filters stay
+honest (filter first, then group, so a group's "4 of 10 have a model report"
+counts the members actually shown).
+
+**New entries jump the detail queue, except on the first run.** A brand-new
+entry with no variant read yet produces a useless notification, so they are
+fetched ahead of the backfill (`details.max_new_per_run`). On a baseline run
+*everything* is new, and queue-jumping all of it would mean ~1100 page fetches
+inside a 25-minute Actions job — so `first_ever` demotes the lot back to plain
+budgeted backfill. Same shape of guard as `new_to_us` for model reports.
+
+**Notifications bundle per model; the activity feed does not.** The department
+publishes a model's variants in one batch (five Stageas landed together on
+2026-08-23), and five pushes reading "NISSAN STAGEA" are five interruptions
+carrying one piece of news. `bundle_events` collapses same-type events sharing
+make + model + model code into one push titled `... ×5` that lists each
+variant, while `record_events` still writes every event separately so the
+dashboard feed and `notify.max_per_run` accounting stay per-entry. `send_ntfy`
+takes bundles, not events — a bundle is `{"type", "rows": [...], "detail"}` and
+a single-row bundle renders exactly like the old per-event push.
+
 ## Traps that already bit
 
 **`first_seen` must be tested by key presence, not truthiness.** Baseline runs
@@ -151,6 +195,12 @@ dashboard's brand picker groups on the upper-case key and displays
 — and the page filters case-insensitively. Group on the raw string and one
 brand becomes three entries in the picker.
 
+**Exit code 1 does not mean "crashed" here** — `--self-test` uses it for a
+failing verdict, so the offline suite treated a real traceback as an expected
+result and three unrelated checks failed with no visible cause (a leftover
+`events` name in `send_ntfy` after it was renamed to `bundles`). `run_checker`
+now also prints whenever stderr contains a traceback.
+
 **Events are recorded before they are sent.** `record_events` writes the
 activity log the dashboard reads, and a failed push does *not* re-fire next
 run — the run summary says how many were lost instead. Anything new that
@@ -175,7 +225,7 @@ pushed by default while routine expiries are not.
 
 ## Testing
 
-`python -m tests.test_checker` — 86 checks, no network. `tests/mock_rover.py`
+`python -m tests.test_checker` — 100 checks, no network. `tests/mock_rover.py`
 serves the portal shapes (both list pages with their base64 layouts, tokenhtml,
 the grid POST with real paging/sorting, detail pages) *and* stands in for
 ntfy.sh, capturing every push so tests assert on titles, bodies and the Click
