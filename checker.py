@@ -1261,7 +1261,9 @@ def run(args: argparse.Namespace) -> int:
     write_dashboard_data(state, warnings, started, cfg)
     if not args.dry_run:
         save_state(state)
-    log("done")
+    elapsed = (datetime.now(timezone.utc)
+               - datetime.fromisoformat(started)).total_seconds()
+    log(f"done in {elapsed / 60:.1f} min")
     return 0
 
 

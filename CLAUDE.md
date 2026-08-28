@@ -40,8 +40,17 @@ browser POSTs that blob back to the URL in `data-get-url`
 carries the complete option-set metadata for `statecode`/`statuscode`, so a
 single row is ~265 KB. `pageSize: 1000` works and takes 15 s, but parsing it
 peaks over a gigabyte. We page at 100 (~26 MB per response, discarded before
-the next) — a full run is ~14 requests and ~30 s. Do not "optimise" this back
-into one call.
+the next). Do not "optimise" this back into one call.
+
+**Grid responses are slow, and how slow varies a lot.** A steady-state run is
+23 grid POSTs (7 in-force + 6 expired + 10 model reports) and nothing else once
+the detail backfills are done. Each POST measured 2.3 s in the morning and
+6–7 s in the afternoon of the same day, putting the same run at 30 s or at
+7 min — the second measured after ~2000 detail fetches, so the portal may well
+be throttling. The Actions job allows 45 minutes for that reason; the run logs
+its own duration on the `done` line. If a run ever approaches the limit, the
+answer is not more parallelism against a government portal — drop
+`details.include_expired`, or scan the model reports every other run.
 
 **Sorting is limited to columns in the view.** There is no created-on field
 exposed, so *new* entries cannot be found by date — they are found by diffing

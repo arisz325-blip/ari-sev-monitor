@@ -99,8 +99,10 @@ python checker.py --backfill     # read every outstanding detail page at once
 python -m tests.test_checker     # offline suite, no network
 ```
 
-A full run makes ~25 requests and takes about a minute, plus one page fetch per
-model report still waiting to be linked.
+Once the backfills are done a run is 23 requests, but they are big ones: each
+grid page is ~26 MB of JSON and the portal has answered anywhere between 2 and
+7 seconds per request, so expect **1 to 7 minutes**. Every run prints its own
+duration. Add roughly a second per outstanding detail page on top.
 
 ## Tuning `config.json`
 
