@@ -175,7 +175,7 @@ pushed by default while routine expiries are not.
 
 ## Testing
 
-`python -m tests.test_checker` — 85 checks, no network. `tests/mock_rover.py`
+`python -m tests.test_checker` — 86 checks, no network. `tests/mock_rover.py`
 serves the portal shapes (both list pages with their base64 layouts, tokenhtml,
 the grid POST with real paging/sorting, detail pages) *and* stands in for
 ntfy.sh, capturing every push so tests assert on titles, bodies and the Click

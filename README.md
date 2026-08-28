@@ -29,7 +29,7 @@ docs/index.html                dashboard
 docs/data.json                 generated — what the dashboard reads
 .github/workflows/check.yml    daily cron; writes diagnostics to the run Summary
 .github/workflows/tests.yml    offline suite on every push
-tests/                         85 checks against a mock ROVER portal, no network
+tests/                         86 checks against a mock ROVER portal, no network
 ```
 
 ## What it tells you
