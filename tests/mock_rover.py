@@ -1,13 +1,19 @@
 """A stand-in for the ROVER portal (and for ntfy.sh), for offline testing.
 
-Serves the four shapes checker.py depends on:
+Serves the shapes checker.py depends on:
 
-  GET  /PublishedApprovals/SEVApprovals        -> page carrying the entity-grid
-                                                  config (data-get-url +
-                                                  base64 data-view-layouts)
-  GET  /_layout/tokenhtml                      -> the anti-forgery token
-  POST /_services/entity-grid-data.json/<id>   -> paged, sorted register rows
-  GET  /PublishedApprovals/SEVDetails/?id=..   -> the per-entry detail page
+  GET  /PublishedApprovals/SEVApprovals            -> page carrying the
+                                                      entity-grid config
+                                                      (data-get-url + base64
+                                                      data-view-layouts)
+  GET  /PublishedApprovals/MREApprovals            -> same, for model reports
+  GET  /_layout/tokenhtml                          -> the anti-forgery token
+  POST /_services/entity-grid-data.json/<id>       -> paged, sorted rows for
+                                                      whichever view was asked
+  GET  /PublishedApprovals/SEVDetails/?id=..       -> the per-entry detail page
+  GET  /PublishedApprovals/ModelReportDetails/?id= -> the model report page,
+                                                      including its "Based on"
+                                                      links to SEV entries
 
 Anything else POSTed is treated as an ntfy publish and recorded in NTFY_POSTS,
 so tests can assert on what would have hit the phone.
@@ -32,9 +38,14 @@ VIEWS = {
     "in_force": "Portal View - SEV Entries In Force",
     "expired": "Portal View - SEV Entries Expired",
 }
+REPORT_VIEW = "Portal View - All Approvals: MRE"
 
 # sev number -> entry. Tests mutate this between runs.
 REGISTER: dict[str, dict] = {}
+# MRE number -> model report. Tests mutate this between runs.
+REPORTS: dict[str, dict] = {}
+# Detail pages fetched this run, so tests can assert on the link budget.
+DETAIL_HITS: list[str] = []
 # Every ntfy publish this server received: {"topic", "headers", "body"}.
 NTFY_POSTS: list[dict] = []
 # Requests that arrived without the anti-forgery token.
@@ -46,35 +57,32 @@ def set_register(entries: dict[str, dict]) -> None:
     REGISTER.update({sev: dict(entry) for sev, entry in entries.items()})
 
 
+def set_reports(reports: dict[str, dict]) -> None:
+    REPORTS.clear()
+    REPORTS.update({mre: dict(report) for mre, report in reports.items()})
+
+
 def reset_ntfy() -> None:
     NTFY_POSTS.clear()
     REJECTED.clear()
+    DETAIL_HITS.clear()
 
 
-def _view_layouts() -> str:
-    layouts = [
-        {
-            "ViewName": VIEWS["in_force"],
-            # The real blob is encrypted; here it just names the view back to us.
-            "Base64SecureConfiguration": "SECURE-in_force",
-            "Configuration": {"EntityName": "rvr_approval", "PageSize": 10,
-                              "ViewDisplayName": "In Force Entries"},
-        },
-        {
-            "ViewName": VIEWS["expired"],
-            "Base64SecureConfiguration": "SECURE-expired",
-            "Configuration": {"EntityName": "rvr_approval", "PageSize": 10,
-                              "ViewDisplayName": "Expired Entries"},
-        },
-    ]
-    return base64.b64encode(json.dumps(layouts).encode()).decode()
+def _layouts(views: list[tuple[str, str]]) -> str:
+    # The real Base64SecureConfiguration is encrypted; here it just names the
+    # view back to us so the grid handler knows what was asked for.
+    return base64.b64encode(json.dumps([
+        {"ViewName": name, "Base64SecureConfiguration": f"SECURE-{marker}",
+         "Configuration": {"EntityName": "rvr_approval", "PageSize": 10,
+                           "ViewDisplayName": name}}
+        for name, marker in views]).encode()).decode()
 
 
-def _list_page() -> str:
+def _list_page(title: str, views: list[tuple[str, str]]) -> str:
     return (
-        "<!doctype html><html><body><h1>Specialist and Enthusiast Vehicles</h1>"
+        f"<!doctype html><html><body><h1>{title}</h1>"
         f'<div class="entity-grid entitylist" data-get-url="{GRID_PATH}" '
-        f"data-view-layouts='{_view_layouts()}' data-selected-view=\"test\">"
+        f"data-view-layouts='{_layouts(views)}' data-selected-view=\"test\">"
         "</div></body></html>"
     )
 
@@ -102,6 +110,52 @@ def _record(sev: str, entry: dict) -> dict:
             _attr("statuscode", "Active"),
         ],
     }
+
+
+def _report_record(mre: str, report: dict) -> dict:
+    return {
+        "Id": report.get("id", f"id-{mre}"),
+        "EntityName": "rvr_approval",
+        "Attributes": [
+            _attr("rvr_approvalnumber", mre),
+            _attr(f"{ALIAS}.rvr_manufacturer", report.get("make")),
+            _attr(f"{ALIAS}.rvr_model", report.get("model")),
+            _attr("rvr_approvalstatus", report.get("status", "In Force")),
+            _attr("rvr_approvalsubtypeid",
+                  report.get("subtype", "Specialist and Enthusiast Vehicles")),
+            _attr(f"{ALIAS}.rvr_categorytype", report.get("category", "MA")),
+            _attr(f"{ALIAS}.rvr_levelofcompliance",
+                  report.get("compliance", "Complies")),
+            _attr(f"{ALIAS}.rvr_mrebuilddaterange",
+                  report.get("build_range", "1/2000 - 12/2004")),
+        ],
+    }
+
+
+def _report_detail_page(mre: str, report: dict) -> str:
+    fields = [
+        ("rvr_approvalnumber", mre),
+        ("rvr_publishedapprovalholder", report.get("holder", "TEST RAW PTY LTD")),
+        ("rvr_publishedwebsite", report.get("website", "www.example.com")),
+        ("rvr_approvalstatus", report.get("status", "In Force")),
+        # The real page also publishes a contact name, phone and email; the
+        # checker deliberately does not read them, so they are here to prove it.
+        ("rvr_publishedcontact", "A PERSON"),
+        ("rvr_publishedphone", "0400000000"),
+    ]
+    blocks = "".join(
+        f'<div class="question-group"><div class="question-body">'
+        f'<div id="{fid}" class="question-label">{value}</div>'
+        "</div></div>" for fid, value in fields)
+    links = "".join(
+        f'<tr role="row"><td><a href="/PublishedApprovals/SEVDetails/'
+        f'?id=id-{sev}" target="_blank">{sev}</a></td></tr>'
+        for sev in report.get("sev", []))
+    based_on = (
+        '<div class="qtdiv" role="heading">Based on</div>'
+        '<div id="related_approval_section" class="row datagrid-table">'
+        f'<table id="RelatedApprovalList"><tbody>{links}</tbody></table></div>')
+    return f"<!doctype html><html><body>{blocks}{based_on}</body></html>"
 
 
 def _detail_page(sev: str, entry: dict) -> str:
@@ -141,7 +195,13 @@ class Handler(BaseHTTPRequestHandler):
     def do_GET(self) -> None:  # noqa: N802
         path = self.path.split("?")[0]
         if path == "/PublishedApprovals/SEVApprovals":
-            return self._send(200, _list_page().encode(), "text/html; charset=utf-8")
+            page = _list_page("Specialist and Enthusiast Vehicles",
+                              [(VIEWS["in_force"], "sev-in_force"),
+                               (VIEWS["expired"], "sev-expired")])
+            return self._send(200, page.encode(), "text/html; charset=utf-8")
+        if path == "/PublishedApprovals/MREApprovals":
+            page = _list_page("Model Reports", [(REPORT_VIEW, "mre-all")])
+            return self._send(200, page.encode(), "text/html; charset=utf-8")
         if path == "/_layout/tokenhtml":
             body = (f'<input name="__RequestVerificationToken" type="hidden" '
                     f'value="{TOKEN}" />')
@@ -150,9 +210,18 @@ class Handler(BaseHTTPRequestHandler):
             record_id = self.path.split("id=")[-1]
             for sev, entry in REGISTER.items():
                 if entry.get("id", f"id-{sev}") == record_id:
+                    DETAIL_HITS.append(sev)
                     return self._send(200, _detail_page(sev, entry).encode(),
                                       "text/html; charset=utf-8")
             return self._send(404, b"no such entry", "text/plain")
+        if path == "/PublishedApprovals/ModelReportDetails/":
+            record_id = self.path.split("id=")[-1]
+            for mre, report in REPORTS.items():
+                if report.get("id", f"id-{mre}") == record_id:
+                    DETAIL_HITS.append(mre)
+                    return self._send(200, _report_detail_page(mre, report).encode(),
+                                      "text/html; charset=utf-8")
+            return self._send(404, b"no such report", "text/plain")
         return self._send(404, b"not found", "text/plain")
 
     def do_POST(self) -> None:  # noqa: N802
@@ -164,16 +233,22 @@ class Handler(BaseHTTPRequestHandler):
                 REJECTED.append(self.path)
                 return self._send(403, b"missing token", "text/plain")
             request = json.loads(raw or b"{}")
-            status = request.get("base64SecureConfiguration", "").replace("SECURE-", "")
-            rows = [(sev, entry) for sev, entry in REGISTER.items()
-                    if entry.get("status", "in_force") == status]
-            rows.sort(key=lambda pair: pair[0],
-                      reverse="DESC" in request.get("sortExpression", "").upper())
+            marker = request.get("base64SecureConfiguration", "").replace("SECURE-", "")
+            if marker.startswith("mre-"):
+                rows = sorted(REPORTS.items())
+                to_record = _report_record
+            else:
+                status = marker.replace("sev-", "")
+                rows = sorted((sev, entry) for sev, entry in REGISTER.items()
+                              if entry.get("status", "in_force") == status)
+                to_record = _record
+            if "DESC" in request.get("sortExpression", "").upper():
+                rows.reverse()
             size = max(1, int(request.get("pageSize", 10)))
             page = max(1, int(request.get("page", 1)))
             window = rows[(page - 1) * size: page * size]
             body = json.dumps({
-                "Records": [_record(sev, entry) for sev, entry in window],
+                "Records": [to_record(key, value) for key, value in window],
                 "MoreRecords": page * size < len(rows),
                 "ItemCount": len(rows),
                 "PageNumber": page,

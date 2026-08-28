@@ -66,11 +66,16 @@
   .seg { display: flex; background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; flex-wrap: wrap; }
   .seg button { border: 0; background: transparent; color: var(--text-secondary); font: inherit; font-size: 13px; padding: 7px 12px; cursor: pointer; min-height: 36px; }
   .seg button[aria-pressed="true"] { background: var(--accent); color: #fff; }
-  input[type="search"] {
-    flex: 1; min-width: 190px; background: var(--surface-1); color: var(--text-primary);
+  input[type="search"], select {
+    flex: 1; min-width: 150px; background: var(--surface-1); color: var(--text-primary);
     border: 1px solid var(--border); border-radius: 10px; padding: 8px 12px; min-height: 38px; font: inherit; font-size: 14px;
   }
   input[type="search"]::placeholder { color: var(--muted); }
+  select { appearance: none; padding-right: 26px;
+    background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%);
+    background-position: calc(100% - 15px) 17px, calc(100% - 10px) 17px;
+    background-size: 5px 5px, 5px 5px; background-repeat: no-repeat; }
+  select:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
 
   .card {
     display: block; text-decoration: none; background: var(--surface-1);
@@ -86,9 +91,12 @@
   .badges { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 7px; }
   .badge { font-size: 11px; padding: 2px 7px; border-radius: 999px; border: 1px solid var(--border); color: var(--text-secondary); background: var(--surface-2); }
   .badge.new { color: #fff; background: var(--accent); border-color: transparent; }
+  .badge.ok { color: #fff; background: var(--good); border-color: transparent; }
   .badge.warn { color: #221a00; background: var(--warning); border-color: transparent; }
   .badge.crit { color: #fff; background: var(--critical); border-color: transparent; }
   .badge.dim { opacity: .75; }
+  .card .holder { color: var(--muted); font-size: 12.5px; margin-top: 4px; }
+  .card .holder b { color: var(--text-secondary); font-weight: 500; }
 
   .feed { list-style: none; margin: 0; padding: 0; }
   .feed li { display: flex; gap: 9px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13.5px; }
@@ -118,8 +126,8 @@
   <div class="tiles">
     <div class="tile new"><div class="v" id="t-new">–</div><div class="k" id="k-new">New</div></div>
     <div class="tile good"><div class="v" id="t-force">–</div><div class="k">In force</div></div>
+    <div class="tile"><div class="v" id="t-report">–</div><div class="k">With report</div></div>
     <div class="tile warn"><div class="v" id="t-soon">–</div><div class="k">Expiring</div></div>
-    <div class="tile"><div class="v" id="t-expired">–</div><div class="k">Expired</div></div>
   </div>
 
   <div class="controls">
@@ -130,7 +138,17 @@
       <button data-filter="expired" aria-pressed="false">Expired</button>
       <button data-filter="all" aria-pressed="false">All</button>
     </div>
-    <input type="search" id="q" placeholder="Search make, model, model code…" autocomplete="off">
+  </div>
+  <div class="controls">
+    <select id="make" aria-label="Filter by make"><option value="">All makes</option></select>
+    <select id="report" aria-label="Filter by model report">
+      <option value="">Report: any</option>
+      <option value="yes">Has model report</option>
+      <option value="no">No model report</option>
+    </select>
+  </div>
+  <div class="controls">
+    <input type="search" id="q" placeholder="Search model, model code, workshop…" autocomplete="off">
   </div>
 
   <div id="list"></div>
@@ -141,16 +159,21 @@
 
   <footer>
     <p id="source-line"></p>
-    <p>An entry on the Specialist and Enthusiast Vehicles Register means that
-      model variant may be imported through a Registered Automotive Workshop.
-      It is not import approval by itself — you still apply for that, and
+    <p><b>List vs model report.</b> An entry on the Specialist and Enthusiast
+      Vehicles Register means that model variant <i>may</i> be imported through
+      a Registered Automotive Workshop. A workshop can only actually bring one
+      in once it holds an <b>in-force model report</b> for it — that is the
+      green badge, and the workshop named on the card is who holds it. "No
+      model report" means the car is on the list but nobody is set up to
+      comply it yet.</p>
+    <p>Neither is an import approval by itself — you still apply for that, and
       vehicles built before 1989 or over 25 years old have their own pathways.
       Always confirm against ROVER before you buy.</p>
   </footer>
 </div>
 
 <script>
-const STATE = { data: null, filter: "new", query: "", shown: 0 };
+const STATE = { data: null, filter: "new", query: "", make: "", report: "", shown: 0 };
 const PAGE = 60;
 
 const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
@@ -186,13 +209,23 @@ function nameOf(e) {
   return [e.make, e.model].filter(Boolean).join(" ") || e.sev;
 }
 
+function inForceReports(e) {
+  return (e.reports || []).filter(r => r.status === "In Force");
+}
+
 function matches(e) {
   if (STATE.filter === "new" && !e.is_new) return false;
   if (STATE.filter === "in_force" && e.status !== "in_force") return false;
   if (STATE.filter === "expiring" && !e.expiring_soon) return false;
   if (STATE.filter === "expired" && e.status === "in_force") return false;
+  // The picker groups spellings ("NISSAN" and "Nissan" are one brand), so the
+  // comparison has to be case-insensitive here too.
+  if (STATE.make && (e.make || "").toUpperCase() !== STATE.make) return false;
+  if (STATE.report === "yes" && !e.has_report) return false;
+  if (STATE.report === "no" && e.has_report) return false;
   if (STATE.query) {
     const hay = [e.make, e.model, e.model_code, e.category, e.sev, e.criterion, e.variant]
+      .concat((e.reports || []).map(r => (r.mre || "") + " " + (r.holder || "")))
       .filter(Boolean).join(" ").toLowerCase();
     if (!STATE.query.split(/\s+/).every(term => hay.includes(term))) return false;
   }
@@ -201,7 +234,14 @@ function matches(e) {
 
 function cardHTML(e) {
   const badges = [];
+  const live = inForceReports(e);
   if (e.is_new) badges.push('<span class="badge new">New</span>');
+  if (live.length) {
+    badges.push('<span class="badge ok">Model report'
+      + (live.length > 1 ? " ×" + live.length : "") + "</span>");
+  } else if (e.status === "in_force") {
+    badges.push('<span class="badge warn">No model report</span>');
+  }
   if (e.status === "in_force" && e.under_review) badges.push('<span class="badge warn">Under review</span>');
   if (e.expiring_soon) badges.push('<span class="badge warn">Expires ' + esc(fullDate(e.expiry_iso, e.expiry)) + '</span>');
   if (e.status === "expired") badges.push('<span class="badge crit">Expired</span>');
@@ -211,12 +251,19 @@ function cardHTML(e) {
   const meta = [buildRange(e), e.category, e.model_code].filter(Boolean)
     .map(esc).join('<span class="dot">·</span>');
   const note = e.variant_details || e.notes;
+  const holders = [...new Set(live.map(r => r.holder).filter(Boolean))];
+  const holderLine = holders.length
+    ? '<div class="holder">Workshop: <b>' + esc(holders.slice(0, 2).join(", "))
+      + (holders.length > 2 ? " +" + (holders.length - 2) + " more" : "")
+      + "</b> · " + esc(live.map(r => r.mre).join(", ")) + "</div>"
+    : "";
 
   return '<a class="card" href="' + esc(e.url || "#") + '" target="_blank" rel="noopener">'
     + '<div class="top"><span class="name">' + esc(nameOf(e)) + '</span>'
     + '<span class="sev">' + esc(e.sev) + '</span></div>'
     + '<div class="meta">' + meta + '</div>'
     + (note ? '<div class="note">' + esc(note.slice(0, 160)) + '</div>' : "")
+    + holderLine
     + (badges.length ? '<div class="badges">' + badges.join("") + "</div>" : "")
     + "</a>";
 }
@@ -240,7 +287,8 @@ function renderFeed(events) {
     new: "added to the register", returned: "back in force", expired: "expired",
     removed: "removed from the register", under_review: "flagged for review",
     review_cleared: "review cleared", expiry_changed: "expiry changed",
-    updated: "details updated"
+    updated: "details updated", report_added: "now has a model report",
+    report_lost: "lost its model report"
   };
   if (!events || !events.length) return;
   feed.innerHTML = events.slice(0, 25).map(ev =>
@@ -258,12 +306,23 @@ function boot(data) {
   document.getElementById("t-new").textContent = data.counts.new_recent;
   document.getElementById("k-new").textContent = "New (" + data.recent_days + "d)";
   document.getElementById("t-force").textContent = data.counts.in_force;
+  document.getElementById("t-report").textContent = data.counts.with_report != null
+    ? data.counts.with_report : "–";
   document.getElementById("t-soon").textContent = data.counts.expiring_soon;
-  document.getElementById("t-expired").textContent = data.counts.expired;
   document.getElementById("source-line").innerHTML =
     'Source: <a href="' + esc(data.source.list_url) + '" target="_blank" rel="noopener">'
-    + esc(data.source.name) + "</a>, checked daily. Expiring = within "
+    + esc(data.source.name) + "</a> and the Model Report register, checked daily. "
+    + data.counts.expired + " entries have expired. Expiring = within "
     + data.expiring_soon_days + " days.";
+
+  const makeSelect = document.getElementById("make");
+  (data.makes || []).forEach(m => {
+    const option = document.createElement("option");
+    option.value = m.key;
+    option.textContent = m.label + " (" + m.count
+      + (m.with_report != null ? ", " + m.with_report + " w/ report" : "") + ")";
+    makeSelect.appendChild(option);
+  });
 
   if (data.warnings && data.warnings.length) {
     document.getElementById("warnings").innerHTML =
@@ -290,6 +349,14 @@ document.getElementById("filters").addEventListener("click", ev => {
 });
 document.getElementById("q").addEventListener("input", ev => {
   STATE.query = ev.target.value.trim().toLowerCase();
+  render(true);
+});
+document.getElementById("make").addEventListener("change", ev => {
+  STATE.make = ev.target.value;
+  render(true);
+});
+document.getElementById("report").addEventListener("change", ev => {
+  STATE.report = ev.target.value;
   render(true);
 });
 document.getElementById("more").addEventListener("click", () => render(false));

@@ -10,8 +10,24 @@
     "page_size": 100,
     "max_pages": 40
   },
+  "model_reports": {
+    "enabled": true,
+    "list_path": "/PublishedApprovals/MREApprovals",
+    "detail_path": "/PublishedApprovals/ModelReportDetails/?id=",
+    "views": {
+      "all": "Portal View - All Approvals: MRE"
+    },
+    "subtypes": [
+      "Specialist and Enthusiast Vehicles"
+    ],
+    "page_size": 100,
+    "max_pages": 40,
+    "link_budget_per_run": 60
+  },
   "notify": {
     "new": true,
+    "report_added": true,
+    "report_lost": true,
     "returned": true,
     "under_review": true,
     "removed": true,

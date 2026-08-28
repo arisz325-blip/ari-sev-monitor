@@ -20,7 +20,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from tests import mock_rover  # noqa: E402
 from checker import (  # noqa: E402
-    build_range, header_safe, matches_watch, month_year, parse_au_date, title_of,
+    build_range, header_safe, matches_watch, month_year, parse_au_date,
+    parse_related_sevs, preferred_spelling, title_of,
 )
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -61,6 +62,18 @@ BASE_REGISTER = {
                         expiry="01/01/2024"),
     "SEV-000091": entry("PORSCHE", "959", model_code="959", status="expired",
                         expiry="01/06/2023"),
+}
+
+
+BASE_REPORTS = {
+    "MRE-000001": {"make": "NISSAN", "model": "Skyline GT-R",
+                   "holder": "SYDNEY RAW PTY LTD", "sev": ["SEV-000100"]},
+    "MRE-000002": {"make": "Toyota", "model": "Chaser",
+                   "holder": "MELBOURNE RAW PTY LTD",
+                   "sev": ["SEV-000101", "SEV-000102"]},
+    # Not written against a SEV entry at all — must never be fetched.
+    "MRE-000003": {"make": "Suzuki", "model": "GSX-R",
+                   "subtype": "Used 2 or 3 Wheeled Vehicle", "sev": []},
 }
 
 
@@ -131,6 +144,19 @@ def unit_checks() -> None:
           title_of({"make": "Honda", "model": "N-ONE e"}) == "Honda N-ONE e")
     check("title_of falls back to the SEV number",
           title_of({"sev": "SEV-000001"}) == "SEV-000001")
+
+    check("the nicest spelling of a make wins ties",
+          preferred_spelling({"NISSAN": 1, "Nissan": 1, "nissan": 1}) == "Nissan")
+    check("but the most-used spelling wins outright",
+          preferred_spelling({"NISSAN": 9, "Nissan": 1}) == "NISSAN")
+    check("the 'Based on' table is what links a report to its entries",
+          parse_related_sevs(
+              '<td><a href="/PublishedApprovals/SEVDetails/?id=abc" '
+              'target="_blank">SEV-000643</a></td>'
+              '<td><a href="/PublishedApprovals/SEVDetails/?id=def">'
+              "SEV-000644</a></td>") == ["SEV-000643", "SEV-000644"])
+    check("a report based on nothing links to nothing",
+          parse_related_sevs("<html><body>no table here</body></html>") == [])
 
     row = {"make": "NISSAN", "model": "Skyline GT-R", "model_code": "BNR32",
            "category": "MA - Passenger Vehicle"}
@@ -282,6 +308,113 @@ def main() -> int:
         check("entries survive the glitch in state",
               len(state_of(work)["entries"]) == 10,
               str(len(state_of(work)["entries"])))
+
+        # -- model reports --------------------------------------------------
+        print("\nModel reports")
+        mock_rover.set_register(BASE_REGISTER)
+        mock_rover.set_reports({})
+        reports_dir = workdir(tmp, base)
+        mock_rover.reset_ntfy()
+        run_checker(reports_dir, base)                 # baseline, no reports
+        check("an entry with no model report is counted as such",
+              data_of(reports_dir)["counts"]["with_report"] == 0,
+              str(data_of(reports_dir)["counts"]))
+
+        mock_rover.set_reports(BASE_REPORTS)
+        mock_rover.reset_ntfy()
+        run_checker(reports_dir, base)
+        data = data_of(reports_dir)
+        by_sev = {e["sev"]: e for e in data["entries"]}
+        check("a model report is linked to its SEV entry through the "
+              "'Based on' table",
+              by_sev["SEV-000100"].get("has_report") is True,
+              str(by_sev["SEV-000100"].get("reports")))
+        check("one report can cover several SEV entries",
+              by_sev["SEV-000101"].get("has_report") is True
+              and by_sev["SEV-000102"].get("has_report") is True)
+        check("the workshop holding the report is carried through",
+              by_sev["SEV-000100"]["reports"][0]["holder"] == "SYDNEY RAW PTY LTD",
+              str(by_sev["SEV-000100"]["reports"]))
+        check("entries without a report stay flagged",
+              by_sev["SEV-000104"].get("has_report") in (None, False))
+        check("the dashboard counts entries with a report",
+              data["counts"]["with_report"] == 3, str(data["counts"]))
+        check("a non-SEV model report is never fetched",
+              "MRE-000003" not in mock_rover.DETAIL_HITS,
+              str(mock_rover.DETAIL_HITS))
+        check("backfilling links does not push anything",
+              not titles_pushed(), str(titles_pushed()))
+
+        mock_rover.reset_ntfy()
+        run_checker(reports_dir, base)
+        check("a linked report is not fetched again on later runs",
+              not [h for h in mock_rover.DETAIL_HITS if h.startswith("MRE")],
+              str(mock_rover.DETAIL_HITS))
+
+        with_new = dict(BASE_REPORTS)
+        with_new["MRE-000004"] = {"make": "Mazda", "model": "RX-7",
+                                  "holder": "PERTH RAW PTY LTD",
+                                  "sev": ["SEV-000103"]}
+        mock_rover.set_reports(with_new)
+        mock_rover.reset_ntfy()
+        run_checker(reports_dir, base)
+        check("a model report appearing later IS pushed",
+              titles_pushed() == ["Model report approved: Mazda RX-7"],
+              str(titles_pushed()))
+        check("the push names the workshop that can build it",
+              "PERTH RAW PTY LTD" in mock_rover.NTFY_POSTS[0]["body"],
+              mock_rover.NTFY_POSTS[0]["body"])
+
+        suspended = {k: dict(v) for k, v in with_new.items()}
+        suspended["MRE-000004"]["status"] = "Suspended"
+        mock_rover.set_reports(suspended)
+        mock_rover.reset_ntfy()
+        run_checker(reports_dir, base)
+        check("a suspended report means the car can no longer be built",
+              titles_pushed() == ["Model report gone: Mazda RX-7"],
+              str(titles_pushed()))
+        check("a suspended report is still listed, marked not in force",
+              {e["sev"]: e for e in data_of(reports_dir)["entries"]}
+              ["SEV-000103"]["reports"][0]["status"] == "Suspended")
+
+        mock_rover.set_reports({"MRE-000001": BASE_REPORTS["MRE-000001"]})
+        mock_rover.reset_ntfy()
+        run_checker(reports_dir, base)
+        check("a collapsed model report register is not believed",
+              not titles_pushed(), str(titles_pushed()))
+        check("the collapse is surfaced as a warning",
+              any("model report" in w for w in data_of(reports_dir)["warnings"]),
+              str(data_of(reports_dir)["warnings"]))
+
+        mock_rover.set_reports(BASE_REPORTS)
+        mock_rover.reset_ntfy()
+        run_checker(reports_dir, base, ["--rebuild"])
+        check("--rebuild keeps the model report links it paid for",
+              not [h for h in mock_rover.DETAIL_HITS if h.startswith("MRE")]
+              and data_of(reports_dir)["counts"]["with_report"] == 3,
+              str(mock_rover.DETAIL_HITS))
+
+        # -- the brand picker ------------------------------------------------
+        print("\nBrand picker")
+        mixed = dict(BASE_REGISTER)
+        mixed["SEV-000200"] = entry("Nissan", "Silvia", model_code="S15")
+        mixed["SEV-000201"] = entry("nissan", "180SX", model_code="RPS13")
+        mock_rover.set_register(mixed)
+        mock_rover.set_reports(BASE_REPORTS)
+        brands = workdir(tmp, base)
+        run_checker(brands, base)
+        makes = {m["key"]: m for m in data_of(brands)["makes"]}
+        check("makes are grouped case-insensitively",
+              makes["NISSAN"]["count"] == 3, str(makes.get("NISSAN")))
+        check("the picker shows the register's most common spelling",
+              makes["NISSAN"]["label"] == "Nissan", str(makes.get("NISSAN")))
+        check("each make carries its own model report count",
+              makes["NISSAN"]["with_report"] == 1, str(makes.get("NISSAN")))
+        check("expired entries stay out of the picker",
+              "LEXUS" not in makes, str(sorted(makes)))
+        check("makes are ordered by how many entries they have",
+              [m["key"] for m in data_of(brands)["makes"]][0] == "NISSAN",
+              str([m["key"] for m in data_of(brands)["makes"]][:3]))
 
         # -- notification budget -------------------------------------------
         print("\nNotification budget")

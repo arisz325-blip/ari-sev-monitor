@@ -64,6 +64,59 @@ in `DETAIL_FIELDS`). Each page is ~450 KB, so only entries that are about to be
 notified get enriched (`enrich.max_per_run`), and `apply_events` carries those
 extras forward so a later plain run does not wipe them.
 
+## Model reports (the MRE register)
+
+**A SEVs listing does not mean anyone can import the car.** A Registered
+Automotive Workshop needs an in-force *model report* for that variant before it
+can comply one. So the register answers "is it allowed", and the MRE register
+answers "can it actually be done, and by whom" — which is the question an
+importer is really asking. `has_report` on each entry is that second answer;
+the workshop named on the dashboard card is the report holder.
+
+**The MRE register rides on the same grid endpoint and the same entity**
+(`rvr_approval`) as the SEVs one, just a different page
+(`/PublishedApprovals/MREApprovals`) and view (`Portal View - All Approvals:
+MRE`). Its own columns carry the status (`In Force`, `Suspended`, …), the
+subtype, level of compliance and a pre-formatted build date range. Seeded
+2026-08-28: **988 reports, 939 of them in force**.
+
+**The only join between the two registers is the "Based on" table on the model
+report's own page.** The MRE grid has no SEV column, the SEV side has no
+reverse link at all, and make/model text does not match between them (the SEV
+entry is `NISSAN Skyline`, the report is `Skyline GT-R`). So each report costs
+one ~450 KB page fetch to place, once, forever. One report can cover several
+SEV entries (`MRE-000988` -> `SEV-001075`, `SEV-001076`), and reports whose
+subtype is not "Specialist and Enthusiast Vehicles" (used motorcycles, second
+stage manufacture) link to nothing and are never fetched.
+
+**The backfill must not look like news.** ~950 links have to be read on a fresh
+install, paced by `link_budget_per_run` (or `--backfill`). Two failure modes
+sit either side of this and both were designed against:
+
+- announce every first-time link and the first weeks are a wall of "model
+  report approved" for reports that have existed for years;
+- suppress every first-time link and a *genuinely new* report — which by
+  definition is also being linked for the first time — is never announced at
+  all.
+
+The `new_to_us` flag is what separates them: a report absent from
+`state["reports"]` on a run that is not the first ever is news, and stays news
+(sticky through state) until it is linked, even if the budget defers it for
+days. Everything else is backfill, and `run()` puts the SEV entries it touched
+into `unsettled`, which mutes report events for them that run. Genuinely new
+reports also sort to the front of the queue so a long backfill cannot starve
+them.
+
+**`has_report` is compared with `is not None`, not truthiness.** Entries
+recorded before model reports existed in this project have no `has_report` key,
+and reading that as False would announce that all 585 in-force cars just lost
+their report. Same shape of bug as `first_seen` below.
+
+**A collapsed MRE scan is not believed either** (`reconcile_reports`): if the
+report register comes back empty or shrunk past `max_shrink_ratio`, the
+previous map is kept and report events are switched off for the run. Otherwise
+one bad response says "no workshop can build any of these any more".
+
 ## Traps that already bit
 
 **`first_seen` must be tested by key presence, not truthiness.** Baseline runs
@@ -91,6 +144,13 @@ notification dies silently while every test stays green. All headers go through
 `header_safe`; emoji belong in the Tags header, which ntfy renders into the
 title anyway.
 
+**ROVER spells makes three different ways.** `NISSAN`, `Nissan` and `nissan`
+are all in the register, as are `PORSCHE`/`Porsche` and `MITSUBISHI`. The
+dashboard's brand picker groups on the upper-case key and displays
+`preferred_spelling()` — most used, ties to Title Case over SHOUTING over lower
+— and the page filters case-insensitively. Group on the raw string and one
+brand becomes three entries in the picker.
+
 **Events are recorded before they are sent.** `record_events` writes the
 activity log the dashboard reads, and a failed push does *not* re-fire next
 run — the run summary says how many were lost instead. Anything new that
@@ -115,8 +175,8 @@ pushed by default while routine expiries are not.
 
 ## Testing
 
-`python -m tests.test_checker` — 61 checks, no network. `tests/mock_rover.py`
-serves the four portal shapes (list page with the base64 layouts, tokenhtml,
+`python -m tests.test_checker` — 85 checks, no network. `tests/mock_rover.py`
+serves the portal shapes (both list pages with their base64 layouts, tokenhtml,
 the grid POST with real paging/sorting, detail pages) *and* stands in for
 ntfy.sh, capturing every push so tests assert on titles, bodies and the Click
 header. It rejects a grid POST without the token, which is what keeps the token

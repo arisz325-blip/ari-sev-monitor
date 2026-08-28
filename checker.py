@@ -50,17 +50,19 @@ MELBOURNE = ZoneInfo("Australia/Melbourne")
 # Emoji go in Tags, never in Title — see header_safe().
 EVENT_META: dict[str, tuple[str, str, int]] = {
     "new":            ("New SEV approval",     "racing_car",              4),
+    "report_added":   ("Model report approved", "white_check_mark",       4),
     "returned":       ("SEV back in force",    "arrows_counterclockwise", 4),
     "expired":        ("SEV expired",          "hourglass_flowing_sand",  3),
     "removed":        ("SEV entry removed",    "wastebasket",             3),
     "under_review":   ("SEV under review",     "warning",                 3),
+    "report_lost":    ("Model report gone",    "warning",                 3),
     "review_cleared": ("Review finished",      "white_check_mark",        2),
     "expiry_changed": ("SEV expiry changed",   "calendar",                2),
     "updated":        ("SEV details updated",  "pencil2",                 2),
 }
 
-EVENT_ORDER = ["new", "returned", "under_review", "removed", "expired",
-               "review_cleared", "expiry_changed", "updated"]
+EVENT_ORDER = ["new", "report_added", "returned", "under_review", "report_lost",
+               "removed", "expired", "review_cleared", "expiry_changed", "updated"]
 
 # Grid attribute name -> our field name. Related-entity columns arrive prefixed
 # with a link alias ("a_cb37....rvr_model"); the alias is stripped before the
@@ -88,6 +90,20 @@ FIELD_LABEL = {
     "build_to": "Build date to", "expiry": "Expiry",
 }
 
+# The model report register (MRE) rides on the same entity and the same grid
+# endpoint, with its own columns.
+REPORT_FIELD_MAP = {
+    "rvr_approvalnumber":     "mre",
+    "rvr_approvalid":         "id",
+    "rvr_manufacturer":       "make",
+    "rvr_model":              "model",
+    "rvr_approvalstatus":     "report_status",
+    "rvr_approvalsubtypeid":  "subtype",
+    "rvr_categorytype":       "category",
+    "rvr_levelofcompliance":  "compliance",
+    "rvr_mrebuilddaterange":  "build_range",
+}
+
 # Detail-page fields, keyed by the element id ROVER gives them.
 DETAIL_FIELDS = {
     "SEVApprovalNo":     "sev",
@@ -101,6 +117,15 @@ DETAIL_FIELDS = {
     "SEVExpiry":         "expiry_display",
     "SEVModelCodeName":  "model_code",
     "SEVNotes":          "notes",
+}
+
+# The model report detail page uses the raw attribute names as element ids.
+# Only the holder's business identity is taken — the page also publishes a
+# named contact, their phone and their email, which we have no need for.
+REPORT_DETAIL_FIELDS = {
+    "rvr_publishedapprovalholder": "holder",
+    "rvr_publishedwebsite":        "website",
+    "rvr_approvalstatus":          "report_status",
 }
 
 
@@ -157,6 +182,25 @@ def build_range(row: dict) -> str:
     start = month_year(row.get("build_from_iso")) or row.get("build_from") or "?"
     end = month_year(row.get("build_to_iso")) or row.get("build_to")
     return f"{start} - {end}" if end else f"{start} - no end date"
+
+
+def preferred_spelling(spellings: dict[str, int]) -> str:
+    """Pick the nicest of ROVER's spellings of one make.
+
+    The register holds "NISSAN", "Nissan" and "nissan" for the same brand.
+    Most-used wins; ties go to Title Case over SHOUTING over lower case, then
+    alphabetically so the picker does not reshuffle itself between runs.
+    """
+    def rank(name: str) -> tuple[int, int, str]:
+        if name[:1].isupper() and any(c.islower() for c in name):
+            style = 2
+        elif name.isupper():
+            style = 1
+        else:
+            style = 0
+        return spellings[name], style, name
+
+    return max(spellings, key=rank)
 
 
 def title_of(row: dict) -> str:
@@ -323,24 +367,47 @@ class Rover:
             page += 1
         log(f"    warning: stopped at max_pages={max_pages} with more rows waiting")
 
-    def detail(self, detail_path: str, record_id: str) -> dict:
-        """Parse the extra fields only an entry's own page carries."""
-        html = self.get_text(f"{detail_path}{record_id}")
-        out: dict[str, str] = {}
-        for element_id, field in DETAIL_FIELDS.items():
+    def detail_page(self, detail_path: str, record_id: str) -> str:
+        """The HTML of one approval's own page (~450 KB — fetch sparingly)."""
+        return self.get_text(f"{detail_path}{record_id}")
+
+    def detail(self, detail_path: str, record_id: str,
+               fields: dict[str, str] = DETAIL_FIELDS) -> dict:
+        return parse_labels(self.detail_page(detail_path, record_id), fields)
+
+
+def parse_labels(html: str, fields: dict[str, str]) -> dict:
+    """Pull ROVER's label/value pairs out of an approval detail page."""
+    out: dict[str, str] = {}
+    for element_id, field in fields.items():
+        m = re.search(
+            r'<div id="%s"[^>]*class="question-label"[^>]*>(.*?)</div>\s*</div>'
+            % re.escape(element_id), html, re.S)
+        if not m:
             m = re.search(
-                r'<div id="%s"[^>]*class="question-label"[^>]*>(.*?)</div>\s*</div>'
+                r'<div id="%s"[^>]*class="question-label"[^>]*>(.*?)</div>'
                 % re.escape(element_id), html, re.S)
-            if not m:
-                m = re.search(
-                    r'<div id="%s"[^>]*class="question-label"[^>]*>(.*?)</div>'
-                    % re.escape(element_id), html, re.S)
-            if m:
-                text = re.sub(r"<[^>]+>", " ", m.group(1))
-                text = re.sub(r"\s+", " ", htmllib.unescape(text)).strip()
-                if text:
-                    out[field] = text
-        return out
+        if m:
+            text = re.sub(r"<[^>]+>", " ", m.group(1))
+            text = re.sub(r"\s+", " ", htmllib.unescape(text)).strip()
+            if text:
+                out[field] = text
+    return out
+
+
+def parse_related_sevs(html: str) -> list[str]:
+    """The SEV entries a model report was written against.
+
+    This link exists in exactly one place: the "Based on" table on the model
+    report's own page. The MRE grid does not carry it, the SEV side has no
+    reverse link, and make/model text does not match reliably between the two
+    registers — so this page fetch is the only honest way to say whether a
+    given SEV entry has a model report.
+    """
+    return sorted({
+        m.group(1) for m in re.finditer(
+            r'href="/PublishedApprovals/SEVDetails/\?id=[^"]*"[^>]*>\s*'
+            r"(SEV-\d+)\s*</a>", html)})
 
 
 def record_to_row(record: dict, status: str, detail_url: str) -> dict | None:
@@ -410,6 +477,181 @@ def scan(rover: Rover, cfg: dict) -> tuple[dict[str, dict], list[str]]:
 
 
 # --------------------------------------------------------------------------
+# model reports
+# --------------------------------------------------------------------------
+
+def record_to_report(record: dict, detail_url: str) -> dict | None:
+    values: dict[str, Any] = {}
+    for attr in record.get("Attributes", []):
+        field = REPORT_FIELD_MAP.get(str(attr.get("Name", "")).split(".")[-1])
+        if field:
+            values[field] = attr.get("DisplayValue")
+
+    mre = str(values.get("mre") or "").strip()
+    if not mre:
+        return None
+    report = {
+        "mre": mre,
+        "id": record.get("Id") or values.get("id"),
+        "make": str(values.get("make") or "").strip(),
+        "model": str(values.get("model") or "").strip(),
+        "report_status": str(values.get("report_status") or "").strip(),
+        "subtype": str(values.get("subtype") or "").strip(),
+        "category": str(values.get("category") or "").strip(),
+        "compliance": str(values.get("compliance") or "").strip(),
+        "build_range": str(values.get("build_range") or "").strip(),
+    }
+    report["url"] = f"{detail_url}{report['id']}" if report.get("id") else None
+    return report
+
+
+def scan_reports(rover: Rover, cfg: dict) -> tuple[dict[str, dict], list[str]]:
+    """Read the model report register. Returns ({MRE number: report}, warnings)."""
+    mcfg = cfg.get("model_reports", {})
+    if not mcfg.get("enabled", True):
+        return {}, []
+    warnings: list[str] = []
+    grid_url, layouts = rover.list_page(mcfg["list_path"])
+    detail_url = f"{rover.base}{mcfg['detail_path']}"
+
+    reports: dict[str, dict] = {}
+    for key, view_name in mcfg["views"].items():
+        layout = layouts.get(view_name)
+        if layout is None:
+            warnings.append(
+                f"model report view '{view_name}' is gone from {mcfg['list_path']} "
+                f"(portal now offers: {', '.join(sorted(layouts)) or 'nothing'})")
+            log(f"  reports {key}: MISSING view '{view_name}'")
+            continue
+        for record in rover.grid_rows(grid_url, layout, mcfg["list_path"],
+                                      int(mcfg.get("page_size", 100)),
+                                      int(mcfg.get("max_pages", 40))):
+            report = record_to_report(record, detail_url)
+            if report:
+                reports[report["mre"]] = report
+        log(f"  reports {key}: {len(reports)} model reports")
+    return reports, warnings
+
+
+def link_reports(rover: Rover, cfg: dict, reports: dict[str, dict],
+                 state: dict) -> set[str]:
+    """Attach each model report to the SEV entries it was written against.
+
+    The link only exists on the report's own ~450 KB page, so it is fetched
+    once per report and then carried in state forever. A fresh install has
+    ~950 to work through, paced by `link_budget_per_run` (or done in one go by
+    `--backfill`).
+
+    Returns the MRE numbers whose links were merely *discovered* by that
+    backfill. Those must not be announced as "a model report appeared today" —
+    only reports that showed up in the register after we started watching are
+    news, which is what the sticky `new_to_us` flag tracks: a report first seen
+    while the budget was exhausted is still news whenever it finally gets
+    linked, and reports seen on the very first run never are.
+    """
+    mcfg = cfg.get("model_reports", {})
+    known = state.get("reports", {})
+    first_ever = not known
+    subtypes = [s.lower() for s in mcfg.get("subtypes", []) if s]
+    budget = int(mcfg.get("link_budget_per_run", 60))
+
+    pending: list[dict] = []
+    for mre, report in reports.items():
+        before = known.get(mre)
+        if before and before.get("linked"):
+            report["sev"] = before.get("sev", [])
+            report["linked"] = True
+            for field in ("holder", "website"):
+                if before.get(field):
+                    report[field] = before[field]
+            continue
+        if subtypes and report.get("subtype", "").lower() not in subtypes:
+            # Used motorcycle and second-stage manufacture reports are not
+            # written against a SEV entry at all; nothing to fetch.
+            report["sev"] = []
+            report["linked"] = True
+            continue
+        report["new_to_us"] = (not first_ever
+                               and (before is None or bool(before.get("new_to_us"))))
+        pending.append(report)
+
+    # Genuinely new reports go first: they are the ones worth a notification,
+    # and a long backfill queue must not push them past the budget.
+    pending.sort(key=lambda r: not r.get("new_to_us"))
+
+    backfilled: set[str] = set()
+    for report in pending[:budget]:
+        if not report.get("id"):
+            continue
+        try:
+            html = rover.detail_page(mcfg["detail_path"], report["id"])
+        except PortalError as exc:
+            log(f"    model report fetch failed for {report['mre']}: {exc}")
+            continue
+        report.update(parse_labels(html, REPORT_DETAIL_FIELDS))
+        report["sev"] = parse_related_sevs(html)
+        report["linked"] = True
+        if not report.pop("new_to_us", False):
+            backfilled.add(report["mre"])
+    if pending:
+        done = min(len(pending), budget)
+        tail = "" if len(pending) <= budget else \
+            f" — {len(pending) - budget} still to do, rerun or use --backfill"
+        log(f"  linked {done} model report(s) to their SEV entries{tail}")
+    return backfilled
+
+
+def reconcile_reports(state: dict, reports: dict[str, dict],
+                      cfg: dict) -> tuple[dict[str, dict], bool, list[str]]:
+    """Decide whether to believe this run's model report scan.
+
+    Same reasoning as the SEV shrink guard: a bad response must not flip a
+    thousand entries to "no model report" and push a wave of alarms. When the
+    scan looks wrong we keep the previous map and say so.
+    """
+    known = state.get("reports", {})
+    if not cfg.get("model_reports", {}).get("enabled", True):
+        return {}, False, []
+    if not known:
+        return reports, bool(reports), []
+    if not reports:
+        return known, False, ["the model report register returned nothing — "
+                              "keeping the previous model report data"]
+    shrink = 1 - (len(reports) / len(known))
+    if shrink > float(cfg.get("sanity", {}).get("max_shrink_ratio", 0.15)):
+        return known, False, [
+            f"model reports came back {len(reports)}, down from {len(known)} "
+            f"({shrink:.0%} smaller) — keeping the previous data and not "
+            "reporting any report as lost"]
+    return reports, True, []
+
+
+def attach_reports(rows: dict[str, dict], reports: dict[str, dict]) -> None:
+    """Hang each SEV entry's model reports off it, newest report first."""
+    by_sev: dict[str, list[dict]] = {}
+    for mre in sorted(reports, reverse=True):
+        report = reports[mre]
+        for sev in report.get("sev") or []:
+            by_sev.setdefault(sev, []).append({
+                "mre": mre,
+                "holder": report.get("holder"),
+                "status": report.get("report_status"),
+                "compliance": report.get("compliance"),
+                "website": report.get("website"),
+                "url": report.get("url"),
+            })
+    for sev, row in rows.items():
+        attached = by_sev.get(sev, [])
+        row["reports"] = attached
+        row["has_report"] = any(r.get("status") == "In Force" for r in attached)
+
+
+def report_holders(row: dict) -> list[str]:
+    return sorted({r["holder"] for r in row.get("reports", [])
+                   if r.get("status") == "In Force" and r.get("holder")})
+
+
+# --------------------------------------------------------------------------
 # diffing
 # --------------------------------------------------------------------------
 
@@ -431,11 +673,17 @@ def matches_watch(row: dict, watch: dict) -> bool:
     return False
 
 
-def diff(state: dict, rows: dict[str, dict], cfg: dict) -> tuple[list[dict], list[str]]:
+def diff(state: dict, rows: dict[str, dict], cfg: dict,
+         report_events: bool = True,
+         unsettled: frozenset[str] = frozenset()) -> tuple[list[dict], list[str]]:
     """Compare this run against the stored baseline.
 
     Returns (events, warnings). Every event carries the row it is about; the
     caller decides which of them become notifications.
+
+    `unsettled` holds SEV numbers whose model report links were filled in by
+    the backfill this run — their report state was discovered, not changed, so
+    they get no report event.
     """
     known: dict[str, dict] = state.get("entries", {})
     warnings: list[str] = []
@@ -478,6 +726,24 @@ def diff(state: dict, rows: dict[str, dict], cfg: dict) -> tuple[list[dict], lis
             elif not was_gone:
                 events.append({"type": "expired", "row": row,
                                "detail": f"expired {row.get('expiry') or ''}".strip()})
+
+        # `is not None` matters: entries recorded before model reports were
+        # tracked have no has_report at all, and reading that as False would
+        # announce that every car in the register just lost its report.
+        had_report = before.get("has_report")
+        if (report_events and had_report is not None
+                and had_report != row.get("has_report")
+                and sev not in unsettled):
+            if row["has_report"]:
+                holders = ", ".join(report_holders(row))
+                events.append({"type": "report_added", "row": row,
+                               "detail": "a model report is now in force"
+                                         + (f" — {holders}" if holders else "")
+                                         + "; a workshop can build it now"})
+            else:
+                events.append({"type": "report_lost", "row": row,
+                               "detail": "no model report is in force any more — "
+                                         "nobody can import it until one is"})
 
         if bool(before.get("under_review")) != row["under_review"]:
             if row["under_review"]:
@@ -589,6 +855,16 @@ def notification_body(event: dict) -> str:
         bits.append(f"Variant: {row['variant']}")
     if row.get("variant_details"):
         bits.append(row["variant_details"][:200])
+    # The register listing is only half the answer: without an in-force model
+    # report, no workshop can actually import the car yet.
+    if "has_report" in row:
+        holders = report_holders(row)
+        if holders:
+            bits.append(f"Model report: {', '.join(holders[:3])}")
+        elif row.get("reports"):
+            bits.append("Model report: none in force (one exists but is not)")
+        else:
+            bits.append("Model report: none yet — no workshop can build it")
     if row.get("expiry"):
         bits.append(f"Register entry expires {row['expiry']}")
     bits.append(event["detail"])
@@ -671,7 +947,7 @@ def record_events(state: dict, events: list[dict]) -> None:
 DASHBOARD_FIELDS = ("sev", "make", "model", "category", "model_code",
                     "build_from_iso", "build_to_iso", "expiry_iso",
                     "under_review", "status", "url", "criterion", "variant",
-                    "variant_details", "notes", "first_seen")
+                    "variant_details", "notes", "first_seen", "has_report")
 
 
 def write_dashboard_data(state: dict, warnings: list[str], started: str,
@@ -697,6 +973,13 @@ def write_dashboard_data(state: dict, warnings: list[str], started: str,
                          ("expiry", "expiry_iso")):
             if entry.get(raw) and not entry.get(iso):
                 row[raw] = entry[raw]
+        # Only what the card shows: number, who holds it, and whether it is
+        # actually in force. The full record stays in state.json.
+        reports = [{"mre": r["mre"], "holder": r.get("holder"),
+                    "status": r.get("status"), "website": r.get("website")}
+                   for r in entry.get("reports", [])]
+        if reports:
+            row["reports"] = reports
         if (entry.get("first_seen") or "") >= new_since:
             row["is_new"] = True
         if (entry.get("status") == "in_force" and entry.get("expiry_iso")
@@ -706,6 +989,25 @@ def write_dashboard_data(state: dict, warnings: list[str], started: str,
 
     rows.sort(key=lambda r: (r.get("first_seen") or "", r.get("sev") or ""),
               reverse=True)
+
+    tally: dict[str, dict] = {}
+    for row in rows:
+        make = (row.get("make") or "").strip()
+        if row.get("status") != "in_force" or not make:
+            continue
+        # ROVER's own spelling is inconsistent — "NISSAN" and "Nissan" are one
+        # brand and must not become two entries in the picker. Group on the
+        # upper-case key, then show whichever spelling the register uses most
+        # (preferring a mixed-case one when it is a tie).
+        slot = tally.setdefault(make.upper(),
+                                {"count": 0, "with_report": 0, "spellings": {}})
+        slot["count"] += 1
+        slot["with_report"] += 1 if row.get("has_report") else 0
+        slot["spellings"][make] = slot["spellings"].get(make, 0) + 1
+    makes = [{"key": key, "label": preferred_spelling(slot["spellings"]),
+              "count": slot["count"], "with_report": slot["with_report"]}
+             for key, slot in tally.items()]
+    makes.sort(key=lambda m: (-m["count"], m["label"].lower()))
 
     DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
     DATA_PATH.write_text(json.dumps({
@@ -723,7 +1025,14 @@ def write_dashboard_data(state: dict, warnings: list[str], started: str,
                                 and r.get("status") == "in_force"),
             "new_recent": sum(1 for r in rows if r.get("is_new")),
             "expiring_soon": sum(1 for r in rows if r.get("expiring_soon")),
+            "with_report": sum(1 for r in rows if r.get("status") == "in_force"
+                               and r.get("has_report")),
+            "without_report": sum(1 for r in rows if r.get("status") == "in_force"
+                                  and not r.get("has_report")),
+            "model_reports": len(state.get("reports", {})),
         },
+        # Brand picker: in-force entries only, with counts.
+        "makes": makes,
         "recent_days": recent_days,
         "expiring_soon_days": int(dash.get("expiring_soon_days", 120)),
         "warnings": warnings,
@@ -772,27 +1081,47 @@ def run(args: argparse.Namespace) -> int:
     baseline = not state.get("entries")
     if args.rebuild:
         baseline = True
+        # The report link map survives a rebuild: it is a cache of ~950
+        # page fetches, not part of the diff baseline, and re-earning it
+        # would take a fortnight of budgeted runs.
         state = {"version": STATE_VERSION, "entries": {},
+                 "reports": state.get("reports", {}),
                  "recent_events": state.get("recent_events", [])}
+
+    if args.backfill:
+        cfg.setdefault("model_reports", {})["link_budget_per_run"] = 100000
 
     log(f"SEVs Register check — {melbourne_time(started)} (Melbourne)")
     rover = Rover(cfg)
     try:
         rows, warnings = scan(rover, cfg)
+        reports, report_warnings = scan_reports(rover, cfg)
     except PortalError as exc:
         log(f"FAILED: {exc}")
         return 2
+    warnings += report_warnings
 
-    events, diff_warnings = diff(state, rows, cfg)
+    backfilled = link_reports(rover, cfg, reports, state) if reports else set()
+    reports, reports_trusted, merge_warnings = reconcile_reports(state, reports, cfg)
+    warnings += merge_warnings
+    attach_reports(rows, reports)
+    unsettled = frozenset(sev for mre in backfilled
+                          for sev in reports.get(mre, {}).get("sev", []))
+
+    events, diff_warnings = diff(state, rows, cfg, report_events=reports_trusted,
+                                 unsettled=unsettled)
     warnings += diff_warnings
     for warning in warnings:
         log(f"  warning: {warning}")
 
+    with_report = sum(1 for r in rows.values() if r.get("has_report"))
     if baseline:
-        log(f"  baseline run — recorded {len(rows)} entries, notifying nothing")
+        log(f"  baseline run — recorded {len(rows)} entries "
+            f"({with_report} with a model report), notifying nothing")
         events = []
     else:
-        log(f"  {len(rows)} entries, {len(events)} changes")
+        log(f"  {len(rows)} entries, {with_report} with a model report, "
+            f"{len(events)} changes")
         enrich(rover, cfg, events)
 
     notify_cfg = cfg.get("notify", {})
@@ -806,6 +1135,7 @@ def run(args: argparse.Namespace) -> int:
 
     record_events(state, events)
     apply_events(state, rows, events, baseline=baseline)
+    state["reports"] = reports
     sent = send_ntfy(to_send[:cap], args.dry_run, extra=overflow)
     if to_send and not args.dry_run and sent < len(to_send[:cap]):
         warnings.append(f"{len(to_send[:cap]) - sent} notification(s) could not be "
@@ -854,6 +1184,34 @@ def self_test() -> int:
                                     + ", ".join(missing))
                 else:
                     log(f"  detail page OK — criterion: {detail['criterion']}")
+
+        if cfg.get("model_reports", {}).get("enabled", True):
+            mcfg = cfg["model_reports"]
+            _, mre_layouts = rover.list_page(mcfg["list_path"])
+            for key, view in mcfg["views"].items():
+                if view not in mre_layouts:
+                    problems.append(f"model report view '{view}' ({key}) is "
+                                    "missing; offered: "
+                                    + ", ".join(sorted(mre_layouts)))
+            reports, report_warnings = scan_reports(rover, cfg)
+            problems += report_warnings
+            log(f"  parsed {len(reports)} model reports")
+            linkable = next((r for r in reports.values()
+                             if r.get("subtype", "").lower()
+                             == "specialist and enthusiast vehicles"), None)
+            if linkable is None:
+                problems.append("no SEV-subtype model reports were parsed")
+            else:
+                html = rover.detail_page(mcfg["detail_path"], linkable["id"])
+                linked = parse_related_sevs(html)
+                holder = parse_labels(html, REPORT_DETAIL_FIELDS).get("holder")
+                if not linked:
+                    problems.append(
+                        f"{linkable['mre']} lists no SEV entry — the 'Based on' "
+                        "link is the only thing tying reports to the register")
+                else:
+                    log(f"  {linkable['mre']} -> {', '.join(linked)} "
+                        f"({holder or 'holder unknown'})")
     except PortalError as exc:
         problems.append(str(exc))
 
@@ -891,6 +1249,10 @@ def main() -> int:
                         help="send one test notification and exit")
     parser.add_argument("--rebuild", action="store_true",
                         help="discard the baseline and rebuild it silently")
+    parser.add_argument("--backfill", action="store_true",
+                        help="link every outstanding model report to its SEV "
+                             "entries in one run, ignoring the per-run budget "
+                             "(slow: one page fetch per report)")
     args = parser.parse_args()
 
     if args.self_test:
