@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-08-29T23:55:33+00:00",
- "started_at": "2026-08-29T23:54:24+00:00",
+ "generated_at": "2026-08-31T00:14:38+00:00",
+ "started_at": "2026-08-31T00:13:18+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -12,9 +12,9 @@
   "under_review": 1,
   "new_recent": 0,
   "expiring_soon": 58,
-  "with_report": 392,
-  "without_report": 193,
-  "model_reports": 988
+  "with_report": 394,
+  "without_report": 191,
+  "model_reports": 990
  },
  "makes": [
   {
@@ -27,7 +27,7 @@
    "key": "NISSAN",
    "label": "NISSAN",
    "count": 54,
-   "with_report": 40
+   "with_report": 41
   },
   {
    "key": "MERCEDES-BENZ",
@@ -159,7 +159,7 @@
    "key": "HINO",
    "label": "Hino",
    "count": 4,
-   "with_report": 1
+   "with_report": 2
   },
   {
    "key": "LAMBORGHINI",
@@ -621,7 +621,24 @@
   "keywords": [],
   "categories": []
  },
- "recent_events": [],
+ "recent_events": [
+  {
+   "type": "report_added",
+   "detail": "a model report is now in force \u2014 SYDNEY AVV PTY LTD; a workshop can build it now",
+   "sev": "SEV-001007",
+   "title": "NISSAN NT100 Clipper Truck",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=287d97b8-65d5-f011-8544-000d3acbfc11",
+   "at": "2026-08-31T00:14:38+00:00"
+  },
+  {
+   "type": "report_added",
+   "detail": "a model report is now in force \u2014 SYDNEY AVV PTY LTD; a workshop can build it now",
+   "sev": "SEV-001099",
+   "title": "Hino Liesse II",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=93e4de4a-4aa0-f111-b8dc-7c1e522afbb4",
+   "at": "2026-08-31T00:14:38+00:00"
+  }
+ ],
  "entries": [
   {
    "sev": "SEV-001102",
@@ -681,7 +698,16 @@
    "criterion": "Campervans and Motorhomes Criterion",
    "variant": "ALL",
    "variant_details": "Hino Liesse II in MD4 category, only with model codes BB55 and BB58 (MUST be AWD), as suitable for conversion into a motorhome as per section 134(b) of the Rules.",
-   "notes": "This Register listing is for Hino Liesse II vehicles in MD4 category, with model codes BB55 and BB58 (AWD), as suitable for conversion into a motorhome as per section 134(b) of the Rules ONLY."
+   "notes": "This Register listing is for Hino Liesse II vehicles in MD4 category, with model codes BB55 and BB58 (AWD), as suitable for conversion into a motorhome as per section 134(b) of the Rules ONLY.",
+   "has_report": true,
+   "reports": [
+    {
+     "mre": "MRE-000989",
+     "holder": "SYDNEY AVV PTY LTD",
+     "status": "In Force",
+     "website": "https://app.comptune.com.au"
+    }
+   ]
   },
   {
    "sev": "SEV-001098",
@@ -2501,7 +2527,16 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=287d97b8-65d5-f011-8544-000d3acbfc11",
    "criterion": "Environmental Criterion",
    "variant": "ALL",
-   "notes": "Entry canvasses the Nissan Clipper Truck (DR16T) series of vehicles rebadged from Suzuki Carry series of vehicles from 2013 onwards."
+   "notes": "Entry canvasses the Nissan Clipper Truck (DR16T) series of vehicles rebadged from Suzuki Carry series of vehicles from 2013 onwards.",
+   "has_report": true,
+   "reports": [
+    {
+     "mre": "MRE-000990",
+     "holder": "SYDNEY AVV PTY LTD",
+     "status": "In Force",
+     "website": "https://app.comptune.com.au"
+    }
+   ]
   },
   {
    "sev": "SEV-001006",
