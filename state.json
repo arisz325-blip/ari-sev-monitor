@@ -38628,10 +38628,43 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=8a561139-a8a1-f111-b8dc-6045bde6d459",
    "variant": "ALL",
    "variant_details": "MUST be JG5 Model Code BEV ONLY."
+  },
+  "SEV-001103": {
+   "build_from": "1/09/2016",
+   "build_from_iso": "2016-09-01",
+   "build_range": "09/2016 - 05/2024",
+   "build_to": "1/05/2024",
+   "build_to_iso": "2024-05-01",
+   "category": "MA - Passenger Vehicle",
+   "criterion": "Rarity Criterion",
+   "detailed": true,
+   "expiry": "30/08/2029",
+   "expiry_iso": "2029-08-30",
+   "first_seen": "2026-09-01T01:01:20+00:00",
+   "has_report": false,
+   "id": "24173772-fca4-f111-b8dd-6045bdc3d6cd",
+   "make": "BUGATTI",
+   "model": "Chiron",
+   "model_code": "5B",
+   "reports": [],
+   "sev": "SEV-001103",
+   "status": "in_force",
+   "title": "BUGATTI Chiron",
+   "under_review": false,
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=24173772-fca4-f111-b8dd-6045bdc3d6cd",
+   "variant": "ALL"
   }
  },
- "last_run": "2026-08-31T00:14:38+00:00",
+ "last_run": "2026-09-01T01:01:20+00:00",
  "recent_events": [
+  {
+   "at": "2026-09-01T01:01:20+00:00",
+   "detail": "09/2016 - 05/2024 \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001103",
+   "title": "BUGATTI Chiron",
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=24173772-fca4-f111-b8dd-6045bdc3d6cd"
+  },
   {
    "at": "2026-08-31T00:14:38+00:00",
    "detail": "a model report is now in force \u2014 SYDNEY AVV PTY LTD; a workshop can build it now",

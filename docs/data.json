@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-08-31T00:14:38+00:00",
- "started_at": "2026-08-31T00:13:18+00:00",
+ "generated_at": "2026-09-01T01:01:20+00:00",
+ "started_at": "2026-09-01T01:00:11+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
  },
  "counts": {
-  "total": 1096,
-  "in_force": 585,
+  "total": 1097,
+  "in_force": 586,
   "expired": 511,
   "under_review": 1,
-  "new_recent": 0,
+  "new_recent": 1,
   "expiring_soon": 58,
   "with_report": 394,
-  "without_report": 191,
+  "without_report": 192,
   "model_reports": 990
  },
  "makes": [
@@ -216,6 +216,12 @@
    "with_report": 1
   },
   {
+   "key": "BUGATTI",
+   "label": "BUGATTI",
+   "count": 2,
+   "with_report": 1
+  },
+  {
    "key": "GUMPERT",
    "label": "Gumpert",
    "count": 2,
@@ -332,12 +338,6 @@
   {
    "key": "BLOOMFIELDS FIAT",
    "label": "Bloomfields Fiat",
-   "count": 1,
-   "with_report": 1
-  },
-  {
-   "key": "BUGATTI",
-   "label": "BUGATTI",
    "count": 1,
    "with_report": 1
   },
@@ -623,23 +623,47 @@
  },
  "recent_events": [
   {
-   "type": "report_added",
+   "type": "new",
+   "detail": "09/2016 - 05/2024 \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001103",
+   "title": "BUGATTI Chiron",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=24173772-fca4-f111-b8dd-6045bdc3d6cd",
+   "at": "2026-09-01T01:01:20+00:00"
+  },
+  {
+   "at": "2026-08-31T00:14:38+00:00",
    "detail": "a model report is now in force \u2014 SYDNEY AVV PTY LTD; a workshop can build it now",
    "sev": "SEV-001007",
    "title": "NISSAN NT100 Clipper Truck",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=287d97b8-65d5-f011-8544-000d3acbfc11",
-   "at": "2026-08-31T00:14:38+00:00"
+   "type": "report_added",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=287d97b8-65d5-f011-8544-000d3acbfc11"
   },
   {
-   "type": "report_added",
+   "at": "2026-08-31T00:14:38+00:00",
    "detail": "a model report is now in force \u2014 SYDNEY AVV PTY LTD; a workshop can build it now",
    "sev": "SEV-001099",
    "title": "Hino Liesse II",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=93e4de4a-4aa0-f111-b8dc-7c1e522afbb4",
-   "at": "2026-08-31T00:14:38+00:00"
+   "type": "report_added",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=93e4de4a-4aa0-f111-b8dc-7c1e522afbb4"
   }
  ],
  "entries": [
+  {
+   "sev": "SEV-001103",
+   "make": "BUGATTI",
+   "model": "Chiron",
+   "category": "MA - Passenger Vehicle",
+   "model_code": "5B",
+   "build_from_iso": "2016-09-01",
+   "build_to_iso": "2024-05-01",
+   "expiry_iso": "2029-08-30",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=24173772-fca4-f111-b8dd-6045bdc3d6cd",
+   "criterion": "Rarity Criterion",
+   "variant": "ALL",
+   "first_seen": "2026-09-01T01:01:20+00:00",
+   "is_new": true
+  },
   {
    "sev": "SEV-001102",
    "make": "Honda",
