@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-01T23:50:12+00:00",
- "started_at": "2026-09-01T23:48:55+00:00",
+ "generated_at": "2026-09-02T23:54:44+00:00",
+ "started_at": "2026-09-02T23:52:35+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -623,52 +623,52 @@
  },
  "recent_events": [
   {
-   "type": "new",
+   "at": "2026-09-01T23:50:12+00:00",
    "detail": "02/2026 - no end date \u00b7 MA - Passenger Vehicle",
    "sev": "SEV-001104",
    "title": "DAIHATSU e-Atrai",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=c673a5f9-bfa5-f111-b8de-70a8a5542380",
-   "at": "2026-09-01T23:50:12+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=c673a5f9-bfa5-f111-b8de-70a8a5542380"
   },
   {
-   "type": "new",
+   "at": "2026-09-01T23:50:12+00:00",
    "detail": "02/2026 - no end date \u00b7 MA - Passenger Vehicle",
    "sev": "SEV-001105",
    "title": "DAIHATSU e Hijet Cargo",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e968a0ff-bfa5-f111-b8de-70a8a5542380",
-   "at": "2026-09-01T23:50:12+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e968a0ff-bfa5-f111-b8de-70a8a5542380"
   },
   {
-   "type": "new",
+   "at": "2026-09-01T23:50:12+00:00",
    "detail": "01/2005 - 12/2015 \u00b7 MA - Passenger Vehicle",
    "sev": "SEV-001106",
    "title": "Mazda Roadster",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=66fe0675-c4a5-f111-b8dd-7ced8d331b87",
-   "at": "2026-09-01T23:50:12+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=66fe0675-c4a5-f111-b8dd-7ced8d331b87"
   },
   {
-   "type": "new",
+   "at": "2026-09-01T23:50:12+00:00",
    "detail": "01/2005 - 12/2015 \u00b7 MA - Passenger Vehicle",
    "sev": "SEV-001107",
    "title": "Mazda Roadster",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=acfe0675-c4a5-f111-b8dd-7ced8d331b87",
-   "at": "2026-09-01T23:50:12+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=acfe0675-c4a5-f111-b8dd-7ced8d331b87"
   },
   {
-   "type": "report_added",
+   "at": "2026-09-01T23:50:12+00:00",
    "detail": "a model report is now in force \u2014 CROSSOVER CAR CONVERSIONS PTY LTD; a workshop can build it now",
    "sev": "SEV-001036",
    "title": "Ford Mustang",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=2aa43f45-7922-f111-8341-6045bde65a9b",
-   "at": "2026-09-01T23:50:12+00:00"
+   "type": "report_added",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=2aa43f45-7922-f111-8341-6045bde65a9b"
   },
   {
-   "type": "report_added",
+   "at": "2026-09-01T23:50:12+00:00",
    "detail": "a model report is now in force \u2014 CROSSOVER CAR CONVERSIONS PTY LTD; a workshop can build it now",
    "sev": "SEV-001037",
    "title": "Ford Mustang",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=96f5414b-7922-f111-8341-6045bde65a9b",
-   "at": "2026-09-01T23:50:12+00:00"
+   "type": "report_added",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=96f5414b-7922-f111-8341-6045bde65a9b"
   },
   {
    "at": "2026-09-01T01:01:20+00:00",
