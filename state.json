@@ -3130,7 +3130,7 @@
      "website": "maracoonda.com"
     },
     {
-     "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
+     "compliance": "Complies",
      "holder": "VEHICLE DEVELOPMENT CORPORATION PTY LTD",
      "mre": "MRE-000332",
      "status": "In Force",
@@ -23330,7 +23330,7 @@
      "website": "maracoonda.com"
     },
     {
-     "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
+     "compliance": "Complies",
      "holder": "VEHICLE DEVELOPMENT CORPORATION PTY LTD",
      "mre": "MRE-000332",
      "status": "In Force",
@@ -30953,6 +30953,14 @@
    "model_code": "GTE",
    "notes": "Hybrid variant of the GTE series XV only.",
    "reports": [
+    {
+     "compliance": "Complies",
+     "holder": "SYDNEY AVV PTY LTD",
+     "mre": "MRE-000992",
+     "status": "In Force",
+     "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=284042ac-e9a7-f111-b8dd-70a8a553e896",
+     "website": "https://app.comptune.com.au"
+    },
     {
      "compliance": "Complies",
      "holder": "SHUI MIR PTY LTD",
@@ -38781,7 +38789,7 @@
    "variant_details": "2.0lt Petrol Engine, 5 Speed Manual, Soft Top Convertible"
   }
  },
- "last_run": "2026-09-02T23:54:44+00:00",
+ "last_run": "2026-09-03T23:50:08+00:00",
  "recent_events": [
   {
    "at": "2026-09-01T23:50:12+00:00",
@@ -39424,7 +39432,7 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=9d282e6f-efb6-ec11-a30a-0050569e60b7"
   },
   "MRE-000033": {
-   "build_range": "10/2020 to current",
+   "build_range": "10/2020 - 2/2025",
    "category": "MA",
    "compliance": "Complies",
    "holder": "ADR MODEL REPORTS PTY LTD",
@@ -44640,7 +44648,7 @@
   "MRE-000332": {
    "build_range": "12/2020 to current",
    "category": "NA",
-   "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
+   "compliance": "Complies",
    "holder": "VEHICLE DEVELOPMENT CORPORATION PTY LTD",
    "id": "ba57587c-852b-ee11-9965-002248933ce7",
    "linked": true,
@@ -52548,7 +52556,7 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=d67bb6fe-d626-f011-8c4e-6045bde526e8"
   },
   "MRE-000788": {
-   "build_range": "1/2022 to current",
+   "build_range": "1/2022 - 7/2026",
    "category": "MA",
    "compliance": "Complies",
    "holder": "SHUI MIR PTY LTD",
@@ -52905,7 +52913,7 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=04a29d0a-bf4c-f011-877b-6045bde65659"
   },
   "MRE-000809": {
-   "build_range": "3/2019 to current",
+   "build_range": "3/2019 - 7/2026",
    "category": "MA",
    "compliance": "Complies",
    "holder": "SHUI MIR PTY LTD",
@@ -53042,7 +53050,7 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=d5d54d5b-9557-f011-bec1-00224893fd9d"
   },
   "MRE-000817": {
-   "build_range": "1/2024 to current",
+   "build_range": "1/2024 - 7/2026",
    "category": "NA",
    "compliance": "Complies",
    "holder": "SYDNEY AVV PTY LTD",
@@ -53535,7 +53543,7 @@
    "website": "https://www.shuimir.com"
   },
   "MRE-000845": {
-   "build_range": "7/2021 to current",
+   "build_range": "7/2021 - 7/2026",
    "category": "MA",
    "compliance": "Complies",
    "holder": "SHUI MIR PTY LTD",
@@ -56133,6 +56141,24 @@
    "subtype": "Specialist and Enthusiast Vehicles",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=b64681cc-bba5-f111-b8de-7c1e522ab891",
    "website": "https://www.crossovercarconversions.com.au"
+  },
+  "MRE-000992": {
+   "build_range": "10/2018 - 2/2020",
+   "category": "MA",
+   "compliance": "Complies",
+   "holder": "SYDNEY AVV PTY LTD",
+   "id": "284042ac-e9a7-f111-b8dd-70a8a553e896",
+   "linked": true,
+   "make": "SUBARU",
+   "model": "XV Hybrid",
+   "mre": "MRE-000992",
+   "report_status": "In Force",
+   "sev": [
+    "SEV-000884"
+   ],
+   "subtype": "Specialist and Enthusiast Vehicles",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=284042ac-e9a7-f111-b8dd-70a8a553e896",
+   "website": "https://app.comptune.com.au"
   }
  },
  "version": 2

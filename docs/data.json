@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-02T23:54:44+00:00",
- "started_at": "2026-09-02T23:52:35+00:00",
+ "generated_at": "2026-09-03T23:50:08+00:00",
+ "started_at": "2026-09-03T23:48:20+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -14,7 +14,7 @@
   "expiring_soon": 58,
   "with_report": 396,
   "without_report": 194,
-  "model_reports": 991
+  "model_reports": 992
  },
  "makes": [
   {
@@ -5804,6 +5804,12 @@
    "notes": "Hybrid variant of the GTE series XV only.",
    "has_report": true,
    "reports": [
+    {
+     "mre": "MRE-000992",
+     "holder": "SYDNEY AVV PTY LTD",
+     "status": "In Force",
+     "website": "https://app.comptune.com.au"
+    },
     {
      "mre": "MRE-000866",
      "holder": "SHUI MIR PTY LTD",
