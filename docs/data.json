@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-09-04T23:46:24+00:00",
- "started_at": "2026-09-04T23:45:14+00:00",
+ "generated_at": "2026-09-05T23:36:24+00:00",
+ "started_at": "2026-09-05T23:35:03+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
  },
  "counts": {
-  "total": 1101,
-  "in_force": 590,
-  "expired": 511,
+  "total": 1103,
+  "in_force": 588,
+  "expired": 515,
   "under_review": 1,
-  "new_recent": 5,
-  "expiring_soon": 58,
-  "with_report": 396,
-  "without_report": 194,
+  "new_recent": 7,
+  "expiring_soon": 54,
+  "with_report": 392,
+  "without_report": 196,
   "model_reports": 992
  },
  "makes": [
@@ -21,13 +21,13 @@
    "key": "TOYOTA",
    "label": "Toyota",
    "count": 147,
-   "with_report": 124
+   "with_report": 122
   },
   {
    "key": "NISSAN",
    "label": "NISSAN",
-   "count": 54,
-   "with_report": 41
+   "count": 53,
+   "with_report": 40
   },
   {
    "key": "MERCEDES-BENZ",
@@ -38,8 +38,8 @@
   {
    "key": "HONDA",
    "label": "Honda",
-   "count": 29,
-   "with_report": 24
+   "count": 28,
+   "with_report": 23
   },
   {
    "key": "MITSUBISHI",
@@ -623,6 +623,54 @@
  },
  "recent_events": [
   {
+   "type": "new",
+   "detail": "04/2009 - 11/2015 \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001090",
+   "title": "Toyota Prius Welcab",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=3e346865-8097-f111-8075-6045bdc3021e",
+   "at": "2026-09-05T23:36:24+00:00"
+  },
+  {
+   "type": "new",
+   "detail": "12/2015 - 12/2022 \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001096",
+   "title": "Toyota Prius Welcab",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0db1a716-c49a-f111-b8db-70a8a553e896",
+   "at": "2026-09-05T23:36:24+00:00"
+  },
+  {
+   "type": "expired",
+   "detail": "expired 6/09/2026",
+   "sev": "SEV-000514",
+   "title": "Toyota Prius Welcab",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f95df575-424d-ee11-be6f-002248933225",
+   "at": "2026-09-05T23:36:24+00:00"
+  },
+  {
+   "type": "expired",
+   "detail": "expired 6/09/2026",
+   "sev": "SEV-000515",
+   "title": "Toyota Prius Welcab",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=15ff42b8-424d-ee11-be6f-002248933225",
+   "at": "2026-09-05T23:36:24+00:00"
+  },
+  {
+   "type": "expired",
+   "detail": "expired 6/09/2026",
+   "sev": "SEV-000516",
+   "title": "Honda CR-Z Mugen RZ",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=591663ab-454d-ee11-be6f-002248933225",
+   "at": "2026-09-05T23:36:24+00:00"
+  },
+  {
+   "type": "expired",
+   "detail": "expired 6/09/2026",
+   "sev": "SEV-000517",
+   "title": "NISSAN SKYLINE",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=fc7997d1-454d-ee11-be6f-002248933225",
+   "at": "2026-09-05T23:36:24+00:00"
+  },
+  {
    "at": "2026-09-01T23:50:12+00:00",
    "detail": "02/2026 - no end date \u00b7 MA - Passenger Vehicle",
    "sev": "SEV-001104",
@@ -696,6 +744,42 @@
   }
  ],
  "entries": [
+  {
+   "sev": "SEV-001096",
+   "make": "Toyota",
+   "model": "Prius Welcab",
+   "category": "MA - Passenger Vehicle",
+   "model_code": "50 Series",
+   "build_from_iso": "2015-12-01",
+   "build_to_iso": "2022-12-01",
+   "expiry_iso": "2029-09-05",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0db1a716-c49a-f111-b8db-70a8a553e896",
+   "criterion": "Mobility Criterion",
+   "variant": "ALL",
+   "variant_details": "Toyota Prius ZVW50 series vehicles fitted with welcab mobility features ONLY",
+   "notes": "This Register entry is for Toyota Prius ZVW50 series vehicles fitted with welcab mobility features ONLY NO other variants are eligible under this listing.",
+   "first_seen": "2026-09-05T23:36:24+00:00",
+   "is_new": true
+  },
+  {
+   "sev": "SEV-001090",
+   "make": "Toyota",
+   "model": "Prius Welcab",
+   "category": "MA - Passenger Vehicle",
+   "model_code": "ZVW30",
+   "build_from_iso": "2009-04-01",
+   "build_to_iso": "2015-11-01",
+   "expiry_iso": "2029-09-05",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=3e346865-8097-f111-8075-6045bdc3021e",
+   "criterion": "Mobility Criterion",
+   "variant": "ALL",
+   "variant_details": "Toyota Prius ZVW30 series vehicles fitted with welcab mobility features ONLY",
+   "notes": "This Register entry is for Toyota Prius ZVW30 series vehicles fitted with welcab mobility features ONLY NO other variants are eligible under this listing.",
+   "first_seen": "2026-09-05T23:36:24+00:00",
+   "is_new": true
+  },
   {
    "sev": "SEV-001107",
    "make": "Mazda",
@@ -15203,7 +15287,7 @@
    "model_code": "HV37/HNV37",
    "build_from_iso": "2013-11-01",
    "expiry_iso": "2026-09-06",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=fc7997d1-454d-ee11-be6f-002248933225",
    "criterion": "Performance Criterion",
    "variant": "ALL",
@@ -15227,8 +15311,7 @@
      "status": "In Force",
      "website": null
     }
-   ],
-   "expiring_soon": true
+   ]
   },
   {
    "sev": "SEV-000516",
@@ -15239,7 +15322,7 @@
    "build_from_iso": "2012-11-01",
    "build_to_iso": "2016-12-01",
    "expiry_iso": "2026-09-06",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=591663ab-454d-ee11-be6f-002248933225",
    "criterion": "Rarity Criterion",
    "variant": "Mugen RZ",
@@ -15263,8 +15346,7 @@
      "status": "In Force",
      "website": null
     }
-   ],
-   "expiring_soon": true
+   ]
   },
   {
    "sev": "SEV-000515",
@@ -15275,7 +15357,7 @@
    "build_from_iso": "2015-12-01",
    "build_to_iso": "2022-12-01",
    "expiry_iso": "2026-09-06",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=15ff42b8-424d-ee11-be6f-002248933225",
    "criterion": "Mobility Criterion",
    "variant": "Welcab Variants",
@@ -15294,8 +15376,7 @@
      "status": "In Force",
      "website": null
     }
-   ],
-   "expiring_soon": true
+   ]
   },
   {
    "sev": "SEV-000514",
@@ -15306,7 +15387,7 @@
    "build_from_iso": "2009-04-01",
    "build_to_iso": "2015-11-01",
    "expiry_iso": "2026-09-06",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f95df575-424d-ee11-be6f-002248933225",
    "criterion": "Mobility Criterion",
    "variant": "Welcab Variants",
@@ -15325,8 +15406,7 @@
      "status": "In Force",
      "website": null
     }
-   ],
-   "expiring_soon": true
+   ]
   },
   {
    "sev": "SEV-000513",
