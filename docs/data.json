@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-05T23:36:24+00:00",
- "started_at": "2026-09-05T23:35:03+00:00",
+ "generated_at": "2026-09-06T23:32:52+00:00",
+ "started_at": "2026-09-06T23:31:20+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -623,52 +623,52 @@
  },
  "recent_events": [
   {
-   "type": "new",
+   "at": "2026-09-05T23:36:24+00:00",
    "detail": "04/2009 - 11/2015 \u00b7 MA - Passenger Vehicle",
    "sev": "SEV-001090",
    "title": "Toyota Prius Welcab",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=3e346865-8097-f111-8075-6045bdc3021e",
-   "at": "2026-09-05T23:36:24+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=3e346865-8097-f111-8075-6045bdc3021e"
   },
   {
-   "type": "new",
+   "at": "2026-09-05T23:36:24+00:00",
    "detail": "12/2015 - 12/2022 \u00b7 MA - Passenger Vehicle",
    "sev": "SEV-001096",
    "title": "Toyota Prius Welcab",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0db1a716-c49a-f111-b8db-70a8a553e896",
-   "at": "2026-09-05T23:36:24+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0db1a716-c49a-f111-b8db-70a8a553e896"
   },
   {
-   "type": "expired",
+   "at": "2026-09-05T23:36:24+00:00",
    "detail": "expired 6/09/2026",
    "sev": "SEV-000514",
    "title": "Toyota Prius Welcab",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f95df575-424d-ee11-be6f-002248933225",
-   "at": "2026-09-05T23:36:24+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f95df575-424d-ee11-be6f-002248933225"
   },
   {
-   "type": "expired",
+   "at": "2026-09-05T23:36:24+00:00",
    "detail": "expired 6/09/2026",
    "sev": "SEV-000515",
    "title": "Toyota Prius Welcab",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=15ff42b8-424d-ee11-be6f-002248933225",
-   "at": "2026-09-05T23:36:24+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=15ff42b8-424d-ee11-be6f-002248933225"
   },
   {
-   "type": "expired",
+   "at": "2026-09-05T23:36:24+00:00",
    "detail": "expired 6/09/2026",
    "sev": "SEV-000516",
    "title": "Honda CR-Z Mugen RZ",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=591663ab-454d-ee11-be6f-002248933225",
-   "at": "2026-09-05T23:36:24+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=591663ab-454d-ee11-be6f-002248933225"
   },
   {
-   "type": "expired",
+   "at": "2026-09-05T23:36:24+00:00",
    "detail": "expired 6/09/2026",
    "sev": "SEV-000517",
    "title": "NISSAN SKYLINE",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=fc7997d1-454d-ee11-be6f-002248933225",
-   "at": "2026-09-05T23:36:24+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=fc7997d1-454d-ee11-be6f-002248933225"
   },
   {
    "at": "2026-09-01T23:50:12+00:00",
