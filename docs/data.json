@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-08T23:53:58+00:00",
- "started_at": "2026-09-08T23:52:21+00:00",
+ "generated_at": "2026-09-09T23:52:36+00:00",
+ "started_at": "2026-09-09T23:51:15+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -9,7 +9,7 @@
   "total": 1103,
   "in_force": 588,
   "expired": 515,
-  "under_review": 1,
+  "under_review": 0,
   "new_recent": 7,
   "expiring_soon": 54,
   "with_report": 392,
@@ -623,12 +623,28 @@
  },
  "recent_events": [
   {
-   "type": "report_lost",
+   "type": "review_cleared",
+   "detail": "review flag cleared",
+   "sev": "SEV-001079",
+   "title": "Mercedes-Benz S450 Hybrid",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=1d2f63a1-8473-f111-ab0e-7c1e528a7792",
+   "at": "2026-09-09T23:52:36+00:00"
+  },
+  {
+   "type": "updated",
+   "detail": "Model code: 222058 -> 222058 / 222158",
+   "sev": "SEV-001079",
+   "title": "Mercedes-Benz S450 Hybrid",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=1d2f63a1-8473-f111-ab0e-7c1e528a7792",
+   "at": "2026-09-09T23:52:36+00:00"
+  },
+  {
+   "at": "2026-09-08T23:53:57+00:00",
    "detail": "no model report is in force any more \u2014 nobody can import it until one is",
    "sev": "SEV-000338",
    "title": "SAIC Maxus (LDV) SV3C-C (EV30)",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=af3386e9-cb1e-ed11-b83e-00224811d85b",
-   "at": "2026-09-08T23:53:57+00:00"
+   "type": "report_lost",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=af3386e9-cb1e-ed11-b83e-00224811d85b"
   },
   {
    "at": "2026-09-05T23:36:24+00:00",
@@ -1234,11 +1250,10 @@
    "make": "Mercedes-Benz",
    "model": "S450 Hybrid",
    "category": "MA - Passenger Vehicle",
-   "model_code": "222058",
+   "model_code": "222058 / 222158",
    "build_from_iso": "2017-06-01",
    "build_to_iso": "2020-12-01",
    "expiry_iso": "2029-06-28",
-   "under_review": true,
    "status": "in_force",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=1d2f63a1-8473-f111-ab0e-7c1e528a7792",
    "criterion": "Performance Criterion",
@@ -15628,7 +15643,7 @@
     {
      "mre": "MRE-000681",
      "holder": "SHUI MIR PTY LTD",
-     "status": "In Force",
+     "status": "Suspended",
      "website": "https://www.mdlreports.com.au"
     },
     {
@@ -19671,7 +19686,7 @@
     {
      "mre": "MRE-000280",
      "holder": "ADR MODEL REPORTS PTY LTD",
-     "status": "In Force",
+     "status": "Suspended",
      "website": null
     },
     {
