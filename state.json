@@ -16890,7 +16890,7 @@
     }
    ],
    "sev": "SEV-000518",
-   "status": "in_force",
+   "status": "expired",
    "title": "LINCOLN Navigator",
    "under_review": false,
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=9304cca6-2b51-ee11-be6f-00224892b406",
@@ -38841,10 +38841,51 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=acfe0675-c4a5-f111-b8dd-7ced8d331b87",
    "variant": "Roadster NR-A",
    "variant_details": "2.0lt Petrol Engine, 5 Speed Manual, Soft Top Convertible"
+  },
+  "SEV-001108": {
+   "build_from": "1/04/2026",
+   "build_from_iso": "2026-04-01",
+   "build_range": "04/2026 - No end date",
+   "build_to": null,
+   "build_to_iso": null,
+   "category": "MA - Passenger Vehicle",
+   "criterion": "Environmental Criterion",
+   "detailed": true,
+   "expiry": "9/09/2029",
+   "expiry_iso": "2029-09-09",
+   "first_seen": "2026-09-10T23:46:45+00:00",
+   "has_report": false,
+   "id": "92fda020-cdac-f111-aaab-70a8a5563b9f",
+   "make": "BYD",
+   "model": "RACCO",
+   "model_code": "CK66EBS",
+   "reports": [],
+   "sev": "SEV-001108",
+   "status": "in_force",
+   "title": "BYD RACCO",
+   "under_review": false,
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=92fda020-cdac-f111-aaab-70a8a5563b9f",
+   "variant": "ALL"
   }
  },
- "last_run": "2026-09-09T23:52:36+00:00",
+ "last_run": "2026-09-10T23:46:45+00:00",
  "recent_events": [
+  {
+   "at": "2026-09-10T23:46:45+00:00",
+   "detail": "04/2026 - no end date \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001108",
+   "title": "BYD RACCO",
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=92fda020-cdac-f111-aaab-70a8a5563b9f"
+  },
+  {
+   "at": "2026-09-10T23:46:45+00:00",
+   "detail": "expired 11/09/2026",
+   "sev": "SEV-000518",
+   "title": "LINCOLN Navigator",
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=9304cca6-2b51-ee11-be6f-00224892b406"
+  },
   {
    "at": "2026-09-09T23:52:36+00:00",
    "detail": "review flag cleared",

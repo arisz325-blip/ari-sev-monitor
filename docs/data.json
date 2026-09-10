@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-09-09T23:52:36+00:00",
- "started_at": "2026-09-09T23:51:15+00:00",
+ "generated_at": "2026-09-10T23:46:45+00:00",
+ "started_at": "2026-09-10T23:45:22+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
  },
  "counts": {
-  "total": 1103,
+  "total": 1104,
   "in_force": 588,
-  "expired": 515,
+  "expired": 516,
   "under_review": 0,
-  "new_recent": 7,
-  "expiring_soon": 54,
-  "with_report": 392,
-  "without_report": 196,
+  "new_recent": 8,
+  "expiring_soon": 53,
+  "with_report": 391,
+  "without_report": 197,
   "model_reports": 992
  },
  "makes": [
@@ -342,6 +342,12 @@
    "with_report": 1
   },
   {
+   "key": "BYD",
+   "label": "BYD",
+   "count": 1,
+   "with_report": 0
+  },
+  {
    "key": "CADILLAC",
    "label": "CADILLAC",
    "count": 1,
@@ -436,12 +442,6 @@
    "label": "KTM",
    "count": 1,
    "with_report": 0
-  },
-  {
-   "key": "LINCOLN",
-   "label": "LINCOLN",
-   "count": 1,
-   "with_report": 1
   },
   {
    "key": "LIUZHOU WULING NEW ENERGY AUTOMOTIVE",
@@ -623,20 +623,36 @@
  },
  "recent_events": [
   {
-   "type": "review_cleared",
+   "type": "new",
+   "detail": "04/2026 - no end date \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001108",
+   "title": "BYD RACCO",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=92fda020-cdac-f111-aaab-70a8a5563b9f",
+   "at": "2026-09-10T23:46:45+00:00"
+  },
+  {
+   "type": "expired",
+   "detail": "expired 11/09/2026",
+   "sev": "SEV-000518",
+   "title": "LINCOLN Navigator",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=9304cca6-2b51-ee11-be6f-00224892b406",
+   "at": "2026-09-10T23:46:45+00:00"
+  },
+  {
+   "at": "2026-09-09T23:52:36+00:00",
    "detail": "review flag cleared",
    "sev": "SEV-001079",
    "title": "Mercedes-Benz S450 Hybrid",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=1d2f63a1-8473-f111-ab0e-7c1e528a7792",
-   "at": "2026-09-09T23:52:36+00:00"
+   "type": "review_cleared",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=1d2f63a1-8473-f111-ab0e-7c1e528a7792"
   },
   {
-   "type": "updated",
+   "at": "2026-09-09T23:52:36+00:00",
    "detail": "Model code: 222058 -> 222058 / 222158",
    "sev": "SEV-001079",
    "title": "Mercedes-Benz S450 Hybrid",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=1d2f63a1-8473-f111-ab0e-7c1e528a7792",
-   "at": "2026-09-09T23:52:36+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=1d2f63a1-8473-f111-ab0e-7c1e528a7792"
   },
   {
    "at": "2026-09-08T23:53:57+00:00",
@@ -768,6 +784,21 @@
   }
  ],
  "entries": [
+  {
+   "sev": "SEV-001108",
+   "make": "BYD",
+   "model": "RACCO",
+   "category": "MA - Passenger Vehicle",
+   "model_code": "CK66EBS",
+   "build_from_iso": "2026-04-01",
+   "expiry_iso": "2029-09-09",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=92fda020-cdac-f111-aaab-70a8a5563b9f",
+   "criterion": "Environmental Criterion",
+   "variant": "ALL",
+   "first_seen": "2026-09-10T23:46:45+00:00",
+   "is_new": true
+  },
   {
    "sev": "SEV-001096",
    "make": "Toyota",
@@ -15287,7 +15318,7 @@
    "model_code": "U554",
    "build_from_iso": "2017-09-01",
    "expiry_iso": "2026-09-11",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=9304cca6-2b51-ee11-be6f-00224892b406",
    "criterion": "Left-Hand Drive Criterion",
    "variant": "ALL",
@@ -15299,8 +15330,7 @@
      "status": "In Force",
      "website": "https://www.american.com.au"
     }
-   ],
-   "expiring_soon": true
+   ]
   },
   {
    "sev": "SEV-000517",
