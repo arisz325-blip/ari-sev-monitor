@@ -16940,7 +16940,7 @@
     }
    ],
    "sev": "SEV-000519",
-   "status": "in_force",
+   "status": "expired",
    "title": "ADRIA Compact Supreme DL",
    "under_review": false,
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=936d921d-0b52-ee11-be6f-00224812298a",
@@ -16966,7 +16966,7 @@
    "model_code": "4BA-R35",
    "reports": [],
    "sev": "SEV-000520",
-   "status": "in_force",
+   "status": "expired",
    "title": "NISSAN GT-R",
    "under_review": false,
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=edeb7e41-0b52-ee11-be6f-00224812298a",
@@ -16991,7 +16991,7 @@
    "model_code": "GMT K2XL",
    "reports": [],
    "sev": "SEV-000521",
-   "status": "in_force",
+   "status": "expired",
    "title": "CADILLAC Escalade",
    "under_review": false,
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=400b4c8c-0b52-ee11-be6f-00224812298a",
@@ -38868,8 +38868,32 @@
    "variant": "ALL"
   }
  },
- "last_run": "2026-09-10T23:46:45+00:00",
+ "last_run": "2026-09-11T23:54:48+00:00",
  "recent_events": [
+  {
+   "at": "2026-09-11T23:54:48+00:00",
+   "detail": "expired 12/09/2026",
+   "sev": "SEV-000519",
+   "title": "ADRIA Compact Supreme DL",
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=936d921d-0b52-ee11-be6f-00224812298a"
+  },
+  {
+   "at": "2026-09-11T23:54:48+00:00",
+   "detail": "expired 12/09/2026",
+   "sev": "SEV-000520",
+   "title": "NISSAN GT-R",
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=edeb7e41-0b52-ee11-be6f-00224812298a"
+  },
+  {
+   "at": "2026-09-11T23:54:48+00:00",
+   "detail": "expired 12/09/2026",
+   "sev": "SEV-000521",
+   "title": "CADILLAC Escalade",
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=400b4c8c-0b52-ee11-be6f-00224812298a"
+  },
   {
    "at": "2026-09-10T23:46:45+00:00",
    "detail": "04/2026 - no end date \u00b7 MA - Passenger Vehicle",
