@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-11T23:54:48+00:00",
- "started_at": "2026-09-11T23:53:35+00:00",
+ "generated_at": "2026-09-12T23:48:11+00:00",
+ "started_at": "2026-09-12T23:46:54+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -611,28 +611,28 @@
  },
  "recent_events": [
   {
-   "type": "expired",
+   "at": "2026-09-11T23:54:48+00:00",
    "detail": "expired 12/09/2026",
    "sev": "SEV-000519",
    "title": "ADRIA Compact Supreme DL",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=936d921d-0b52-ee11-be6f-00224812298a",
-   "at": "2026-09-11T23:54:48+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=936d921d-0b52-ee11-be6f-00224812298a"
   },
   {
-   "type": "expired",
+   "at": "2026-09-11T23:54:48+00:00",
    "detail": "expired 12/09/2026",
    "sev": "SEV-000520",
    "title": "NISSAN GT-R",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=edeb7e41-0b52-ee11-be6f-00224812298a",
-   "at": "2026-09-11T23:54:48+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=edeb7e41-0b52-ee11-be6f-00224812298a"
   },
   {
-   "type": "expired",
+   "at": "2026-09-11T23:54:48+00:00",
    "detail": "expired 12/09/2026",
    "sev": "SEV-000521",
    "title": "CADILLAC Escalade",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=400b4c8c-0b52-ee11-be6f-00224812298a",
-   "at": "2026-09-11T23:54:48+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=400b4c8c-0b52-ee11-be6f-00224812298a"
   },
   {
    "at": "2026-09-10T23:46:45+00:00",
