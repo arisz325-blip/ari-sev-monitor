@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-12T23:48:11+00:00",
- "started_at": "2026-09-12T23:46:54+00:00",
+ "generated_at": "2026-09-13T23:55:21+00:00",
+ "started_at": "2026-09-13T23:54:10+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -12,9 +12,9 @@
   "under_review": 0,
   "new_recent": 8,
   "expiring_soon": 50,
-  "with_report": 390,
-  "without_report": 195,
-  "model_reports": 992
+  "with_report": 391,
+  "without_report": 194,
+  "model_reports": 993
  },
  "makes": [
   {
@@ -561,7 +561,7 @@
    "key": "SMART",
    "label": "SMART",
    "count": 1,
-   "with_report": 0
+   "with_report": 1
   },
   {
    "key": "SPACESHIPS TOYOTA",
@@ -610,6 +610,14 @@
   "categories": []
  },
  "recent_events": [
+  {
+   "type": "report_added",
+   "detail": "a model report is now in force \u2014 SYDNEY AVV PTY LTD; a workshop can build it now",
+   "sev": "SEV-000935",
+   "title": "SMART ForTwo Electric Drive",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7e1612b3-187e-f011-b4cc-000d3ad1290a",
+   "at": "2026-09-13T23:55:21+00:00"
+  },
   {
    "at": "2026-09-11T23:54:48+00:00",
    "detail": "expired 12/09/2026",
@@ -4587,7 +4595,16 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7e1612b3-187e-f011-b4cc-000d3ad1290a",
    "criterion": "Environmental Criterion",
    "variant": "ALL",
-   "notes": "Battery electric variant of the Smart ForTwo. This entry covers the third generation of the model line, with model codes 451390 and 451392 corresponding to the base and Brabus trims respectively."
+   "notes": "Battery electric variant of the Smart ForTwo. This entry covers the third generation of the model line, with model codes 451390 and 451392 corresponding to the base and Brabus trims respectively.",
+   "has_report": true,
+   "reports": [
+    {
+     "mre": "MRE-000993",
+     "holder": "SYDNEY AVV PTY LTD",
+     "status": "In Force",
+     "website": "https://app.comptune.com.au"
+    }
+   ]
   },
   {
    "sev": "SEV-000934",
