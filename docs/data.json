@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-13T23:55:21+00:00",
- "started_at": "2026-09-13T23:54:10+00:00",
+ "generated_at": "2026-09-15T00:22:01+00:00",
+ "started_at": "2026-09-15T00:20:21+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -611,12 +611,12 @@
  },
  "recent_events": [
   {
-   "type": "report_added",
+   "at": "2026-09-13T23:55:21+00:00",
    "detail": "a model report is now in force \u2014 SYDNEY AVV PTY LTD; a workshop can build it now",
    "sev": "SEV-000935",
    "title": "SMART ForTwo Electric Drive",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7e1612b3-187e-f011-b4cc-000d3ad1290a",
-   "at": "2026-09-13T23:55:21+00:00"
+   "type": "report_added",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7e1612b3-187e-f011-b4cc-000d3ad1290a"
   },
   {
    "at": "2026-09-11T23:54:48+00:00",
