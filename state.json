@@ -33709,6 +33709,14 @@
    "reports": [
     {
      "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
+     "holder": "ORACLE CERTIFICATION PTY. LTD.",
+     "mre": "MRE-000998",
+     "status": "In Force",
+     "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=09f97b12-e8b2-f111-aaab-7c1e522ab3fe",
+     "website": null
+    },
+    {
+     "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
      "holder": "SYDNEY AVV PTY LTD",
      "mre": "MRE-000202",
      "status": "In Force",
@@ -38910,7 +38918,7 @@
    "variant": "ALL"
   }
  },
- "last_run": "2026-09-17T00:10:44+00:00",
+ "last_run": "2026-09-17T23:57:38+00:00",
  "recent_events": [
   {
    "at": "2026-09-17T00:10:44+00:00",
@@ -42465,7 +42473,7 @@
    "website": "https://www.mdlreports.com.au"
   },
   "MRE-000194": {
-   "build_range": "12/2020 to current",
+   "build_range": "12/2020 - 7/2026",
    "category": "NA",
    "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
    "holder": "CROSSOVER CAR CONVERSIONS PTY LTD",
@@ -56497,6 +56505,23 @@
    "subtype": "Specialist and Enthusiast Vehicles",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=0141da7b-84b1-f111-aaac-7c1e522abea1",
    "website": "https://app.comptune.com.au"
+  },
+  "MRE-000998": {
+   "build_range": "1/2009 - 8/2014",
+   "category": "MA",
+   "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
+   "holder": "ORACLE CERTIFICATION PTY. LTD.",
+   "id": "09f97b12-e8b2-f111-aaab-7c1e522ab3fe",
+   "linked": true,
+   "make": "SUBARU",
+   "model": "Impreza WRX STI",
+   "mre": "MRE-000998",
+   "report_status": "In Force",
+   "sev": [
+    "SEV-000954"
+   ],
+   "subtype": "Specialist and Enthusiast Vehicles",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=09f97b12-e8b2-f111-aaab-7c1e522ab3fe"
   }
  },
  "version": 2

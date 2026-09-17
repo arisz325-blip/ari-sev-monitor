@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-17T00:10:44+00:00",
- "started_at": "2026-09-17T00:09:05+00:00",
+ "generated_at": "2026-09-17T23:57:38+00:00",
+ "started_at": "2026-09-17T23:55:36+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -14,7 +14,7 @@
   "expiring_soon": 50,
   "with_report": 392,
   "without_report": 193,
-  "model_reports": 997
+  "model_reports": 998
  },
  "makes": [
   {
@@ -611,12 +611,12 @@
  },
  "recent_events": [
   {
-   "type": "report_added",
+   "at": "2026-09-17T00:10:44+00:00",
    "detail": "a model report is now in force \u2014 SHUI MIR PTY LTD; a workshop can build it now",
    "sev": "SEV-000589",
    "title": "LEXUS IS300h",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=602cf62d-27ea-ee11-a1fd-002248969682",
-   "at": "2026-09-17T00:10:44+00:00"
+   "type": "report_added",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=602cf62d-27ea-ee11-a1fd-002248969682"
   },
   {
    "at": "2026-09-13T23:55:21+00:00",
@@ -4144,6 +4144,12 @@
    "notes": "GVB (Sedan) and GRB (hatchback) Impreza WRX STi fitted with EJ20 2.0L motor ONLY.",
    "has_report": true,
    "reports": [
+    {
+     "mre": "MRE-000998",
+     "holder": "ORACLE CERTIFICATION PTY. LTD.",
+     "status": "In Force",
+     "website": null
+    },
     {
      "mre": "MRE-000202",
      "holder": "SYDNEY AVV PTY LTD",
