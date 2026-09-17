@@ -19320,12 +19320,21 @@
    "expiry": "24/03/2027",
    "expiry_iso": "2027-03-24",
    "first_seen": null,
-   "has_report": false,
+   "has_report": true,
    "id": "602cf62d-27ea-ee11-a1fd-002248969682",
    "make": "LEXUS",
    "model": "IS300h",
    "model_code": "AVE30, AVE35",
-   "reports": [],
+   "reports": [
+    {
+     "compliance": "Complies",
+     "holder": "SHUI MIR PTY LTD",
+     "mre": "MRE-000996",
+     "status": "In Force",
+     "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=a787b620-84b1-f111-aaac-7c1e522abea1",
+     "website": "https://www.shuimir.com"
+    }
+   ],
    "sev": "SEV-000589",
    "status": "in_force",
    "title": "LEXUS IS300h",
@@ -32140,6 +32149,14 @@
    "reports": [
     {
      "compliance": "Complies",
+     "holder": "SYDNEY AVV PTY LTD",
+     "mre": "MRE-000997",
+     "status": "In Force",
+     "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=0141da7b-84b1-f111-aaac-7c1e522abea1",
+     "website": "https://app.comptune.com.au"
+    },
+    {
+     "compliance": "Complies",
      "holder": "SHUI MIR PTY LTD",
      "mre": "MRE-000947",
      "status": "In Force",
@@ -35943,6 +35960,14 @@
    "model_code": "FF21S",
    "reports": [
     {
+     "compliance": "Complies",
+     "holder": "SYDNEY AVV PTY LTD",
+     "mre": "MRE-000994",
+     "status": "In Force",
+     "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=5777b9c4-7eb1-f111-aaab-70a8a55435a1",
+     "website": "https://app.comptune.com.au"
+    },
+    {
      "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
      "holder": "SHUI MIR PTY LTD",
      "mre": "MRE-000985",
@@ -36002,6 +36027,14 @@
    "model_code": "VAB",
    "notes": "This Register listing is for Subaru WRX STi variants, of model code VAB, with 2.0 litre turbocharged EJ20 motor ONLY.",
    "reports": [
+    {
+     "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
+     "holder": "ORACLE CERTIFICATION PTY. LTD.",
+     "mre": "MRE-000995",
+     "status": "In Force",
+     "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=cc1b2cde-83b1-f111-aaac-7c1e522abea1",
+     "website": null
+    },
     {
      "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
      "holder": "ADR MODEL REPORTS PTY LTD",
@@ -38877,8 +38910,16 @@
    "variant": "ALL"
   }
  },
- "last_run": "2026-09-15T23:59:50+00:00",
+ "last_run": "2026-09-17T00:10:44+00:00",
  "recent_events": [
+  {
+   "at": "2026-09-17T00:10:44+00:00",
+   "detail": "a model report is now in force \u2014 SHUI MIR PTY LTD; a workshop can build it now",
+   "sev": "SEV-000589",
+   "title": "LEXUS IS300h",
+   "type": "report_added",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=602cf62d-27ea-ee11-a1fd-002248969682"
+  },
   {
    "at": "2026-09-13T23:55:21+00:00",
    "detail": "a model report is now in force \u2014 SYDNEY AVV PTY LTD; a workshop can build it now",
@@ -56384,6 +56425,77 @@
    ],
    "subtype": "Specialist and Enthusiast Vehicles",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=265dd962-cbaf-f111-aaab-7ced8dd1061e",
+   "website": "https://app.comptune.com.au"
+  },
+  "MRE-000994": {
+   "build_range": "1/2016 - 4/2024",
+   "category": "MA",
+   "compliance": "Complies",
+   "holder": "SYDNEY AVV PTY LTD",
+   "id": "5777b9c4-7eb1-f111-aaab-70a8a55435a1",
+   "linked": true,
+   "make": "SUZUKI",
+   "model": "Ignis",
+   "mre": "MRE-000994",
+   "report_status": "In Force",
+   "sev": [
+    "SEV-001015"
+   ],
+   "subtype": "Specialist and Enthusiast Vehicles",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=5777b9c4-7eb1-f111-aaab-70a8a55435a1",
+   "website": "https://app.comptune.com.au"
+  },
+  "MRE-000995": {
+   "build_range": "7/2014 - 10/2021",
+   "category": "MA",
+   "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
+   "holder": "ORACLE CERTIFICATION PTY. LTD.",
+   "id": "cc1b2cde-83b1-f111-aaac-7c1e522abea1",
+   "linked": true,
+   "make": "SUBARU",
+   "model": "WRX STI",
+   "mre": "MRE-000995",
+   "report_status": "In Force",
+   "sev": [
+    "SEV-001017"
+   ],
+   "subtype": "Specialist and Enthusiast Vehicles",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=cc1b2cde-83b1-f111-aaac-7c1e522abea1"
+  },
+  "MRE-000996": {
+   "build_range": "8/2022 - 7/2026",
+   "category": "MA",
+   "compliance": "Complies",
+   "holder": "SHUI MIR PTY LTD",
+   "id": "a787b620-84b1-f111-aaac-7c1e522abea1",
+   "linked": true,
+   "make": "LEXUS",
+   "model": "IS300h",
+   "mre": "MRE-000996",
+   "report_status": "In Force",
+   "sev": [
+    "SEV-000589"
+   ],
+   "subtype": "Specialist and Enthusiast Vehicles",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=a787b620-84b1-f111-aaac-7c1e522abea1",
+   "website": "https://www.shuimir.com"
+  },
+  "MRE-000997": {
+   "build_range": "1/2021 - 12/2023",
+   "category": "MA",
+   "compliance": "Complies",
+   "holder": "SYDNEY AVV PTY LTD",
+   "id": "0141da7b-84b1-f111-aaac-7c1e522abea1",
+   "linked": true,
+   "make": "Toyota",
+   "model": "Camry",
+   "mre": "MRE-000997",
+   "report_status": "In Force",
+   "sev": [
+    "SEV-000913"
+   ],
+   "subtype": "Specialist and Enthusiast Vehicles",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=0141da7b-84b1-f111-aaac-7c1e522abea1",
    "website": "https://app.comptune.com.au"
   }
  },

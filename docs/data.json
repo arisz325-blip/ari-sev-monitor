@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-15T23:59:50+00:00",
- "started_at": "2026-09-15T23:58:43+00:00",
+ "generated_at": "2026-09-17T00:10:44+00:00",
+ "started_at": "2026-09-17T00:09:05+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -12,9 +12,9 @@
   "under_review": 0,
   "new_recent": 8,
   "expiring_soon": 50,
-  "with_report": 391,
-  "without_report": 194,
-  "model_reports": 993
+  "with_report": 392,
+  "without_report": 193,
+  "model_reports": 997
  },
  "makes": [
   {
@@ -63,7 +63,7 @@
    "key": "LEXUS",
    "label": "LEXUS",
    "count": 18,
-   "with_report": 15
+   "with_report": 16
   },
   {
    "key": "RAM",
@@ -610,6 +610,14 @@
   "categories": []
  },
  "recent_events": [
+  {
+   "type": "report_added",
+   "detail": "a model report is now in force \u2014 SHUI MIR PTY LTD; a workshop can build it now",
+   "sev": "SEV-000589",
+   "title": "LEXUS IS300h",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=602cf62d-27ea-ee11-a1fd-002248969682",
+   "at": "2026-09-17T00:10:44+00:00"
+  },
   {
    "at": "2026-09-13T23:55:21+00:00",
    "detail": "a model report is now in force \u2014 SYDNEY AVV PTY LTD; a workshop can build it now",
@@ -2610,6 +2618,12 @@
    "has_report": true,
    "reports": [
     {
+     "mre": "MRE-000995",
+     "holder": "ORACLE CERTIFICATION PTY. LTD.",
+     "status": "In Force",
+     "website": null
+    },
+    {
      "mre": "MRE-000303",
      "holder": "ADR MODEL REPORTS PTY LTD",
      "status": "In Force",
@@ -2651,6 +2665,12 @@
    "variant": "Ignis Hybrid",
    "has_report": true,
    "reports": [
+    {
+     "mre": "MRE-000994",
+     "holder": "SYDNEY AVV PTY LTD",
+     "status": "In Force",
+     "website": "https://app.comptune.com.au"
+    },
     {
      "mre": "MRE-000985",
      "holder": "SHUI MIR PTY LTD",
@@ -5172,6 +5192,12 @@
    "notes": "NOTE: 1/2021 onwards, E-FOUR / AWD, AXVH75 model codes ONLY are eligible.",
    "has_report": true,
    "reports": [
+    {
+     "mre": "MRE-000997",
+     "holder": "SYDNEY AVV PTY LTD",
+     "status": "In Force",
+     "website": "https://app.comptune.com.au"
+    },
     {
      "mre": "MRE-000947",
      "holder": "SHUI MIR PTY LTD",
@@ -13752,7 +13778,16 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=602cf62d-27ea-ee11-a1fd-002248969682",
    "criterion": "Environmental Criterion",
    "variant": "Lexus IS300h",
-   "variant_details": "Lexus IS300h 2WD (Fr) (AVE30-BEXLH) and AWD (AVE35-BEXLH) 2AR-FSE Hybrid-power from build date September 2022 onwards ONLY"
+   "variant_details": "Lexus IS300h 2WD (Fr) (AVE30-BEXLH) and AWD (AVE35-BEXLH) 2AR-FSE Hybrid-power from build date September 2022 onwards ONLY",
+   "has_report": true,
+   "reports": [
+    {
+     "mre": "MRE-000996",
+     "holder": "SHUI MIR PTY LTD",
+     "status": "In Force",
+     "website": "https://www.shuimir.com"
+    }
+   ]
   },
   {
    "sev": "SEV-000588",
