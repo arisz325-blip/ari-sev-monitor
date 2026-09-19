@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-18T23:55:38+00:00",
- "started_at": "2026-09-18T23:54:37+00:00",
+ "generated_at": "2026-09-19T23:56:06+00:00",
+ "started_at": "2026-09-19T23:54:59+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -611,20 +611,20 @@
  },
  "recent_events": [
   {
-   "type": "new",
+   "at": "2026-09-18T23:55:37+00:00",
    "detail": "11/2012 - 12/2016 \u00b7 MA - Passenger Vehicle",
    "sev": "SEV-001109",
    "title": "Honda CR-Z Mugen RZ",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=55a4c879-13b3-f111-aaac-6045bdc3d6cd",
-   "at": "2026-09-18T23:55:37+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=55a4c879-13b3-f111-aaac-6045bdc3d6cd"
   },
   {
-   "type": "new",
+   "at": "2026-09-18T23:55:37+00:00",
    "detail": "11/2011 - 06/2021 \u00b7 MA - Passenger Vehicle",
    "sev": "SEV-001110",
    "title": "Toyota Aqua Welcab",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e40ab785-13b3-f111-aaac-6045bdc3d6cd",
-   "at": "2026-09-18T23:55:37+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e40ab785-13b3-f111-aaac-6045bdc3d6cd"
   },
   {
    "at": "2026-09-17T00:10:44+00:00",
