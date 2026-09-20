@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-19T23:56:06+00:00",
- "started_at": "2026-09-19T23:54:59+00:00",
+ "generated_at": "2026-09-20T23:53:20+00:00",
+ "started_at": "2026-09-20T23:52:08+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -22427,7 +22427,7 @@
     {
      "mre": "MRE-000326",
      "holder": "GLAM GROUPS PTY. LTD.",
-     "status": "In Force",
+     "status": "Revoked",
      "website": "https://www.rvsa.co/"
     },
     {
@@ -23556,7 +23556,7 @@
     {
      "mre": "MRE-000339",
      "holder": "GLAM GROUPS PTY. LTD.",
-     "status": "In Force",
+     "status": "Revoked",
      "website": "https://www.rvsa.co/"
     },
     {

@@ -3810,7 +3810,7 @@
      "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
      "holder": "GLAM GROUPS PTY. LTD.",
      "mre": "MRE-000339",
-     "status": "In Force",
+     "status": "Revoked",
      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=0d815813-0938-ee11-bdf4-00224893b94f",
      "website": "https://www.rvsa.co/"
     },
@@ -5654,7 +5654,7 @@
      "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
      "holder": "GLAM GROUPS PTY. LTD.",
      "mre": "MRE-000326",
-     "status": "In Force",
+     "status": "Revoked",
      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=44ec8cc5-fc29-ee11-9965-00224810679d",
      "website": "https://www.rvsa.co/"
     },
@@ -38969,7 +38969,7 @@
    "variant_details": "Welcab variants fitted with rotating front passenger seat only"
   }
  },
- "last_run": "2026-09-19T23:56:06+00:00",
+ "last_run": "2026-09-20T23:53:20+00:00",
  "recent_events": [
   {
    "at": "2026-09-18T23:55:37+00:00",
@@ -44873,7 +44873,7 @@
    "make": "NISSAN",
    "model": "NOTE",
    "mre": "MRE-000326",
-   "report_status": "In Force",
+   "report_status": "Revoked",
    "sev": [
     "SEV-000174"
    ],
@@ -45106,7 +45106,7 @@
    "make": "Toyota",
    "model": "Corolla Axio Hybrid",
    "mre": "MRE-000339",
-   "report_status": "In Force",
+   "report_status": "Revoked",
    "sev": [
     "SEV-000120"
    ],
