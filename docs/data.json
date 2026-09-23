@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-22T00:38:09+00:00",
- "started_at": "2026-09-22T00:36:43+00:00",
+ "generated_at": "2026-09-23T00:03:18+00:00",
+ "started_at": "2026-09-23T00:02:09+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -14,7 +14,7 @@
   "expiring_soon": 50,
   "with_report": 392,
   "without_report": 195,
-  "model_reports": 998
+  "model_reports": 1000
  },
  "makes": [
   {
@@ -1943,6 +1943,12 @@
    "notes": "This SEVs Listing is for J29 series Toyota Supra fitted with B48 series IL 4, 2.0L TC P engine ONLY",
    "has_report": true,
    "reports": [
+    {
+     "mre": "MRE-000999",
+     "holder": "ORACLE CERTIFICATION PTY. LTD.",
+     "status": "In Force",
+     "website": null
+    },
     {
      "mre": "MRE-000954",
      "holder": "SHUI MIR PTY LTD",

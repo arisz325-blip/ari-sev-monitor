@@ -37180,6 +37180,14 @@
    "reports": [
     {
      "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
+     "holder": "ORACLE CERTIFICATION PTY. LTD.",
+     "mre": "MRE-000999",
+     "status": "In Force",
+     "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=8ed581c2-3ab6-f111-aaac-6045bdc2297d",
+     "website": null
+    },
+    {
+     "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
      "holder": "SHUI MIR PTY LTD",
      "mre": "MRE-000954",
      "status": "In Force",
@@ -38969,7 +38977,7 @@
    "variant_details": "Welcab variants fitted with rotating front passenger seat only"
   }
  },
- "last_run": "2026-09-22T00:38:09+00:00",
+ "last_run": "2026-09-23T00:03:18+00:00",
  "recent_events": [
   {
    "at": "2026-09-18T23:55:37+00:00",
@@ -54260,7 +54268,7 @@
    "website": "https://www.mdlreports.com.au"
   },
   "MRE-000867": {
-   "build_range": "4/2022 - 10/2024",
+   "build_range": "4/2022 to current",
    "category": "NA",
    "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
    "holder": "SHUI MIR PTY LTD",
@@ -56589,6 +56597,37 @@
    ],
    "subtype": "Specialist and Enthusiast Vehicles",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=09f97b12-e8b2-f111-aaab-7c1e522ab3fe"
+  },
+  "MRE-000999": {
+   "build_range": "5/2019 - 2/2025",
+   "category": "MA",
+   "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
+   "holder": "ORACLE CERTIFICATION PTY. LTD.",
+   "id": "8ed581c2-3ab6-f111-aaac-6045bdc2297d",
+   "linked": true,
+   "make": "Toyota",
+   "model": "Supra",
+   "mre": "MRE-000999",
+   "report_status": "In Force",
+   "sev": [
+    "SEV-001051"
+   ],
+   "subtype": "Specialist and Enthusiast Vehicles",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=8ed581c2-3ab6-f111-aaac-6045bdc2297d"
+  },
+  "MRE-001000": {
+   "build_range": "1/2020 to current",
+   "category": "LC",
+   "compliance": "Complies",
+   "id": "d0880a56-3bb6-f111-aaac-6045bdc2297d",
+   "linked": true,
+   "make": "DUCATI",
+   "model": "PANIGALE",
+   "mre": "MRE-001000",
+   "report_status": "In Force",
+   "sev": [],
+   "subtype": "Used 2 or 3 Wheeled Vehicle",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=d0880a56-3bb6-f111-aaac-6045bdc2297d"
   }
  },
  "version": 2
