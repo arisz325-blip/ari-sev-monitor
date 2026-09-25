@@ -1209,7 +1209,7 @@
      "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
      "holder": null,
      "mre": "MRE-000287",
-     "status": "In Force",
+     "status": "Suspended",
      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=16729f5e-ae14-ee11-9cbe-00224893b6a9",
      "website": null
     },
@@ -1217,7 +1217,7 @@
      "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
      "holder": null,
      "mre": "MRE-000081",
-     "status": "In Force",
+     "status": "Suspended",
      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=0b585ead-6927-ed11-9db1-002248122e3e",
      "website": null
     }
@@ -1587,7 +1587,7 @@
      "compliance": "Complies",
      "holder": "SYDNEY AVV PTY LTD",
      "mre": "MRE-000231",
-     "status": "In Force",
+     "status": "Suspended",
      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=2e64e157-52df-ed11-a7c7-002248933ce7",
      "website": null
     },
@@ -1595,7 +1595,7 @@
      "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
      "holder": "GLAM GROUPS PTY. LTD.",
      "mre": "MRE-000140",
-     "status": "In Force",
+     "status": "Suspended",
      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=c2a7d8a7-007c-ed11-81ad-00224810679d",
      "website": "www.rvsa.co"
     }
@@ -2164,7 +2164,7 @@
    "expiry": "22/09/2024",
    "expiry_iso": "2024-09-22",
    "first_seen": null,
-   "has_report": true,
+   "has_report": false,
    "id": "e9a2db09-561c-ec11-a314-0050569ede77",
    "make": "Honda",
    "model": "Fit Hybrid",
@@ -2174,7 +2174,7 @@
      "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
      "holder": "CUSTOM WORLD AUTOS (AUST) PTY LTD",
      "mre": "MRE-000358",
-     "status": "In Force",
+     "status": "Suspended",
      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=c2f5a73f-8456-ee11-be6f-002248933665",
      "website": null
     }
@@ -2517,7 +2517,7 @@
      "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
      "holder": null,
      "mre": "MRE-000573",
-     "status": "In Force",
+     "status": "Suspended",
      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=91eca46f-7b32-ef11-8e4f-000d3acbfbdc",
      "website": null
     },
@@ -2525,7 +2525,7 @@
      "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
      "holder": "ADR MODIFICATIONS PTY LTD",
      "mre": "MRE-000293",
-     "status": "In Force",
+     "status": "Suspended",
      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=e05a4275-5016-ee11-9cbe-00224893b6a9",
      "website": null
     },
@@ -2935,7 +2935,7 @@
    "expiry": "31/10/2024",
    "expiry_iso": "2024-10-31",
    "first_seen": null,
-   "has_report": true,
+   "has_report": false,
    "id": "279dfe8d-e23a-ec11-a303-0050569e60b7",
    "make": "GMC",
    "model": "Sierra 1500",
@@ -2945,7 +2945,7 @@
      "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
      "holder": "PERFORMAX INTERNATIONAL PTY LTD",
      "mre": "MRE-000756",
-     "status": "In Force",
+     "status": "Suspended",
      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=7645a201-21ef-ef11-9341-000d3aca8e60",
      "website": "https://www.performax.com.au"
     }
@@ -2970,7 +2970,7 @@
    "expiry": "31/10/2024",
    "expiry_iso": "2024-10-31",
    "first_seen": null,
-   "has_report": true,
+   "has_report": false,
    "id": "5d9dfe8d-e23a-ec11-a303-0050569e60b7",
    "make": "GMC",
    "model": "Sierra 1500",
@@ -2980,7 +2980,7 @@
      "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
      "holder": "PERFORMAX INTERNATIONAL PTY LTD",
      "mre": "MRE-000756",
-     "status": "In Force",
+     "status": "Suspended",
      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=7645a201-21ef-ef11-9341-000d3aca8e60",
      "website": "https://www.performax.com.au"
     }
@@ -3749,7 +3749,7 @@
      "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
      "holder": "ADR MODIFICATIONS PTY LTD",
      "mre": "MRE-000155",
-     "status": "In Force",
+     "status": "Suspended",
      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=1d95346b-d996-ed11-aad1-00224892b306",
      "website": null
     }
@@ -3800,7 +3800,7 @@
    "expiry": "29/11/2024",
    "expiry_iso": "2024-11-29",
    "first_seen": null,
-   "has_report": true,
+   "has_report": false,
    "id": "7d9c64aa-9f51-ec11-a304-fa28e243ca9c",
    "make": "Toyota",
    "model": "Corolla Axio Hybrid",
@@ -3818,7 +3818,7 @@
      "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
      "holder": null,
      "mre": "MRE-000228",
-     "status": "In Force",
+     "status": "Suspended",
      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=17c16cc4-eddc-ed11-a7c7-00224893ba6c",
      "website": null
     },
@@ -3875,7 +3875,7 @@
      "compliance": "Complies",
      "holder": "SYDNEY VEHICLE COMPLIANCE PTY LTD",
      "mre": "MRE-000589",
-     "status": "In Force",
+     "status": "Suspended",
      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=3b1490f4-093f-ef11-a316-6045bde57fbd",
      "website": "www.ModelReportsOnline.com.au"
     },
@@ -5518,7 +5518,7 @@
    "expiry": "17/01/2025",
    "expiry_iso": "2025-01-17",
    "first_seen": null,
-   "has_report": true,
+   "has_report": false,
    "id": "3b5abc7c-2b78-ec11-a306-0050569e60b7",
    "make": "Ford",
    "model": "Bronco",
@@ -5528,7 +5528,7 @@
      "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
      "holder": "CROSSOVER CAR CONVERSIONS PTY LTD",
      "mre": "MRE-000488",
-     "status": "In Force",
+     "status": "Suspended",
      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=9703fe58-3edb-ee11-904c-0022489614bf",
      "website": "www.crossovercarconversions.com.au"
     }
@@ -5630,7 +5630,7 @@
      "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
      "holder": "JAP DIVISION PTY. LTD.",
      "mre": "MRE-000682",
-     "status": "In Force",
+     "status": "Suspended",
      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=97d07272-a89f-ef11-8a6a-002248967996",
      "website": null
     },
@@ -5646,7 +5646,7 @@
      "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
      "holder": "CUSTOM WORLD AUTOS (AUST) PTY LTD",
      "mre": "MRE-000421",
-     "status": "In Force",
+     "status": "Suspended",
      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=92c3eea5-468f-ee11-be36-00224893ba82",
      "website": null
     },
@@ -6016,7 +6016,7 @@
    "expiry": "27/02/2025",
    "expiry_iso": "2025-02-27",
    "first_seen": null,
-   "has_report": true,
+   "has_report": false,
    "id": "a0953a25-5d98-ec11-a31b-0050569ede77",
    "make": "Moto-Trek",
    "model": "X-Cite G",
@@ -6026,7 +6026,7 @@
      "compliance": "Complies",
      "holder": null,
      "mre": "MRE-000568",
-     "status": "In Force",
+     "status": "Suspended",
      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=39f3625b-b827-ef11-840a-00224898cb4e",
      "website": null
     }
@@ -9755,7 +9755,7 @@
      "compliance": "Complies",
      "holder": "SYDNEY AVV PTY LTD",
      "mre": "MRE-000213",
-     "status": "In Force",
+     "status": "Suspended",
      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=a0754583-09d2-ed11-a7c7-00224893b94f",
      "website": null
     }
@@ -9780,7 +9780,7 @@
    "expiry": "30/06/2025",
    "expiry_iso": "2025-06-30",
    "first_seen": null,
-   "has_report": true,
+   "has_report": false,
    "id": "0b5489f4-faf8-ec11-a320-0050569ede77",
    "make": "LEXUS",
    "model": "RX 450h",
@@ -9790,7 +9790,7 @@
      "compliance": "Complies",
      "holder": "CUSTOM WORLD AUTOS (AUST) PTY LTD",
      "mre": "MRE-000740",
-     "status": "In Force",
+     "status": "Suspended",
      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=cc00f5f2-26dd-ef11-8eea-00224893f91b",
      "website": null
     }
@@ -10096,7 +10096,7 @@
      "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
      "holder": null,
      "mre": "MRE-000558",
-     "status": "In Force",
+     "status": "Suspended",
      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=2fe23b39-5c1d-ef11-840a-0022489708d6",
      "website": null
     },
@@ -10173,7 +10173,7 @@
    "expiry": "10/08/2025",
    "expiry_iso": "2025-08-10",
    "first_seen": null,
-   "has_report": true,
+   "has_report": false,
    "id": "a9c31576-4119-ed11-b83e-000d3aca67e3",
    "make": "Honda",
    "model": "Acty",
@@ -10183,7 +10183,7 @@
      "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
      "holder": "SYDNEY AVV PTY LTD",
      "mre": "MRE-000185",
-     "status": "In Force",
+     "status": "Suspended",
      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=b72c5888-5bbd-ed11-83ff-002248933e22",
      "website": null
     }
@@ -10557,7 +10557,7 @@
      "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
      "holder": "GLAM GROUPS PTY. LTD.",
      "mre": "MRE-000334",
-     "status": "In Force",
+     "status": "Suspended",
      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=4bcf56df-852b-ee11-9965-002248933ce7",
      "website": "https://www.rvsa.co/"
     }
@@ -11810,7 +11810,7 @@
      "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
      "holder": "CUSTOM WORLD AUTOS (AUST) PTY LTD",
      "mre": "MRE-000659",
-     "status": "In Force",
+     "status": "Suspended",
      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=bb93726a-e276-ef11-a670-6045bde58b06",
      "website": null
     },
@@ -15639,7 +15639,7 @@
    "expiry": "27/06/2026",
    "expiry_iso": "2026-06-27",
    "first_seen": null,
-   "has_report": true,
+   "has_report": false,
    "id": "7ef264a7-7915-ee11-9cbe-00224893bb55",
    "make": "DAIHATSU",
    "model": "HIJET",
@@ -15649,7 +15649,7 @@
      "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
      "holder": "SYDNEY AVV PTY LTD",
      "mre": "MRE-000315",
-     "status": "In Force",
+     "status": "Suspended",
      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=0dde0a26-0d22-ee11-9966-00224893b509",
      "website": null
     }
@@ -16874,7 +16874,7 @@
    "expiry": "11/09/2026",
    "expiry_iso": "2026-09-11",
    "first_seen": null,
-   "has_report": true,
+   "has_report": false,
    "id": "9304cca6-2b51-ee11-be6f-00224892b406",
    "make": "LINCOLN",
    "model": "Navigator",
@@ -16884,7 +16884,7 @@
      "compliance": "Complies",
      "holder": "OVERSEAS VEHICLE SALES PTY LTD",
      "mre": "MRE-000711",
-     "status": "In Force",
+     "status": "Suspended",
      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=fd8ad14c-d0b1-ef11-b8e9-002248945461",
      "website": "https://www.american.com.au"
     }
@@ -23085,7 +23085,7 @@
    "expiry": "29/10/2027",
    "expiry_iso": "2027-10-29",
    "first_seen": null,
-   "has_report": true,
+   "has_report": false,
    "id": "a053b361-5596-ef11-8a69-00224811ce44",
    "make": "GMC",
    "model": "Sierra 1500",
@@ -23095,7 +23095,7 @@
      "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
      "holder": "PERFORMAX INTERNATIONAL PTY LTD",
      "mre": "MRE-000756",
-     "status": "In Force",
+     "status": "Suspended",
      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=7645a201-21ef-ef11-9341-000d3aca8e60",
      "website": "https://www.performax.com.au"
     }
@@ -23120,7 +23120,7 @@
    "expiry": "29/10/2027",
    "expiry_iso": "2027-10-29",
    "first_seen": null,
-   "has_report": true,
+   "has_report": false,
    "id": "fab0dd67-5596-ef11-8a69-00224811ce44",
    "make": "GMC",
    "model": "Sierra 1500",
@@ -23130,7 +23130,7 @@
      "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
      "holder": "PERFORMAX INTERNATIONAL PTY LTD",
      "mre": "MRE-000756",
-     "status": "In Force",
+     "status": "Suspended",
      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=7645a201-21ef-ef11-9341-000d3aca8e60",
      "website": "https://www.performax.com.au"
     }
@@ -38977,8 +38977,104 @@
    "variant_details": "Welcab variants fitted with rotating front passenger seat only"
   }
  },
- "last_run": "2026-09-24T00:18:45+00:00",
+ "last_run": "2026-09-25T00:25:41+00:00",
  "recent_events": [
+  {
+   "at": "2026-09-25T00:25:39+00:00",
+   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
+   "sev": "SEV-000071",
+   "title": "Honda Fit Hybrid",
+   "type": "report_lost",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e9a2db09-561c-ec11-a314-0050569ede77"
+  },
+  {
+   "at": "2026-09-25T00:25:39+00:00",
+   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
+   "sev": "SEV-000092",
+   "title": "GMC Sierra 1500",
+   "type": "report_lost",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=279dfe8d-e23a-ec11-a303-0050569e60b7"
+  },
+  {
+   "at": "2026-09-25T00:25:39+00:00",
+   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
+   "sev": "SEV-000093",
+   "title": "GMC Sierra 1500",
+   "type": "report_lost",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=5d9dfe8d-e23a-ec11-a303-0050569e60b7"
+  },
+  {
+   "at": "2026-09-25T00:25:39+00:00",
+   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
+   "sev": "SEV-000120",
+   "title": "Toyota Corolla Axio Hybrid",
+   "type": "report_lost",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7d9c64aa-9f51-ec11-a304-fa28e243ca9c"
+  },
+  {
+   "at": "2026-09-25T00:25:39+00:00",
+   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
+   "sev": "SEV-000171",
+   "title": "Ford Bronco",
+   "type": "report_lost",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=3b5abc7c-2b78-ec11-a306-0050569e60b7"
+  },
+  {
+   "at": "2026-09-25T00:25:39+00:00",
+   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
+   "sev": "SEV-000186",
+   "title": "Moto-Trek X-Cite G",
+   "type": "report_lost",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a0953a25-5d98-ec11-a31b-0050569ede77"
+  },
+  {
+   "at": "2026-09-25T00:25:39+00:00",
+   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
+   "sev": "SEV-000322",
+   "title": "LEXUS RX 450h",
+   "type": "report_lost",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0b5489f4-faf8-ec11-a320-0050569ede77"
+  },
+  {
+   "at": "2026-09-25T00:25:39+00:00",
+   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
+   "sev": "SEV-000333",
+   "title": "Honda Acty",
+   "type": "report_lost",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a9c31576-4119-ed11-b83e-000d3aca67e3"
+  },
+  {
+   "at": "2026-09-25T00:25:39+00:00",
+   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
+   "sev": "SEV-000485",
+   "title": "DAIHATSU HIJET",
+   "type": "report_lost",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7ef264a7-7915-ee11-9cbe-00224893bb55"
+  },
+  {
+   "at": "2026-09-25T00:25:39+00:00",
+   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
+   "sev": "SEV-000518",
+   "title": "LINCOLN Navigator",
+   "type": "report_lost",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=9304cca6-2b51-ee11-be6f-00224892b406"
+  },
+  {
+   "at": "2026-09-25T00:25:39+00:00",
+   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
+   "sev": "SEV-000688",
+   "title": "GMC Sierra 1500",
+   "type": "report_lost",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a053b361-5596-ef11-8a69-00224811ce44"
+  },
+  {
+   "at": "2026-09-25T00:25:39+00:00",
+   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
+   "sev": "SEV-000689",
+   "title": "GMC Sierra 1500",
+   "type": "report_lost",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=fab0dd67-5596-ef11-8a69-00224811ce44"
+  },
   {
    "at": "2026-09-18T23:55:37+00:00",
    "detail": "11/2012 - 12/2016 \u00b7 MA - Passenger Vehicle",
@@ -40599,7 +40695,7 @@
    "make": "Honda",
    "model": "Fit Hybrid",
    "mre": "MRE-000081",
-   "report_status": "In Force",
+   "report_status": "Suspended",
    "sev": [
     "SEV-000042"
    ],
@@ -41623,7 +41719,7 @@
    "make": "NISSAN",
    "model": "X-Trail",
    "mre": "MRE-000140",
-   "report_status": "In Force",
+   "report_status": "Suspended",
    "sev": [
     "SEV-000053"
    ],
@@ -41881,7 +41977,7 @@
    "make": "Toyota",
    "model": "Corolla 160 SER",
    "mre": "MRE-000155",
-   "report_status": "In Force",
+   "report_status": "Suspended",
    "sev": [
     "SEV-000118"
    ],
@@ -42402,7 +42498,7 @@
    "make": "Honda",
    "model": "Acty",
    "mre": "MRE-000185",
-   "report_status": "In Force",
+   "report_status": "Suspended",
    "sev": [
     "SEV-000333"
    ],
@@ -42887,7 +42983,7 @@
    "make": "LEXUS",
    "model": "RX 450h",
    "mre": "MRE-000213",
-   "report_status": "In Force",
+   "report_status": "Suspended",
    "sev": [
     "SEV-000321"
    ],
@@ -43145,7 +43241,7 @@
    "make": "Toyota",
    "model": "Corolla Axio Hybrid",
    "mre": "MRE-000228",
-   "report_status": "In Force",
+   "report_status": "Suspended",
    "sev": [
     "SEV-000120"
    ],
@@ -43197,7 +43293,7 @@
    "make": "NISSAN",
    "model": "X-Trail",
    "mre": "MRE-000231",
-   "report_status": "In Force",
+   "report_status": "Suspended",
    "sev": [
     "SEV-000053"
    ],
@@ -44187,7 +44283,7 @@
    "make": "Honda",
    "model": "Fit Hybrid",
    "mre": "MRE-000287",
-   "report_status": "In Force",
+   "report_status": "Suspended",
    "sev": [
     "SEV-000042"
    ],
@@ -44293,7 +44389,7 @@
    "make": "Toyota",
    "model": "Prius",
    "mre": "MRE-000293",
-   "report_status": "In Force",
+   "report_status": "Suspended",
    "sev": [
     "SEV-000079"
    ],
@@ -44683,7 +44779,7 @@
    "make": "DAIHATSU",
    "model": "HIJET",
    "mre": "MRE-000315",
-   "report_status": "In Force",
+   "report_status": "Suspended",
    "sev": [
     "SEV-000485"
    ],
@@ -45024,7 +45120,7 @@
    "make": "Honda",
    "model": "Shuttle Hybrid",
    "mre": "MRE-000334",
-   "report_status": "In Force",
+   "report_status": "Suspended",
    "sev": [
     "SEV-000341"
    ],
@@ -45441,7 +45537,7 @@
    "make": "Honda",
    "model": "Fit Hybrid",
    "mre": "MRE-000358",
-   "report_status": "In Force",
+   "report_status": "Suspended",
    "sev": [
     "SEV-000071"
    ],
@@ -46532,7 +46628,7 @@
    "make": "NISSAN",
    "model": "NOTE",
    "mre": "MRE-000421",
-   "report_status": "In Force",
+   "report_status": "Suspended",
    "sev": [
     "SEV-000174"
    ],
@@ -47685,7 +47781,7 @@
    "make": "Ford",
    "model": "Bronco",
    "mre": "MRE-000488",
-   "report_status": "In Force",
+   "report_status": "Suspended",
    "sev": [
     "SEV-000171"
    ],
@@ -48896,7 +48992,7 @@
    "make": "SUZUKI",
    "model": "Carry / Every",
    "mre": "MRE-000558",
-   "report_status": "In Force",
+   "report_status": "Suspended",
    "sev": [
     "SEV-000331"
    ],
@@ -49075,7 +49171,7 @@
    "make": "Moto-Trek",
    "model": "X-Cite G",
    "mre": "MRE-000568",
-   "report_status": "In Force",
+   "report_status": "Suspended",
    "sev": [
     "SEV-000186"
    ],
@@ -49161,7 +49257,7 @@
    "make": "Toyota",
    "model": "Prius",
    "mre": "MRE-000573",
-   "report_status": "In Force",
+   "report_status": "Suspended",
    "sev": [
     "SEV-000079"
    ],
@@ -49435,7 +49531,7 @@
    "make": "Toyota",
    "model": "Corolla 160 SER",
    "mre": "MRE-000589",
-   "report_status": "In Force",
+   "report_status": "Suspended",
    "sev": [
     "SEV-000121"
    ],
@@ -50657,7 +50753,7 @@
    "make": "Toyota",
    "model": "Noah",
    "mre": "MRE-000659",
-   "report_status": "In Force",
+   "report_status": "Suspended",
    "sev": [
     "SEV-000379"
    ],
@@ -51064,7 +51160,7 @@
    "make": "NISSAN",
    "model": "NOTE",
    "mre": "MRE-000682",
-   "report_status": "In Force",
+   "report_status": "Suspended",
    "sev": [
     "SEV-000174"
    ],
@@ -51564,7 +51660,7 @@
    "make": "LINCOLN",
    "model": "Navigator",
    "mre": "MRE-000711",
-   "report_status": "In Force",
+   "report_status": "Suspended",
    "sev": [
     "SEV-000518"
    ],
@@ -52064,7 +52160,7 @@
    "make": "LEXUS",
    "model": "RX 450h",
    "mre": "MRE-000740",
-   "report_status": "In Force",
+   "report_status": "Suspended",
    "sev": [
     "SEV-000322"
    ],
@@ -52340,7 +52436,7 @@
    "make": "GMC",
    "model": "Sierra 1500",
    "mre": "MRE-000756",
-   "report_status": "In Force",
+   "report_status": "Suspended",
    "sev": [
     "SEV-000092",
     "SEV-000093",

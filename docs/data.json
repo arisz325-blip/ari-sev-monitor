@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-24T00:18:45+00:00",
- "started_at": "2026-09-24T00:15:30+00:00",
+ "generated_at": "2026-09-25T00:25:41+00:00",
+ "started_at": "2026-09-25T00:17:53+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -11,9 +11,9 @@
   "expired": 519,
   "under_review": 0,
   "new_recent": 10,
-  "expiring_soon": 50,
-  "with_report": 392,
-  "without_report": 195,
+  "expiring_soon": 53,
+  "with_report": 390,
+  "without_report": 197,
   "model_reports": 1000
  },
  "makes": [
@@ -93,7 +93,7 @@
    "key": "GMC",
    "label": "GMC",
    "count": 11,
-   "with_report": 8
+   "with_report": 6
   },
   {
    "key": "SUZUKI",
@@ -610,6 +610,102 @@
   "categories": []
  },
  "recent_events": [
+  {
+   "type": "report_lost",
+   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
+   "sev": "SEV-000071",
+   "title": "Honda Fit Hybrid",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e9a2db09-561c-ec11-a314-0050569ede77",
+   "at": "2026-09-25T00:25:39+00:00"
+  },
+  {
+   "type": "report_lost",
+   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
+   "sev": "SEV-000092",
+   "title": "GMC Sierra 1500",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=279dfe8d-e23a-ec11-a303-0050569e60b7",
+   "at": "2026-09-25T00:25:39+00:00"
+  },
+  {
+   "type": "report_lost",
+   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
+   "sev": "SEV-000093",
+   "title": "GMC Sierra 1500",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=5d9dfe8d-e23a-ec11-a303-0050569e60b7",
+   "at": "2026-09-25T00:25:39+00:00"
+  },
+  {
+   "type": "report_lost",
+   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
+   "sev": "SEV-000120",
+   "title": "Toyota Corolla Axio Hybrid",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7d9c64aa-9f51-ec11-a304-fa28e243ca9c",
+   "at": "2026-09-25T00:25:39+00:00"
+  },
+  {
+   "type": "report_lost",
+   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
+   "sev": "SEV-000171",
+   "title": "Ford Bronco",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=3b5abc7c-2b78-ec11-a306-0050569e60b7",
+   "at": "2026-09-25T00:25:39+00:00"
+  },
+  {
+   "type": "report_lost",
+   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
+   "sev": "SEV-000186",
+   "title": "Moto-Trek X-Cite G",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a0953a25-5d98-ec11-a31b-0050569ede77",
+   "at": "2026-09-25T00:25:39+00:00"
+  },
+  {
+   "type": "report_lost",
+   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
+   "sev": "SEV-000322",
+   "title": "LEXUS RX 450h",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0b5489f4-faf8-ec11-a320-0050569ede77",
+   "at": "2026-09-25T00:25:39+00:00"
+  },
+  {
+   "type": "report_lost",
+   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
+   "sev": "SEV-000333",
+   "title": "Honda Acty",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a9c31576-4119-ed11-b83e-000d3aca67e3",
+   "at": "2026-09-25T00:25:39+00:00"
+  },
+  {
+   "type": "report_lost",
+   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
+   "sev": "SEV-000485",
+   "title": "DAIHATSU HIJET",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7ef264a7-7915-ee11-9cbe-00224893bb55",
+   "at": "2026-09-25T00:25:39+00:00"
+  },
+  {
+   "type": "report_lost",
+   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
+   "sev": "SEV-000518",
+   "title": "LINCOLN Navigator",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=9304cca6-2b51-ee11-be6f-00224892b406",
+   "at": "2026-09-25T00:25:39+00:00"
+  },
+  {
+   "type": "report_lost",
+   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
+   "sev": "SEV-000688",
+   "title": "GMC Sierra 1500",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a053b361-5596-ef11-8a69-00224811ce44",
+   "at": "2026-09-25T00:25:39+00:00"
+  },
+  {
+   "type": "report_lost",
+   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
+   "sev": "SEV-000689",
+   "title": "GMC Sierra 1500",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=fab0dd67-5596-ef11-8a69-00224811ce44",
+   "at": "2026-09-25T00:25:39+00:00"
+  },
   {
    "at": "2026-09-18T23:55:37+00:00",
    "detail": "11/2012 - 12/2016 \u00b7 MA - Passenger Vehicle",
@@ -11326,12 +11422,11 @@
    "criterion": "Left-Hand Drive Criterion",
    "variant": "6.2L Petrol",
    "variant_details": "6.2L Petrol, V8, 4WD with 10 speed automatic transmission",
-   "has_report": true,
    "reports": [
     {
      "mre": "MRE-000756",
      "holder": "PERFORMAX INTERNATIONAL PTY LTD",
-     "status": "In Force",
+     "status": "Suspended",
      "website": "https://www.performax.com.au"
     }
    ]
@@ -11350,12 +11445,11 @@
    "criterion": "Left-Hand Drive Criterion",
    "variant": "5.3L Petrol",
    "variant_details": "5.3L Petrol, V8 with 6/8/10 speed automatic transmission",
-   "has_report": true,
    "reports": [
     {
      "mre": "MRE-000756",
      "holder": "PERFORMAX INTERNATIONAL PTY LTD",
-     "status": "In Force",
+     "status": "Suspended",
      "website": "https://www.performax.com.au"
     }
    ]
@@ -14192,7 +14286,8 @@
      "status": "In Force",
      "website": "https://app.comptune.com.au"
     }
-   ]
+   ],
+   "expiring_soon": true
   },
   {
    "sev": "SEV-000573",
@@ -14214,7 +14309,8 @@
      "status": "In Force",
      "website": "https://app.comptune.com.au"
     }
-   ]
+   ],
+   "expiring_soon": true
   },
   {
    "sev": "SEV-000572",
@@ -14236,7 +14332,8 @@
      "status": "In Force",
      "website": "https://app.comptune.com.au"
     }
-   ]
+   ],
+   "expiring_soon": true
   },
   {
    "sev": "SEV-000571",
@@ -15444,12 +15541,11 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=9304cca6-2b51-ee11-be6f-00224892b406",
    "criterion": "Left-Hand Drive Criterion",
    "variant": "ALL",
-   "has_report": true,
    "reports": [
     {
      "mre": "MRE-000711",
      "holder": "OVERSEAS VEHICLE SALES PTY LTD",
-     "status": "In Force",
+     "status": "Suspended",
      "website": "https://www.american.com.au"
     }
    ]
@@ -16246,12 +16342,11 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7ef264a7-7915-ee11-9cbe-00224893bb55",
    "criterion": "Environmental Criterion",
    "variant": "ALL",
-   "has_report": true,
    "reports": [
     {
      "mre": "MRE-000315",
      "holder": "SYDNEY AVV PTY LTD",
-     "status": "In Force",
+     "status": "Suspended",
      "website": null
     }
    ]
@@ -18724,7 +18819,7 @@
     {
      "mre": "MRE-000659",
      "holder": "CUSTOM WORLD AUTOS (AUST) PTY LTD",
-     "status": "In Force",
+     "status": "Suspended",
      "website": null
     },
     {
@@ -19539,7 +19634,7 @@
     {
      "mre": "MRE-000334",
      "holder": "GLAM GROUPS PTY. LTD.",
-     "status": "In Force",
+     "status": "Suspended",
      "website": "https://www.rvsa.co/"
     }
    ]
@@ -19773,12 +19868,11 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a9c31576-4119-ed11-b83e-000d3aca67e3",
    "criterion": "Environmental Criterion",
    "variant": "ALL",
-   "has_report": true,
    "reports": [
     {
      "mre": "MRE-000185",
      "holder": "SYDNEY AVV PTY LTD",
-     "status": "In Force",
+     "status": "Suspended",
      "website": null
     }
    ]
@@ -19832,7 +19926,7 @@
     {
      "mre": "MRE-000558",
      "holder": null,
-     "status": "In Force",
+     "status": "Suspended",
      "website": null
     },
     {
@@ -20024,12 +20118,11 @@
    "criterion": "Environmental Criterion",
    "variant": "GYL20",
    "variant_details": "2GR-FXS 3.5LT HYBRID, WAGON, 2WD",
-   "has_report": true,
    "reports": [
     {
      "mre": "MRE-000740",
      "holder": "CUSTOM WORLD AUTOS (AUST) PTY LTD",
-     "status": "In Force",
+     "status": "Suspended",
      "website": null
     }
    ]
@@ -20065,7 +20158,7 @@
     {
      "mre": "MRE-000213",
      "holder": "SYDNEY AVV PTY LTD",
-     "status": "In Force",
+     "status": "Suspended",
      "website": null
     }
    ]
@@ -22187,12 +22280,11 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a0953a25-5d98-ec11-a31b-0050569ede77",
    "criterion": "Campervans and Motorhomes Criterion",
    "variant": "ALL",
-   "has_report": true,
    "reports": [
     {
      "mre": "MRE-000568",
      "holder": null,
-     "status": "In Force",
+     "status": "Suspended",
      "website": null
     }
    ]
@@ -22415,7 +22507,7 @@
     {
      "mre": "MRE-000682",
      "holder": "JAP DIVISION PTY. LTD.",
-     "status": "In Force",
+     "status": "Suspended",
      "website": null
     },
     {
@@ -22427,7 +22519,7 @@
     {
      "mre": "MRE-000421",
      "holder": "CUSTOM WORLD AUTOS (AUST) PTY LTD",
-     "status": "In Force",
+     "status": "Suspended",
      "website": null
     },
     {
@@ -22492,12 +22584,11 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=3b5abc7c-2b78-ec11-a306-0050569e60b7",
    "criterion": "Left-Hand Drive Criterion",
    "variant": "ALL",
-   "has_report": true,
    "reports": [
     {
      "mre": "MRE-000488",
      "holder": "CROSSOVER CAR CONVERSIONS PTY LTD",
-     "status": "In Force",
+     "status": "Suspended",
      "website": "www.crossovercarconversions.com.au"
     }
    ]
@@ -23523,7 +23614,7 @@
     {
      "mre": "MRE-000589",
      "holder": "SYDNEY VEHICLE COMPLIANCE PTY LTD",
-     "status": "In Force",
+     "status": "Suspended",
      "website": "www.ModelReportsOnline.com.au"
     },
     {
@@ -23557,7 +23648,6 @@
    "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7d9c64aa-9f51-ec11-a304-fa28e243ca9c",
    "criterion": "Environmental Criterion",
-   "has_report": true,
    "reports": [
     {
      "mre": "MRE-000339",
@@ -23568,7 +23658,7 @@
     {
      "mre": "MRE-000228",
      "holder": null,
-     "status": "In Force",
+     "status": "Suspended",
      "website": null
     },
     {
@@ -23636,7 +23726,7 @@
     {
      "mre": "MRE-000155",
      "holder": "ADR MODIFICATIONS PTY LTD",
-     "status": "In Force",
+     "status": "Suspended",
      "website": null
     }
    ]
@@ -24064,12 +24154,11 @@
    "criterion": "Left-Hand Drive Criterion",
    "variant": "6.2L Petrol",
    "variant_details": "6.2L Petrol, V8, 4WD with 10 speed automatic transmission",
-   "has_report": true,
    "reports": [
     {
      "mre": "MRE-000756",
      "holder": "PERFORMAX INTERNATIONAL PTY LTD",
-     "status": "In Force",
+     "status": "Suspended",
      "website": "https://www.performax.com.au"
     }
    ]
@@ -24087,12 +24176,11 @@
    "criterion": "Left-Hand Drive Criterion",
    "variant": "5.3L Petrol",
    "variant_details": "5.3L Petrol, V8 with 6/8/10 speed automatic transmission",
-   "has_report": true,
    "reports": [
     {
      "mre": "MRE-000756",
      "holder": "PERFORMAX INTERNATIONAL PTY LTD",
-     "status": "In Force",
+     "status": "Suspended",
      "website": "https://www.performax.com.au"
     }
    ]
@@ -24351,13 +24439,13 @@
     {
      "mre": "MRE-000573",
      "holder": null,
-     "status": "In Force",
+     "status": "Suspended",
      "website": null
     },
     {
      "mre": "MRE-000293",
      "holder": "ADR MODIFICATIONS PTY LTD",
-     "status": "In Force",
+     "status": "Suspended",
      "website": null
     },
     {
@@ -24593,12 +24681,11 @@
    "criterion": "Environmental Criterion",
    "variant": "Hybrid",
    "variant_details": "Hybrid Variants only",
-   "has_report": true,
    "reports": [
     {
      "mre": "MRE-000358",
      "holder": "CUSTOM WORLD AUTOS (AUST) PTY LTD",
-     "status": "In Force",
+     "status": "Suspended",
      "website": null
     }
    ]
@@ -24984,13 +25071,13 @@
     {
      "mre": "MRE-000231",
      "holder": "SYDNEY AVV PTY LTD",
-     "status": "In Force",
+     "status": "Suspended",
      "website": null
     },
     {
      "mre": "MRE-000140",
      "holder": "GLAM GROUPS PTY. LTD.",
-     "status": "In Force",
+     "status": "Suspended",
      "website": "www.rvsa.co"
     }
    ]
@@ -25214,13 +25301,13 @@
     {
      "mre": "MRE-000287",
      "holder": null,
-     "status": "In Force",
+     "status": "Suspended",
      "website": null
     },
     {
      "mre": "MRE-000081",
      "holder": null,
-     "status": "In Force",
+     "status": "Suspended",
      "website": null
     }
    ]
