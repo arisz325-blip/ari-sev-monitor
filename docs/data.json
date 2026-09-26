@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-25T00:25:41+00:00",
- "started_at": "2026-09-25T00:17:53+00:00",
+ "generated_at": "2026-09-26T00:25:19+00:00",
+ "started_at": "2026-09-26T00:23:17+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -611,100 +611,100 @@
  },
  "recent_events": [
   {
-   "type": "report_lost",
+   "at": "2026-09-25T00:25:39+00:00",
    "detail": "no model report is in force any more \u2014 nobody can import it until one is",
    "sev": "SEV-000071",
    "title": "Honda Fit Hybrid",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e9a2db09-561c-ec11-a314-0050569ede77",
-   "at": "2026-09-25T00:25:39+00:00"
+   "type": "report_lost",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e9a2db09-561c-ec11-a314-0050569ede77"
   },
   {
-   "type": "report_lost",
+   "at": "2026-09-25T00:25:39+00:00",
    "detail": "no model report is in force any more \u2014 nobody can import it until one is",
    "sev": "SEV-000092",
    "title": "GMC Sierra 1500",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=279dfe8d-e23a-ec11-a303-0050569e60b7",
-   "at": "2026-09-25T00:25:39+00:00"
+   "type": "report_lost",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=279dfe8d-e23a-ec11-a303-0050569e60b7"
   },
   {
-   "type": "report_lost",
+   "at": "2026-09-25T00:25:39+00:00",
    "detail": "no model report is in force any more \u2014 nobody can import it until one is",
    "sev": "SEV-000093",
    "title": "GMC Sierra 1500",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=5d9dfe8d-e23a-ec11-a303-0050569e60b7",
-   "at": "2026-09-25T00:25:39+00:00"
+   "type": "report_lost",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=5d9dfe8d-e23a-ec11-a303-0050569e60b7"
   },
   {
-   "type": "report_lost",
+   "at": "2026-09-25T00:25:39+00:00",
    "detail": "no model report is in force any more \u2014 nobody can import it until one is",
    "sev": "SEV-000120",
    "title": "Toyota Corolla Axio Hybrid",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7d9c64aa-9f51-ec11-a304-fa28e243ca9c",
-   "at": "2026-09-25T00:25:39+00:00"
+   "type": "report_lost",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7d9c64aa-9f51-ec11-a304-fa28e243ca9c"
   },
   {
-   "type": "report_lost",
+   "at": "2026-09-25T00:25:39+00:00",
    "detail": "no model report is in force any more \u2014 nobody can import it until one is",
    "sev": "SEV-000171",
    "title": "Ford Bronco",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=3b5abc7c-2b78-ec11-a306-0050569e60b7",
-   "at": "2026-09-25T00:25:39+00:00"
+   "type": "report_lost",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=3b5abc7c-2b78-ec11-a306-0050569e60b7"
   },
   {
-   "type": "report_lost",
+   "at": "2026-09-25T00:25:39+00:00",
    "detail": "no model report is in force any more \u2014 nobody can import it until one is",
    "sev": "SEV-000186",
    "title": "Moto-Trek X-Cite G",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a0953a25-5d98-ec11-a31b-0050569ede77",
-   "at": "2026-09-25T00:25:39+00:00"
+   "type": "report_lost",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a0953a25-5d98-ec11-a31b-0050569ede77"
   },
   {
-   "type": "report_lost",
+   "at": "2026-09-25T00:25:39+00:00",
    "detail": "no model report is in force any more \u2014 nobody can import it until one is",
    "sev": "SEV-000322",
    "title": "LEXUS RX 450h",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0b5489f4-faf8-ec11-a320-0050569ede77",
-   "at": "2026-09-25T00:25:39+00:00"
+   "type": "report_lost",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0b5489f4-faf8-ec11-a320-0050569ede77"
   },
   {
-   "type": "report_lost",
+   "at": "2026-09-25T00:25:39+00:00",
    "detail": "no model report is in force any more \u2014 nobody can import it until one is",
    "sev": "SEV-000333",
    "title": "Honda Acty",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a9c31576-4119-ed11-b83e-000d3aca67e3",
-   "at": "2026-09-25T00:25:39+00:00"
+   "type": "report_lost",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a9c31576-4119-ed11-b83e-000d3aca67e3"
   },
   {
-   "type": "report_lost",
+   "at": "2026-09-25T00:25:39+00:00",
    "detail": "no model report is in force any more \u2014 nobody can import it until one is",
    "sev": "SEV-000485",
    "title": "DAIHATSU HIJET",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7ef264a7-7915-ee11-9cbe-00224893bb55",
-   "at": "2026-09-25T00:25:39+00:00"
+   "type": "report_lost",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7ef264a7-7915-ee11-9cbe-00224893bb55"
   },
   {
-   "type": "report_lost",
+   "at": "2026-09-25T00:25:39+00:00",
    "detail": "no model report is in force any more \u2014 nobody can import it until one is",
    "sev": "SEV-000518",
    "title": "LINCOLN Navigator",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=9304cca6-2b51-ee11-be6f-00224892b406",
-   "at": "2026-09-25T00:25:39+00:00"
+   "type": "report_lost",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=9304cca6-2b51-ee11-be6f-00224892b406"
   },
   {
-   "type": "report_lost",
+   "at": "2026-09-25T00:25:39+00:00",
    "detail": "no model report is in force any more \u2014 nobody can import it until one is",
    "sev": "SEV-000688",
    "title": "GMC Sierra 1500",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a053b361-5596-ef11-8a69-00224811ce44",
-   "at": "2026-09-25T00:25:39+00:00"
+   "type": "report_lost",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a053b361-5596-ef11-8a69-00224811ce44"
   },
   {
-   "type": "report_lost",
+   "at": "2026-09-25T00:25:39+00:00",
    "detail": "no model report is in force any more \u2014 nobody can import it until one is",
    "sev": "SEV-000689",
    "title": "GMC Sierra 1500",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=fab0dd67-5596-ef11-8a69-00224811ce44",
-   "at": "2026-09-25T00:25:39+00:00"
+   "type": "report_lost",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=fab0dd67-5596-ef11-8a69-00224811ce44"
   },
   {
    "at": "2026-09-18T23:55:37+00:00",
