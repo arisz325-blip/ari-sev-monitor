@@ -1,27 +1,27 @@
 {
- "generated_at": "2026-09-26T00:25:19+00:00",
- "started_at": "2026-09-26T00:23:17+00:00",
+ "generated_at": "2026-09-27T00:20:05+00:00",
+ "started_at": "2026-09-27T00:17:32+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
  },
  "counts": {
   "total": 1106,
-  "in_force": 587,
-  "expired": 519,
+  "in_force": 583,
+  "expired": 523,
   "under_review": 0,
   "new_recent": 10,
-  "expiring_soon": 53,
-  "with_report": 390,
-  "without_report": 197,
+  "expiring_soon": 49,
+  "with_report": 387,
+  "without_report": 196,
   "model_reports": 1000
  },
  "makes": [
   {
    "key": "TOYOTA",
    "label": "Toyota",
-   "count": 148,
-   "with_report": 122
+   "count": 146,
+   "with_report": 120
   },
   {
    "key": "NISSAN",
@@ -38,8 +38,8 @@
   {
    "key": "HONDA",
    "label": "Honda",
-   "count": 29,
-   "with_report": 23
+   "count": 28,
+   "with_report": 22
   },
   {
    "key": "MITSUBISHI",
@@ -592,12 +592,6 @@
    "label": "Whitehouse Toyota",
    "count": 1,
    "with_report": 1
-  },
-  {
-   "key": "YIHAU",
-   "label": "Yihau",
-   "count": 1,
-   "with_report": 0
   }
  ],
  "recent_days": 30,
@@ -610,6 +604,38 @@
   "categories": []
  },
  "recent_events": [
+  {
+   "type": "expired",
+   "detail": "expired 27/09/2026",
+   "sev": "SEV-000522",
+   "title": "Yihau YH-EQ",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=437cb413-995d-ee11-be6f-002248933665",
+   "at": "2026-09-27T00:20:05+00:00"
+  },
+  {
+   "type": "expired",
+   "detail": "expired 27/09/2026",
+   "sev": "SEV-000523",
+   "title": "Toyota Aqua Welcab",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=677e465c-995d-ee11-be6f-002248933665",
+   "at": "2026-09-27T00:20:05+00:00"
+  },
+  {
+   "type": "expired",
+   "detail": "expired 27/09/2026",
+   "sev": "SEV-000524",
+   "title": "Toyota Harrier Hybrid",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=88f80e40-9a5d-ee11-be6f-002248933665",
+   "at": "2026-09-27T00:20:05+00:00"
+  },
+  {
+   "type": "expired",
+   "detail": "expired 27/09/2026",
+   "sev": "SEV-000525",
+   "title": "Honda NSX Type S",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=86db3deb-b55d-ee11-be6f-00224810679d",
+   "at": "2026-09-27T00:20:05+00:00"
+  },
   {
    "at": "2026-09-25T00:25:39+00:00",
    "detail": "no model report is in force any more \u2014 nobody can import it until one is",
@@ -15347,7 +15373,7 @@
    "build_from_iso": "2021-10-01",
    "build_to_iso": "2022-10-01",
    "expiry_iso": "2026-09-27",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=86db3deb-b55d-ee11-be6f-00224810679d",
    "criterion": "Performance Criterion",
    "variant": "ALL",
@@ -15371,8 +15397,7 @@
      "status": "In Force",
      "website": null
     }
-   ],
-   "expiring_soon": true
+   ]
   },
   {
    "sev": "SEV-000524",
@@ -15382,7 +15407,7 @@
    "model_code": "AXUP85",
    "build_from_iso": "2022-09-01",
    "expiry_iso": "2026-09-27",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=88f80e40-9a5d-ee11-be6f-002248933665",
    "criterion": "Environmental Criterion",
    "variant": "PHEV",
@@ -15413,8 +15438,7 @@
      "status": "In Force",
      "website": null
     }
-   ],
-   "expiring_soon": true
+   ]
   },
   {
    "sev": "SEV-000523",
@@ -15425,7 +15449,7 @@
    "build_from_iso": "2011-11-01",
    "build_to_iso": "2021-06-01",
    "expiry_iso": "2026-09-27",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=677e465c-995d-ee11-be6f-002248933665",
    "criterion": "Mobility Criterion",
    "variant": "Welcab Variants",
@@ -15450,8 +15474,7 @@
      "status": "In Force",
      "website": null
     }
-   ],
-   "expiring_soon": true
+   ]
   },
   {
    "sev": "SEV-000522",
@@ -15461,11 +15484,10 @@
    "model_code": "EQ-B",
    "build_from_iso": "2023-01-01",
    "expiry_iso": "2026-09-27",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=437cb413-995d-ee11-be6f-002248933665",
    "criterion": "Environmental Criterion",
-   "variant": "ALL",
-   "expiring_soon": true
+   "variant": "ALL"
   },
   {
    "sev": "SEV-000521",
