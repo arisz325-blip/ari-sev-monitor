@@ -1,27 +1,27 @@
 {
- "generated_at": "2026-09-27T00:20:05+00:00",
- "started_at": "2026-09-27T00:17:32+00:00",
+ "generated_at": "2026-09-28T00:22:11+00:00",
+ "started_at": "2026-09-28T00:18:46+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
  },
  "counts": {
   "total": 1106,
-  "in_force": 583,
-  "expired": 523,
+  "in_force": 572,
+  "expired": 534,
   "under_review": 0,
   "new_recent": 10,
-  "expiring_soon": 49,
-  "with_report": 387,
-  "without_report": 196,
+  "expiring_soon": 38,
+  "with_report": 381,
+  "without_report": 191,
   "model_reports": 1000
  },
  "makes": [
   {
    "key": "TOYOTA",
    "label": "Toyota",
-   "count": 146,
-   "with_report": 120
+   "count": 145,
+   "with_report": 119
   },
   {
    "key": "NISSAN",
@@ -32,26 +32,20 @@
   {
    "key": "MERCEDES-BENZ",
    "label": "Mercedes-Benz",
-   "count": 36,
-   "with_report": 27
+   "count": 33,
+   "with_report": 25
   },
   {
    "key": "HONDA",
    "label": "Honda",
-   "count": 28,
-   "with_report": 22
+   "count": 27,
+   "with_report": 21
   },
   {
    "key": "MITSUBISHI",
    "label": "MITSUBISHI",
    "count": 22,
    "with_report": 16
-  },
-  {
-   "key": "BMW",
-   "label": "BMW",
-   "count": 18,
-   "with_report": 10
   },
   {
    "key": "FORD",
@@ -64,6 +58,12 @@
    "label": "LEXUS",
    "count": 18,
    "with_report": 16
+  },
+  {
+   "key": "BMW",
+   "label": "BMW",
+   "count": 17,
+   "with_report": 9
   },
   {
    "key": "RAM",
@@ -132,12 +132,6 @@
    "with_report": 2
   },
   {
-   "key": "ASTON MARTIN",
-   "label": "ASTON MARTIN",
-   "count": 6,
-   "with_report": 4
-  },
-  {
    "key": "DODGE",
    "label": "DODGE",
    "count": 6,
@@ -150,6 +144,12 @@
    "with_report": 4
   },
   {
+   "key": "ASTON MARTIN",
+   "label": "ASTON MARTIN",
+   "count": 5,
+   "with_report": 4
+  },
+  {
    "key": "MAZDA",
    "label": "Mazda",
    "count": 5,
@@ -159,12 +159,6 @@
    "key": "TVR",
    "label": "TVR",
    "count": 5,
-   "with_report": 2
-  },
-  {
-   "key": "HINO",
-   "label": "Hino",
-   "count": 4,
    "with_report": 2
   },
   {
@@ -190,6 +184,12 @@
    "label": "BENTLEY",
    "count": 3,
    "with_report": 1
+  },
+  {
+   "key": "HINO",
+   "label": "Hino",
+   "count": 3,
+   "with_report": 2
   },
   {
    "key": "PORSCHE",
@@ -402,12 +402,6 @@
    "with_report": 1
   },
   {
-   "key": "IVECO",
-   "label": "Iveco",
-   "count": 1,
-   "with_report": 1
-  },
-  {
    "key": "JP STAR DAIHATSU",
    "label": "JP Star Daihatsu",
    "count": 1,
@@ -428,12 +422,6 @@
   {
    "key": "KTM",
    "label": "KTM",
-   "count": 1,
-   "with_report": 0
-  },
-  {
-   "key": "LIUZHOU WULING NEW ENERGY AUTOMOTIVE",
-   "label": "Liuzhou Wuling New Energy Automotive",
    "count": 1,
    "with_report": 0
   },
@@ -514,12 +502,6 @@
    "label": "PILATO",
    "count": 1,
    "with_report": 1
-  },
-  {
-   "key": "RENAULT",
-   "label": "Renault",
-   "count": 1,
-   "with_report": 0
   },
   {
    "key": "RIVIAN",
@@ -606,35 +588,123 @@
  "recent_events": [
   {
    "type": "expired",
+   "detail": "expired 28/09/2026",
+   "sev": "SEV-000526",
+   "title": "Hino Liesse II Campervan / Motorhome",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=5b48281b-5f5e-ee11-be6f-00224893341d",
+   "at": "2026-09-28T00:22:11+00:00"
+  },
+  {
+   "type": "expired",
+   "detail": "expired 28/09/2026",
+   "sev": "SEV-000527",
+   "title": "Mercedes-Benz S Class PHEV",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=69dbe316-605e-ee11-be6f-00224893341d",
+   "at": "2026-09-28T00:22:11+00:00"
+  },
+  {
+   "type": "expired",
+   "detail": "expired 28/09/2026",
+   "sev": "SEV-000528",
+   "title": "Mercedes-Benz S Class PHEV",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=92dbe316-605e-ee11-be6f-00224893341d",
+   "at": "2026-09-28T00:22:11+00:00"
+  },
+  {
+   "type": "expired",
+   "detail": "expired 28/09/2026",
+   "sev": "SEV-000529",
+   "title": "Mercedes-Benz S Class PHEV",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=bedbe316-605e-ee11-be6f-00224893341d",
+   "at": "2026-09-28T00:22:11+00:00"
+  },
+  {
+   "type": "expired",
+   "detail": "expired 28/09/2026",
+   "sev": "SEV-000530",
+   "title": "Honda Stepwgn",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=1667e5b1-605e-ee11-be6f-00224893341d",
+   "at": "2026-09-28T00:22:11+00:00"
+  },
+  {
+   "type": "expired",
+   "detail": "expired 28/09/2026",
+   "sev": "SEV-000531",
+   "title": "Renault Alpine",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=b2f77905-625e-ee11-be6f-002248933df6",
+   "at": "2026-09-28T00:22:11+00:00"
+  },
+  {
+   "type": "expired",
+   "detail": "expired 28/09/2026",
+   "sev": "SEV-000532",
+   "title": "ASTON MARTIN Valkyrie",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=3faddf49-655e-ee11-be6f-00224893341d",
+   "at": "2026-09-28T00:22:11+00:00"
+  },
+  {
+   "type": "expired",
+   "detail": "expired 28/09/2026",
+   "sev": "SEV-000533",
+   "title": "Liuzhou Wuling New Energy Automotive GO50",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=aa06dff0-675e-ee11-be6f-002248933428",
+   "at": "2026-09-28T00:22:11+00:00"
+  },
+  {
+   "type": "expired",
+   "detail": "expired 28/09/2026",
+   "sev": "SEV-000534",
+   "title": "Iveco Eurocargo Motorhome",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=2cfe9397-685e-ee11-be6f-002248933428",
+   "at": "2026-09-28T00:22:11+00:00"
+  },
+  {
+   "type": "expired",
+   "detail": "expired 28/09/2026",
+   "sev": "SEV-000535",
+   "title": "BMW Alpina B6 Edition 50",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=d2a0b878-695e-ee11-be6f-002248933428",
+   "at": "2026-09-28T00:22:11+00:00"
+  },
+  {
+   "type": "expired",
+   "detail": "expired 28/09/2026",
+   "sev": "SEV-000536",
+   "title": "Toyota Corolla Cross",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e55fece6-6a5e-ee11-8def-00224893b94f",
+   "at": "2026-09-28T00:22:11+00:00"
+  },
+  {
+   "at": "2026-09-27T00:20:05+00:00",
    "detail": "expired 27/09/2026",
    "sev": "SEV-000522",
    "title": "Yihau YH-EQ",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=437cb413-995d-ee11-be6f-002248933665",
-   "at": "2026-09-27T00:20:05+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=437cb413-995d-ee11-be6f-002248933665"
   },
   {
-   "type": "expired",
+   "at": "2026-09-27T00:20:05+00:00",
    "detail": "expired 27/09/2026",
    "sev": "SEV-000523",
    "title": "Toyota Aqua Welcab",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=677e465c-995d-ee11-be6f-002248933665",
-   "at": "2026-09-27T00:20:05+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=677e465c-995d-ee11-be6f-002248933665"
   },
   {
-   "type": "expired",
+   "at": "2026-09-27T00:20:05+00:00",
    "detail": "expired 27/09/2026",
    "sev": "SEV-000524",
    "title": "Toyota Harrier Hybrid",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=88f80e40-9a5d-ee11-be6f-002248933665",
-   "at": "2026-09-27T00:20:05+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=88f80e40-9a5d-ee11-be6f-002248933665"
   },
   {
-   "type": "expired",
+   "at": "2026-09-27T00:20:05+00:00",
    "detail": "expired 27/09/2026",
    "sev": "SEV-000525",
    "title": "Honda NSX Type S",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=86db3deb-b55d-ee11-be6f-00224810679d",
-   "at": "2026-09-27T00:20:05+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=86db3deb-b55d-ee11-be6f-00224810679d"
   },
   {
    "at": "2026-09-25T00:25:39+00:00",
@@ -15117,7 +15187,7 @@
    "build_from_iso": "2021-09-14",
    "build_to_iso": "2022-10-01",
    "expiry_iso": "2026-09-28",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e55fece6-6a5e-ee11-8def-00224893b94f",
    "criterion": "Environmental Criterion",
    "variant": "1.8L, 2WD, 4WD",
@@ -15141,8 +15211,7 @@
      "status": "In Force",
      "website": null
     }
-   ],
-   "expiring_soon": true
+   ]
   },
   {
    "sev": "SEV-000535",
@@ -15153,7 +15222,7 @@
    "build_from_iso": "2015-03-01",
    "build_to_iso": "2016-04-01",
    "expiry_iso": "2026-09-28",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=d2a0b878-695e-ee11-be6f-002248933428",
    "criterion": "Rarity Criterion",
    "variant": "Edition 50",
@@ -15172,8 +15241,7 @@
      "status": "In Force",
      "website": null
     }
-   ],
-   "expiring_soon": true
+   ]
   },
   {
    "sev": "SEV-000534",
@@ -15184,7 +15252,7 @@
    "build_from_iso": "2003-01-01",
    "build_to_iso": "2015-12-01",
    "expiry_iso": "2026-09-28",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=2cfe9397-685e-ee11-be6f-002248933428",
    "criterion": "Campervans and Motorhomes Criterion",
    "variant": "Eurocargo Motorhome",
@@ -15197,8 +15265,7 @@
      "status": "In Force",
      "website": null
     }
-   ],
-   "expiring_soon": true
+   ]
   },
   {
    "sev": "SEV-000533",
@@ -15207,12 +15274,11 @@
    "category": "NA - Light Goods Vehicle",
    "build_from_iso": "2023-06-01",
    "expiry_iso": "2026-09-28",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=aa06dff0-675e-ee11-be6f-002248933428",
    "criterion": "Environmental Criterion",
    "variant": "GO50 BASE MODEL TYPE A",
-   "notes": "Rather than enter a wrong code in the Model code field I here provide the information that I have, which are from the manufacturers GO50 Product mass production configuration Table (in Excel) BASE MODEL - TYPE A E60100000KJFG10000. Clear Sky Silver-Blue Decoration",
-   "expiring_soon": true
+   "notes": "Rather than enter a wrong code in the Model code field I here provide the information that I have, which are from the manufacturers GO50 Product mass production configuration Table (in Excel) BASE MODEL - TYPE A E60100000KJFG10000. Clear Sky Silver-Blue Decoration"
   },
   {
    "sev": "SEV-000532",
@@ -15222,11 +15288,10 @@
    "model_code": "Valkyrie",
    "build_from_iso": "2021-01-01",
    "expiry_iso": "2026-09-28",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=3faddf49-655e-ee11-be6f-00224893341d",
    "criterion": "Rarity Criterion",
-   "variant": "ALL",
-   "expiring_soon": true
+   "variant": "ALL"
   },
   {
    "sev": "SEV-000531",
@@ -15236,12 +15301,11 @@
    "model_code": "XEF",
    "build_from_iso": "2022-01-01",
    "expiry_iso": "2026-09-28",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=b2f77905-625e-ee11-be6f-002248933df6",
    "criterion": "Performance Criterion",
    "variant": "A110; A110S",
-   "variant_details": "A110; A110S variants only",
-   "expiring_soon": true
+   "variant_details": "A110; A110S variants only"
   },
   {
    "sev": "SEV-000530",
@@ -15251,7 +15315,7 @@
    "model_code": "RP8",
    "build_from_iso": "2022-01-01",
    "expiry_iso": "2026-09-28",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=1667e5b1-605e-ee11-be6f-00224893341d",
    "criterion": "Environmental Criterion",
    "variant": "ALL",
@@ -15281,8 +15345,7 @@
      "status": "In Force",
      "website": null
     }
-   ],
-   "expiring_soon": true
+   ]
   },
   {
    "sev": "SEV-000529",
@@ -15292,7 +15355,7 @@
    "model_code": "223",
    "build_from_iso": "2021-01-01",
    "expiry_iso": "2026-09-28",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=bedbe316-605e-ee11-be6f-00224893341d",
    "criterion": "Environmental Criterion",
    "variant": "S 63 E PHEV",
@@ -15304,8 +15367,7 @@
      "status": "In Force",
      "website": null
     }
-   ],
-   "expiring_soon": true
+   ]
   },
   {
    "sev": "SEV-000528",
@@ -15315,7 +15377,7 @@
    "model_code": "223",
    "build_from_iso": "2021-01-01",
    "expiry_iso": "2026-09-28",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=92dbe316-605e-ee11-be6f-00224893341d",
    "criterion": "Environmental Criterion",
    "variant": "S 580 E PHEV",
@@ -15329,8 +15391,7 @@
      "status": "In Force",
      "website": "https://app.comptune.com.au/"
     }
-   ],
-   "expiring_soon": true
+   ]
   },
   {
    "sev": "SEV-000527",
@@ -15340,13 +15401,12 @@
    "model_code": "223",
    "build_from_iso": "2021-01-01",
    "expiry_iso": "2026-09-28",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=69dbe316-605e-ee11-be6f-00224893341d",
    "criterion": "Environmental Criterion",
    "variant": "S 450 E PHEV",
    "variant_details": "This SEV Register entry is for S450E PHEV vehicles,",
-   "notes": "This SEV Register entry is for S450E PHEV vehicles.",
-   "expiring_soon": true
+   "notes": "This SEV Register entry is for S450E PHEV vehicles."
   },
   {
    "sev": "SEV-000526",
@@ -15356,13 +15416,12 @@
    "model_code": "B40/B50 Campervan/Motorhome",
    "build_from_iso": "1996-01-01",
    "expiry_iso": "2026-09-28",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=5b48281b-5f5e-ee11-be6f-00224893341d",
    "criterion": "Campervans and Motorhomes Criterion",
    "variant": "Campervan / Motorhome",
    "variant_details": "B40/B50 model codes only. Vehicle must be suitable for conversion as motorhome / campervan as per section 134 of the Road Vehicle Standards Rules",
-   "notes": "B40/B50 model codes only. Vehicle must be suitable for conversion as motorhome / campervan as per section 134 of the Road Vehicle Standards Rules",
-   "expiring_soon": true
+   "notes": "B40/B50 model codes only. Vehicle must be suitable for conversion as motorhome / campervan as per section 134 of the Road Vehicle Standards Rules"
   },
   {
    "sev": "SEV-000525",
