@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-28T00:22:11+00:00",
- "started_at": "2026-09-28T00:18:46+00:00",
+ "generated_at": "2026-09-29T01:32:10+00:00",
+ "started_at": "2026-09-29T01:30:09+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -12,9 +12,9 @@
   "under_review": 0,
   "new_recent": 10,
   "expiring_soon": 38,
-  "with_report": 381,
-  "without_report": 191,
-  "model_reports": 1000
+  "with_report": 382,
+  "without_report": 190,
+  "model_reports": 1001
  },
  "makes": [
   {
@@ -141,7 +141,7 @@
    "key": "MCLAREN",
    "label": "MCLAREN",
    "count": 6,
-   "with_report": 4
+   "with_report": 5
   },
   {
    "key": "ASTON MARTIN",
@@ -587,92 +587,100 @@
  },
  "recent_events": [
   {
-   "type": "expired",
+   "type": "report_added",
+   "detail": "a model report is now in force; a workshop can build it now",
+   "sev": "SEV-001018",
+   "title": "MCLAREN W1",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=70b8fc6d-b8f1-f011-8407-6045bdc26750",
+   "at": "2026-09-29T01:32:10+00:00"
+  },
+  {
+   "at": "2026-09-28T00:22:11+00:00",
    "detail": "expired 28/09/2026",
    "sev": "SEV-000526",
    "title": "Hino Liesse II Campervan / Motorhome",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=5b48281b-5f5e-ee11-be6f-00224893341d",
-   "at": "2026-09-28T00:22:11+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=5b48281b-5f5e-ee11-be6f-00224893341d"
   },
   {
-   "type": "expired",
+   "at": "2026-09-28T00:22:11+00:00",
    "detail": "expired 28/09/2026",
    "sev": "SEV-000527",
    "title": "Mercedes-Benz S Class PHEV",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=69dbe316-605e-ee11-be6f-00224893341d",
-   "at": "2026-09-28T00:22:11+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=69dbe316-605e-ee11-be6f-00224893341d"
   },
   {
-   "type": "expired",
+   "at": "2026-09-28T00:22:11+00:00",
    "detail": "expired 28/09/2026",
    "sev": "SEV-000528",
    "title": "Mercedes-Benz S Class PHEV",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=92dbe316-605e-ee11-be6f-00224893341d",
-   "at": "2026-09-28T00:22:11+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=92dbe316-605e-ee11-be6f-00224893341d"
   },
   {
-   "type": "expired",
+   "at": "2026-09-28T00:22:11+00:00",
    "detail": "expired 28/09/2026",
    "sev": "SEV-000529",
    "title": "Mercedes-Benz S Class PHEV",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=bedbe316-605e-ee11-be6f-00224893341d",
-   "at": "2026-09-28T00:22:11+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=bedbe316-605e-ee11-be6f-00224893341d"
   },
   {
-   "type": "expired",
+   "at": "2026-09-28T00:22:11+00:00",
    "detail": "expired 28/09/2026",
    "sev": "SEV-000530",
    "title": "Honda Stepwgn",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=1667e5b1-605e-ee11-be6f-00224893341d",
-   "at": "2026-09-28T00:22:11+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=1667e5b1-605e-ee11-be6f-00224893341d"
   },
   {
-   "type": "expired",
+   "at": "2026-09-28T00:22:11+00:00",
    "detail": "expired 28/09/2026",
    "sev": "SEV-000531",
    "title": "Renault Alpine",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=b2f77905-625e-ee11-be6f-002248933df6",
-   "at": "2026-09-28T00:22:11+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=b2f77905-625e-ee11-be6f-002248933df6"
   },
   {
-   "type": "expired",
+   "at": "2026-09-28T00:22:11+00:00",
    "detail": "expired 28/09/2026",
    "sev": "SEV-000532",
    "title": "ASTON MARTIN Valkyrie",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=3faddf49-655e-ee11-be6f-00224893341d",
-   "at": "2026-09-28T00:22:11+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=3faddf49-655e-ee11-be6f-00224893341d"
   },
   {
-   "type": "expired",
+   "at": "2026-09-28T00:22:11+00:00",
    "detail": "expired 28/09/2026",
    "sev": "SEV-000533",
    "title": "Liuzhou Wuling New Energy Automotive GO50",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=aa06dff0-675e-ee11-be6f-002248933428",
-   "at": "2026-09-28T00:22:11+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=aa06dff0-675e-ee11-be6f-002248933428"
   },
   {
-   "type": "expired",
+   "at": "2026-09-28T00:22:11+00:00",
    "detail": "expired 28/09/2026",
    "sev": "SEV-000534",
    "title": "Iveco Eurocargo Motorhome",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=2cfe9397-685e-ee11-be6f-002248933428",
-   "at": "2026-09-28T00:22:11+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=2cfe9397-685e-ee11-be6f-002248933428"
   },
   {
-   "type": "expired",
+   "at": "2026-09-28T00:22:11+00:00",
    "detail": "expired 28/09/2026",
    "sev": "SEV-000535",
    "title": "BMW Alpina B6 Edition 50",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=d2a0b878-695e-ee11-be6f-002248933428",
-   "at": "2026-09-28T00:22:11+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=d2a0b878-695e-ee11-be6f-002248933428"
   },
   {
-   "type": "expired",
+   "at": "2026-09-28T00:22:11+00:00",
    "detail": "expired 28/09/2026",
    "sev": "SEV-000536",
    "title": "Toyota Corolla Cross",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e55fece6-6a5e-ee11-8def-00224893b94f",
-   "at": "2026-09-28T00:22:11+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e55fece6-6a5e-ee11-8def-00224893b94f"
   },
   {
    "at": "2026-09-27T00:20:05+00:00",
@@ -2845,7 +2853,16 @@
    "status": "in_force",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=70b8fc6d-b8f1-f011-8407-6045bdc26750",
    "criterion": "Rarity Criterion",
-   "variant": "ALL"
+   "variant": "ALL",
+   "has_report": true,
+   "reports": [
+    {
+     "mre": "MRE-001001",
+     "holder": null,
+     "status": "In Force",
+     "website": null
+    }
+   ]
   },
   {
    "sev": "SEV-001017",

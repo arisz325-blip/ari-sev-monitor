@@ -36080,12 +36080,21 @@
    "expiry": "14/01/2029",
    "expiry_iso": "2029-01-14",
    "first_seen": null,
-   "has_report": false,
+   "has_report": true,
    "id": "70b8fc6d-b8f1-f011-8407-6045bdc26750",
    "make": "MCLAREN",
    "model": "W1",
    "model_code": "MA7",
-   "reports": [],
+   "reports": [
+    {
+     "compliance": "Complies",
+     "holder": null,
+     "mre": "MRE-001001",
+     "status": "In Force",
+     "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=1e9a9aea-d6ba-f111-aaad-6045bde53ffe",
+     "website": null
+    }
+   ],
    "sev": "SEV-001018",
    "status": "in_force",
    "title": "MCLAREN W1",
@@ -38977,8 +38986,16 @@
    "variant_details": "Welcab variants fitted with rotating front passenger seat only"
   }
  },
- "last_run": "2026-09-28T00:22:11+00:00",
+ "last_run": "2026-09-29T01:32:10+00:00",
  "recent_events": [
+  {
+   "at": "2026-09-29T01:32:10+00:00",
+   "detail": "a model report is now in force; a workshop can build it now",
+   "sev": "SEV-001018",
+   "title": "MCLAREN W1",
+   "type": "report_added",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=70b8fc6d-b8f1-f011-8407-6045bdc26750"
+  },
   {
    "at": "2026-09-28T00:22:11+00:00",
    "detail": "expired 28/09/2026",
@@ -56844,6 +56861,22 @@
    "sev": [],
    "subtype": "Used 2 or 3 Wheeled Vehicle",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=d0880a56-3bb6-f111-aaac-6045bdc2297d"
+  },
+  "MRE-001001": {
+   "build_range": "2/2026 to current",
+   "category": "MA",
+   "compliance": "Complies",
+   "id": "1e9a9aea-d6ba-f111-aaad-6045bde53ffe",
+   "linked": true,
+   "make": "MCLAREN",
+   "model": "W1",
+   "mre": "MRE-001001",
+   "report_status": "In Force",
+   "sev": [
+    "SEV-001018"
+   ],
+   "subtype": "Specialist and Enthusiast Vehicles",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=1e9a9aea-d6ba-f111-aaad-6045bde53ffe"
   }
  },
  "version": 2
