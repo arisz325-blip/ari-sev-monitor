@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-29T01:32:10+00:00",
- "started_at": "2026-09-29T01:30:09+00:00",
+ "generated_at": "2026-09-30T01:08:35+00:00",
+ "started_at": "2026-09-30T01:06:49+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -587,12 +587,12 @@
  },
  "recent_events": [
   {
-   "type": "report_added",
+   "at": "2026-09-29T01:32:10+00:00",
    "detail": "a model report is now in force; a workshop can build it now",
    "sev": "SEV-001018",
    "title": "MCLAREN W1",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=70b8fc6d-b8f1-f011-8407-6045bdc26750",
-   "at": "2026-09-29T01:32:10+00:00"
+   "type": "report_added",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=70b8fc6d-b8f1-f011-8407-6045bdc26750"
   },
   {
    "at": "2026-09-28T00:22:11+00:00",
