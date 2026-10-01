@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-30T01:08:35+00:00",
- "started_at": "2026-09-30T01:06:49+00:00",
+ "generated_at": "2026-10-01T01:06:49+00:00",
+ "started_at": "2026-10-01T01:05:20+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -10,8 +10,8 @@
   "in_force": 572,
   "expired": 534,
   "under_review": 0,
-  "new_recent": 10,
-  "expiring_soon": 38,
+  "new_recent": 9,
+  "expiring_soon": 39,
   "with_report": 382,
   "without_report": 190,
   "model_reports": 1001
@@ -1195,8 +1195,7 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=24173772-fca4-f111-b8dd-6045bdc3d6cd",
    "criterion": "Rarity Criterion",
    "variant": "ALL",
-   "first_seen": "2026-09-01T01:01:20+00:00",
-   "is_new": true
+   "first_seen": "2026-09-01T01:01:20+00:00"
   },
   {
    "sev": "SEV-001102",
@@ -14377,7 +14376,8 @@
      "status": "In Force",
      "website": null
     }
-   ]
+   ],
+   "expiring_soon": true
   },
   {
    "sev": "SEV-000574",
