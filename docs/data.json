@@ -1,26 +1,26 @@
 {
- "generated_at": "2026-10-01T01:06:49+00:00",
- "started_at": "2026-10-01T01:05:20+00:00",
+ "generated_at": "2026-10-02T01:20:02+00:00",
+ "started_at": "2026-10-02T01:18:22+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
  },
  "counts": {
-  "total": 1106,
-  "in_force": 572,
+  "total": 1109,
+  "in_force": 575,
   "expired": 534,
   "under_review": 0,
-  "new_recent": 9,
-  "expiring_soon": 39,
+  "new_recent": 8,
+  "expiring_soon": 40,
   "with_report": 382,
-  "without_report": 190,
+  "without_report": 193,
   "model_reports": 1001
  },
  "makes": [
   {
    "key": "TOYOTA",
    "label": "Toyota",
-   "count": 145,
+   "count": 146,
    "with_report": 119
   },
   {
@@ -32,13 +32,13 @@
   {
    "key": "MERCEDES-BENZ",
    "label": "Mercedes-Benz",
-   "count": 33,
+   "count": 34,
    "with_report": 25
   },
   {
    "key": "HONDA",
    "label": "Honda",
-   "count": 27,
+   "count": 28,
    "with_report": 21
   },
   {
@@ -587,6 +587,30 @@
  },
  "recent_events": [
   {
+   "type": "new",
+   "detail": "10/2021 - 12/2022 \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001111",
+   "title": "Honda NSX Type S",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=b07839f0-e7bd-f111-aaad-7c1e52631efa",
+   "at": "2026-10-02T01:20:01+00:00"
+  },
+  {
+   "type": "new",
+   "detail": "12/2017 - no end date \u00b7 MD1 - Light Omnibus",
+   "sev": "SEV-001112",
+   "title": "Toyota Hiace Welljoin",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=5cbbbf02-e8bd-f111-aaad-7c1e52631efa",
+   "at": "2026-10-02T01:20:01+00:00"
+  },
+  {
+   "type": "new",
+   "detail": "06/2022 - no end date \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001113",
+   "title": "Mercedes-Benz GLC 220d",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7bb0c30e-e8bd-f111-aaad-7c1e52631efa",
+   "at": "2026-10-02T01:20:01+00:00"
+  },
+  {
    "at": "2026-09-29T01:32:10+00:00",
    "detail": "a model report is now in force; a workshop can build it now",
    "sev": "SEV-001018",
@@ -1029,6 +1053,56 @@
  ],
  "entries": [
   {
+   "sev": "SEV-001113",
+   "make": "Mercedes-Benz",
+   "model": "GLC 220d",
+   "category": "MA - Passenger Vehicle",
+   "model_code": "254605, 254605C",
+   "build_from_iso": "2022-06-01",
+   "expiry_iso": "2029-10-01",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7bb0c30e-e8bd-f111-aaad-7c1e52631efa",
+   "criterion": "Environmental Criterion",
+   "variant": "ALL",
+   "variant_details": "GLC 220d HEV variants only",
+   "notes": "GLC 220d HEV variants only",
+   "first_seen": "2026-10-02T01:20:01+00:00",
+   "is_new": true
+  },
+  {
+   "sev": "SEV-001112",
+   "make": "Toyota",
+   "model": "Hiace Welljoin",
+   "category": "MD1 - Light Omnibus",
+   "model_code": "TRH214W, TRH219W, TRH224W, TRH229W",
+   "build_from_iso": "2017-12-01",
+   "expiry_iso": "2029-10-01",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=5cbbbf02-e8bd-f111-aaad-7c1e52631efa",
+   "criterion": "Mobility Criterion",
+   "variant": "ALL",
+   "variant_details": "Variant details - Must have Mobility Hiace Welljoin features, including front handrail, sliding door entrance grip handle, electrical retractable step, seating position removed to allow for easy access and door opening label. These vehicles are 10-seater variants only",
+   "notes": "Variant details - Must have Mobility Hiace Welljoin features, including front handrail, sliding door entrance grip handle, electrical retractable step, seating position removed to allow for easy access and door opening label. These vehicles are 10-seater variants only",
+   "first_seen": "2026-10-02T01:20:01+00:00",
+   "is_new": true
+  },
+  {
+   "sev": "SEV-001111",
+   "make": "Honda",
+   "model": "NSX Type S",
+   "category": "MA - Passenger Vehicle",
+   "model_code": "NC1",
+   "build_from_iso": "2021-10-01",
+   "build_to_iso": "2022-12-01",
+   "expiry_iso": "2029-10-01",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=b07839f0-e7bd-f111-aaad-7c1e52631efa",
+   "criterion": "Performance Criterion",
+   "variant": "ALL",
+   "first_seen": "2026-10-02T01:20:01+00:00",
+   "is_new": true
+  },
+  {
    "sev": "SEV-001110",
    "make": "Toyota",
    "model": "Aqua Welcab",
@@ -1127,8 +1201,7 @@
    "variant": "Roadster NR-A",
    "variant_details": "2.0lt Petrol Engine, 5 Speed Manual, Soft Top Convertible",
    "notes": "This Register listing is for Mazda NCEC series Roadster NR-A fitted with 2.0lt Petrol Engine, 5 Speed Manual, Soft Top Convertible ONLY",
-   "first_seen": "2026-09-01T23:50:12+00:00",
-   "is_new": true
+   "first_seen": "2026-09-01T23:50:12+00:00"
   },
   {
    "sev": "SEV-001106",
@@ -1145,8 +1218,7 @@
    "variant": "Roadster S",
    "variant_details": "2.0lt Petrol Engine, 5 Speed Manual, Soft Top Convertible",
    "notes": "The Register listing is for Mazda NCEC series Roadster S fitted with 2.0lt Petrol Engine, 5 Speed Manual, Soft Top Convertible ONLY",
-   "first_seen": "2026-09-01T23:50:12+00:00",
-   "is_new": true
+   "first_seen": "2026-09-01T23:50:12+00:00"
   },
   {
    "sev": "SEV-001105",
@@ -1162,8 +1234,7 @@
    "variant": "ALL",
    "variant_details": "Daihatsu e-Hijet Cargo BEV with model code ZAB-S781V-ZEDM and 4 seat ONLY",
    "notes": "This Register listing is for Daihatsu e-Hijet Cargo BEV variants with model code ZAB-S781V-ZEDM (4 seat) ONLY",
-   "first_seen": "2026-09-01T23:50:12+00:00",
-   "is_new": true
+   "first_seen": "2026-09-01T23:50:12+00:00"
   },
   {
    "sev": "SEV-001104",
@@ -1179,8 +1250,7 @@
    "variant": "ALL",
    "variant_details": "Daihatsu e-Atrai BEV variants with model code ZAB-S781V-ZEXM (4 seat) ONLY",
    "notes": "This Register listing is for Daihatsu e-Atrai BEV variants with model code ZAB-S781V-ZEXM (4 seat) ONLY",
-   "first_seen": "2026-09-01T23:50:12+00:00",
-   "is_new": true
+   "first_seen": "2026-09-01T23:50:12+00:00"
   },
   {
    "sev": "SEV-001103",
@@ -14352,7 +14422,8 @@
      "status": "In Force",
      "website": null
     }
-   ]
+   ],
+   "expiring_soon": true
   },
   {
    "sev": "SEV-000575",
