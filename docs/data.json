@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-02T01:20:02+00:00",
- "started_at": "2026-10-02T01:18:22+00:00",
+ "generated_at": "2026-10-03T00:58:44+00:00",
+ "started_at": "2026-10-03T00:57:31+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -32,7 +32,7 @@
   {
    "key": "MERCEDES-BENZ",
    "label": "Mercedes-Benz",
-   "count": 34,
+   "count": 35,
    "with_report": 25
   },
   {
@@ -587,28 +587,36 @@
  },
  "recent_events": [
   {
-   "type": "new",
+   "type": "updated",
+   "detail": "Make: n/a -> Mercedes-Benz",
+   "sev": "SEV-000863",
+   "title": "Mercedes-Benz Vecotras S-Class Hearse",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=3fcbda68-501b-f011-9989-002248112dcc",
+   "at": "2026-10-03T00:58:44+00:00"
+  },
+  {
+   "at": "2026-10-02T01:20:01+00:00",
    "detail": "10/2021 - 12/2022 \u00b7 MA - Passenger Vehicle",
    "sev": "SEV-001111",
    "title": "Honda NSX Type S",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=b07839f0-e7bd-f111-aaad-7c1e52631efa",
-   "at": "2026-10-02T01:20:01+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=b07839f0-e7bd-f111-aaad-7c1e52631efa"
   },
   {
-   "type": "new",
+   "at": "2026-10-02T01:20:01+00:00",
    "detail": "12/2017 - no end date \u00b7 MD1 - Light Omnibus",
    "sev": "SEV-001112",
    "title": "Toyota Hiace Welljoin",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=5cbbbf02-e8bd-f111-aaad-7c1e52631efa",
-   "at": "2026-10-02T01:20:01+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=5cbbbf02-e8bd-f111-aaad-7c1e52631efa"
   },
   {
-   "type": "new",
+   "at": "2026-10-02T01:20:01+00:00",
    "detail": "06/2022 - no end date \u00b7 MA - Passenger Vehicle",
    "sev": "SEV-001113",
    "title": "Mercedes-Benz GLC 220d",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7bb0c30e-e8bd-f111-aaad-7c1e52631efa",
-   "at": "2026-10-02T01:20:01+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7bb0c30e-e8bd-f111-aaad-7c1e52631efa"
   },
   {
    "at": "2026-09-29T01:32:10+00:00",
@@ -6781,6 +6789,7 @@
   },
   {
    "sev": "SEV-000863",
+   "make": "Mercedes-Benz",
    "model": "Vecotras S-Class Hearse",
    "category": "MA - Passenger Vehicle",
    "model_code": "Vecotras W222",

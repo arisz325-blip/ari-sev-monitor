@@ -30264,14 +30264,14 @@
    "first_seen": null,
    "has_report": false,
    "id": "3fcbda68-501b-f011-9989-002248112dcc",
-   "make": "",
+   "make": "Mercedes-Benz",
    "model": "Vecotras S-Class Hearse",
    "model_code": "Vecotras W222",
    "notes": "Vecotras S-Class Hearse models only",
    "reports": [],
    "sev": "SEV-000863",
    "status": "in_force",
-   "title": "Vecotras S-Class Hearse",
+   "title": "Mercedes-Benz Vecotras S-Class Hearse",
    "under_review": false,
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=3fcbda68-501b-f011-9989-002248112dcc",
    "variant": "Vecotras S-Class Hearse models only",
@@ -39065,8 +39065,16 @@
    "variant_details": "GLC 220d HEV variants only"
   }
  },
- "last_run": "2026-10-02T01:20:02+00:00",
+ "last_run": "2026-10-03T00:58:44+00:00",
  "recent_events": [
+  {
+   "at": "2026-10-03T00:58:44+00:00",
+   "detail": "Make: n/a -> Mercedes-Benz",
+   "sev": "SEV-000863",
+   "title": "Mercedes-Benz Vecotras S-Class Hearse",
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=3fcbda68-501b-f011-9989-002248112dcc"
+  },
   {
    "at": "2026-10-02T01:20:01+00:00",
    "detail": "10/2021 - 12/2022 \u00b7 MA - Passenger Vehicle",
