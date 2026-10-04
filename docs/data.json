@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-03T00:58:44+00:00",
- "started_at": "2026-10-03T00:57:31+00:00",
+ "generated_at": "2026-10-04T00:24:30+00:00",
+ "started_at": "2026-10-04T00:22:14+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -11,7 +11,7 @@
   "expired": 534,
   "under_review": 0,
   "new_recent": 8,
-  "expiring_soon": 40,
+  "expiring_soon": 41,
   "with_report": 382,
   "without_report": 193,
   "model_reports": 1001
@@ -587,12 +587,12 @@
  },
  "recent_events": [
   {
-   "type": "updated",
+   "at": "2026-10-03T00:58:44+00:00",
    "detail": "Make: n/a -> Mercedes-Benz",
    "sev": "SEV-000863",
    "title": "Mercedes-Benz Vecotras S-Class Hearse",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=3fcbda68-501b-f011-9989-002248112dcc",
-   "at": "2026-10-03T00:58:44+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=3fcbda68-501b-f011-9989-002248112dcc"
   },
   {
    "at": "2026-10-02T01:20:01+00:00",
@@ -14401,7 +14401,8 @@
      "status": "In Force",
      "website": null
     }
-   ]
+   ],
+   "expiring_soon": true
   },
   {
    "sev": "SEV-000576",
