@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-06T02:06:27+00:00",
- "started_at": "2026-10-06T02:04:38+00:00",
+ "generated_at": "2026-10-07T01:15:50+00:00",
+ "started_at": "2026-10-07T01:13:41+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -9,7 +9,7 @@
   "total": 1109,
   "in_force": 575,
   "expired": 534,
-  "under_review": 0,
+  "under_review": 1,
   "new_recent": 6,
   "expiring_soon": 41,
   "with_report": 382,
@@ -586,6 +586,14 @@
   "categories": []
  },
  "recent_events": [
+  {
+   "type": "under_review",
+   "detail": "the entry may be varied or removed",
+   "sev": "SEV-000708",
+   "title": "SUBARU IMPREZA",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f54bf44d-06a7-ef11-b8e8-000d3acc12dc",
+   "at": "2026-10-07T01:15:49+00:00"
+  },
   {
    "at": "2026-10-03T00:58:44+00:00",
    "detail": "Make: n/a -> Mercedes-Benz",
@@ -11051,6 +11059,7 @@
    "build_from_iso": "2005-01-01",
    "build_to_iso": "2007-05-01",
    "expiry_iso": "2027-11-19",
+   "under_review": true,
    "status": "in_force",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f54bf44d-06a7-ef11-b8e8-000d3acc12dc",
    "criterion": "Performance Criterion",
