@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-10-07T01:15:50+00:00",
- "started_at": "2026-10-07T01:13:41+00:00",
+ "generated_at": "2026-10-08T01:37:01+00:00",
+ "started_at": "2026-10-08T01:34:59+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
  },
  "counts": {
-  "total": 1109,
-  "in_force": 575,
+  "total": 1113,
+  "in_force": 579,
   "expired": 534,
   "under_review": 1,
-  "new_recent": 6,
+  "new_recent": 10,
   "expiring_soon": 41,
   "with_report": 382,
-  "without_report": 193,
+  "without_report": 197,
   "model_reports": 1001
  },
  "makes": [
@@ -48,16 +48,16 @@
    "with_report": 16
   },
   {
+   "key": "LEXUS",
+   "label": "LEXUS",
+   "count": 19,
+   "with_report": 16
+  },
+  {
    "key": "FORD",
    "label": "Ford",
    "count": 18,
    "with_report": 10
-  },
-  {
-   "key": "LEXUS",
-   "label": "LEXUS",
-   "count": 18,
-   "with_report": 16
   },
   {
    "key": "BMW",
@@ -102,6 +102,12 @@
    "with_report": 8
   },
   {
+   "key": "DODGE",
+   "label": "DODGE",
+   "count": 8,
+   "with_report": 3
+  },
+  {
    "key": "MORGAN",
    "label": "MORGAN",
    "count": 8,
@@ -130,12 +136,6 @@
    "label": "Nuts RV Toyota",
    "count": 7,
    "with_report": 2
-  },
-  {
-   "key": "DODGE",
-   "label": "DODGE",
-   "count": 6,
-   "with_report": 3
   },
   {
    "key": "MCLAREN",
@@ -310,6 +310,12 @@
    "label": "Adam Bowes Commercials",
    "count": 1,
    "with_report": 1
+  },
+  {
+   "key": "AIMA",
+   "label": "Aima",
+   "count": 1,
+   "with_report": 0
   },
   {
    "key": "ALX HORSEBOXES",
@@ -587,12 +593,44 @@
  },
  "recent_events": [
   {
-   "type": "under_review",
+   "type": "new",
+   "detail": "08/2020 - no end date \u00b7 LC - Motor Cycle",
+   "sev": "SEV-001114",
+   "title": "Aima Xiaopa",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=4bd9ea7a-fec1-f111-aaad-70a8a55633c4",
+   "at": "2026-10-08T01:37:01+00:00"
+  },
+  {
+   "type": "new",
+   "detail": "10/2003 - 12/2006 \u00b7 NA - Light Goods Vehicle",
+   "sev": "SEV-001115",
+   "title": "DODGE Ram 1500 GEN 2",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=73e3b966-12c2-f111-aaad-6045bdc28289",
+   "at": "2026-10-08T01:37:01+00:00"
+  },
+  {
+   "type": "new",
+   "detail": "10/2003 - 12/2006 \u00b7 NA - Light Goods Vehicle",
+   "sev": "SEV-001116",
+   "title": "DODGE Ram 1500 GEN 2",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=b9e3b966-12c2-f111-aaad-6045bdc28289",
+   "at": "2026-10-08T01:37:01+00:00"
+  },
+  {
+   "type": "new",
+   "detail": "08/2022 - 12/2025 \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001117",
+   "title": "LEXUS IS 500 F-Sport",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=045a04a9-b1c2-f111-aaaf-6045bdc28a67",
+   "at": "2026-10-08T01:37:01+00:00"
+  },
+  {
+   "at": "2026-10-07T01:15:49+00:00",
    "detail": "the entry may be varied or removed",
    "sev": "SEV-000708",
    "title": "SUBARU IMPREZA",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f54bf44d-06a7-ef11-b8e8-000d3acc12dc",
-   "at": "2026-10-07T01:15:49+00:00"
+   "type": "under_review",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f54bf44d-06a7-ef11-b8e8-000d3acc12dc"
   },
   {
    "at": "2026-10-03T00:58:44+00:00",
@@ -1033,41 +1071,74 @@
    "title": "Ford Mustang",
    "type": "report_added",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=2aa43f45-7922-f111-8341-6045bde65a9b"
-  },
-  {
-   "at": "2026-09-01T23:50:12+00:00",
-   "detail": "a model report is now in force \u2014 CROSSOVER CAR CONVERSIONS PTY LTD; a workshop can build it now",
-   "sev": "SEV-001037",
-   "title": "Ford Mustang",
-   "type": "report_added",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=96f5414b-7922-f111-8341-6045bde65a9b"
-  },
-  {
-   "at": "2026-09-01T01:01:20+00:00",
-   "detail": "09/2016 - 05/2024 \u00b7 MA - Passenger Vehicle",
-   "sev": "SEV-001103",
-   "title": "BUGATTI Chiron",
-   "type": "new",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=24173772-fca4-f111-b8dd-6045bdc3d6cd"
-  },
-  {
-   "at": "2026-08-31T00:14:38+00:00",
-   "detail": "a model report is now in force \u2014 SYDNEY AVV PTY LTD; a workshop can build it now",
-   "sev": "SEV-001007",
-   "title": "NISSAN NT100 Clipper Truck",
-   "type": "report_added",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=287d97b8-65d5-f011-8544-000d3acbfc11"
-  },
-  {
-   "at": "2026-08-31T00:14:38+00:00",
-   "detail": "a model report is now in force \u2014 SYDNEY AVV PTY LTD; a workshop can build it now",
-   "sev": "SEV-001099",
-   "title": "Hino Liesse II",
-   "type": "report_added",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=93e4de4a-4aa0-f111-b8dc-7c1e522afbb4"
   }
  ],
  "entries": [
+  {
+   "sev": "SEV-001117",
+   "make": "LEXUS",
+   "model": "IS 500 F-Sport",
+   "category": "MA - Passenger Vehicle",
+   "model_code": "USE30",
+   "build_from_iso": "2022-08-01",
+   "build_to_iso": "2025-12-01",
+   "expiry_iso": "2029-10-07",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=045a04a9-b1c2-f111-aaaf-6045bdc28a67",
+   "criterion": "Performance Criterion",
+   "variant": "ALL",
+   "first_seen": "2026-10-08T01:37:01+00:00",
+   "is_new": true
+  },
+  {
+   "sev": "SEV-001116",
+   "make": "DODGE",
+   "model": "Ram 1500 GEN 2",
+   "category": "NA - Light Goods Vehicle",
+   "model_code": "SRT10",
+   "build_from_iso": "2003-10-01",
+   "build_to_iso": "2006-12-01",
+   "expiry_iso": "2029-10-06",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=b9e3b966-12c2-f111-aaad-6045bdc28289",
+   "criterion": "Left-Hand Drive Criterion",
+   "variant": "SRT 10 DUAL CAB",
+   "variant_details": "V10 PETROL DUAL CAB UTILITY",
+   "first_seen": "2026-10-08T01:37:01+00:00",
+   "is_new": true
+  },
+  {
+   "sev": "SEV-001115",
+   "make": "DODGE",
+   "model": "Ram 1500 GEN 2",
+   "category": "NA - Light Goods Vehicle",
+   "model_code": "SRT10",
+   "build_from_iso": "2003-10-01",
+   "build_to_iso": "2006-12-01",
+   "expiry_iso": "2029-10-06",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=73e3b966-12c2-f111-aaad-6045bdc28289",
+   "criterion": "Left-Hand Drive Criterion",
+   "variant": "SRT 10 Single cab",
+   "variant_details": "V10 PETROL SINGLE CAB UTILITY",
+   "first_seen": "2026-10-08T01:37:01+00:00",
+   "is_new": true
+  },
+  {
+   "sev": "SEV-001114",
+   "make": "Aima",
+   "model": "Xiaopa",
+   "category": "LC - Motor Cycle",
+   "model_code": "XP800DQT-2K",
+   "build_from_iso": "2020-08-01",
+   "expiry_iso": "2029-10-06",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=4bd9ea7a-fec1-f111-aaad-70a8a55633c4",
+   "criterion": "Environmental Criterion",
+   "variant": "ALL",
+   "first_seen": "2026-10-08T01:37:01+00:00",
+   "is_new": true
+  },
   {
    "sev": "SEV-001113",
    "make": "Mercedes-Benz",
