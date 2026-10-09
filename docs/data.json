@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-10-08T01:37:01+00:00",
- "started_at": "2026-10-08T01:34:59+00:00",
+ "generated_at": "2026-10-09T01:47:20+00:00",
+ "started_at": "2026-10-09T01:45:42+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
  },
  "counts": {
-  "total": 1113,
-  "in_force": 579,
+  "total": 1117,
+  "in_force": 583,
   "expired": 534,
   "under_review": 1,
-  "new_recent": 10,
-  "expiring_soon": 41,
+  "new_recent": 14,
+  "expiring_soon": 47,
   "with_report": 382,
-  "without_report": 197,
-  "model_reports": 1001
+  "without_report": 201,
+  "model_reports": 1002
  },
  "makes": [
   {
@@ -32,7 +32,7 @@
   {
    "key": "MERCEDES-BENZ",
    "label": "Mercedes-Benz",
-   "count": 35,
+   "count": 37,
    "with_report": 25
   },
   {
@@ -50,7 +50,7 @@
   {
    "key": "LEXUS",
    "label": "LEXUS",
-   "count": 19,
+   "count": 21,
    "with_report": 16
   },
   {
@@ -594,35 +594,67 @@
  "recent_events": [
   {
    "type": "new",
+   "detail": "06/2024 - 02/2025 \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001118",
+   "title": "Mercedes-Benz CLE53",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f88a9ce2-c5c2-f111-aaaf-6045bde53ffe",
+   "at": "2026-10-09T01:47:20+00:00"
+  },
+  {
+   "type": "new",
+   "detail": "11/2024 - 04/2025 \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001119",
+   "title": "Mercedes-Benz CLE53",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0644afe8-c5c2-f111-aaaf-6045bde53ffe",
+   "at": "2026-10-09T01:47:20+00:00"
+  },
+  {
+   "type": "new",
+   "detail": "05/2007 - 11/2007 \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001120",
+   "title": "LEXUS LS600h AWD",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=22b9b2a4-6dc3-f111-aaad-7c1e52631fbd",
+   "at": "2026-10-09T01:47:20+00:00"
+  },
+  {
+   "type": "new",
+   "detail": "09/2006 - 04/2007 \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001121",
+   "title": "LEXUS LS460",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f0025ccf-6dc3-f111-aaad-7c1e52631fbd",
+   "at": "2026-10-09T01:47:20+00:00"
+  },
+  {
+   "at": "2026-10-08T01:37:01+00:00",
    "detail": "08/2020 - no end date \u00b7 LC - Motor Cycle",
    "sev": "SEV-001114",
    "title": "Aima Xiaopa",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=4bd9ea7a-fec1-f111-aaad-70a8a55633c4",
-   "at": "2026-10-08T01:37:01+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=4bd9ea7a-fec1-f111-aaad-70a8a55633c4"
   },
   {
-   "type": "new",
+   "at": "2026-10-08T01:37:01+00:00",
    "detail": "10/2003 - 12/2006 \u00b7 NA - Light Goods Vehicle",
    "sev": "SEV-001115",
    "title": "DODGE Ram 1500 GEN 2",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=73e3b966-12c2-f111-aaad-6045bdc28289",
-   "at": "2026-10-08T01:37:01+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=73e3b966-12c2-f111-aaad-6045bdc28289"
   },
   {
-   "type": "new",
+   "at": "2026-10-08T01:37:01+00:00",
    "detail": "10/2003 - 12/2006 \u00b7 NA - Light Goods Vehicle",
    "sev": "SEV-001116",
    "title": "DODGE Ram 1500 GEN 2",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=b9e3b966-12c2-f111-aaad-6045bdc28289",
-   "at": "2026-10-08T01:37:01+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=b9e3b966-12c2-f111-aaad-6045bdc28289"
   },
   {
-   "type": "new",
+   "at": "2026-10-08T01:37:01+00:00",
    "detail": "08/2022 - 12/2025 \u00b7 MA - Passenger Vehicle",
    "sev": "SEV-001117",
    "title": "LEXUS IS 500 F-Sport",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=045a04a9-b1c2-f111-aaaf-6045bdc28a67",
-   "at": "2026-10-08T01:37:01+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=045a04a9-b1c2-f111-aaaf-6045bdc28a67"
   },
   {
    "at": "2026-10-07T01:15:49+00:00",
@@ -1039,41 +1071,77 @@
    "title": "DAIHATSU e-Atrai",
    "type": "new",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=c673a5f9-bfa5-f111-b8de-70a8a5542380"
-  },
-  {
-   "at": "2026-09-01T23:50:12+00:00",
-   "detail": "02/2026 - no end date \u00b7 MA - Passenger Vehicle",
-   "sev": "SEV-001105",
-   "title": "DAIHATSU e Hijet Cargo",
-   "type": "new",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e968a0ff-bfa5-f111-b8de-70a8a5542380"
-  },
-  {
-   "at": "2026-09-01T23:50:12+00:00",
-   "detail": "01/2005 - 12/2015 \u00b7 MA - Passenger Vehicle",
-   "sev": "SEV-001106",
-   "title": "Mazda Roadster",
-   "type": "new",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=66fe0675-c4a5-f111-b8dd-7ced8d331b87"
-  },
-  {
-   "at": "2026-09-01T23:50:12+00:00",
-   "detail": "01/2005 - 12/2015 \u00b7 MA - Passenger Vehicle",
-   "sev": "SEV-001107",
-   "title": "Mazda Roadster",
-   "type": "new",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=acfe0675-c4a5-f111-b8dd-7ced8d331b87"
-  },
-  {
-   "at": "2026-09-01T23:50:12+00:00",
-   "detail": "a model report is now in force \u2014 CROSSOVER CAR CONVERSIONS PTY LTD; a workshop can build it now",
-   "sev": "SEV-001036",
-   "title": "Ford Mustang",
-   "type": "report_added",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=2aa43f45-7922-f111-8341-6045bde65a9b"
   }
  ],
  "entries": [
+  {
+   "sev": "SEV-001121",
+   "make": "LEXUS",
+   "model": "LS460",
+   "category": "MA - Passenger Vehicle",
+   "model_code": "USF40 / USF41",
+   "build_from_iso": "2006-09-01",
+   "build_to_iso": "2007-04-01",
+   "expiry_iso": "2029-10-08",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f0025ccf-6dc3-f111-aaad-7c1e52631fbd",
+   "criterion": "Performance Criterion",
+   "variant": "ALL",
+   "variant_details": "SEVS eligibility restricted to USF 40 and USF 41 (2WD) with build date range of 1/09/2006 to 1/04/2007",
+   "notes": "SEVS eligibility restricted to USF 40 and USF 41 (2WD) with build date range of 1/09/2006 to 1/04/2007",
+   "first_seen": "2026-10-09T01:47:20+00:00",
+   "is_new": true
+  },
+  {
+   "sev": "SEV-001120",
+   "make": "LEXUS",
+   "model": "LS600h AWD",
+   "category": "MA - Passenger Vehicle",
+   "model_code": "UVF45/UVF46",
+   "build_from_iso": "2007-05-01",
+   "build_to_iso": "2007-11-01",
+   "expiry_iso": "2029-10-08",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=22b9b2a4-6dc3-f111-aaad-7c1e52631fbd",
+   "criterion": "Performance Criterion",
+   "variant": "ALL",
+   "first_seen": "2026-10-09T01:47:20+00:00",
+   "is_new": true
+  },
+  {
+   "sev": "SEV-001119",
+   "make": "Mercedes-Benz",
+   "model": "CLE53",
+   "category": "MA - Passenger Vehicle",
+   "model_code": "236362",
+   "build_from_iso": "2024-11-01",
+   "build_to_iso": "2025-04-01",
+   "expiry_iso": "2029-10-07",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0644afe8-c5c2-f111-aaaf-6045bde53ffe",
+   "criterion": "Performance Criterion",
+   "variant": "Cabriolet",
+   "variant_details": "Cabriolet",
+   "first_seen": "2026-10-09T01:47:20+00:00",
+   "is_new": true
+  },
+  {
+   "sev": "SEV-001118",
+   "make": "Mercedes-Benz",
+   "model": "CLE53",
+   "category": "MA - Passenger Vehicle",
+   "model_code": "236362",
+   "build_from_iso": "2024-06-01",
+   "build_to_iso": "2025-02-01",
+   "expiry_iso": "2029-10-07",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f88a9ce2-c5c2-f111-aaaf-6045bde53ffe",
+   "criterion": "Performance Criterion",
+   "variant": "Coupe",
+   "variant_details": "Coupe",
+   "first_seen": "2026-10-09T01:47:20+00:00",
+   "is_new": true
+  },
   {
    "sev": "SEV-001117",
    "make": "LEXUS",
@@ -6137,6 +6205,12 @@
    "notes": "This entry is for the Sienta Welcab variant of vehicles only. These vehicles feature a wheelchair ramp at the rear of the vehicle, with a space for the wheelchair on the driver side of the vehicle in the second row.",
    "has_report": true,
    "reports": [
+    {
+     "mre": "MRE-001002",
+     "holder": "SYDNEY AVV PTY LTD",
+     "status": "In Force",
+     "website": "https://app.comptune.com.au"
+    },
     {
      "mre": "MRE-000086",
      "holder": "SYDNEY AVV PTY LTD",
@@ -14359,7 +14433,8 @@
      "status": "In Force",
      "website": null
     }
-   ]
+   ],
+   "expiring_soon": true
   },
   {
    "sev": "SEV-000582",
@@ -14374,7 +14449,8 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=25944793-4ec5-ee11-9079-00224892b306",
    "criterion": "Rarity Criterion",
    "variant": "Islay Edition",
-   "variant_details": "Islay Edition 90 and 110 ONLY"
+   "variant_details": "Islay Edition 90 and 110 ONLY",
+   "expiring_soon": true
   },
   {
    "sev": "SEV-000581",
@@ -14404,7 +14480,8 @@
      "status": "In Force",
      "website": null
     }
-   ]
+   ],
+   "expiring_soon": true
   },
   {
    "sev": "SEV-000580",
@@ -14418,7 +14495,8 @@
    "status": "in_force",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=20f79ea1-4dc5-ee11-9079-00224892b306",
    "criterion": "Rarity Criterion",
-   "variant": "ALL"
+   "variant": "ALL",
+   "expiring_soon": true
   },
   {
    "sev": "SEV-000579",
@@ -14441,7 +14519,8 @@
      "status": "In Force",
      "website": null
     }
-   ]
+   ],
+   "expiring_soon": true
   },
   {
    "sev": "SEV-000578",
@@ -14455,7 +14534,8 @@
    "status": "in_force",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=ce83bee0-4bc5-ee11-9079-00224892b306",
    "criterion": "Rarity Criterion",
-   "variant": "CLK DTM Coupe"
+   "variant": "CLK DTM Coupe",
+   "expiring_soon": true
   },
   {
    "sev": "SEV-000577",
