@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-09T01:47:20+00:00",
- "started_at": "2026-10-09T01:45:42+00:00",
+ "generated_at": "2026-10-10T01:33:36+00:00",
+ "started_at": "2026-10-10T01:32:25+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -593,36 +593,36 @@
  },
  "recent_events": [
   {
-   "type": "new",
+   "at": "2026-10-09T01:47:20+00:00",
    "detail": "06/2024 - 02/2025 \u00b7 MA - Passenger Vehicle",
    "sev": "SEV-001118",
    "title": "Mercedes-Benz CLE53",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f88a9ce2-c5c2-f111-aaaf-6045bde53ffe",
-   "at": "2026-10-09T01:47:20+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f88a9ce2-c5c2-f111-aaaf-6045bde53ffe"
   },
   {
-   "type": "new",
+   "at": "2026-10-09T01:47:20+00:00",
    "detail": "11/2024 - 04/2025 \u00b7 MA - Passenger Vehicle",
    "sev": "SEV-001119",
    "title": "Mercedes-Benz CLE53",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0644afe8-c5c2-f111-aaaf-6045bde53ffe",
-   "at": "2026-10-09T01:47:20+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0644afe8-c5c2-f111-aaaf-6045bde53ffe"
   },
   {
-   "type": "new",
+   "at": "2026-10-09T01:47:20+00:00",
    "detail": "05/2007 - 11/2007 \u00b7 MA - Passenger Vehicle",
    "sev": "SEV-001120",
    "title": "LEXUS LS600h AWD",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=22b9b2a4-6dc3-f111-aaad-7c1e52631fbd",
-   "at": "2026-10-09T01:47:20+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=22b9b2a4-6dc3-f111-aaad-7c1e52631fbd"
   },
   {
-   "type": "new",
+   "at": "2026-10-09T01:47:20+00:00",
    "detail": "09/2006 - 04/2007 \u00b7 MA - Passenger Vehicle",
    "sev": "SEV-001121",
    "title": "LEXUS LS460",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f0025ccf-6dc3-f111-aaad-7c1e52631fbd",
-   "at": "2026-10-09T01:47:20+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f0025ccf-6dc3-f111-aaad-7c1e52631fbd"
   },
   {
    "at": "2026-10-08T01:37:01+00:00",
