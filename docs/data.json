@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-10T01:33:36+00:00",
- "started_at": "2026-10-10T01:32:25+00:00",
+ "generated_at": "2026-10-11T00:42:59+00:00",
+ "started_at": "2026-10-11T00:41:49+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -10,7 +10,7 @@
   "in_force": 583,
   "expired": 534,
   "under_review": 1,
-  "new_recent": 14,
+  "new_recent": 13,
   "expiring_soon": 47,
   "with_report": 382,
   "without_report": 201,
@@ -1302,8 +1302,7 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=92fda020-cdac-f111-aaab-70a8a5563b9f",
    "criterion": "Environmental Criterion",
    "variant": "ALL",
-   "first_seen": "2026-09-10T23:46:45+00:00",
-   "is_new": true
+   "first_seen": "2026-09-10T23:46:45+00:00"
   },
   {
    "sev": "SEV-001096",
