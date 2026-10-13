@@ -38183,13 +38183,22 @@
    "expiry": "15/07/2029",
    "expiry_iso": "2029-07-15",
    "first_seen": null,
-   "has_report": false,
+   "has_report": true,
    "id": "092218a7-557a-f111-ab0f-00224892f8b8",
    "make": "Toyota",
    "model": "Vitz Welcab ONLY",
    "model_code": "130 Series Welcab",
    "notes": "This Register listing is for Toyota Vitz vehicles of model code NSP-130, KSP-130, NHP-130 and NSP-135 fitted with Welcab mobility features ONLY. Note that model code NHP-130-AHXVB is NOT eligible.",
-   "reports": [],
+   "reports": [
+    {
+     "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
+     "holder": "SYDNEY AVV PTY LTD",
+     "mre": "MRE-001003",
+     "status": "In Force",
+     "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=80cea08a-a1c6-f111-aaad-7c1e52631efa",
+     "website": "https://app.comptune.com.au"
+    }
+   ],
    "sev": "SEV-001081",
    "status": "in_force",
    "title": "Toyota Vitz Welcab ONLY",
@@ -39093,7 +39102,7 @@
    "sev": "SEV-001114",
    "status": "in_force",
    "title": "Aima Xiaopa",
-   "under_review": false,
+   "under_review": true,
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=4bd9ea7a-fec1-f111-aaad-70a8a55633c4",
    "variant": "ALL"
   },
@@ -39279,8 +39288,24 @@
    "variant_details": "SEVS eligibility restricted to USF 40 and USF 41 (2WD) with build date range of 1/09/2006 to 1/04/2007"
   }
  },
- "last_run": "2026-10-12T01:04:03+00:00",
+ "last_run": "2026-10-13T02:52:48+00:00",
  "recent_events": [
+  {
+   "at": "2026-10-13T02:52:47+00:00",
+   "detail": "a model report is now in force \u2014 SYDNEY AVV PTY LTD; a workshop can build it now",
+   "sev": "SEV-001081",
+   "title": "Toyota Vitz Welcab ONLY",
+   "type": "report_added",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=092218a7-557a-f111-ab0f-00224892f8b8"
+  },
+  {
+   "at": "2026-10-13T02:52:47+00:00",
+   "detail": "the entry may be varied or removed",
+   "sev": "SEV-001114",
+   "title": "Aima Xiaopa",
+   "type": "under_review",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=4bd9ea7a-fec1-f111-aaad-70a8a55633c4"
+  },
   {
    "at": "2026-10-09T01:47:20+00:00",
    "detail": "06/2024 - 02/2025 \u00b7 MA - Passenger Vehicle",
@@ -54649,7 +54674,7 @@
    "website": "https://app.comptune.com.au/"
   },
   "MRE-000853": {
-   "build_range": "8/2022 to current",
+   "build_range": "8/2022 - 12/2025",
    "category": "MA",
    "compliance": "Complies",
    "holder": "SHUI MIR PTY LTD",
@@ -57291,6 +57316,24 @@
    ],
    "subtype": "Specialist and Enthusiast Vehicles",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=76c45c0f-82c3-f111-aaad-7ced8dd17624",
+   "website": "https://app.comptune.com.au"
+  },
+  "MRE-001003": {
+   "build_range": "12/2010 - 3/2020",
+   "category": "MA",
+   "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
+   "holder": "SYDNEY AVV PTY LTD",
+   "id": "80cea08a-a1c6-f111-aaad-7c1e52631efa",
+   "linked": true,
+   "make": "Toyota",
+   "model": "Vitz Welcab ONLY",
+   "mre": "MRE-001003",
+   "report_status": "In Force",
+   "sev": [
+    "SEV-001081"
+   ],
+   "subtype": "Specialist and Enthusiast Vehicles",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=80cea08a-a1c6-f111-aaad-7c1e52631efa",
    "website": "https://app.comptune.com.au"
   }
  },

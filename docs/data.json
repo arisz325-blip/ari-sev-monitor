@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-12T01:04:03+00:00",
- "started_at": "2026-10-12T01:02:23+00:00",
+ "generated_at": "2026-10-13T02:52:48+00:00",
+ "started_at": "2026-10-13T02:51:04+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -9,19 +9,19 @@
   "total": 1117,
   "in_force": 583,
   "expired": 534,
-  "under_review": 1,
+  "under_review": 2,
   "new_recent": 13,
   "expiring_soon": 47,
-  "with_report": 382,
-  "without_report": 201,
-  "model_reports": 1002
+  "with_report": 383,
+  "without_report": 200,
+  "model_reports": 1003
  },
  "makes": [
   {
    "key": "TOYOTA",
    "label": "Toyota",
    "count": 146,
-   "with_report": 119
+   "with_report": 120
   },
   {
    "key": "NISSAN",
@@ -593,6 +593,22 @@
  },
  "recent_events": [
   {
+   "type": "report_added",
+   "detail": "a model report is now in force \u2014 SYDNEY AVV PTY LTD; a workshop can build it now",
+   "sev": "SEV-001081",
+   "title": "Toyota Vitz Welcab ONLY",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=092218a7-557a-f111-ab0f-00224892f8b8",
+   "at": "2026-10-13T02:52:47+00:00"
+  },
+  {
+   "type": "under_review",
+   "detail": "the entry may be varied or removed",
+   "sev": "SEV-001114",
+   "title": "Aima Xiaopa",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=4bd9ea7a-fec1-f111-aaad-70a8a55633c4",
+   "at": "2026-10-13T02:52:47+00:00"
+  },
+  {
    "at": "2026-10-09T01:47:20+00:00",
    "detail": "06/2024 - 02/2025 \u00b7 MA - Passenger Vehicle",
    "sev": "SEV-001118",
@@ -1055,22 +1071,6 @@
    "title": "Honda CR-Z Mugen RZ",
    "type": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=591663ab-454d-ee11-be6f-002248933225"
-  },
-  {
-   "at": "2026-09-05T23:36:24+00:00",
-   "detail": "expired 6/09/2026",
-   "sev": "SEV-000517",
-   "title": "NISSAN SKYLINE",
-   "type": "expired",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=fc7997d1-454d-ee11-be6f-002248933225"
-  },
-  {
-   "at": "2026-09-01T23:50:12+00:00",
-   "detail": "02/2026 - no end date \u00b7 MA - Passenger Vehicle",
-   "sev": "SEV-001104",
-   "title": "DAIHATSU e-Atrai",
-   "type": "new",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=c673a5f9-bfa5-f111-b8de-70a8a5542380"
   }
  ],
  "entries": [
@@ -1200,6 +1200,7 @@
    "model_code": "XP800DQT-2K",
    "build_from_iso": "2020-08-01",
    "expiry_iso": "2029-10-06",
+   "under_review": true,
    "status": "in_force",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=4bd9ea7a-fec1-f111-aaad-70a8a55633c4",
    "criterion": "Environmental Criterion",
@@ -1749,7 +1750,16 @@
    "criterion": "Mobility Criterion",
    "variant": "ALL",
    "variant_details": "Toyota Vitz of model code NSP-130, KSP-130, NHP-130 and NSP-135 fitted with Welcab mobility features ONLY. NHP-130-AHXVB is NOT eligible",
-   "notes": "This Register listing is for Toyota Vitz vehicles of model code NSP-130, KSP-130, NHP-130 and NSP-135 fitted with Welcab mobility features ONLY. Note that model code NHP-130-AHXVB is NOT eligible."
+   "notes": "This Register listing is for Toyota Vitz vehicles of model code NSP-130, KSP-130, NHP-130 and NSP-135 fitted with Welcab mobility features ONLY. Note that model code NHP-130-AHXVB is NOT eligible.",
+   "has_report": true,
+   "reports": [
+    {
+     "mre": "MRE-001003",
+     "holder": "SYDNEY AVV PTY LTD",
+     "status": "In Force",
+     "website": "https://app.comptune.com.au"
+    }
+   ]
   },
   {
    "sev": "SEV-001080",
