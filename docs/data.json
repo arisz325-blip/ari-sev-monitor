@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-10-13T02:52:48+00:00",
- "started_at": "2026-10-13T02:51:04+00:00",
+ "generated_at": "2026-10-14T00:56:33+00:00",
+ "started_at": "2026-10-14T00:54:22+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
  },
  "counts": {
-  "total": 1117,
-  "in_force": 583,
+  "total": 1118,
+  "in_force": 584,
   "expired": 534,
   "under_review": 2,
-  "new_recent": 13,
+  "new_recent": 14,
   "expiring_soon": 47,
   "with_report": 383,
-  "without_report": 200,
+  "without_report": 201,
   "model_reports": 1003
  },
  "makes": [
@@ -80,7 +80,7 @@
   {
    "key": "FERRARI",
    "label": "FERRARI",
-   "count": 12,
+   "count": 13,
    "with_report": 8
   },
   {
@@ -593,20 +593,28 @@
  },
  "recent_events": [
   {
-   "type": "report_added",
+   "type": "new",
+   "detail": "02/2012 - 12/2012 \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001122",
+   "title": "FERRARI F12 berlinetta",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=9abecfbd-b4c6-f111-aaaf-6045bde53b69",
+   "at": "2026-10-14T00:56:33+00:00"
+  },
+  {
+   "at": "2026-10-13T02:52:47+00:00",
    "detail": "a model report is now in force \u2014 SYDNEY AVV PTY LTD; a workshop can build it now",
    "sev": "SEV-001081",
    "title": "Toyota Vitz Welcab ONLY",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=092218a7-557a-f111-ab0f-00224892f8b8",
-   "at": "2026-10-13T02:52:47+00:00"
+   "type": "report_added",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=092218a7-557a-f111-ab0f-00224892f8b8"
   },
   {
-   "type": "under_review",
+   "at": "2026-10-13T02:52:47+00:00",
    "detail": "the entry may be varied or removed",
    "sev": "SEV-001114",
    "title": "Aima Xiaopa",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=4bd9ea7a-fec1-f111-aaad-70a8a55633c4",
-   "at": "2026-10-13T02:52:47+00:00"
+   "type": "under_review",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=4bd9ea7a-fec1-f111-aaad-70a8a55633c4"
   },
   {
    "at": "2026-10-09T01:47:20+00:00",
@@ -1063,17 +1071,25 @@
    "title": "Toyota Prius Welcab",
    "type": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=15ff42b8-424d-ee11-be6f-002248933225"
-  },
-  {
-   "at": "2026-09-05T23:36:24+00:00",
-   "detail": "expired 6/09/2026",
-   "sev": "SEV-000516",
-   "title": "Honda CR-Z Mugen RZ",
-   "type": "expired",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=591663ab-454d-ee11-be6f-002248933225"
   }
  ],
  "entries": [
+  {
+   "sev": "SEV-001122",
+   "make": "FERRARI",
+   "model": "F12 berlinetta",
+   "category": "MA - Passenger Vehicle",
+   "model_code": "F152",
+   "build_from_iso": "2012-02-01",
+   "build_to_iso": "2012-12-01",
+   "expiry_iso": "2029-10-12",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=9abecfbd-b4c6-f111-aaaf-6045bde53b69",
+   "criterion": "Performance Criterion",
+   "variant": "ALL",
+   "first_seen": "2026-10-14T00:56:33+00:00",
+   "is_new": true
+  },
   {
    "sev": "SEV-001121",
    "make": "LEXUS",
