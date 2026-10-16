@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-15T00:22:28+00:00",
- "started_at": "2026-10-15T00:18:05+00:00",
+ "generated_at": "2026-10-16T00:07:40+00:00",
+ "started_at": "2026-10-16T00:06:09+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -599,20 +599,20 @@
  },
  "recent_events": [
   {
-   "type": "new",
+   "at": "2026-10-15T00:22:28+00:00",
    "detail": "07/2024 - no end date \u00b7 MA - Passenger Vehicle",
    "sev": "SEV-001123",
    "title": "Ariel Nomad 2",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7754b050-8ec7-f111-aaad-70a8a55633c4",
-   "at": "2026-10-15T00:22:28+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7754b050-8ec7-f111-aaad-70a8a55633c4"
   },
   {
-   "type": "new",
+   "at": "2026-10-15T00:22:28+00:00",
    "detail": "04/2024 - no end date \u00b7 MC - Off-Road Passenger Vehicle",
    "sev": "SEV-001124",
    "title": "SVI Prado B6",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e52316ef-97c7-f111-aaaf-7ced8dd17176",
-   "at": "2026-10-15T00:22:28+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e52316ef-97c7-f111-aaaf-7ced8dd17176"
   },
   {
    "at": "2026-10-14T00:56:33+00:00",
