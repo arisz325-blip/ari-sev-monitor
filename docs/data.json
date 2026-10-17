@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-10-16T00:07:40+00:00",
- "started_at": "2026-10-16T00:06:09+00:00",
+ "generated_at": "2026-10-17T00:15:58+00:00",
+ "started_at": "2026-10-17T00:10:11+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
  },
  "counts": {
   "total": 1120,
-  "in_force": 586,
-  "expired": 534,
+  "in_force": 585,
+  "expired": 535,
   "under_review": 2,
   "new_recent": 16,
-  "expiring_soon": 48,
+  "expiring_soon": 47,
   "with_report": 383,
-  "without_report": 203,
+  "without_report": 202,
   "model_reports": 1003
  },
  "makes": [
@@ -290,12 +290,6 @@
   {
    "key": "VOLKSWAGEN",
    "label": "VOLKSWAGEN",
-   "count": 2,
-   "with_report": 0
-  },
-  {
-   "key": "ZERO",
-   "label": "ZERO",
    "count": 2,
    "with_report": 0
   },
@@ -586,6 +580,12 @@
    "label": "Whitehouse Toyota",
    "count": 1,
    "with_report": 1
+  },
+  {
+   "key": "ZERO",
+   "label": "ZERO",
+   "count": 1,
+   "with_report": 0
   }
  ],
  "recent_days": 30,
@@ -598,6 +598,14 @@
   "categories": []
  },
  "recent_events": [
+  {
+   "type": "expired",
+   "detail": "expired 17/10/2026",
+   "sev": "SEV-000537",
+   "title": "ZERO SR/S",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=acdc90de-6d6d-ee11-9ae7-002248933df6",
+   "at": "2026-10-17T00:15:58+00:00"
+  },
   {
    "at": "2026-10-15T00:22:28+00:00",
    "detail": "07/2024 - no end date \u00b7 MA - Passenger Vehicle",
@@ -1069,14 +1077,6 @@
    "title": "Toyota Prius Welcab",
    "type": "new",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=3e346865-8097-f111-8075-6045bdc3021e"
-  },
-  {
-   "at": "2026-09-05T23:36:24+00:00",
-   "detail": "12/2015 - 12/2022 \u00b7 MA - Passenger Vehicle",
-   "sev": "SEV-001096",
-   "title": "Toyota Prius Welcab",
-   "type": "new",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0db1a716-c49a-f111-b8db-70a8a553e896"
   }
  ],
  "entries": [
@@ -15490,12 +15490,11 @@
    "category": "LC - Motor Cycle",
    "build_from_iso": "2017-01-01",
    "expiry_iso": "2026-10-17",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=acdc90de-6d6d-ee11-9ae7-002248933df6",
    "criterion": "Environmental Criterion",
    "variant": "ALL",
-   "notes": "this is for the standard model of the bike",
-   "expiring_soon": true
+   "notes": "this is for the standard model of the bike"
   },
   {
    "sev": "SEV-000536",
