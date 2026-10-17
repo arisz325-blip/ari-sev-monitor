@@ -17623,7 +17623,7 @@
     }
    ],
    "sev": "SEV-000538",
-   "status": "in_force",
+   "status": "expired",
    "title": "Honda Freed Welfare",
    "under_review": false,
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=47efce67-186e-ee11-9ae7-002248933b6f",
@@ -17666,7 +17666,7 @@
     }
    ],
    "sev": "SEV-000539",
-   "status": "in_force",
+   "status": "expired",
    "title": "LEXUS LFA",
    "under_review": false,
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=82b34395-1a6e-ee11-9ae7-002248933b6f",
@@ -39364,8 +39364,24 @@
    "variant": "ALL"
   }
  },
- "last_run": "2026-10-17T00:15:58+00:00",
+ "last_run": "2026-10-17T23:48:01+00:00",
  "recent_events": [
+  {
+   "at": "2026-10-17T23:48:01+00:00",
+   "detail": "expired 18/10/2026",
+   "sev": "SEV-000538",
+   "title": "Honda Freed Welfare",
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=47efce67-186e-ee11-9ae7-002248933b6f"
+  },
+  {
+   "at": "2026-10-17T23:48:01+00:00",
+   "detail": "expired 18/10/2026",
+   "sev": "SEV-000539",
+   "title": "LEXUS LFA",
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=82b34395-1a6e-ee11-9ae7-002248933b6f"
+  },
   {
    "at": "2026-10-17T00:15:58+00:00",
    "detail": "expired 17/10/2026",
