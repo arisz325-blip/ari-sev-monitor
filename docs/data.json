@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-10-17T23:48:01+00:00",
- "started_at": "2026-10-17T23:46:34+00:00",
+ "generated_at": "2026-10-18T23:57:40+00:00",
+ "started_at": "2026-10-18T23:56:14+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
  },
  "counts": {
   "total": 1120,
-  "in_force": 583,
-  "expired": 537,
+  "in_force": 579,
+  "expired": 541,
   "under_review": 2,
-  "new_recent": 16,
-  "expiring_soon": 45,
-  "with_report": 381,
-  "without_report": 202,
+  "new_recent": 14,
+  "expiring_soon": 41,
+  "with_report": 380,
+  "without_report": 199,
   "model_reports": 1003
  },
  "makes": [
@@ -32,7 +32,7 @@
   {
    "key": "MERCEDES-BENZ",
    "label": "Mercedes-Benz",
-   "count": 37,
+   "count": 36,
    "with_report": 25
   },
   {
@@ -80,8 +80,8 @@
   {
    "key": "FERRARI",
    "label": "FERRARI",
-   "count": 13,
-   "with_report": 8
+   "count": 12,
+   "with_report": 7
   },
   {
    "key": "BRABUS",
@@ -270,12 +270,6 @@
    "with_report": 1
   },
   {
-   "key": "RENNER",
-   "label": "Renner",
-   "count": 2,
-   "with_report": 0
-  },
-  {
    "key": "SIGNATURE DAF",
    "label": "Signature DAF",
    "count": 2,
@@ -286,12 +280,6 @@
    "label": "VAUXHALL",
    "count": 2,
    "with_report": 2
-  },
-  {
-   "key": "VOLKSWAGEN",
-   "label": "VOLKSWAGEN",
-   "count": 2,
-   "with_report": 0
   },
   {
    "key": "A TO Z RV TOYOTA",
@@ -504,6 +492,12 @@
    "with_report": 1
   },
   {
+   "key": "RENNER",
+   "label": "Renner",
+   "count": 1,
+   "with_report": 0
+  },
+  {
    "key": "RIVIAN",
    "label": "Rivian",
    "count": 1,
@@ -576,6 +570,12 @@
    "with_report": 0
   },
   {
+   "key": "VOLKSWAGEN",
+   "label": "VOLKSWAGEN",
+   "count": 1,
+   "with_report": 0
+  },
+  {
    "key": "WHITEHOUSE TOYOTA",
    "label": "Whitehouse Toyota",
    "count": 1,
@@ -600,19 +600,51 @@
  "recent_events": [
   {
    "type": "expired",
-   "detail": "expired 18/10/2026",
-   "sev": "SEV-000538",
-   "title": "Honda Freed Welfare",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=47efce67-186e-ee11-9ae7-002248933b6f",
-   "at": "2026-10-17T23:48:01+00:00"
+   "detail": "expired 19/10/2026",
+   "sev": "SEV-000540",
+   "title": "FERRARI F12 berlinetta",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=2670f69c-d76e-ee11-9ae7-00224892b406",
+   "at": "2026-10-18T23:57:40+00:00"
   },
   {
    "type": "expired",
+   "detail": "expired 19/10/2026",
+   "sev": "SEV-000541",
+   "title": "Mercedes-Benz AIRSTREAM INTERSTATE",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=297e9dcb-e36e-ee11-9ae7-00224893ba82",
+   "at": "2026-10-18T23:57:40+00:00"
+  },
+  {
+   "type": "expired",
+   "detail": "expired 19/10/2026",
+   "sev": "SEV-000542",
+   "title": "VOLKSWAGEN Passat",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=c6422bfb-e36e-ee11-9ae7-00224893ba6c",
+   "at": "2026-10-18T23:57:40+00:00"
+  },
+  {
+   "type": "expired",
+   "detail": "expired 19/10/2026",
+   "sev": "SEV-000543",
+   "title": "Renner Speedster",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a8b0436d-e46e-ee11-9ae7-00224893ba6c",
+   "at": "2026-10-18T23:57:40+00:00"
+  },
+  {
+   "at": "2026-10-17T23:48:01+00:00",
+   "detail": "expired 18/10/2026",
+   "sev": "SEV-000538",
+   "title": "Honda Freed Welfare",
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=47efce67-186e-ee11-9ae7-002248933b6f"
+  },
+  {
+   "at": "2026-10-17T23:48:01+00:00",
    "detail": "expired 18/10/2026",
    "sev": "SEV-000539",
    "title": "LEXUS LFA",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=82b34395-1a6e-ee11-9ae7-002248933b6f",
-   "at": "2026-10-17T23:48:01+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=82b34395-1a6e-ee11-9ae7-002248933b6f"
   },
   {
    "at": "2026-10-17T00:15:58+00:00",
@@ -1045,38 +1077,6 @@
    "title": "CADILLAC Escalade",
    "type": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=400b4c8c-0b52-ee11-be6f-00224812298a"
-  },
-  {
-   "at": "2026-09-10T23:46:45+00:00",
-   "detail": "04/2026 - no end date \u00b7 MA - Passenger Vehicle",
-   "sev": "SEV-001108",
-   "title": "BYD RACCO",
-   "type": "new",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=92fda020-cdac-f111-aaab-70a8a5563b9f"
-  },
-  {
-   "at": "2026-09-10T23:46:45+00:00",
-   "detail": "expired 11/09/2026",
-   "sev": "SEV-000518",
-   "title": "LINCOLN Navigator",
-   "type": "expired",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=9304cca6-2b51-ee11-be6f-00224892b406"
-  },
-  {
-   "at": "2026-09-09T23:52:36+00:00",
-   "detail": "review flag cleared",
-   "sev": "SEV-001079",
-   "title": "Mercedes-Benz S450 Hybrid",
-   "type": "review_cleared",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=1d2f63a1-8473-f111-ab0e-7c1e528a7792"
-  },
-  {
-   "at": "2026-09-09T23:52:36+00:00",
-   "detail": "Model code: 222058 -> 222058 / 222158",
-   "sev": "SEV-001079",
-   "title": "Mercedes-Benz S450 Hybrid",
-   "type": "updated",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=1d2f63a1-8473-f111-ab0e-7c1e528a7792"
   }
  ],
  "entries": [
@@ -1325,8 +1325,7 @@
    "criterion": "Mobility Criterion",
    "variant": "ALL",
    "variant_details": "Welcab variants fitted with rotating front passenger seat only",
-   "first_seen": "2026-09-18T23:55:37+00:00",
-   "is_new": true
+   "first_seen": "2026-09-18T23:55:37+00:00"
   },
   {
    "sev": "SEV-001109",
@@ -1341,8 +1340,7 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=55a4c879-13b3-f111-aaac-6045bdc3d6cd",
    "criterion": "Rarity Criterion",
    "variant": "ALL",
-   "first_seen": "2026-09-18T23:55:37+00:00",
-   "is_new": true
+   "first_seen": "2026-09-18T23:55:37+00:00"
   },
   {
    "sev": "SEV-001108",
@@ -15366,11 +15364,10 @@
    "model_code": "GEN2",
    "build_from_iso": "2023-03-01",
    "expiry_iso": "2026-10-19",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a8b0436d-e46e-ee11-9ae7-00224893ba6c",
    "criterion": "Rarity Criterion",
-   "variant": "ALL",
-   "expiring_soon": true
+   "variant": "ALL"
   },
   {
    "sev": "SEV-000542",
@@ -15381,11 +15378,10 @@
    "build_from_iso": "2001-09-01",
    "build_to_iso": "2004-09-01",
    "expiry_iso": "2026-10-19",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=c6422bfb-e36e-ee11-9ae7-00224893ba6c",
    "criterion": "Performance Criterion",
-   "variant": "W8 - Manual Transmission",
-   "expiring_soon": true
+   "variant": "W8 - Manual Transmission"
   },
   {
    "sev": "SEV-000541",
@@ -15396,12 +15392,11 @@
    "build_from_iso": "2015-01-01",
    "build_to_iso": "2016-12-01",
    "expiry_iso": "2026-10-19",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=297e9dcb-e36e-ee11-9ae7-00224893ba82",
    "criterion": "Campervans and Motorhomes Criterion",
    "variant": "Campervan / motorhome",
-   "variant_details": "AIRSTREAM INTERSTATE variants only",
-   "expiring_soon": true
+   "variant_details": "AIRSTREAM INTERSTATE variants only"
   },
   {
    "sev": "SEV-000540",
@@ -15412,7 +15407,7 @@
    "build_from_iso": "2012-02-01",
    "build_to_iso": "2012-11-01",
    "expiry_iso": "2026-10-19",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=2670f69c-d76e-ee11-9ae7-00224892b406",
    "criterion": "Performance Criterion",
    "variant": "F12 Berlinetta",
@@ -15425,8 +15420,7 @@
      "status": "In Force",
      "website": "https://www.mdlreports.com.au"
     }
-   ],
-   "expiring_soon": true
+   ]
   },
   {
    "sev": "SEV-000539",
