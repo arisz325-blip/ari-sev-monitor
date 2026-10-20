@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-18T23:57:40+00:00",
- "started_at": "2026-10-18T23:56:14+00:00",
+ "generated_at": "2026-10-20T00:57:11+00:00",
+ "started_at": "2026-10-20T00:55:06+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -12,16 +12,16 @@
   "under_review": 2,
   "new_recent": 14,
   "expiring_soon": 41,
-  "with_report": 380,
-  "without_report": 199,
-  "model_reports": 1003
+  "with_report": 381,
+  "without_report": 198,
+  "model_reports": 1004
  },
  "makes": [
   {
    "key": "TOYOTA",
    "label": "Toyota",
    "count": 146,
-   "with_report": 120
+   "with_report": 121
   },
   {
    "key": "NISSAN",
@@ -599,36 +599,44 @@
  },
  "recent_events": [
   {
-   "type": "expired",
+   "type": "report_added",
+   "detail": "a model report is now in force \u2014 GLAM GROUPS PTY. LTD.; a workshop can build it now",
+   "sev": "SEV-000850",
+   "title": "Toyota Sienta",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f2807f53-6116-f011-998a-000d3ad0c06c",
+   "at": "2026-10-20T00:57:11+00:00"
+  },
+  {
+   "at": "2026-10-18T23:57:40+00:00",
    "detail": "expired 19/10/2026",
    "sev": "SEV-000540",
    "title": "FERRARI F12 berlinetta",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=2670f69c-d76e-ee11-9ae7-00224892b406",
-   "at": "2026-10-18T23:57:40+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=2670f69c-d76e-ee11-9ae7-00224892b406"
   },
   {
-   "type": "expired",
+   "at": "2026-10-18T23:57:40+00:00",
    "detail": "expired 19/10/2026",
    "sev": "SEV-000541",
    "title": "Mercedes-Benz AIRSTREAM INTERSTATE",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=297e9dcb-e36e-ee11-9ae7-00224893ba82",
-   "at": "2026-10-18T23:57:40+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=297e9dcb-e36e-ee11-9ae7-00224893ba82"
   },
   {
-   "type": "expired",
+   "at": "2026-10-18T23:57:40+00:00",
    "detail": "expired 19/10/2026",
    "sev": "SEV-000542",
    "title": "VOLKSWAGEN Passat",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=c6422bfb-e36e-ee11-9ae7-00224893ba6c",
-   "at": "2026-10-18T23:57:40+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=c6422bfb-e36e-ee11-9ae7-00224893ba6c"
   },
   {
-   "type": "expired",
+   "at": "2026-10-18T23:57:40+00:00",
    "detail": "expired 19/10/2026",
    "sev": "SEV-000543",
    "title": "Renner Speedster",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a8b0436d-e46e-ee11-9ae7-00224893ba6c",
-   "at": "2026-10-18T23:57:40+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a8b0436d-e46e-ee11-9ae7-00224893ba6c"
   },
   {
    "at": "2026-10-17T23:48:01+00:00",
@@ -1069,14 +1077,6 @@
    "title": "NISSAN GT-R",
    "type": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=edeb7e41-0b52-ee11-be6f-00224812298a"
-  },
-  {
-   "at": "2026-09-11T23:54:48+00:00",
-   "detail": "expired 12/09/2026",
-   "sev": "SEV-000521",
-   "title": "CADILLAC Escalade",
-   "type": "expired",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=400b4c8c-0b52-ee11-be6f-00224812298a"
   }
  ],
  "entries": [
@@ -7256,7 +7256,16 @@
    "criterion": "Mobility Criterion",
    "variant": "Welcab",
    "variant_details": "Welcab variants ONLY of model codes NCP81 and NCP85",
-   "notes": "Note that only the Welcab variants of the Sienta series, with Model Codes of NCP81 and NCP85 are eligible for entry onto the register under the mobility critera. These variants are: Welcab with lift-up front passenger seat Welcab with rotating and sliding passenger's seat Welcab with Friendmatic seat Welcab with removable seat for use of a wheelchair Welcab with factory-fitted rear wheelchair ramp"
+   "notes": "Note that only the Welcab variants of the Sienta series, with Model Codes of NCP81 and NCP85 are eligible for entry onto the register under the mobility critera. These variants are: Welcab with lift-up front passenger seat Welcab with rotating and sliding passenger's seat Welcab with Friendmatic seat Welcab with removable seat for use of a wheelchair Welcab with factory-fitted rear wheelchair ramp",
+   "has_report": true,
+   "reports": [
+    {
+     "mre": "MRE-001004",
+     "holder": "GLAM GROUPS PTY. LTD.",
+     "status": "In Force",
+     "website": "https://www.rvsa.co/"
+    }
+   ]
   },
   {
    "sev": "SEV-000849",

@@ -17929,7 +17929,7 @@
      "website": null
     },
     {
-     "compliance": "Complies",
+     "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
      "holder": "SYDNEY AVV PTY LTD",
      "mre": "MRE-000537",
      "status": "In Force",
@@ -29868,13 +29868,22 @@
    "expiry": "10/04/2028",
    "expiry_iso": "2028-04-10",
    "first_seen": null,
-   "has_report": false,
+   "has_report": true,
    "id": "f2807f53-6116-f011-998a-000d3ad0c06c",
    "make": "Toyota",
    "model": "Sienta",
    "model_code": "NCP81/NCP85",
    "notes": "Note that only the Welcab variants of the Sienta series, with Model Codes of NCP81 and NCP85 are eligible for entry onto the register under the mobility critera. These variants are: Welcab with lift-up front passenger seat Welcab with rotating and sliding passenger's seat Welcab with Friendmatic seat Welcab with removable seat for use of a wheelchair Welcab with factory-fitted rear wheelchair ramp",
-   "reports": [],
+   "reports": [
+    {
+     "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
+     "holder": "GLAM GROUPS PTY. LTD.",
+     "mre": "MRE-001004",
+     "status": "In Force",
+     "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=b7263d97-87cb-f111-a05b-70a8a55632c4",
+     "website": "https://www.rvsa.co/"
+    }
+   ],
    "sev": "SEV-000850",
    "status": "in_force",
    "title": "Toyota Sienta",
@@ -39364,8 +39373,16 @@
    "variant": "ALL"
   }
  },
- "last_run": "2026-10-18T23:57:40+00:00",
+ "last_run": "2026-10-20T00:57:11+00:00",
  "recent_events": [
+  {
+   "at": "2026-10-20T00:57:11+00:00",
+   "detail": "a model report is now in force \u2014 GLAM GROUPS PTY. LTD.; a workshop can build it now",
+   "sev": "SEV-000850",
+   "title": "Toyota Sienta",
+   "type": "report_added",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f2807f53-6116-f011-998a-000d3ad0c06c"
+  },
   {
    "at": "2026-10-18T23:57:40+00:00",
    "detail": "expired 19/10/2026",
@@ -49333,9 +49350,9 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=cdc440ff-3a00-ef11-9f89-002248105edd"
   },
   "MRE-000537": {
-   "build_range": "8/2022 - 2/2025",
+   "build_range": "8/2022 - 12/2025",
    "category": "MA",
-   "compliance": "Complies",
+   "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
    "holder": "SYDNEY AVV PTY LTD",
    "id": "684bc99c-1f01-ef11-9f89-000d3ad0ed7c",
    "linked": true,
@@ -57491,6 +57508,24 @@
    "subtype": "Specialist and Enthusiast Vehicles",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=80cea08a-a1c6-f111-aaad-7c1e52631efa",
    "website": "https://app.comptune.com.au"
+  },
+  "MRE-001004": {
+   "build_range": "9/2003 - 6/2015",
+   "category": "MA",
+   "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
+   "holder": "GLAM GROUPS PTY. LTD.",
+   "id": "b7263d97-87cb-f111-a05b-70a8a55632c4",
+   "linked": true,
+   "make": "Toyota",
+   "model": "Sienta",
+   "mre": "MRE-001004",
+   "report_status": "In Force",
+   "sev": [
+    "SEV-000850"
+   ],
+   "subtype": "Specialist and Enthusiast Vehicles",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=b7263d97-87cb-f111-a05b-70a8a55632c4",
+   "website": "https://www.rvsa.co/"
   }
  },
  "version": 2
