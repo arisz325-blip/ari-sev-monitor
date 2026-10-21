@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-10-20T00:57:11+00:00",
- "started_at": "2026-10-20T00:55:06+00:00",
+ "generated_at": "2026-10-21T00:27:36+00:00",
+ "started_at": "2026-10-21T00:23:32+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
  },
  "counts": {
-  "total": 1120,
-  "in_force": 579,
+  "total": 1122,
+  "in_force": 581,
   "expired": 541,
   "under_review": 2,
-  "new_recent": 14,
+  "new_recent": 16,
   "expiring_soon": 41,
   "with_report": 381,
-  "without_report": 198,
-  "model_reports": 1004
+  "without_report": 200,
+  "model_reports": 1005
  },
  "makes": [
   {
@@ -38,7 +38,7 @@
   {
    "key": "HONDA",
    "label": "Honda",
-   "count": 27,
+   "count": 28,
    "with_report": 20
   },
   {
@@ -56,7 +56,7 @@
   {
    "key": "FORD",
    "label": "Ford",
-   "count": 18,
+   "count": 19,
    "with_report": 10
   },
   {
@@ -599,12 +599,28 @@
  },
  "recent_events": [
   {
-   "type": "report_added",
+   "type": "new",
+   "detail": "09/2016 - 06/2024 \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001125",
+   "title": "Honda Freed Welfare",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=41df6181-3ecc-f111-a05c-70a8a5563fff",
+   "at": "2026-10-21T00:27:35+00:00"
+  },
+  {
+   "type": "new",
+   "detail": "04/2022 - 12/2025 \u00b7 NB1 - Medium Goods Vehicle",
+   "sev": "SEV-001126",
+   "title": "Ford F150 Lightning",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0ec0e1c7-42cc-f111-a05a-70a8a5563ff8",
+   "at": "2026-10-21T00:27:35+00:00"
+  },
+  {
+   "at": "2026-10-20T00:57:11+00:00",
    "detail": "a model report is now in force \u2014 GLAM GROUPS PTY. LTD.; a workshop can build it now",
    "sev": "SEV-000850",
    "title": "Toyota Sienta",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f2807f53-6116-f011-998a-000d3ad0c06c",
-   "at": "2026-10-20T00:57:11+00:00"
+   "type": "report_added",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f2807f53-6116-f011-998a-000d3ad0c06c"
   },
   {
    "at": "2026-10-18T23:57:40+00:00",
@@ -1061,25 +1077,43 @@
    "title": "SMART ForTwo Electric Drive",
    "type": "report_added",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7e1612b3-187e-f011-b4cc-000d3ad1290a"
-  },
-  {
-   "at": "2026-09-11T23:54:48+00:00",
-   "detail": "expired 12/09/2026",
-   "sev": "SEV-000519",
-   "title": "ADRIA Compact Supreme DL",
-   "type": "expired",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=936d921d-0b52-ee11-be6f-00224812298a"
-  },
-  {
-   "at": "2026-09-11T23:54:48+00:00",
-   "detail": "expired 12/09/2026",
-   "sev": "SEV-000520",
-   "title": "NISSAN GT-R",
-   "type": "expired",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=edeb7e41-0b52-ee11-be6f-00224812298a"
   }
  ],
  "entries": [
+  {
+   "sev": "SEV-001126",
+   "make": "Ford",
+   "model": "F150 Lightning",
+   "category": "NB1 - Medium Goods Vehicle",
+   "model_code": "W1E",
+   "build_from_iso": "2022-04-01",
+   "build_to_iso": "2025-12-01",
+   "expiry_iso": "2029-10-19",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0ec0e1c7-42cc-f111-a05a-70a8a5563ff8",
+   "criterion": "Left-Hand Drive Criterion",
+   "variant": "ALL",
+   "first_seen": "2026-10-21T00:27:35+00:00",
+   "is_new": true
+  },
+  {
+   "sev": "SEV-001125",
+   "make": "Honda",
+   "model": "Freed Welfare",
+   "category": "MA - Passenger Vehicle",
+   "model_code": "GB Series Welfare",
+   "build_from_iso": "2016-09-01",
+   "build_to_iso": "2024-06-01",
+   "expiry_iso": "2029-10-19",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=41df6181-3ecc-f111-a05c-70a8a5563fff",
+   "criterion": "Mobility Criterion",
+   "variant": "ALL",
+   "variant_details": "Honda Freed GB series factory-fitted with Welfare PWD assistance features.",
+   "notes": "This RVSA SEVs Register listing is for Honda GB series Freed vehicles, factory-fitted with Welfare PWD assistance features ONLY.",
+   "first_seen": "2026-10-21T00:27:35+00:00",
+   "is_new": true
+  },
   {
    "sev": "SEV-001124",
    "make": "SVI",
@@ -14725,6 +14759,12 @@
    "variant": "840d xDrive Gran Coupe (G16)",
    "has_report": true,
    "reports": [
+    {
+     "mre": "MRE-001005",
+     "holder": "ORACLE CERTIFICATION PTY. LTD.",
+     "status": "In Force",
+     "website": null
+    },
     {
      "mre": "MRE-000616",
      "holder": "SYDNEY AVV PTY LTD",

@@ -18764,6 +18764,14 @@
    "model_code": "G14/G15/G16",
    "reports": [
     {
+     "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
+     "holder": "ORACLE CERTIFICATION PTY. LTD.",
+     "mre": "MRE-001005",
+     "status": "In Force",
+     "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=9bf88cd0-38cc-f111-a05a-70a8a5563b78",
+     "website": null
+    },
+    {
      "compliance": "Complies",
      "holder": "SYDNEY AVV PTY LTD",
      "mre": "MRE-000616",
@@ -39371,10 +39379,78 @@
    "under_review": false,
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e52316ef-97c7-f111-aaaf-7ced8dd17176",
    "variant": "ALL"
+  },
+  "SEV-001125": {
+   "build_from": "1/09/2016",
+   "build_from_iso": "2016-09-01",
+   "build_range": "09/2016 - 06/2024",
+   "build_to": "1/06/2024",
+   "build_to_iso": "2024-06-01",
+   "category": "MA - Passenger Vehicle",
+   "criterion": "Mobility Criterion",
+   "detailed": true,
+   "expiry": "19/10/2029",
+   "expiry_iso": "2029-10-19",
+   "first_seen": "2026-10-21T00:27:35+00:00",
+   "has_report": false,
+   "id": "41df6181-3ecc-f111-a05c-70a8a5563fff",
+   "make": "Honda",
+   "model": "Freed Welfare",
+   "model_code": "GB Series Welfare",
+   "notes": "This RVSA SEVs Register listing is for Honda GB series Freed vehicles, factory-fitted with Welfare PWD assistance features ONLY.",
+   "reports": [],
+   "sev": "SEV-001125",
+   "status": "in_force",
+   "title": "Honda Freed Welfare",
+   "under_review": false,
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=41df6181-3ecc-f111-a05c-70a8a5563fff",
+   "variant": "ALL",
+   "variant_details": "Honda Freed GB series factory-fitted with Welfare PWD assistance features."
+  },
+  "SEV-001126": {
+   "build_from": "1/04/2022",
+   "build_from_iso": "2022-04-01",
+   "build_range": "04/2022 - 12/2025",
+   "build_to": "1/12/2025",
+   "build_to_iso": "2025-12-01",
+   "category": "NB1 - Medium Goods Vehicle",
+   "criterion": "Left-Hand Drive Criterion",
+   "detailed": true,
+   "expiry": "19/10/2029",
+   "expiry_iso": "2029-10-19",
+   "first_seen": "2026-10-21T00:27:35+00:00",
+   "has_report": false,
+   "id": "0ec0e1c7-42cc-f111-a05a-70a8a5563ff8",
+   "make": "Ford",
+   "model": "F150 Lightning",
+   "model_code": "W1E",
+   "reports": [],
+   "sev": "SEV-001126",
+   "status": "in_force",
+   "title": "Ford F150 Lightning",
+   "under_review": false,
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0ec0e1c7-42cc-f111-a05a-70a8a5563ff8",
+   "variant": "ALL"
   }
  },
- "last_run": "2026-10-20T00:57:11+00:00",
+ "last_run": "2026-10-21T00:27:36+00:00",
  "recent_events": [
+  {
+   "at": "2026-10-21T00:27:35+00:00",
+   "detail": "09/2016 - 06/2024 \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001125",
+   "title": "Honda Freed Welfare",
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=41df6181-3ecc-f111-a05c-70a8a5563fff"
+  },
+  {
+   "at": "2026-10-21T00:27:35+00:00",
+   "detail": "04/2022 - 12/2025 \u00b7 NB1 - Medium Goods Vehicle",
+   "sev": "SEV-001126",
+   "title": "Ford F150 Lightning",
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0ec0e1c7-42cc-f111-a05a-70a8a5563ff8"
+  },
   {
    "at": "2026-10-20T00:57:11+00:00",
    "detail": "a model report is now in force \u2014 GLAM GROUPS PTY. LTD.; a workshop can build it now",
@@ -47196,7 +47272,7 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=81adcce1-ba89-ee11-be36-0022489333a7"
   },
   "MRE-000412": {
-   "build_range": "10/2021 - 10/2022",
+   "build_range": "10/2021 - 12/2022",
    "category": "MA",
    "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
    "holder": "SYDNEY AVV PTY LTD",
@@ -55169,7 +55245,7 @@
    "website": "https://americanmotors.com.au/"
   },
   "MRE-000871": {
-   "build_range": "2/2012 - 11/2012",
+   "build_range": "2/2012 - 12/2012",
    "category": "MA",
    "compliance": "Complies",
    "holder": "SHUI MIR PTY LTD",
@@ -57526,6 +57602,23 @@
    "subtype": "Specialist and Enthusiast Vehicles",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=b7263d97-87cb-f111-a05b-70a8a55632c4",
    "website": "https://www.rvsa.co/"
+  },
+  "MRE-001005": {
+   "build_range": "11/2018 - 2/2025",
+   "category": "MA",
+   "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
+   "holder": "ORACLE CERTIFICATION PTY. LTD.",
+   "id": "9bf88cd0-38cc-f111-a05a-70a8a5563b78",
+   "linked": true,
+   "make": "BMW",
+   "model": "8 Series",
+   "mre": "MRE-001005",
+   "report_status": "In Force",
+   "sev": [
+    "SEV-000573"
+   ],
+   "subtype": "Specialist and Enthusiast Vehicles",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=9bf88cd0-38cc-f111-a05a-70a8a5563b78"
   }
  },
  "version": 2
