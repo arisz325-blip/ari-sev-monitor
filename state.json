@@ -23909,8 +23909,8 @@
    "variant_details": "Hybrid drivetrain ONLY"
   },
   "SEV-000708": {
-   "build_from": "1/01/2005",
-   "build_from_iso": "2005-01-01",
+   "build_from": "1/12/2004",
+   "build_from_iso": "2004-12-01",
    "build_range": "01/2005 - 05/2007",
    "build_to": "1/05/2007",
    "build_to_iso": "2007-05-01",
@@ -23963,7 +23963,7 @@
    "sev": "SEV-000708",
    "status": "in_force",
    "title": "SUBARU IMPREZA",
-   "under_review": true,
+   "under_review": false,
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f54bf44d-06a7-ef11-b8e8-000d3acc12dc",
    "variant": "GDB Series Subaru Impreza WRX STi.",
    "variant_details": "GDB Series Subaru Impreza WRX STi. of model codes GDBE4EH, GDBF4EH and GDBG4EH with EJ20 2.0L Turbo motor ONLY"
@@ -34563,6 +34563,14 @@
    "reports": [
     {
      "compliance": "Complies",
+     "holder": "AMERICAN COMPLIANCE PTY LTD",
+     "mre": "MRE-001007",
+     "status": "In Force",
+     "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=7d443fc5-8acd-f111-a05a-7c1e528a1af9",
+     "website": "https://scddirect.com.au/"
+    },
+    {
+     "compliance": "Complies",
      "holder": "Maracoonda Auto Pty Ltd",
      "mre": "MRE-000500",
      "status": "In Force",
@@ -38795,13 +38803,22 @@
    "expiry": "26/08/2029",
    "expiry_iso": "2029-08-26",
    "first_seen": null,
-   "has_report": false,
+   "has_report": true,
    "id": "8a561139-a8a1-f111-b8dc-6045bde6d459",
    "make": "Honda",
    "model": "N-ONE e",
    "model_code": "ZAA-JG5",
    "notes": "This Register listing is for Honda N-ONE e, \u2018Kei car\u2019, of model code ZAA-JG5, and with BEV drivetrain ONLY.",
-   "reports": [],
+   "reports": [
+    {
+     "compliance": "Complies",
+     "holder": "SYDNEY AVV PTY LTD",
+     "mre": "MRE-001006",
+     "status": "In Force",
+     "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=97409688-8acd-f111-a05a-7c1e528a1af9",
+     "website": "https://app.comptune.com.au"
+    }
+   ],
    "sev": "SEV-001102",
    "status": "in_force",
    "title": "Honda N-ONE e",
@@ -39433,8 +39450,32 @@
    "variant": "ALL"
   }
  },
- "last_run": "2026-10-21T00:27:36+00:00",
+ "last_run": "2026-10-22T00:30:17+00:00",
  "recent_events": [
+  {
+   "at": "2026-10-22T00:30:17+00:00",
+   "detail": "a model report is now in force \u2014 SYDNEY AVV PTY LTD; a workshop can build it now",
+   "sev": "SEV-001102",
+   "title": "Honda N-ONE e",
+   "type": "report_added",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=8a561139-a8a1-f111-b8dc-6045bde6d459"
+  },
+  {
+   "at": "2026-10-22T00:30:17+00:00",
+   "detail": "review flag cleared",
+   "sev": "SEV-000708",
+   "title": "SUBARU IMPREZA",
+   "type": "review_cleared",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f54bf44d-06a7-ef11-b8e8-000d3acc12dc"
+  },
+  {
+   "at": "2026-10-22T00:30:17+00:00",
+   "detail": "Build date from: 1/01/2005 -> 1/12/2004",
+   "sev": "SEV-000708",
+   "title": "SUBARU IMPREZA",
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f54bf44d-06a7-ef11-b8e8-000d3acc12dc"
+  },
   {
    "at": "2026-10-21T00:27:35+00:00",
    "detail": "09/2016 - 06/2024 \u00b7 MA - Passenger Vehicle",
@@ -57619,6 +57660,42 @@
    ],
    "subtype": "Specialist and Enthusiast Vehicles",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=9bf88cd0-38cc-f111-a05a-70a8a5563b78"
+  },
+  "MRE-001006": {
+   "build_range": "9/2025 to current",
+   "category": "MA",
+   "compliance": "Complies",
+   "holder": "SYDNEY AVV PTY LTD",
+   "id": "97409688-8acd-f111-a05a-7c1e528a1af9",
+   "linked": true,
+   "make": "Honda",
+   "model": "N-ONE e",
+   "mre": "MRE-001006",
+   "report_status": "In Force",
+   "sev": [
+    "SEV-001102"
+   ],
+   "subtype": "Specialist and Enthusiast Vehicles",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=97409688-8acd-f111-a05a-7c1e528a1af9",
+   "website": "https://app.comptune.com.au"
+  },
+  "MRE-001007": {
+   "build_range": "9/2022 to current",
+   "category": "NB1",
+   "compliance": "Complies",
+   "holder": "AMERICAN COMPLIANCE PTY LTD",
+   "id": "7d443fc5-8acd-f111-a05a-7c1e528a1af9",
+   "linked": true,
+   "make": "Ford",
+   "model": "Super Duty",
+   "mre": "MRE-001007",
+   "report_status": "In Force",
+   "sev": [
+    "SEV-000977"
+   ],
+   "subtype": "Specialist and Enthusiast Vehicles",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=7d443fc5-8acd-f111-a05a-7c1e528a1af9",
+   "website": "https://scddirect.com.au/"
   }
  },
  "version": 2

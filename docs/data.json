@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-21T00:27:36+00:00",
- "started_at": "2026-10-21T00:23:32+00:00",
+ "generated_at": "2026-10-22T00:30:17+00:00",
+ "started_at": "2026-10-22T00:26:56+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -9,12 +9,12 @@
   "total": 1122,
   "in_force": 581,
   "expired": 541,
-  "under_review": 2,
+  "under_review": 1,
   "new_recent": 16,
   "expiring_soon": 41,
-  "with_report": 381,
-  "without_report": 200,
-  "model_reports": 1005
+  "with_report": 382,
+  "without_report": 199,
+  "model_reports": 1007
  },
  "makes": [
   {
@@ -39,7 +39,7 @@
    "key": "HONDA",
    "label": "Honda",
    "count": 28,
-   "with_report": 20
+   "with_report": 21
   },
   {
    "key": "MITSUBISHI",
@@ -599,20 +599,44 @@
  },
  "recent_events": [
   {
-   "type": "new",
+   "type": "report_added",
+   "detail": "a model report is now in force \u2014 SYDNEY AVV PTY LTD; a workshop can build it now",
+   "sev": "SEV-001102",
+   "title": "Honda N-ONE e",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=8a561139-a8a1-f111-b8dc-6045bde6d459",
+   "at": "2026-10-22T00:30:17+00:00"
+  },
+  {
+   "type": "review_cleared",
+   "detail": "review flag cleared",
+   "sev": "SEV-000708",
+   "title": "SUBARU IMPREZA",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f54bf44d-06a7-ef11-b8e8-000d3acc12dc",
+   "at": "2026-10-22T00:30:17+00:00"
+  },
+  {
+   "type": "updated",
+   "detail": "Build date from: 1/01/2005 -> 1/12/2004",
+   "sev": "SEV-000708",
+   "title": "SUBARU IMPREZA",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f54bf44d-06a7-ef11-b8e8-000d3acc12dc",
+   "at": "2026-10-22T00:30:17+00:00"
+  },
+  {
+   "at": "2026-10-21T00:27:35+00:00",
    "detail": "09/2016 - 06/2024 \u00b7 MA - Passenger Vehicle",
    "sev": "SEV-001125",
    "title": "Honda Freed Welfare",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=41df6181-3ecc-f111-a05c-70a8a5563fff",
-   "at": "2026-10-21T00:27:35+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=41df6181-3ecc-f111-a05c-70a8a5563fff"
   },
   {
-   "type": "new",
+   "at": "2026-10-21T00:27:35+00:00",
    "detail": "04/2022 - 12/2025 \u00b7 NB1 - Medium Goods Vehicle",
    "sev": "SEV-001126",
    "title": "Ford F150 Lightning",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0ec0e1c7-42cc-f111-a05a-70a8a5563ff8",
-   "at": "2026-10-21T00:27:35+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0ec0e1c7-42cc-f111-a05a-70a8a5563ff8"
   },
   {
    "at": "2026-10-20T00:57:11+00:00",
@@ -1053,30 +1077,6 @@
    "title": "Honda CR-Z Mugen RZ",
    "type": "new",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=55a4c879-13b3-f111-aaac-6045bdc3d6cd"
-  },
-  {
-   "at": "2026-09-18T23:55:37+00:00",
-   "detail": "11/2011 - 06/2021 \u00b7 MA - Passenger Vehicle",
-   "sev": "SEV-001110",
-   "title": "Toyota Aqua Welcab",
-   "type": "new",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e40ab785-13b3-f111-aaac-6045bdc3d6cd"
-  },
-  {
-   "at": "2026-09-17T00:10:44+00:00",
-   "detail": "a model report is now in force \u2014 SHUI MIR PTY LTD; a workshop can build it now",
-   "sev": "SEV-000589",
-   "title": "LEXUS IS300h",
-   "type": "report_added",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=602cf62d-27ea-ee11-a1fd-002248969682"
-  },
-  {
-   "at": "2026-09-13T23:55:21+00:00",
-   "detail": "a model report is now in force \u2014 SYDNEY AVV PTY LTD; a workshop can build it now",
-   "sev": "SEV-000935",
-   "title": "SMART ForTwo Electric Drive",
-   "type": "report_added",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7e1612b3-187e-f011-b4cc-000d3ad1290a"
   }
  ],
  "entries": [
@@ -1518,7 +1518,16 @@
    "criterion": "Environmental Criterion",
    "variant": "ALL",
    "variant_details": "MUST be JG5 Model Code BEV ONLY.",
-   "notes": "This Register listing is for Honda N-ONE e, \u2018Kei car\u2019, of model code ZAA-JG5, and with BEV drivetrain ONLY."
+   "notes": "This Register listing is for Honda N-ONE e, \u2018Kei car\u2019, of model code ZAA-JG5, and with BEV drivetrain ONLY.",
+   "has_report": true,
+   "reports": [
+    {
+     "mre": "MRE-001006",
+     "holder": "SYDNEY AVV PTY LTD",
+     "status": "In Force",
+     "website": "https://app.comptune.com.au"
+    }
+   ]
   },
   {
    "sev": "SEV-001101",
@@ -4171,6 +4180,12 @@
    "notes": "This entry canvasses the fifth generation of Ford Super Duty built on the P708 platform, specifically the F250 model variant.",
    "has_report": true,
    "reports": [
+    {
+     "mre": "MRE-001007",
+     "holder": "AMERICAN COMPLIANCE PTY LTD",
+     "status": "In Force",
+     "website": "https://scddirect.com.au/"
+    },
     {
      "mre": "MRE-000500",
      "holder": "Maracoonda Auto Pty Ltd",
@@ -11304,10 +11319,9 @@
    "model": "IMPREZA",
    "category": "MA - Passenger Vehicle",
    "model_code": "GDB",
-   "build_from_iso": "2005-01-01",
+   "build_from_iso": "2004-12-01",
    "build_to_iso": "2007-05-01",
    "expiry_iso": "2027-11-19",
-   "under_review": true,
    "status": "in_force",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f54bf44d-06a7-ef11-b8e8-000d3acc12dc",
    "criterion": "Performance Criterion",
