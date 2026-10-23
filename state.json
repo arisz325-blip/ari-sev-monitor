@@ -17803,7 +17803,7 @@
    "model_code": "MV",
    "reports": [],
    "sev": "SEV-000544",
-   "status": "in_force",
+   "status": "expired",
    "title": "KIA EV9",
    "under_review": false,
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=fb66e19a-2672-ee11-8179-002248933ce7",
@@ -32174,6 +32174,14 @@
    "reports": [
     {
      "compliance": "Complies",
+     "holder": "ORACLE CERTIFICATION PTY. LTD.",
+     "mre": "MRE-001008",
+     "status": "In Force",
+     "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=452134c2-b0cd-f111-a05a-6045bdc287a4",
+     "website": null
+    },
+    {
+     "compliance": "Complies",
      "holder": "SYDNEY AVV PTY LTD",
      "mre": "MRE-000997",
      "status": "In Force",
@@ -39448,10 +39456,53 @@
    "under_review": false,
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0ec0e1c7-42cc-f111-a05a-70a8a5563ff8",
    "variant": "ALL"
+  },
+  "SEV-001127": {
+   "build_from": "1/01/2018",
+   "build_from_iso": "2018-01-01",
+   "build_range": "01/2018 - No end date",
+   "build_to": null,
+   "build_to_iso": null,
+   "category": "NA - Light Goods Vehicle",
+   "criterion": "Campervans and Motorhomes Criterion",
+   "detailed": true,
+   "expiry": "21/10/2029",
+   "expiry_iso": "2029-10-21",
+   "first_seen": "2026-10-23T00:28:22+00:00",
+   "has_report": false,
+   "id": "d23feb24-b4cd-f111-a05a-70a8a5563b78",
+   "make": "Annex Toyota",
+   "model": "Liberty Camroad",
+   "model_code": "52DB, 52SP, 52RE",
+   "notes": "This RVSA SEVs Register listing is for completed campervans as built as a second-stage manufacture by Annex RV and based in a first-stage Toyota Camroad ONLY.",
+   "reports": [],
+   "sev": "SEV-001127",
+   "status": "in_force",
+   "title": "Annex Toyota Liberty Camroad",
+   "under_review": false,
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=d23feb24-b4cd-f111-a05a-70a8a5563b78",
+   "variant": "ALL",
+   "variant_details": "SSM vehicles built by Annex RV based on a Toyota Camroad first stage."
   }
  },
- "last_run": "2026-10-22T00:30:17+00:00",
+ "last_run": "2026-10-23T00:28:23+00:00",
  "recent_events": [
+  {
+   "at": "2026-10-23T00:28:22+00:00",
+   "detail": "01/2018 - no end date \u00b7 NA - Light Goods Vehicle",
+   "sev": "SEV-001127",
+   "title": "Annex Toyota Liberty Camroad",
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=d23feb24-b4cd-f111-a05a-70a8a5563b78"
+  },
+  {
+   "at": "2026-10-23T00:28:22+00:00",
+   "detail": "expired 23/10/2026",
+   "sev": "SEV-000544",
+   "title": "KIA EV9",
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=fb66e19a-2672-ee11-8179-002248933ce7"
+  },
   {
    "at": "2026-10-22T00:30:17+00:00",
    "detail": "a model report is now in force \u2014 SYDNEY AVV PTY LTD; a workshop can build it now",
@@ -57696,6 +57747,23 @@
    "subtype": "Specialist and Enthusiast Vehicles",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=7d443fc5-8acd-f111-a05a-7c1e528a1af9",
    "website": "https://scddirect.com.au/"
+  },
+  "MRE-001008": {
+   "build_range": "1/2021 - 12/2023",
+   "category": "MA",
+   "compliance": "Complies",
+   "holder": "ORACLE CERTIFICATION PTY. LTD.",
+   "id": "452134c2-b0cd-f111-a05a-6045bdc287a4",
+   "linked": true,
+   "make": "Toyota",
+   "model": "Camry",
+   "mre": "MRE-001008",
+   "report_status": "In Force",
+   "sev": [
+    "SEV-000913"
+   ],
+   "subtype": "Specialist and Enthusiast Vehicles",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=452134c2-b0cd-f111-a05a-6045bdc287a4"
   }
  },
  "version": 2

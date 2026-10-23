@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-10-22T00:30:17+00:00",
- "started_at": "2026-10-22T00:26:56+00:00",
+ "generated_at": "2026-10-23T00:28:23+00:00",
+ "started_at": "2026-10-23T00:24:52+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
  },
  "counts": {
-  "total": 1122,
+  "total": 1123,
   "in_force": 581,
-  "expired": 541,
+  "expired": 542,
   "under_review": 1,
-  "new_recent": 16,
-  "expiring_soon": 41,
+  "new_recent": 17,
+  "expiring_soon": 40,
   "with_report": 382,
   "without_report": 199,
-  "model_reports": 1007
+  "model_reports": 1008
  },
  "makes": [
   {
@@ -306,6 +306,12 @@
    "with_report": 1
   },
   {
+   "key": "ANNEX TOYOTA",
+   "label": "Annex Toyota",
+   "count": 1,
+   "with_report": 0
+  },
+  {
    "key": "BAC (BRIGGS AUTOMOTIVE COMPANY)",
    "label": "BAC (Briggs Automotive Company)",
    "count": 1,
@@ -394,12 +400,6 @@
    "label": "JP Star Daihatsu",
    "count": 1,
    "with_report": 1
-  },
-  {
-   "key": "KIA",
-   "label": "KIA",
-   "count": 1,
-   "with_report": 0
   },
   {
    "key": "KM HORSEBOXES DAF",
@@ -599,28 +599,44 @@
  },
  "recent_events": [
   {
-   "type": "report_added",
+   "type": "new",
+   "detail": "01/2018 - no end date \u00b7 NA - Light Goods Vehicle",
+   "sev": "SEV-001127",
+   "title": "Annex Toyota Liberty Camroad",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=d23feb24-b4cd-f111-a05a-70a8a5563b78",
+   "at": "2026-10-23T00:28:22+00:00"
+  },
+  {
+   "type": "expired",
+   "detail": "expired 23/10/2026",
+   "sev": "SEV-000544",
+   "title": "KIA EV9",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=fb66e19a-2672-ee11-8179-002248933ce7",
+   "at": "2026-10-23T00:28:22+00:00"
+  },
+  {
+   "at": "2026-10-22T00:30:17+00:00",
    "detail": "a model report is now in force \u2014 SYDNEY AVV PTY LTD; a workshop can build it now",
    "sev": "SEV-001102",
    "title": "Honda N-ONE e",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=8a561139-a8a1-f111-b8dc-6045bde6d459",
-   "at": "2026-10-22T00:30:17+00:00"
+   "type": "report_added",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=8a561139-a8a1-f111-b8dc-6045bde6d459"
   },
   {
-   "type": "review_cleared",
+   "at": "2026-10-22T00:30:17+00:00",
    "detail": "review flag cleared",
    "sev": "SEV-000708",
    "title": "SUBARU IMPREZA",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f54bf44d-06a7-ef11-b8e8-000d3acc12dc",
-   "at": "2026-10-22T00:30:17+00:00"
+   "type": "review_cleared",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f54bf44d-06a7-ef11-b8e8-000d3acc12dc"
   },
   {
-   "type": "updated",
+   "at": "2026-10-22T00:30:17+00:00",
    "detail": "Build date from: 1/01/2005 -> 1/12/2004",
    "sev": "SEV-000708",
    "title": "SUBARU IMPREZA",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f54bf44d-06a7-ef11-b8e8-000d3acc12dc",
-   "at": "2026-10-22T00:30:17+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f54bf44d-06a7-ef11-b8e8-000d3acc12dc"
   },
   {
    "at": "2026-10-21T00:27:35+00:00",
@@ -1061,25 +1077,26 @@
    "title": "GMC Sierra 1500",
    "type": "report_lost",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a053b361-5596-ef11-8a69-00224811ce44"
-  },
-  {
-   "at": "2026-09-25T00:25:39+00:00",
-   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
-   "sev": "SEV-000689",
-   "title": "GMC Sierra 1500",
-   "type": "report_lost",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=fab0dd67-5596-ef11-8a69-00224811ce44"
-  },
-  {
-   "at": "2026-09-18T23:55:37+00:00",
-   "detail": "11/2012 - 12/2016 \u00b7 MA - Passenger Vehicle",
-   "sev": "SEV-001109",
-   "title": "Honda CR-Z Mugen RZ",
-   "type": "new",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=55a4c879-13b3-f111-aaac-6045bdc3d6cd"
   }
  ],
  "entries": [
+  {
+   "sev": "SEV-001127",
+   "make": "Annex Toyota",
+   "model": "Liberty Camroad",
+   "category": "NA - Light Goods Vehicle",
+   "model_code": "52DB, 52SP, 52RE",
+   "build_from_iso": "2018-01-01",
+   "expiry_iso": "2029-10-21",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=d23feb24-b4cd-f111-a05a-70a8a5563b78",
+   "criterion": "Campervans and Motorhomes Criterion",
+   "variant": "ALL",
+   "variant_details": "SSM vehicles built by Annex RV based on a Toyota Camroad first stage.",
+   "notes": "This RVSA SEVs Register listing is for completed campervans as built as a second-stage manufacture by Annex RV and based in a first-stage Toyota Camroad ONLY.",
+   "first_seen": "2026-10-23T00:28:22+00:00",
+   "is_new": true
+  },
   {
    "sev": "SEV-001126",
    "make": "Ford",
@@ -5793,6 +5810,12 @@
    "notes": "NOTE: 1/2021 onwards, E-FOUR / AWD, AXVH75 model codes ONLY are eligible.",
    "has_report": true,
    "reports": [
+    {
+     "mre": "MRE-001008",
+     "holder": "ORACLE CERTIFICATION PTY. LTD.",
+     "status": "In Force",
+     "website": null
+    },
     {
      "mre": "MRE-000997",
      "holder": "SYDNEY AVV PTY LTD",
@@ -15413,11 +15436,10 @@
    "model_code": "MV",
    "build_from_iso": "2023-06-01",
    "expiry_iso": "2026-10-23",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=fb66e19a-2672-ee11-8179-002248933ce7",
    "criterion": "Environmental Criterion",
-   "variant": "ALL",
-   "expiring_soon": true
+   "variant": "ALL"
   },
   {
    "sev": "SEV-000543",
