@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-23T00:28:23+00:00",
- "started_at": "2026-10-23T00:24:52+00:00",
+ "generated_at": "2026-10-24T00:20:32+00:00",
+ "started_at": "2026-10-24T00:17:38+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -599,20 +599,20 @@
  },
  "recent_events": [
   {
-   "type": "new",
+   "at": "2026-10-23T00:28:22+00:00",
    "detail": "01/2018 - no end date \u00b7 NA - Light Goods Vehicle",
    "sev": "SEV-001127",
    "title": "Annex Toyota Liberty Camroad",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=d23feb24-b4cd-f111-a05a-70a8a5563b78",
-   "at": "2026-10-23T00:28:22+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=d23feb24-b4cd-f111-a05a-70a8a5563b78"
   },
   {
-   "type": "expired",
+   "at": "2026-10-23T00:28:22+00:00",
    "detail": "expired 23/10/2026",
    "sev": "SEV-000544",
    "title": "KIA EV9",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=fb66e19a-2672-ee11-8179-002248933ce7",
-   "at": "2026-10-23T00:28:22+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=fb66e19a-2672-ee11-8179-002248933ce7"
   },
   {
    "at": "2026-10-22T00:30:17+00:00",
