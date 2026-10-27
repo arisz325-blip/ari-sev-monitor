@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-10-25T23:53:04+00:00",
- "started_at": "2026-10-25T23:51:06+00:00",
+ "generated_at": "2026-10-27T01:16:44+00:00",
+ "started_at": "2026-10-27T01:11:37+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
  },
  "counts": {
-  "total": 1123,
-  "in_force": 581,
+  "total": 1124,
+  "in_force": 582,
   "expired": 542,
   "under_review": 1,
-  "new_recent": 17,
+  "new_recent": 18,
   "expiring_soon": 40,
   "with_report": 382,
-  "without_report": 199,
+  "without_report": 200,
   "model_reports": 1008
  },
  "makes": [
@@ -492,6 +492,12 @@
    "with_report": 1
   },
   {
+   "key": "RENAULT",
+   "label": "Renault",
+   "count": 1,
+   "with_report": 0
+  },
+  {
    "key": "RENNER",
    "label": "Renner",
    "count": 1,
@@ -598,6 +604,14 @@
   "categories": []
  },
  "recent_events": [
+  {
+   "type": "new",
+   "detail": "01/2022 - no end date \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001128",
+   "title": "Renault Alpine",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=b7298c43-fad0-f111-a059-7c1e528a1af9",
+   "at": "2026-10-27T01:16:44+00:00"
+  },
   {
    "at": "2026-10-23T00:28:22+00:00",
    "detail": "01/2018 - no end date \u00b7 NA - Light Goods Vehicle",
@@ -1069,17 +1083,26 @@
    "title": "LINCOLN Navigator",
    "type": "report_lost",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=9304cca6-2b51-ee11-be6f-00224892b406"
-  },
-  {
-   "at": "2026-09-25T00:25:39+00:00",
-   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
-   "sev": "SEV-000688",
-   "title": "GMC Sierra 1500",
-   "type": "report_lost",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a053b361-5596-ef11-8a69-00224811ce44"
   }
  ],
  "entries": [
+  {
+   "sev": "SEV-001128",
+   "make": "Renault",
+   "model": "Alpine",
+   "category": "MA - Passenger Vehicle",
+   "model_code": "XEF",
+   "build_from_iso": "2022-01-01",
+   "expiry_iso": "2029-10-25",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=b7298c43-fad0-f111-a059-7c1e528a1af9",
+   "criterion": "Performance Criterion",
+   "variant": "A110, A110 GT: A110S",
+   "variant_details": "A110; A110 GT; A110S variants only",
+   "notes": "This RVSA SEVs Register entry is for A110; A110 GT; A110S variants from the specified build date ONLY.",
+   "first_seen": "2026-10-27T01:16:44+00:00",
+   "is_new": true
+  },
   {
    "sev": "SEV-001127",
    "make": "Annex Toyota",

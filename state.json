@@ -39483,10 +39483,45 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=d23feb24-b4cd-f111-a05a-70a8a5563b78",
    "variant": "ALL",
    "variant_details": "SSM vehicles built by Annex RV based on a Toyota Camroad first stage."
+  },
+  "SEV-001128": {
+   "build_from": "1/01/2022",
+   "build_from_iso": "2022-01-01",
+   "build_range": "01/2022 - No end date",
+   "build_to": null,
+   "build_to_iso": null,
+   "category": "MA - Passenger Vehicle",
+   "criterion": "Performance Criterion",
+   "detailed": true,
+   "expiry": "25/10/2029",
+   "expiry_iso": "2029-10-25",
+   "first_seen": "2026-10-27T01:16:44+00:00",
+   "has_report": false,
+   "id": "b7298c43-fad0-f111-a059-7c1e528a1af9",
+   "make": "Renault",
+   "model": "Alpine",
+   "model_code": "XEF",
+   "notes": "This RVSA SEVs Register entry is for A110; A110 GT; A110S variants from the specified build date ONLY.",
+   "reports": [],
+   "sev": "SEV-001128",
+   "status": "in_force",
+   "title": "Renault Alpine",
+   "under_review": false,
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=b7298c43-fad0-f111-a059-7c1e528a1af9",
+   "variant": "A110, A110 GT: A110S",
+   "variant_details": "A110; A110 GT; A110S variants only"
   }
  },
- "last_run": "2026-10-25T23:53:04+00:00",
+ "last_run": "2026-10-27T01:16:44+00:00",
  "recent_events": [
+  {
+   "at": "2026-10-27T01:16:44+00:00",
+   "detail": "01/2022 - no end date \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001128",
+   "title": "Renault Alpine",
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=b7298c43-fad0-f111-a059-7c1e528a1af9"
+  },
   {
    "at": "2026-10-23T00:28:22+00:00",
    "detail": "01/2018 - no end date \u00b7 NA - Light Goods Vehicle",
