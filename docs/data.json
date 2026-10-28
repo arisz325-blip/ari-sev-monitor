@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-10-27T01:16:44+00:00",
- "started_at": "2026-10-27T01:11:37+00:00",
+ "generated_at": "2026-10-28T01:01:32+00:00",
+ "started_at": "2026-10-28T00:59:27+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
  },
  "counts": {
-  "total": 1124,
-  "in_force": 582,
+  "total": 1125,
+  "in_force": 583,
   "expired": 542,
   "under_review": 1,
-  "new_recent": 18,
+  "new_recent": 19,
   "expiring_soon": 40,
   "with_report": 382,
-  "without_report": 200,
+  "without_report": 201,
   "model_reports": 1008
  },
  "makes": [
@@ -50,7 +50,7 @@
   {
    "key": "LEXUS",
    "label": "LEXUS",
-   "count": 20,
+   "count": 21,
    "with_report": 15
   },
   {
@@ -606,11 +606,35 @@
  "recent_events": [
   {
    "type": "new",
+   "detail": "06/2020 - 06/2021 \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001129",
+   "title": "LEXUS LC 500",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0bf13c43-b3d1-f111-a05b-6045bdc28f40",
+   "at": "2026-10-28T01:01:32+00:00"
+  },
+  {
+   "type": "updated",
+   "detail": "Model: S400d / S450d (223023 / 223025) -> S400d / S450d (223023 / 223025 / 223123 / 223125); Model code: 223023 / 223025 -> 223023 / 223025 / 223123 / 223125",
+   "sev": "SEV-001085",
+   "title": "Mercedes-Benz S400d / S450d (223023 / 223025 / 223123 / 223125)",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=c111c902-5f85-f111-ab0e-70a8a5540c85",
+   "at": "2026-10-28T01:01:32+00:00"
+  },
+  {
+   "type": "updated",
+   "detail": "Model code: CK66EBS -> CK66EBS, CK66EAS",
+   "sev": "SEV-001108",
+   "title": "BYD RACCO",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=92fda020-cdac-f111-aaab-70a8a5563b9f",
+   "at": "2026-10-28T01:01:32+00:00"
+  },
+  {
+   "at": "2026-10-27T01:16:44+00:00",
    "detail": "01/2022 - no end date \u00b7 MA - Passenger Vehicle",
    "sev": "SEV-001128",
    "title": "Renault Alpine",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=b7298c43-fad0-f111-a059-7c1e528a1af9",
-   "at": "2026-10-27T01:16:44+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=b7298c43-fad0-f111-a059-7c1e528a1af9"
   },
   {
    "at": "2026-10-23T00:28:22+00:00",
@@ -1059,33 +1083,27 @@
    "title": "LEXUS RX 450h",
    "type": "report_lost",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0b5489f4-faf8-ec11-a320-0050569ede77"
-  },
-  {
-   "at": "2026-09-25T00:25:39+00:00",
-   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
-   "sev": "SEV-000333",
-   "title": "Honda Acty",
-   "type": "report_lost",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a9c31576-4119-ed11-b83e-000d3aca67e3"
-  },
-  {
-   "at": "2026-09-25T00:25:39+00:00",
-   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
-   "sev": "SEV-000485",
-   "title": "DAIHATSU HIJET",
-   "type": "report_lost",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7ef264a7-7915-ee11-9cbe-00224893bb55"
-  },
-  {
-   "at": "2026-09-25T00:25:39+00:00",
-   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
-   "sev": "SEV-000518",
-   "title": "LINCOLN Navigator",
-   "type": "report_lost",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=9304cca6-2b51-ee11-be6f-00224892b406"
   }
  ],
  "entries": [
+  {
+   "sev": "SEV-001129",
+   "make": "LEXUS",
+   "model": "LC 500",
+   "category": "MA - Passenger Vehicle",
+   "model_code": "URZ100-AKUBH",
+   "build_from_iso": "2020-06-01",
+   "build_to_iso": "2021-06-01",
+   "expiry_iso": "2029-10-26",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0bf13c43-b3d1-f111-a05b-6045bdc28f40",
+   "criterion": "Performance Criterion",
+   "variant": "LC 500 Convertible",
+   "variant_details": "Lexus LC500 Convertible model code URZ100-AKUBH",
+   "notes": "This RVSA SEVs Register listing is for Lexus LC500 Convertible, model code URZ100-AKUBH, in the nominated build date range ONLY",
+   "first_seen": "2026-10-28T01:01:32+00:00",
+   "is_new": true
+  },
   {
    "sev": "SEV-001128",
    "make": "Renault",
@@ -1421,7 +1439,7 @@
    "make": "BYD",
    "model": "RACCO",
    "category": "MA - Passenger Vehicle",
-   "model_code": "CK66EBS",
+   "model_code": "CK66EBS, CK66EAS",
    "build_from_iso": "2026-04-01",
    "expiry_iso": "2029-09-09",
    "status": "in_force",
@@ -1804,9 +1822,9 @@
   {
    "sev": "SEV-001085",
    "make": "Mercedes-Benz",
-   "model": "S400d / S450d (223023 / 223025)",
+   "model": "S400d / S450d (223023 / 223025 / 223123 / 223125)",
    "category": "MA - Passenger Vehicle",
-   "model_code": "223023 / 223025",
+   "model_code": "223023 / 223025 / 223123 / 223125",
    "build_from_iso": "2021-07-01",
    "expiry_iso": "2029-07-21",
    "status": "in_force",
