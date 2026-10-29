@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-28T01:01:32+00:00",
- "started_at": "2026-10-28T00:59:27+00:00",
+ "generated_at": "2026-10-29T01:36:19+00:00",
+ "started_at": "2026-10-29T01:34:56+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -605,28 +605,28 @@
  },
  "recent_events": [
   {
-   "type": "new",
+   "at": "2026-10-28T01:01:32+00:00",
    "detail": "06/2020 - 06/2021 \u00b7 MA - Passenger Vehicle",
    "sev": "SEV-001129",
    "title": "LEXUS LC 500",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0bf13c43-b3d1-f111-a05b-6045bdc28f40",
-   "at": "2026-10-28T01:01:32+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0bf13c43-b3d1-f111-a05b-6045bdc28f40"
   },
   {
-   "type": "updated",
+   "at": "2026-10-28T01:01:32+00:00",
    "detail": "Model: S400d / S450d (223023 / 223025) -> S400d / S450d (223023 / 223025 / 223123 / 223125); Model code: 223023 / 223025 -> 223023 / 223025 / 223123 / 223125",
    "sev": "SEV-001085",
    "title": "Mercedes-Benz S400d / S450d (223023 / 223025 / 223123 / 223125)",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=c111c902-5f85-f111-ab0e-70a8a5540c85",
-   "at": "2026-10-28T01:01:32+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=c111c902-5f85-f111-ab0e-70a8a5540c85"
   },
   {
-   "type": "updated",
+   "at": "2026-10-28T01:01:32+00:00",
    "detail": "Model code: CK66EBS -> CK66EBS, CK66EAS",
    "sev": "SEV-001108",
    "title": "BYD RACCO",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=92fda020-cdac-f111-aaab-70a8a5563b9f",
-   "at": "2026-10-28T01:01:32+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=92fda020-cdac-f111-aaab-70a8a5563b9f"
   },
   {
    "at": "2026-10-27T01:16:44+00:00",
