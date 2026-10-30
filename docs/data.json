@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-10-29T01:36:19+00:00",
- "started_at": "2026-10-29T01:34:56+00:00",
+ "generated_at": "2026-10-30T01:36:38+00:00",
+ "started_at": "2026-10-30T01:35:23+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
  },
  "counts": {
   "total": 1125,
-  "in_force": 583,
-  "expired": 542,
+  "in_force": 582,
+  "expired": 543,
   "under_review": 1,
   "new_recent": 19,
-  "expiring_soon": 40,
+  "expiring_soon": 39,
   "with_report": 382,
-  "without_report": 201,
+  "without_report": 200,
   "model_reports": 1008
  },
  "makes": [
@@ -504,12 +504,6 @@
    "with_report": 0
   },
   {
-   "key": "RIVIAN",
-   "label": "Rivian",
-   "count": 1,
-   "with_report": 0
-  },
-  {
    "key": "ROARK DESIGN",
    "label": "Roark Design",
    "count": 1,
@@ -604,6 +598,14 @@
   "categories": []
  },
  "recent_events": [
+  {
+   "type": "expired",
+   "detail": "expired 30/10/2026",
+   "sev": "SEV-000545",
+   "title": "Rivian R1T",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e7094638-9577-ee11-8179-00224892b306",
+   "at": "2026-10-30T01:36:38+00:00"
+  },
   {
    "at": "2026-10-28T01:01:32+00:00",
    "detail": "06/2020 - 06/2021 \u00b7 MA - Passenger Vehicle",
@@ -1075,14 +1077,6 @@
    "title": "Moto-Trek X-Cite G",
    "type": "report_lost",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a0953a25-5d98-ec11-a31b-0050569ede77"
-  },
-  {
-   "at": "2026-09-25T00:25:39+00:00",
-   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
-   "sev": "SEV-000322",
-   "title": "LEXUS RX 450h",
-   "type": "report_lost",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0b5489f4-faf8-ec11-a320-0050569ede77"
   }
  ],
  "entries": [
@@ -15463,11 +15457,10 @@
    "model_code": "R1T",
    "build_from_iso": "2021-10-01",
    "expiry_iso": "2026-10-30",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e7094638-9577-ee11-8179-00224892b306",
    "criterion": "Left-Hand Drive Criterion",
-   "variant": "ALL",
-   "expiring_soon": true
+   "variant": "ALL"
   },
   {
    "sev": "SEV-000544",
