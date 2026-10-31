@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-30T01:36:38+00:00",
- "started_at": "2026-10-30T01:35:23+00:00",
+ "generated_at": "2026-10-31T01:27:20+00:00",
+ "started_at": "2026-10-31T01:26:06+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -14,7 +14,7 @@
   "expiring_soon": 39,
   "with_report": 382,
   "without_report": 200,
-  "model_reports": 1008
+  "model_reports": 1009
  },
  "makes": [
   {
@@ -599,12 +599,12 @@
  },
  "recent_events": [
   {
-   "type": "expired",
+   "at": "2026-10-30T01:36:38+00:00",
    "detail": "expired 30/10/2026",
    "sev": "SEV-000545",
    "title": "Rivian R1T",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e7094638-9577-ee11-8179-00224892b306",
-   "at": "2026-10-30T01:36:38+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e7094638-9577-ee11-8179-00224892b306"
   },
   {
    "at": "2026-10-28T01:01:32+00:00",
@@ -5247,6 +5247,12 @@
    "notes": "This entry seeks to enter the 2WD and 4WD fourth generation Toyota Townace series of vehicles. S402 and S403 are 2WD pre and post facelift, S403M and S413M are 4WD pre and post facelift respectively.",
    "has_report": true,
    "reports": [
+    {
+     "mre": "MRE-001009",
+     "holder": "SHUI MIR PTY LTD",
+     "status": "In Force",
+     "website": "https://www.shuimir.com"
+    },
     {
      "mre": "MRE-000911",
      "holder": "SYDNEY AVV PTY LTD",
