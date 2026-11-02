@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-01T00:44:41+00:00",
- "started_at": "2026-11-01T00:43:35+00:00",
+ "generated_at": "2026-11-02T01:19:07+00:00",
+ "started_at": "2026-11-02T01:17:48+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -10,7 +10,7 @@
   "in_force": 582,
   "expired": 543,
   "under_review": 1,
-  "new_recent": 19,
+  "new_recent": 16,
   "expiring_soon": 39,
   "with_report": 382,
   "without_report": 200,
@@ -1361,8 +1361,7 @@
    "variant": "ALL",
    "variant_details": "GLC 220d HEV variants only",
    "notes": "GLC 220d HEV variants only",
-   "first_seen": "2026-10-02T01:20:01+00:00",
-   "is_new": true
+   "first_seen": "2026-10-02T01:20:01+00:00"
   },
   {
    "sev": "SEV-001112",
@@ -1378,8 +1377,7 @@
    "variant": "ALL",
    "variant_details": "Variant details - Must have Mobility Hiace Welljoin features, including front handrail, sliding door entrance grip handle, electrical retractable step, seating position removed to allow for easy access and door opening label. These vehicles are 10-seater variants only",
    "notes": "Variant details - Must have Mobility Hiace Welljoin features, including front handrail, sliding door entrance grip handle, electrical retractable step, seating position removed to allow for easy access and door opening label. These vehicles are 10-seater variants only",
-   "first_seen": "2026-10-02T01:20:01+00:00",
-   "is_new": true
+   "first_seen": "2026-10-02T01:20:01+00:00"
   },
   {
    "sev": "SEV-001111",
@@ -1394,8 +1392,7 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=b07839f0-e7bd-f111-aaad-7c1e52631efa",
    "criterion": "Performance Criterion",
    "variant": "ALL",
-   "first_seen": "2026-10-02T01:20:01+00:00",
-   "is_new": true
+   "first_seen": "2026-10-02T01:20:01+00:00"
   },
   {
    "sev": "SEV-001110",
