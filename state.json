@@ -35899,6 +35899,14 @@
    "reports": [
     {
      "compliance": "Complies",
+     "holder": null,
+     "mre": "MRE-001010",
+     "status": "In Force",
+     "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=eb3ae009-07d7-f111-a05b-000d3acaf0b6",
+     "website": null
+    },
+    {
+     "compliance": "Complies",
      "holder": "SYDNEY AVV PTY LTD",
      "mre": "MRE-000972",
      "status": "In Force",
@@ -39547,7 +39555,7 @@
    "variant_details": "Lexus LC500 Convertible model code URZ100-AKUBH"
   }
  },
- "last_run": "2026-11-02T01:19:07+00:00",
+ "last_run": "2026-11-03T03:20:47+00:00",
  "recent_events": [
   {
    "at": "2026-10-30T01:36:38+00:00",
@@ -57884,6 +57892,22 @@
    "subtype": "Specialist and Enthusiast Vehicles",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=0e06a2b2-0ad4-f111-a05b-6045bdc28f40",
    "website": "https://www.shuimir.com"
+  },
+  "MRE-001010": {
+   "build_range": "7/2021 - 2/2025",
+   "category": "MA",
+   "compliance": "Complies",
+   "id": "eb3ae009-07d7-f111-a05b-000d3acaf0b6",
+   "linked": true,
+   "make": "Toyota",
+   "model": "Aqua",
+   "mre": "MRE-001010",
+   "report_status": "In Force",
+   "sev": [
+    "SEV-001012"
+   ],
+   "subtype": "Specialist and Enthusiast Vehicles",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=eb3ae009-07d7-f111-a05b-000d3acaf0b6"
   }
  },
  "version": 2

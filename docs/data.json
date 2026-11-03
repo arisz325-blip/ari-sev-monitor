@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-02T01:19:07+00:00",
- "started_at": "2026-11-02T01:17:48+00:00",
+ "generated_at": "2026-11-03T03:20:47+00:00",
+ "started_at": "2026-11-03T03:19:16+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -11,10 +11,10 @@
   "expired": 543,
   "under_review": 1,
   "new_recent": 16,
-  "expiring_soon": 39,
+  "expiring_soon": 40,
   "with_report": 382,
   "without_report": 200,
-  "model_reports": 1009
+  "model_reports": 1010
  },
  "makes": [
   {
@@ -3381,6 +3381,12 @@
    "variant": "ALL",
    "has_report": true,
    "reports": [
+    {
+     "mre": "MRE-001010",
+     "holder": null,
+     "status": "In Force",
+     "website": null
+    },
     {
      "mre": "MRE-000972",
      "holder": "SYDNEY AVV PTY LTD",
@@ -14559,7 +14565,8 @@
    "status": "in_force",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=b29adc64-a8d9-ee11-904c-000d3acba793",
    "criterion": "Performance Criterion",
-   "variant": "ALL"
+   "variant": "ALL",
+   "expiring_soon": true
   },
   {
    "sev": "SEV-000584",
