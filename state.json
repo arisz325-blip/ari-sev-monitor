@@ -35856,6 +35856,14 @@
    "model_code": "NHP10",
    "reports": [
     {
+     "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
+     "holder": "GLAM GROUPS PTY. LTD.",
+     "mre": "MRE-001011",
+     "status": "In Force",
+     "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=726ce4dd-d8d7-f111-a05b-7c1e52631efa",
+     "website": "https://www.rvsa.co"
+    },
+    {
      "compliance": "Complies",
      "holder": "SYDNEY AVV PTY LTD",
      "mre": "MRE-000974",
@@ -39555,7 +39563,7 @@
    "variant_details": "Lexus LC500 Convertible model code URZ100-AKUBH"
   }
  },
- "last_run": "2026-11-03T03:20:47+00:00",
+ "last_run": "2026-11-04T01:56:39+00:00",
  "recent_events": [
   {
    "at": "2026-10-30T01:36:38+00:00",
@@ -57908,6 +57916,24 @@
    ],
    "subtype": "Specialist and Enthusiast Vehicles",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=eb3ae009-07d7-f111-a05b-000d3acaf0b6"
+  },
+  "MRE-001011": {
+   "build_range": "1/2021 - 7/2021",
+   "category": "MA",
+   "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
+   "holder": "GLAM GROUPS PTY. LTD.",
+   "id": "726ce4dd-d8d7-f111-a05b-7c1e52631efa",
+   "linked": true,
+   "make": "Toyota",
+   "model": "Aqua",
+   "mre": "MRE-001011",
+   "report_status": "In Force",
+   "sev": [
+    "SEV-001011"
+   ],
+   "subtype": "Specialist and Enthusiast Vehicles",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=726ce4dd-d8d7-f111-a05b-7c1e52631efa",
+   "website": "https://www.rvsa.co"
   }
  },
  "version": 2

@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-03T03:20:47+00:00",
- "started_at": "2026-11-03T03:19:16+00:00",
+ "generated_at": "2026-11-04T01:56:39+00:00",
+ "started_at": "2026-11-04T01:55:19+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -11,10 +11,10 @@
   "expired": 543,
   "under_review": 1,
   "new_recent": 16,
-  "expiring_soon": 40,
+  "expiring_soon": 41,
   "with_report": 382,
   "without_report": 200,
-  "model_reports": 1010
+  "model_reports": 1011
  },
  "makes": [
   {
@@ -3416,6 +3416,12 @@
    "variant": "ALL",
    "has_report": true,
    "reports": [
+    {
+     "mre": "MRE-001011",
+     "holder": "GLAM GROUPS PTY. LTD.",
+     "status": "In Force",
+     "website": "https://www.rvsa.co"
+    },
     {
      "mre": "MRE-000974",
      "holder": "SYDNEY AVV PTY LTD",
@@ -14552,7 +14558,8 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=6a3b31fc-75da-ee11-904c-0022489614bf",
    "criterion": "Environmental Criterion",
    "variant": "ALL",
-   "notes": "This is a pure electric vehicle."
+   "notes": "This is a pure electric vehicle.",
+   "expiring_soon": true
   },
   {
    "sev": "SEV-000585",
