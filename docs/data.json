@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-11-04T01:56:39+00:00",
- "started_at": "2026-11-04T01:55:19+00:00",
+ "generated_at": "2026-11-05T02:02:40+00:00",
+ "started_at": "2026-11-05T02:00:07+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
  },
  "counts": {
-  "total": 1125,
-  "in_force": 582,
+  "total": 1129,
+  "in_force": 586,
   "expired": 543,
-  "under_review": 1,
-  "new_recent": 16,
+  "under_review": 3,
+  "new_recent": 20,
   "expiring_soon": 41,
-  "with_report": 382,
-  "without_report": 200,
-  "model_reports": 1011
+  "with_report": 383,
+  "without_report": 203,
+  "model_reports": 1012
  },
  "makes": [
   {
@@ -32,13 +32,13 @@
   {
    "key": "MERCEDES-BENZ",
    "label": "Mercedes-Benz",
-   "count": 36,
+   "count": 39,
    "with_report": 25
   },
   {
    "key": "HONDA",
    "label": "Honda",
-   "count": 28,
+   "count": 29,
    "with_report": 21
   },
   {
@@ -69,7 +69,7 @@
    "key": "RAM",
    "label": "RAM",
    "count": 16,
-   "with_report": 12
+   "with_report": 13
   },
   {
    "key": "SUBARU",
@@ -599,6 +599,62 @@
  },
  "recent_events": [
   {
+   "type": "new",
+   "detail": "01/2001 - 12/2005 \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001130",
+   "title": "Honda Civic Type R",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0eed8d0d-f5d7-f111-a05b-70a8a55633c4",
+   "at": "2026-11-05T02:02:38+00:00"
+  },
+  {
+   "type": "new",
+   "detail": "01/2021 - no end date \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001131",
+   "title": "Mercedes-Benz S63 E PHEV",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=fe77a880-f5d7-f111-a05b-70a8a55633c4",
+   "at": "2026-11-05T02:02:38+00:00"
+  },
+  {
+   "type": "new",
+   "detail": "01/2021 - no end date \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001132",
+   "title": "Mercedes-Benz S 450 E PHEV",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=3378a880-f5d7-f111-a05b-70a8a55633c4",
+   "at": "2026-11-05T02:02:38+00:00"
+  },
+  {
+   "type": "new",
+   "detail": "01/2021 - no end date \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001133",
+   "title": "Mercedes-Benz S 580 E PHEV",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=6f78a880-f5d7-f111-a05b-70a8a55633c4",
+   "at": "2026-11-05T02:02:38+00:00"
+  },
+  {
+   "type": "report_added",
+   "detail": "a model report is now in force \u2014 AMERICAN COMPLIANCE PTY LTD; a workshop can build it now",
+   "sev": "SEV-000828",
+   "title": "RAM 1500",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=80670085-8604-f011-bae2-6045bde7293c",
+   "at": "2026-11-05T02:02:38+00:00"
+  },
+  {
+   "type": "under_review",
+   "detail": "the entry may be varied or removed",
+   "sev": "SEV-000709",
+   "title": "Toyota Yaris",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=cfa2368c-9cab-ef11-b8e9-000d3acbed23",
+   "at": "2026-11-05T02:02:38+00:00"
+  },
+  {
+   "type": "under_review",
+   "detail": "the entry may be varied or removed",
+   "sev": "SEV-001026",
+   "title": "NISSAN Skyline",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=ae8e8702-be06-f111-8407-7ced8dd12560",
+   "at": "2026-11-05T02:02:38+00:00"
+  },
+  {
    "at": "2026-10-30T01:36:38+00:00",
    "detail": "expired 30/10/2026",
    "sev": "SEV-000545",
@@ -1021,65 +1077,78 @@
    "title": "Toyota Harrier Hybrid",
    "type": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=88f80e40-9a5d-ee11-be6f-002248933665"
-  },
-  {
-   "at": "2026-09-27T00:20:05+00:00",
-   "detail": "expired 27/09/2026",
-   "sev": "SEV-000525",
-   "title": "Honda NSX Type S",
-   "type": "expired",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=86db3deb-b55d-ee11-be6f-00224810679d"
-  },
-  {
-   "at": "2026-09-25T00:25:39+00:00",
-   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
-   "sev": "SEV-000071",
-   "title": "Honda Fit Hybrid",
-   "type": "report_lost",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e9a2db09-561c-ec11-a314-0050569ede77"
-  },
-  {
-   "at": "2026-09-25T00:25:39+00:00",
-   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
-   "sev": "SEV-000092",
-   "title": "GMC Sierra 1500",
-   "type": "report_lost",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=279dfe8d-e23a-ec11-a303-0050569e60b7"
-  },
-  {
-   "at": "2026-09-25T00:25:39+00:00",
-   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
-   "sev": "SEV-000093",
-   "title": "GMC Sierra 1500",
-   "type": "report_lost",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=5d9dfe8d-e23a-ec11-a303-0050569e60b7"
-  },
-  {
-   "at": "2026-09-25T00:25:39+00:00",
-   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
-   "sev": "SEV-000120",
-   "title": "Toyota Corolla Axio Hybrid",
-   "type": "report_lost",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7d9c64aa-9f51-ec11-a304-fa28e243ca9c"
-  },
-  {
-   "at": "2026-09-25T00:25:39+00:00",
-   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
-   "sev": "SEV-000171",
-   "title": "Ford Bronco",
-   "type": "report_lost",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=3b5abc7c-2b78-ec11-a306-0050569e60b7"
-  },
-  {
-   "at": "2026-09-25T00:25:39+00:00",
-   "detail": "no model report is in force any more \u2014 nobody can import it until one is",
-   "sev": "SEV-000186",
-   "title": "Moto-Trek X-Cite G",
-   "type": "report_lost",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a0953a25-5d98-ec11-a31b-0050569ede77"
   }
  ],
  "entries": [
+  {
+   "sev": "SEV-001133",
+   "make": "Mercedes-Benz",
+   "model": "S 580 E PHEV",
+   "category": "MA - Passenger Vehicle",
+   "model_code": "223169",
+   "build_from_iso": "2021-01-01",
+   "expiry_iso": "2029-11-03",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=6f78a880-f5d7-f111-a05b-70a8a55633c4",
+   "criterion": "Performance Criterion",
+   "variant": "S 580 E PHEV",
+   "variant_details": "Mercedes-Benz S 580 E PHEV with model code 223169 ONLY",
+   "notes": "This SEVs Register listing is for Mercedes-Benz S 580 E PHEV with model code 223169 ONLY",
+   "first_seen": "2026-11-05T02:02:38+00:00",
+   "is_new": true
+  },
+  {
+   "sev": "SEV-001132",
+   "make": "Mercedes-Benz",
+   "model": "S 450 E PHEV",
+   "category": "MA - Passenger Vehicle",
+   "model_code": "223066 / 223166",
+   "build_from_iso": "2021-01-01",
+   "expiry_iso": "2029-11-03",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=3378a880-f5d7-f111-a05b-70a8a55633c4",
+   "criterion": "Performance Criterion",
+   "variant": "S 450 E PHEV",
+   "variant_details": "Mercedes-Benz S 450 PHEV of model codes 223066 and 223166 ONLY",
+   "notes": "This SEVs Register listing is for Mercedes-Benz S 450 PHEV of model codes 223066 and 223166 ONLY",
+   "first_seen": "2026-11-05T02:02:38+00:00",
+   "is_new": true
+  },
+  {
+   "sev": "SEV-001131",
+   "make": "Mercedes-Benz",
+   "model": "S63 E PHEV",
+   "category": "MA - Passenger Vehicle",
+   "model_code": "223182",
+   "build_from_iso": "2021-01-01",
+   "expiry_iso": "2029-11-03",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=fe77a880-f5d7-f111-a05b-70a8a55633c4",
+   "criterion": "Performance Criterion",
+   "variant": "S 63 E PHEV",
+   "variant_details": "Mercedes-Benz S63 E PHEV of model code 223182 ONLY",
+   "notes": "This SEVs Register listing is for Mercedes-Benz S63 E PHEV of model code 223182 ONLY",
+   "first_seen": "2026-11-05T02:02:38+00:00",
+   "is_new": true
+  },
+  {
+   "sev": "SEV-001130",
+   "make": "Honda",
+   "model": "Civic Type R",
+   "category": "MA - Passenger Vehicle",
+   "model_code": "EP3",
+   "build_from_iso": "2001-01-01",
+   "build_to_iso": "2005-12-01",
+   "expiry_iso": "2029-11-03",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0eed8d0d-f5d7-f111-a05b-70a8a55633c4",
+   "criterion": "Performance Criterion",
+   "variant": "HONDA CIVIC TYPE R EP3",
+   "variant_details": "2 DOOR EP3 HATCHBACK K20A MOTOR",
+   "notes": "This SEVs Register listing is for Honda Civic Type R 2-door hatchback EP3 series vehicles fitted with K20A engine ONLY",
+   "first_seen": "2026-11-05T02:02:38+00:00",
+   "is_new": true
+  },
   {
    "sev": "SEV-001129",
    "make": "LEXUS",
@@ -3029,6 +3098,7 @@
    "model_code": "RV37",
    "build_from_iso": "2021-01-01",
    "expiry_iso": "2029-02-10",
+   "under_review": true,
    "status": "in_force",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=ae8e8702-be06-f111-8407-7ced8dd12560",
    "criterion": "Performance Criterion",
@@ -7902,7 +7972,14 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=80670085-8604-f011-bae2-6045bde7293c",
    "criterion": "Left-Hand Drive Criterion",
    "variant": "ALL",
+   "has_report": true,
    "reports": [
+    {
+     "mre": "MRE-001012",
+     "holder": "AMERICAN COMPLIANCE PTY LTD",
+     "status": "In Force",
+     "website": null
+    },
     {
      "mre": "MRE-000557",
      "holder": "AUSMV PTY LTD",
@@ -11359,6 +11436,7 @@
    "model_code": "MXPH1#",
    "build_from_iso": "2020-02-01",
    "expiry_iso": "2027-11-25",
+   "under_review": true,
    "status": "in_force",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=cfa2368c-9cab-ef11-b8e9-000d3acbed23",
    "criterion": "Environmental Criterion",
