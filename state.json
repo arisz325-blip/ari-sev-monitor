@@ -19336,6 +19336,14 @@
    "reports": [
     {
      "compliance": "Complies",
+     "holder": "SYDNEY AVV PTY LTD",
+     "mre": "MRE-001014",
+     "status": "In Force",
+     "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=8e5775d7-82d9-f111-a05b-70a8a55633c4",
+     "website": "https://app.comptune.com.au"
+    },
+    {
+     "compliance": "Complies",
      "holder": "SHUI MIR PTY LTD",
      "mre": "MRE-000996",
      "status": "In Force",
@@ -35865,6 +35873,14 @@
    "reports": [
     {
      "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
+     "holder": null,
+     "mre": "MRE-001013",
+     "status": "In Force",
+     "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=604bcd3a-5dd9-f111-a05b-70a8a55633c4",
+     "website": null
+    },
+    {
+     "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
      "holder": "GLAM GROUPS PTY. LTD.",
      "mre": "MRE-001011",
      "status": "In Force",
@@ -36470,7 +36486,7 @@
    "sev": "SEV-001026",
    "status": "in_force",
    "title": "NISSAN Skyline",
-   "under_review": true,
+   "under_review": false,
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=ae8e8702-be06-f111-8407-7ced8dd12560",
    "variant": "Skyline GT",
    "variant_details": "RV37 variant with RWD and powered by VQ30DDTT engine (P V6 3.0L 2TC)"
@@ -39679,8 +39695,16 @@
    "variant_details": "Mercedes-Benz S 580 E PHEV with model code 223169 ONLY"
   }
  },
- "last_run": "2026-11-05T02:02:40+00:00",
+ "last_run": "2026-11-06T02:04:33+00:00",
  "recent_events": [
+  {
+   "at": "2026-11-06T02:04:33+00:00",
+   "detail": "review flag cleared",
+   "sev": "SEV-001026",
+   "title": "NISSAN Skyline",
+   "type": "review_cleared",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=ae8e8702-be06-f111-8407-7ced8dd12560"
+  },
   {
    "at": "2026-11-05T02:02:38+00:00",
    "detail": "01/2001 - 12/2005 \u00b7 MA - Passenger Vehicle",
@@ -58123,6 +58147,40 @@
    ],
    "subtype": "Specialist and Enthusiast Vehicles",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=95a2125e-03d8-f111-a05b-7c1e52631fbd"
+  },
+  "MRE-001013": {
+   "build_range": "1/2021 - 7/2021",
+   "category": "MA",
+   "compliance": "Substantially Complies - Minor and Inconsequential non-compliance",
+   "id": "604bcd3a-5dd9-f111-a05b-70a8a55633c4",
+   "linked": true,
+   "make": "Toyota",
+   "model": "Aqua",
+   "mre": "MRE-001013",
+   "report_status": "In Force",
+   "sev": [
+    "SEV-001011"
+   ],
+   "subtype": "Specialist and Enthusiast Vehicles",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=604bcd3a-5dd9-f111-a05b-70a8a55633c4"
+  },
+  "MRE-001014": {
+   "build_range": "8/2022 to current",
+   "category": "MA",
+   "compliance": "Complies",
+   "holder": "SYDNEY AVV PTY LTD",
+   "id": "8e5775d7-82d9-f111-a05b-70a8a55633c4",
+   "linked": true,
+   "make": "LEXUS",
+   "model": "IS300h",
+   "mre": "MRE-001014",
+   "report_status": "In Force",
+   "sev": [
+    "SEV-000589"
+   ],
+   "subtype": "Specialist and Enthusiast Vehicles",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=8e5775d7-82d9-f111-a05b-70a8a55633c4",
+   "website": "https://app.comptune.com.au"
   }
  },
  "version": 2
