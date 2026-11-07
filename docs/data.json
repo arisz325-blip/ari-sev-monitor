@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-06T02:04:33+00:00",
- "started_at": "2026-11-06T01:59:56+00:00",
+ "generated_at": "2026-11-07T01:40:17+00:00",
+ "started_at": "2026-11-07T01:39:09+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -10,7 +10,7 @@
   "in_force": 586,
   "expired": 543,
   "under_review": 2,
-  "new_recent": 20,
+  "new_recent": 16,
   "expiring_soon": 41,
   "with_report": 383,
   "without_report": 203,
@@ -599,12 +599,12 @@
  },
  "recent_events": [
   {
-   "type": "review_cleared",
+   "at": "2026-11-06T02:04:33+00:00",
    "detail": "review flag cleared",
    "sev": "SEV-001026",
    "title": "NISSAN Skyline",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=ae8e8702-be06-f111-8407-7ced8dd12560",
-   "at": "2026-11-06T02:04:33+00:00"
+   "type": "review_cleared",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=ae8e8702-be06-f111-8407-7ced8dd12560"
   },
   {
    "at": "2026-11-05T02:02:38+00:00",
@@ -1363,8 +1363,7 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=045a04a9-b1c2-f111-aaaf-6045bdc28a67",
    "criterion": "Performance Criterion",
    "variant": "ALL",
-   "first_seen": "2026-10-08T01:37:01+00:00",
-   "is_new": true
+   "first_seen": "2026-10-08T01:37:01+00:00"
   },
   {
    "sev": "SEV-001116",
@@ -1380,8 +1379,7 @@
    "criterion": "Left-Hand Drive Criterion",
    "variant": "SRT 10 DUAL CAB",
    "variant_details": "V10 PETROL DUAL CAB UTILITY",
-   "first_seen": "2026-10-08T01:37:01+00:00",
-   "is_new": true
+   "first_seen": "2026-10-08T01:37:01+00:00"
   },
   {
    "sev": "SEV-001115",
@@ -1397,8 +1395,7 @@
    "criterion": "Left-Hand Drive Criterion",
    "variant": "SRT 10 Single cab",
    "variant_details": "V10 PETROL SINGLE CAB UTILITY",
-   "first_seen": "2026-10-08T01:37:01+00:00",
-   "is_new": true
+   "first_seen": "2026-10-08T01:37:01+00:00"
   },
   {
    "sev": "SEV-001114",
@@ -1413,8 +1410,7 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=4bd9ea7a-fec1-f111-aaad-70a8a55633c4",
    "criterion": "Environmental Criterion",
    "variant": "ALL",
-   "first_seen": "2026-10-08T01:37:01+00:00",
-   "is_new": true
+   "first_seen": "2026-10-08T01:37:01+00:00"
   },
   {
    "sev": "SEV-001113",
