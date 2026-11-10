@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-09T01:28:44+00:00",
- "started_at": "2026-11-09T01:27:23+00:00",
+ "generated_at": "2026-11-10T03:59:52+00:00",
+ "started_at": "2026-11-10T03:57:59+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -12,9 +12,9 @@
   "under_review": 2,
   "new_recent": 12,
   "expiring_soon": 34,
-  "with_report": 379,
-  "without_report": 200,
-  "model_reports": 1014
+  "with_report": 380,
+  "without_report": 199,
+  "model_reports": 1016
  },
  "makes": [
   {
@@ -57,7 +57,7 @@
    "key": "LEXUS",
    "label": "LEXUS",
    "count": 18,
-   "with_report": 12
+   "with_report": 13
   },
   {
    "key": "RAM",
@@ -599,60 +599,68 @@
  },
  "recent_events": [
   {
-   "type": "expired",
+   "type": "report_added",
+   "detail": "a model report is now in force \u2014 SHUI MIR PTY LTD; a workshop can build it now",
+   "sev": "SEV-001074",
+   "title": "LEXUS LBX MORIZO RR",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=9f171f7e-c76a-f111-a825-6045bdc372f6",
+   "at": "2026-11-10T03:59:52+00:00"
+  },
+  {
+   "at": "2026-11-09T01:28:44+00:00",
    "detail": "expired 9/11/2026",
    "sev": "SEV-000546",
    "title": "BMW Alpina",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=c2fb3289-857f-ee11-8179-002248933df6",
-   "at": "2026-11-09T01:28:44+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=c2fb3289-857f-ee11-8179-002248933df6"
   },
   {
-   "type": "expired",
+   "at": "2026-11-09T01:28:44+00:00",
    "detail": "expired 9/11/2026",
    "sev": "SEV-000547",
    "title": "BMW Alpina",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=fcfb3289-857f-ee11-8179-002248933df6",
-   "at": "2026-11-09T01:28:44+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=fcfb3289-857f-ee11-8179-002248933df6"
   },
   {
-   "type": "expired",
+   "at": "2026-11-09T01:28:44+00:00",
    "detail": "expired 9/11/2026",
    "sev": "SEV-000548",
    "title": "LEXUS IS 500 F-Sport",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f235f5b3-857f-ee11-8179-002248933df6",
-   "at": "2026-11-09T01:28:44+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f235f5b3-857f-ee11-8179-002248933df6"
   },
   {
-   "type": "expired",
+   "at": "2026-11-09T01:28:44+00:00",
    "detail": "expired 9/11/2026",
    "sev": "SEV-000549",
    "title": "LEXUS LS600h AWD",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=8cd06fe6-857f-ee11-8179-002248933df6",
-   "at": "2026-11-09T01:28:44+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=8cd06fe6-857f-ee11-8179-002248933df6"
   },
   {
-   "type": "expired",
+   "at": "2026-11-09T01:28:44+00:00",
    "detail": "expired 9/11/2026",
    "sev": "SEV-000550",
    "title": "LEXUS LS460",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=64e1e030-867f-ee11-8179-002248933df6",
-   "at": "2026-11-09T01:28:44+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=64e1e030-867f-ee11-8179-002248933df6"
   },
   {
-   "type": "expired",
+   "at": "2026-11-09T01:28:44+00:00",
    "detail": "expired 9/11/2026",
    "sev": "SEV-000551",
    "title": "DAIHATSU Tanto",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=4e165c73-867f-ee11-8179-002248933df6",
-   "at": "2026-11-09T01:28:44+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=4e165c73-867f-ee11-8179-002248933df6"
   },
   {
-   "type": "expired",
+   "at": "2026-11-09T01:28:44+00:00",
    "detail": "expired 9/11/2026",
    "sev": "SEV-000552",
    "title": "ASTON MARTIN Speedster",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7d7436b0-867f-ee11-8179-002248933df6",
-   "at": "2026-11-09T01:28:44+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7d7436b0-867f-ee11-8179-002248933df6"
   },
   {
    "at": "2026-11-06T02:04:33+00:00",
@@ -1069,14 +1077,6 @@
    "title": "Honda Stepwgn",
    "type": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=1667e5b1-605e-ee11-be6f-00224893341d"
-  },
-  {
-   "at": "2026-09-28T00:22:11+00:00",
-   "detail": "expired 28/09/2026",
-   "sev": "SEV-000531",
-   "title": "Renault Alpine",
-   "type": "expired",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=b2f77905-625e-ee11-be6f-002248933df6"
   }
  ],
  "entries": [
@@ -2132,7 +2132,16 @@
    "criterion": "Performance Criterion",
    "variant": "LBX MORIZO RR",
    "variant_details": "6 Speed Manual Transmission ONLY (6MT AWD)",
-   "notes": "model code GAYA16 AWFAZ, 6 Speed Manual Transmission ONLY (6MT AWD)"
+   "notes": "model code GAYA16 AWFAZ, 6 Speed Manual Transmission ONLY (6MT AWD)",
+   "has_report": true,
+   "reports": [
+    {
+     "mre": "MRE-001016",
+     "holder": "SHUI MIR PTY LTD",
+     "status": "In Force",
+     "website": "https://www.shuimir.com"
+    }
+   ]
   },
   {
    "sev": "SEV-001073",

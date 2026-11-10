@@ -38015,13 +38015,22 @@
    "expiry": "17/06/2029",
    "expiry_iso": "2029-06-17",
    "first_seen": null,
-   "has_report": false,
+   "has_report": true,
    "id": "9f171f7e-c76a-f111-a825-6045bdc372f6",
    "make": "LEXUS",
    "model": "LBX MORIZO RR",
    "model_code": "GAYA16 AWFAZ",
    "notes": "model code GAYA16 AWFAZ, 6 Speed Manual Transmission ONLY (6MT AWD)",
-   "reports": [],
+   "reports": [
+    {
+     "compliance": "Complies",
+     "holder": "SHUI MIR PTY LTD",
+     "mre": "MRE-001016",
+     "status": "In Force",
+     "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=fc083fa4-ebdb-f111-84e8-6045bdc28a67",
+     "website": "https://www.shuimir.com"
+    }
+   ],
    "sev": "SEV-001074",
    "status": "in_force",
    "title": "LEXUS LBX MORIZO RR",
@@ -39695,8 +39704,16 @@
    "variant_details": "Mercedes-Benz S 580 E PHEV with model code 223169 ONLY"
   }
  },
- "last_run": "2026-11-09T01:28:44+00:00",
+ "last_run": "2026-11-10T03:59:52+00:00",
  "recent_events": [
+  {
+   "at": "2026-11-10T03:59:52+00:00",
+   "detail": "a model report is now in force \u2014 SHUI MIR PTY LTD; a workshop can build it now",
+   "sev": "SEV-001074",
+   "title": "LEXUS LBX MORIZO RR",
+   "type": "report_added",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=9f171f7e-c76a-f111-a825-6045bdc372f6"
+  },
   {
    "at": "2026-11-09T01:28:44+00:00",
    "detail": "expired 9/11/2026",
@@ -58237,6 +58254,40 @@
    "subtype": "Specialist and Enthusiast Vehicles",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=8e5775d7-82d9-f111-a05b-70a8a55633c4",
    "website": "https://app.comptune.com.au"
+  },
+  "MRE-001015": {
+   "build_range": "1/2023 - 12/2025",
+   "category": "MA",
+   "compliance": "Complies",
+   "holder": "SYDNEY AVV PTY LTD",
+   "id": "ac6ef818-ebdb-f111-84e8-6045bdc28a67",
+   "linked": true,
+   "make": "Mercedes-Benz",
+   "model": "S400d / S450d (223023 / 223025 / 223123 / 223125)",
+   "mre": "MRE-001015",
+   "report_status": "In Force",
+   "sev": [],
+   "subtype": "Specialist and Enthusiast Vehicles",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=ac6ef818-ebdb-f111-84e8-6045bdc28a67",
+   "website": "https://app.comptune.com.au"
+  },
+  "MRE-001016": {
+   "build_range": "8/2024 to current",
+   "category": "MA",
+   "compliance": "Complies",
+   "holder": "SHUI MIR PTY LTD",
+   "id": "fc083fa4-ebdb-f111-84e8-6045bdc28a67",
+   "linked": true,
+   "make": "LEXUS",
+   "model": "LBX MORIZO RR",
+   "mre": "MRE-001016",
+   "report_status": "In Force",
+   "sev": [
+    "SEV-001074"
+   ],
+   "subtype": "Specialist and Enthusiast Vehicles",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=fc083fa4-ebdb-f111-84e8-6045bdc28a67",
+   "website": "https://www.shuimir.com"
   }
  },
  "version": 2
