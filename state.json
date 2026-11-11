@@ -39704,7 +39704,7 @@
    "variant_details": "Mercedes-Benz S 580 E PHEV with model code 223169 ONLY"
   }
  },
- "last_run": "2026-11-10T03:59:52+00:00",
+ "last_run": "2026-11-11T01:44:35+00:00",
  "recent_events": [
   {
    "at": "2026-11-10T03:59:52+00:00",
@@ -56166,7 +56166,7 @@
    "id": "c18c3f5e-76dc-f011-8544-6045bde632e4",
    "linked": true,
    "make": "Mercedes-Benz",
-   "model": "S Class PHEV",
+   "model": "S63 E PHEV",
    "mre": "MRE-000896",
    "report_status": "In Force",
    "sev": [

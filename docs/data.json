@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-10T03:59:52+00:00",
- "started_at": "2026-11-10T03:57:59+00:00",
+ "generated_at": "2026-11-11T01:44:35+00:00",
+ "started_at": "2026-11-11T01:42:56+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -11,7 +11,7 @@
   "expired": 550,
   "under_review": 2,
   "new_recent": 12,
-  "expiring_soon": 34,
+  "expiring_soon": 36,
   "with_report": 380,
   "without_report": 199,
   "model_reports": 1016
@@ -599,12 +599,12 @@
  },
  "recent_events": [
   {
-   "type": "report_added",
+   "at": "2026-11-10T03:59:52+00:00",
    "detail": "a model report is now in force \u2014 SHUI MIR PTY LTD; a workshop can build it now",
    "sev": "SEV-001074",
    "title": "LEXUS LBX MORIZO RR",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=9f171f7e-c76a-f111-a825-6045bdc372f6",
-   "at": "2026-11-10T03:59:52+00:00"
+   "type": "report_added",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=9f171f7e-c76a-f111-a825-6045bdc372f6"
   },
   {
    "at": "2026-11-09T01:28:44+00:00",
@@ -14594,7 +14594,8 @@
      "status": "Suspended",
      "website": null
     }
-   ]
+   ],
+   "expiring_soon": true
   },
   {
    "sev": "SEV-000587",
@@ -14635,7 +14636,8 @@
      "status": "In Force",
      "website": null
     }
-   ]
+   ],
+   "expiring_soon": true
   },
   {
    "sev": "SEV-000586",
