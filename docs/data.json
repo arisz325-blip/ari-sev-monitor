@@ -1,32 +1,32 @@
 {
- "generated_at": "2026-11-11T01:44:35+00:00",
- "started_at": "2026-11-11T01:42:56+00:00",
+ "generated_at": "2026-11-12T02:44:23+00:00",
+ "started_at": "2026-11-12T02:42:47+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
  },
  "counts": {
-  "total": 1129,
-  "in_force": 579,
+  "total": 1135,
+  "in_force": 585,
   "expired": 550,
   "under_review": 2,
-  "new_recent": 12,
+  "new_recent": 18,
   "expiring_soon": 36,
   "with_report": 380,
-  "without_report": 199,
+  "without_report": 205,
   "model_reports": 1016
  },
  "makes": [
   {
    "key": "TOYOTA",
    "label": "Toyota",
-   "count": 146,
+   "count": 148,
    "with_report": 121
   },
   {
    "key": "NISSAN",
    "label": "NISSAN",
-   "count": 52,
+   "count": 53,
    "with_report": 40
   },
   {
@@ -60,16 +60,16 @@
    "with_report": 13
   },
   {
+   "key": "BMW",
+   "label": "BMW",
+   "count": 17,
+   "with_report": 9
+  },
+  {
    "key": "RAM",
    "label": "RAM",
    "count": 16,
    "with_report": 13
-  },
-  {
-   "key": "BMW",
-   "label": "BMW",
-   "count": 15,
-   "with_report": 9
   },
   {
    "key": "SUBARU",
@@ -280,6 +280,12 @@
    "label": "VAUXHALL",
    "count": 2,
    "with_report": 2
+  },
+  {
+   "key": "3L ENGINEERING AND DESIGN",
+   "label": "3L Engineering and Design",
+   "count": 1,
+   "with_report": 0
   },
   {
    "key": "A TO Z RV TOYOTA",
@@ -598,6 +604,54 @@
   "categories": []
  },
  "recent_events": [
+  {
+   "type": "new",
+   "detail": "06/2023 - no end date \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001137",
+   "title": "Toyota Vellfire",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e96a023a-7cdd-f111-84e8-70a8a556304d",
+   "at": "2026-11-12T02:44:23+00:00"
+  },
+  {
+   "type": "new",
+   "detail": "06/2023 - no end date \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001138",
+   "title": "Toyota Alphard",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=08f93507-7edd-f111-84e8-70a8a556304d",
+   "at": "2026-11-12T02:44:23+00:00"
+  },
+  {
+   "type": "new",
+   "detail": "07/2026 - no end date \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001139",
+   "title": "NISSAN ELGRAND",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=6bd24c50-7edd-f111-84e8-70a8a556304d",
+   "at": "2026-11-12T02:44:23+00:00"
+  },
+  {
+   "type": "new",
+   "detail": "06/2018 - no end date \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001140",
+   "title": "3L Engineering and Design V8Stealthbeetle",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=2b4ccd54-8bdd-f111-84e8-70a8a556304d",
+   "at": "2026-11-12T02:44:23+00:00"
+  },
+  {
+   "type": "new",
+   "detail": "01/2007 - 12/2013 \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001141",
+   "title": "BMW Alpina",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e9f6ed2b-8cdd-f111-84e8-70a8a556304d",
+   "at": "2026-11-12T02:44:23+00:00"
+  },
+  {
+   "type": "new",
+   "detail": "04/2010 - 12/2012 \u00b7 MA - Passenger Vehicle",
+   "sev": "SEV-001142",
+   "title": "BMW Alpina",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=23f7ed2b-8cdd-f111-84e8-70a8a556304d",
+   "at": "2026-11-12T02:44:23+00:00"
+  },
   {
    "at": "2026-11-10T03:59:52+00:00",
    "detail": "a model report is now in force \u2014 SHUI MIR PTY LTD; a workshop can build it now",
@@ -1029,57 +1083,112 @@
    "title": "Mercedes-Benz GLC 220d",
    "type": "new",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7bb0c30e-e8bd-f111-aaad-7c1e52631efa"
-  },
-  {
-   "at": "2026-09-29T01:32:10+00:00",
-   "detail": "a model report is now in force; a workshop can build it now",
-   "sev": "SEV-001018",
-   "title": "MCLAREN W1",
-   "type": "report_added",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=70b8fc6d-b8f1-f011-8407-6045bdc26750"
-  },
-  {
-   "at": "2026-09-28T00:22:11+00:00",
-   "detail": "expired 28/09/2026",
-   "sev": "SEV-000526",
-   "title": "Hino Liesse II Campervan / Motorhome",
-   "type": "expired",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=5b48281b-5f5e-ee11-be6f-00224893341d"
-  },
-  {
-   "at": "2026-09-28T00:22:11+00:00",
-   "detail": "expired 28/09/2026",
-   "sev": "SEV-000527",
-   "title": "Mercedes-Benz S Class PHEV",
-   "type": "expired",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=69dbe316-605e-ee11-be6f-00224893341d"
-  },
-  {
-   "at": "2026-09-28T00:22:11+00:00",
-   "detail": "expired 28/09/2026",
-   "sev": "SEV-000528",
-   "title": "Mercedes-Benz S Class PHEV",
-   "type": "expired",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=92dbe316-605e-ee11-be6f-00224893341d"
-  },
-  {
-   "at": "2026-09-28T00:22:11+00:00",
-   "detail": "expired 28/09/2026",
-   "sev": "SEV-000529",
-   "title": "Mercedes-Benz S Class PHEV",
-   "type": "expired",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=bedbe316-605e-ee11-be6f-00224893341d"
-  },
-  {
-   "at": "2026-09-28T00:22:11+00:00",
-   "detail": "expired 28/09/2026",
-   "sev": "SEV-000530",
-   "title": "Honda Stepwgn",
-   "type": "expired",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=1667e5b1-605e-ee11-be6f-00224893341d"
   }
  ],
  "entries": [
+  {
+   "sev": "SEV-001142",
+   "make": "BMW",
+   "model": "Alpina",
+   "category": "MA - Passenger Vehicle",
+   "model_code": "B3S",
+   "build_from_iso": "2010-04-01",
+   "build_to_iso": "2012-12-31",
+   "expiry_iso": "2029-11-10",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=23f7ed2b-8cdd-f111-84e8-70a8a556304d",
+   "criterion": "Performance Criterion",
+   "variant": "B3S",
+   "variant_details": "Alpina B3S E9X variants of build date range 1/04/2010 to 31/05/2013 ONLY",
+   "notes": "This SEVs Register listing is for BMW Alpina B3S E9X variants of build date range 1/04/2010 to 31/05/2013 ONLY",
+   "first_seen": "2026-11-12T02:44:23+00:00",
+   "is_new": true
+  },
+  {
+   "sev": "SEV-001141",
+   "make": "BMW",
+   "model": "Alpina",
+   "category": "MA - Passenger Vehicle",
+   "model_code": "B3 GTS",
+   "build_from_iso": "2007-01-01",
+   "build_to_iso": "2013-12-01",
+   "expiry_iso": "2029-11-10",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e9f6ed2b-8cdd-f111-84e8-70a8a556304d",
+   "criterion": "Performance Criterion",
+   "variant": "B3 GTS",
+   "variant_details": "E92 Alpina B3 GTS, build date range of 1/01/2007 to 1/12/2013 ONLY",
+   "notes": "This SEVs Register listing is for BMW E92 Alpina B3 GTS, build date range of 1/01/2007 to 1/12/2013 ONLY",
+   "first_seen": "2026-11-12T02:44:23+00:00",
+   "is_new": true
+  },
+  {
+   "sev": "SEV-001140",
+   "make": "3L Engineering and Design",
+   "model": "V8Stealthbeetle",
+   "category": "MA - Passenger Vehicle",
+   "build_from_iso": "2018-06-01",
+   "expiry_iso": "2029-11-10",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=2b4ccd54-8bdd-f111-84e8-70a8a556304d",
+   "criterion": "Rarity Criterion",
+   "variant": "V8Stealthbeetle - LS3, Right-Hand Drive (RHD)",
+   "variant_details": "RHD V8Stealthbeetle variant configured for a LS3-series V8 engine.",
+   "notes": "This Register listing relates to the RHD V8Stealthbeetle variant configured for a LS3-series V8 engine ONLY",
+   "first_seen": "2026-11-12T02:44:23+00:00",
+   "is_new": true
+  },
+  {
+   "sev": "SEV-001139",
+   "make": "NISSAN",
+   "model": "ELGRAND",
+   "category": "MA - Passenger Vehicle",
+   "model_code": "6AA-NE53",
+   "build_from_iso": "2026-07-01",
+   "expiry_iso": "2029-11-10",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=6bd24c50-7edd-f111-84e8-70a8a556304d",
+   "criterion": "Campervans and Motorhomes Criterion",
+   "variant": "ALL",
+   "variant_details": "6AA-NE53 series Elgrand",
+   "notes": "This SEVs Register listing is for Nissan Elgrand 6AA-NE53 series vehicles that are to be converted to campervans ONLY.",
+   "first_seen": "2026-11-12T02:44:23+00:00",
+   "is_new": true
+  },
+  {
+   "sev": "SEV-001138",
+   "make": "Toyota",
+   "model": "Alphard",
+   "category": "MA - Passenger Vehicle",
+   "model_code": "AAHP45W",
+   "build_from_iso": "2023-06-01",
+   "expiry_iso": "2029-11-10",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=08f93507-7edd-f111-84e8-70a8a556304d",
+   "criterion": "Campervans and Motorhomes Criterion",
+   "variant": "ALL",
+   "variant_details": "Toyota Alphard PHEV AAHP45W series ONLY",
+   "notes": "This SEVs Register listing is for Toyota Alphard PHEV AAHP45W series vehicle to be converted into a Campervan as per section 134(b) of the Rules and Schedule 4 of the Rules' section 89(2) Determination ONLY",
+   "first_seen": "2026-11-12T02:44:23+00:00",
+   "is_new": true
+  },
+  {
+   "sev": "SEV-001137",
+   "make": "Toyota",
+   "model": "Vellfire",
+   "category": "MA - Passenger Vehicle",
+   "model_code": "AAHP45W",
+   "build_from_iso": "2023-06-01",
+   "expiry_iso": "2029-11-10",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e96a023a-7cdd-f111-84e8-70a8a556304d",
+   "criterion": "Campervans and Motorhomes Criterion",
+   "variant": "ALL",
+   "variant_details": "Toyota Vellfire PHEV AAHP45W series vehicle to be converted into a Campervan as per section 134(b) of the Rules and Schedule 4 of the Rules' section 89(2) Determination ONLY",
+   "notes": "This RVSA SEVs Register listing is for Toyota Vellfire PHEV AAHP45W series vehicle to be converted into a Campervan as per section 134(b) of the Rules and Schedule 4 of the Rules' section 89(2) Determination ONLY",
+   "first_seen": "2026-11-12T02:44:23+00:00",
+   "is_new": true
+  },
   {
    "sev": "SEV-001133",
    "make": "Mercedes-Benz",
