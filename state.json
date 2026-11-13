@@ -32050,6 +32050,14 @@
    "reports": [
     {
      "compliance": "Complies",
+     "holder": "ORACLE CERTIFICATION PTY. LTD.",
+     "mre": "MRE-001017",
+     "status": "In Force",
+     "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=0c6667ba-48de-f111-84e8-7ced8dd17176",
+     "website": null
+    },
+    {
+     "compliance": "Complies",
      "holder": "SHUI MIR PTY LTD",
      "mre": "MRE-000889",
      "status": "In Force",
@@ -39866,7 +39874,7 @@
    "variant_details": "Alpina B3S E9X variants of build date range 1/04/2010 to 31/05/2013 ONLY"
   }
  },
- "last_run": "2026-11-12T02:44:23+00:00",
+ "last_run": "2026-11-13T02:27:06+00:00",
  "recent_events": [
   {
    "at": "2026-11-12T02:44:23+00:00",
@@ -57661,7 +57669,7 @@
    "id": "d81dc15c-d283-f111-ab0e-7ced8dd0d65b",
    "linked": true,
    "make": "Mercedes-Benz",
-   "model": "S Class PHEV",
+   "model": "S 580 E PHEV",
    "mre": "MRE-000969",
    "report_status": "In Force",
    "sev": [
@@ -58498,6 +58506,23 @@
    "subtype": "Specialist and Enthusiast Vehicles",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=fc083fa4-ebdb-f111-84e8-6045bdc28a67",
    "website": "https://www.shuimir.com"
+  },
+  "MRE-001017": {
+   "build_range": "9/2014 - 1/2015",
+   "category": "MA",
+   "compliance": "Complies",
+   "holder": "ORACLE CERTIFICATION PTY. LTD.",
+   "id": "0c6667ba-48de-f111-84e8-7ced8dd17176",
+   "linked": true,
+   "make": "LEXUS",
+   "model": "RC-F",
+   "mre": "MRE-001017",
+   "report_status": "In Force",
+   "sev": [
+    "SEV-000909"
+   ],
+   "subtype": "Specialist and Enthusiast Vehicles",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/ModelReportDetails/?id=0c6667ba-48de-f111-84e8-7ced8dd17176"
   }
  },
  "version": 2

@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-12T02:44:23+00:00",
- "started_at": "2026-11-12T02:42:47+00:00",
+ "generated_at": "2026-11-13T02:27:06+00:00",
+ "started_at": "2026-11-13T02:25:42+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -10,11 +10,11 @@
   "in_force": 585,
   "expired": 550,
   "under_review": 2,
-  "new_recent": 18,
+  "new_recent": 17,
   "expiring_soon": 36,
   "with_report": 380,
   "without_report": 205,
-  "model_reports": 1016
+  "model_reports": 1017
  },
  "makes": [
   {
@@ -605,52 +605,52 @@
  },
  "recent_events": [
   {
-   "type": "new",
+   "at": "2026-11-12T02:44:23+00:00",
    "detail": "06/2023 - no end date \u00b7 MA - Passenger Vehicle",
    "sev": "SEV-001137",
    "title": "Toyota Vellfire",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e96a023a-7cdd-f111-84e8-70a8a556304d",
-   "at": "2026-11-12T02:44:23+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e96a023a-7cdd-f111-84e8-70a8a556304d"
   },
   {
-   "type": "new",
+   "at": "2026-11-12T02:44:23+00:00",
    "detail": "06/2023 - no end date \u00b7 MA - Passenger Vehicle",
    "sev": "SEV-001138",
    "title": "Toyota Alphard",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=08f93507-7edd-f111-84e8-70a8a556304d",
-   "at": "2026-11-12T02:44:23+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=08f93507-7edd-f111-84e8-70a8a556304d"
   },
   {
-   "type": "new",
+   "at": "2026-11-12T02:44:23+00:00",
    "detail": "07/2026 - no end date \u00b7 MA - Passenger Vehicle",
    "sev": "SEV-001139",
    "title": "NISSAN ELGRAND",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=6bd24c50-7edd-f111-84e8-70a8a556304d",
-   "at": "2026-11-12T02:44:23+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=6bd24c50-7edd-f111-84e8-70a8a556304d"
   },
   {
-   "type": "new",
+   "at": "2026-11-12T02:44:23+00:00",
    "detail": "06/2018 - no end date \u00b7 MA - Passenger Vehicle",
    "sev": "SEV-001140",
    "title": "3L Engineering and Design V8Stealthbeetle",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=2b4ccd54-8bdd-f111-84e8-70a8a556304d",
-   "at": "2026-11-12T02:44:23+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=2b4ccd54-8bdd-f111-84e8-70a8a556304d"
   },
   {
-   "type": "new",
+   "at": "2026-11-12T02:44:23+00:00",
    "detail": "01/2007 - 12/2013 \u00b7 MA - Passenger Vehicle",
    "sev": "SEV-001141",
    "title": "BMW Alpina",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e9f6ed2b-8cdd-f111-84e8-70a8a556304d",
-   "at": "2026-11-12T02:44:23+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e9f6ed2b-8cdd-f111-84e8-70a8a556304d"
   },
   {
-   "type": "new",
+   "at": "2026-11-12T02:44:23+00:00",
    "detail": "04/2010 - 12/2012 \u00b7 MA - Passenger Vehicle",
    "sev": "SEV-001142",
    "title": "BMW Alpina",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=23f7ed2b-8cdd-f111-84e8-70a8a556304d",
-   "at": "2026-11-12T02:44:23+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=23f7ed2b-8cdd-f111-84e8-70a8a556304d"
   },
   {
    "at": "2026-11-10T03:59:52+00:00",
@@ -1388,8 +1388,7 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=9abecfbd-b4c6-f111-aaaf-6045bde53b69",
    "criterion": "Performance Criterion",
    "variant": "ALL",
-   "first_seen": "2026-10-14T00:56:33+00:00",
-   "is_new": true
+   "first_seen": "2026-10-14T00:56:33+00:00"
   },
   {
    "sev": "SEV-001121",
@@ -6143,6 +6142,12 @@
    "notes": "ONLY vehicles from within the nominated build date range are eligible.",
    "has_report": true,
    "reports": [
+    {
+     "mre": "MRE-001017",
+     "holder": "ORACLE CERTIFICATION PTY. LTD.",
+     "status": "In Force",
+     "website": null
+    },
     {
      "mre": "MRE-000889",
      "holder": "SHUI MIR PTY LTD",
