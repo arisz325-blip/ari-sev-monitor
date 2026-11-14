@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-13T02:27:06+00:00",
- "started_at": "2026-11-13T02:25:42+00:00",
+ "generated_at": "2026-11-14T02:00:12+00:00",
+ "started_at": "2026-11-14T01:58:54+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -10,7 +10,7 @@
   "in_force": 585,
   "expired": 550,
   "under_review": 2,
-  "new_recent": 17,
+  "new_recent": 15,
   "expiring_soon": 36,
   "with_report": 380,
   "without_report": 205,
@@ -1357,8 +1357,7 @@
    "criterion": "Rarity Criterion",
    "variant": "ALL",
    "notes": "SVI B6 Armoured Prado (Toyota J250 platform) which includes 38mm curved bullet proof B6 standard glass, armoured plating in A, B, and C pillars and roof Full suspension upgrade, including GVM upgrade to 4200kg, escape hatch, total tare mass increase of 750kg, B6 roof, B6 floor, heavy duty runflat rings.",
-   "first_seen": "2026-10-15T00:22:28+00:00",
-   "is_new": true
+   "first_seen": "2026-10-15T00:22:28+00:00"
   },
   {
    "sev": "SEV-001123",
@@ -1372,8 +1371,7 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7754b050-8ec7-f111-aaad-70a8a55633c4",
    "criterion": "Rarity Criterion",
    "variant": "ALL",
-   "first_seen": "2026-10-15T00:22:28+00:00",
-   "is_new": true
+   "first_seen": "2026-10-15T00:22:28+00:00"
   },
   {
    "sev": "SEV-001122",
