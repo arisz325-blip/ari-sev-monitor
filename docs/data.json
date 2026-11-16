@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-15T01:32:46+00:00",
- "started_at": "2026-11-15T01:31:35+00:00",
+ "generated_at": "2026-11-16T01:36:56+00:00",
+ "started_at": "2026-11-16T01:35:35+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -14,7 +14,7 @@
   "expiring_soon": 36,
   "with_report": 380,
   "without_report": 205,
-  "model_reports": 1017
+  "model_reports": 1018
  },
  "makes": [
   {
@@ -3557,6 +3557,12 @@
    "variant": "ALL",
    "has_report": true,
    "reports": [
+    {
+     "mre": "MRE-001018",
+     "holder": "SHUI MIR PTY LTD",
+     "status": "In Force",
+     "website": "https://www.shuimir.com"
+    },
     {
      "mre": "MRE-001010",
      "holder": null,
