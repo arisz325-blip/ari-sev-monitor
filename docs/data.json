@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-11-16T01:36:56+00:00",
- "started_at": "2026-11-16T01:35:35+00:00",
+ "generated_at": "2026-11-17T04:21:17+00:00",
+ "started_at": "2026-11-17T04:19:58+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
  },
  "counts": {
-  "total": 1135,
-  "in_force": 585,
+  "total": 1136,
+  "in_force": 586,
   "expired": 550,
   "under_review": 2,
-  "new_recent": 15,
+  "new_recent": 16,
   "expiring_soon": 36,
   "with_report": 380,
-  "without_report": 205,
+  "without_report": 206,
   "model_reports": 1018
  },
  "makes": [
@@ -26,7 +26,7 @@
   {
    "key": "NISSAN",
    "label": "NISSAN",
-   "count": 53,
+   "count": 54,
    "with_report": 40
   },
   {
@@ -605,6 +605,14 @@
  },
  "recent_events": [
   {
+   "type": "new",
+   "detail": "07/2005 - 06/2021 \u00b7 MD4 - Light Omnibus",
+   "sev": "SEV-001143",
+   "title": "NISSAN CIVILIAN MOTORHOME",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=dfb993b6-38e2-f111-84ea-70a8a5563fff",
+   "at": "2026-11-17T04:21:17+00:00"
+  },
+  {
    "at": "2026-11-12T02:44:23+00:00",
    "detail": "06/2023 - no end date \u00b7 MA - Passenger Vehicle",
    "sev": "SEV-001137",
@@ -1075,17 +1083,25 @@
    "title": "Toyota Hiace Welljoin",
    "type": "new",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=5cbbbf02-e8bd-f111-aaad-7c1e52631efa"
-  },
-  {
-   "at": "2026-10-02T01:20:01+00:00",
-   "detail": "06/2022 - no end date \u00b7 MA - Passenger Vehicle",
-   "sev": "SEV-001113",
-   "title": "Mercedes-Benz GLC 220d",
-   "type": "new",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7bb0c30e-e8bd-f111-aaad-7c1e52631efa"
   }
  ],
  "entries": [
+  {
+   "sev": "SEV-001143",
+   "make": "NISSAN",
+   "model": "CIVILIAN MOTORHOME",
+   "category": "MD4 - Light Omnibus",
+   "model_code": "W41",
+   "build_from_iso": "2005-07-01",
+   "build_to_iso": "2021-06-01",
+   "expiry_iso": "2029-11-16",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=dfb993b6-38e2-f111-84ea-70a8a5563fff",
+   "criterion": "Campervans and Motorhomes Criterion",
+   "variant": "ALL",
+   "first_seen": "2026-11-17T04:21:17+00:00",
+   "is_new": true
+  },
   {
    "sev": "SEV-001142",
    "make": "BMW",
