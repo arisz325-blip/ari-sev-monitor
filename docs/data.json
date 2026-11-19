@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-18T03:21:41+00:00",
- "started_at": "2026-11-18T03:20:34+00:00",
+ "generated_at": "2026-11-19T02:58:03+00:00",
+ "started_at": "2026-11-19T02:56:39+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
@@ -9,12 +9,12 @@
   "total": 1137,
   "in_force": 587,
   "expired": 550,
-  "under_review": 2,
+  "under_review": 1,
   "new_recent": 17,
   "expiring_soon": 36,
   "with_report": 381,
   "without_report": 206,
-  "model_reports": 1021
+  "model_reports": 1022
  },
  "makes": [],
  "recent_days": 30,
@@ -28,484 +28,484 @@
  },
  "recent_events": [
   {
-   "type": "new",
+   "type": "review_cleared",
+   "detail": "review flag cleared",
+   "sev": "SEV-000709",
+   "title": "SEV-000709",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=cfa2368c-9cab-ef11-b8e9-000d3acbed23",
+   "at": "2026-11-19T02:58:03+00:00"
+  },
+  {
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "? - no end date \u00b7 category n/a",
    "sev": "SEV-001144",
    "title": "SEV-001144",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f560a16e-dfe2-f111-84ea-70a8a5563fff",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f560a16e-dfe2-f111-84ea-70a8a5563fff"
   },
   {
-   "type": "report_added",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "a model report is now in force \u2014 SYDNEY AVV PTY LTD; a workshop can build it now",
    "sev": "SEV-001129",
    "title": "SEV-001129",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0bf13c43-b3d1-f111-a05b-6045bdc28f40",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "report_added",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0bf13c43-b3d1-f111-a05b-6045bdc28f40"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: VAUXHALL -> n/a; Model: Mokka-e -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000001",
    "title": "SEV-000001",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=82fb9627-a8e3-eb11-a2fc-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=82fb9627-a8e3-eb11-a2fc-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: VAUXHALL -> n/a; Model: Mokka-e -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000002",
    "title": "SEV-000002",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=b4fb9627-a8e3-eb11-a2fc-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=b4fb9627-a8e3-eb11-a2fc-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: VAUXHALL -> n/a; Model: Mokka-e -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000003",
    "title": "SEV-000003",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e6fb9627-a8e3-eb11-a2fc-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e6fb9627-a8e3-eb11-a2fc-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: VAUXHALL -> n/a; Model: Mokka-e -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000004",
    "title": "SEV-000004",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=18fc9627-a8e3-eb11-a2fc-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=18fc9627-a8e3-eb11-a2fc-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: PORSCHE -> n/a; Model: 918 Spyder -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000005",
    "title": "SEV-000005",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=2028ccbd-f8f0-eb11-a2fd-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=2028ccbd-f8f0-eb11-a2fd-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: LVNENG -> n/a; Model: LX06MAX -> n/a; Category: LC - Motor Cycle -> n/a",
    "sev": "SEV-000006",
    "title": "SEV-000006",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=14c1806f-15ff-eb11-a2fd-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=14c1806f-15ff-eb11-a2fd-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: Toyota -> n/a; Model: 20 Series Welcab -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000007",
    "title": "SEV-000007",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=73dafe46-f6ff-eb11-a30f-0050569ede77",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=73dafe46-f6ff-eb11-a30f-0050569ede77"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: ISUZU -> n/a; Model: D-MAX -> n/a; Category: NA - Light Goods Vehicle -> n/a",
    "sev": "SEV-000008",
    "title": "SEV-000008",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=97f8d10c-5e05-ec11-a311-0050569ede77",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=97f8d10c-5e05-ec11-a311-0050569ede77"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: RAM -> n/a; Model: 1500 -> n/a; Category: NA - Light Goods Vehicle -> n/a",
    "sev": "SEV-000009",
    "title": "SEV-000009",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=b5c29eb6-5e05-ec11-a311-0050569ede77",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=b5c29eb6-5e05-ec11-a311-0050569ede77"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: RAM -> n/a; Model: 1500 -> n/a; Category: NA - Light Goods Vehicle -> n/a",
    "sev": "SEV-000010",
    "title": "SEV-000010",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=676999bc-5e05-ec11-a311-0050569ede77",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=676999bc-5e05-ec11-a311-0050569ede77"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: Commuter Cars -> n/a; Model: TANGO -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000011",
    "title": "SEV-000011",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=1fca3913-6005-ec11-a311-0050569ede77",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=1fca3913-6005-ec11-a311-0050569ede77"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: Toyota -> n/a; Model: 70 Series Welcab -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000012",
    "title": "SEV-000012",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0ff2dded-0807-ec11-a2ff-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0ff2dded-0807-ec11-a2ff-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: PILATO -> n/a; Model: Lyra Limousine -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000013",
    "title": "SEV-000013",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=2ac0f46e-2d0a-ec11-a311-0050569ede77",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=2ac0f46e-2d0a-ec11-a311-0050569ede77"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: GMC -> n/a; Model: Yukon -> n/a; Category: MC - Off-Road Passenger Vehicle -> n/a",
    "sev": "SEV-000014",
    "title": "SEV-000014",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=82f4c8f7-ae0f-ec11-a300-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=82f4c8f7-ae0f-ec11-a300-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: Chevrolet -> n/a; Model: Corvette -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000015",
    "title": "SEV-000015",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=ec19b3bd-7c10-ec11-a312-0050569ede77",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=ec19b3bd-7c10-ec11-a312-0050569ede77"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: Toyota -> n/a; Model: Corolla Touring Wagon -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000016",
    "title": "SEV-000016",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=57cc4837-7d10-ec11-a312-0050569ede77",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=57cc4837-7d10-ec11-a312-0050569ede77"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: Ford -> n/a; Model: Mustang -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000017",
    "title": "SEV-000017",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a1d1dc2d-4311-ec11-a313-0050569ede77",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a1d1dc2d-4311-ec11-a313-0050569ede77"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: SUBARU -> n/a; Model: Impreza  WRX -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000018",
    "title": "SEV-000018",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=55c23774-4311-ec11-a313-0050569ede77",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=55c23774-4311-ec11-a313-0050569ede77"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: SUBARU -> n/a; Model: Impreza  WRX -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000019",
    "title": "SEV-000019",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=87c23774-4311-ec11-a313-0050569ede77",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=87c23774-4311-ec11-a313-0050569ede77"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: SUBARU -> n/a; Model: Impreza  WRX -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000020",
    "title": "SEV-000020",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=b9c23774-4311-ec11-a313-0050569ede77",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=b9c23774-4311-ec11-a313-0050569ede77"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: SUBARU -> n/a; Model: Impreza  WRX -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000021",
    "title": "SEV-000021",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=ebc23774-4311-ec11-a313-0050569ede77",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=ebc23774-4311-ec11-a313-0050569ede77"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: SUBARU -> n/a; Model: Impreza  WRX -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000022",
    "title": "SEV-000022",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=1dc33774-4311-ec11-a313-0050569ede77",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=1dc33774-4311-ec11-a313-0050569ede77"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: SUBARU -> n/a; Model: Impreza  WRX -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000023",
    "title": "SEV-000023",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=4fc33774-4311-ec11-a313-0050569ede77",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=4fc33774-4311-ec11-a313-0050569ede77"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: KTM -> n/a; Model: X-BOW -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000024",
    "title": "SEV-000024",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=353c0680-5514-ec11-a301-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=353c0680-5514-ec11-a301-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: TIFFIN -> n/a; Model: Allegro Breeze 33 BR -> n/a; Category: NB2 - Medium Goods Vehicle -> n/a",
    "sev": "SEV-000025",
    "title": "SEV-000025",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=26afc411-5614-ec11-a301-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=26afc411-5614-ec11-a301-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: Toyota -> n/a; Model: Century -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000026",
    "title": "SEV-000026",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=232a129e-2815-ec11-a301-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=232a129e-2815-ec11-a301-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: Honda -> n/a; Model: Vezel -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000027",
    "title": "SEV-000027",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=cb2c9cb1-2e15-ec11-a313-0050569ede77",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=cb2c9cb1-2e15-ec11-a313-0050569ede77"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: Honda -> n/a; Model: Civic -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000028",
    "title": "SEV-000028",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f143efef-2e15-ec11-a313-0050569ede77",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f143efef-2e15-ec11-a313-0050569ede77"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: NISSAN -> n/a; Model: GT-R -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000029",
    "title": "SEV-000029",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=9e69de5d-2f15-ec11-a313-0050569ede77",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=9e69de5d-2f15-ec11-a313-0050569ede77"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: SUBARU -> n/a; Model: Forester -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000030",
    "title": "SEV-000030",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=d7394d9d-2f15-ec11-a313-0050569ede77",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=d7394d9d-2f15-ec11-a313-0050569ede77"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: SUBARU -> n/a; Model: Forester -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000031",
    "title": "SEV-000031",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=093a4d9d-2f15-ec11-a313-0050569ede77",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=093a4d9d-2f15-ec11-a313-0050569ede77"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: Toyota -> n/a; Model: Aristo -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000032",
    "title": "SEV-000032",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=026cbbda-2f15-ec11-a313-0050569ede77",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=026cbbda-2f15-ec11-a313-0050569ede77"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: Toyota -> n/a; Model: Altezza RS200 -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000033",
    "title": "SEV-000033",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=fbe20c08-3015-ec11-a313-0050569ede77",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=fbe20c08-3015-ec11-a313-0050569ede77"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: Mercedes-Benz -> n/a; Model: 230 -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000034",
    "title": "SEV-000034",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=fd799c45-3015-ec11-a313-0050569ede77",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=fd799c45-3015-ec11-a313-0050569ede77"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: Toyota -> n/a; Model: Hiace -> n/a; Category: MD1 - Light Omnibus -> n/a",
    "sev": "SEV-000035",
    "title": "SEV-000035",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a1320618-f915-ec11-a313-0050569ede77",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a1320618-f915-ec11-a313-0050569ede77"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: MITSUBISHI -> n/a; Model: Pajero Mini -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000036",
    "title": "SEV-000036",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=48b9afda-fa15-ec11-a313-0050569ede77",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=48b9afda-fa15-ec11-a313-0050569ede77"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: Toyota -> n/a; Model: Hiace -> n/a; Category: MB - Forward-Control Passenger Vehicle -> n/a",
    "sev": "SEV-000037",
    "title": "SEV-000037",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=524e770c-fb15-ec11-a313-0050569ede77",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=524e770c-fb15-ec11-a313-0050569ede77"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: Honda -> n/a; Model: Civic Type R -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000038",
    "title": "SEV-000038",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=fad9e3ae-fb15-ec11-a313-0050569ede77",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=fad9e3ae-fb15-ec11-a313-0050569ede77"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: Honda -> n/a; Model: Civic Type R -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000039",
    "title": "SEV-000039",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=ae07c24a-cc16-ec11-a301-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=ae07c24a-cc16-ec11-a301-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: Toyota -> n/a; Model: Blade -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000040",
    "title": "SEV-000040",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=c7e1a48b-cc16-ec11-a301-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=c7e1a48b-cc16-ec11-a301-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: NISSAN -> n/a; Model: X-Trail -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000041",
    "title": "SEV-000041",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a56d50af-cc16-ec11-a301-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=a56d50af-cc16-ec11-a301-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: Honda -> n/a; Model: Fit Hybrid -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000042",
    "title": "SEV-000042",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=8cabd7e8-cc16-ec11-a301-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=8cabd7e8-cc16-ec11-a301-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: Honda -> n/a; Model: N-One -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000043",
    "title": "SEV-000043",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=16020c14-cd16-ec11-a301-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=16020c14-cd16-ec11-a301-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: SUZUKI -> n/a; Model: Jimny -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000044",
    "title": "SEV-000044",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e4c1c33c-cd16-ec11-a301-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e4c1c33c-cd16-ec11-a301-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: Toyota -> n/a; Model: MR2 -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000045",
    "title": "SEV-000045",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f6030468-cd16-ec11-a301-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f6030468-cd16-ec11-a301-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: Honda -> n/a; Model: Integra -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000046",
    "title": "SEV-000046",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=281d8499-cd16-ec11-a301-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=281d8499-cd16-ec11-a301-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: Toyota -> n/a; Model: Hiace -> n/a; Category: NA - Light Goods Vehicle -> n/a",
    "sev": "SEV-000047",
    "title": "SEV-000047",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7faa81c4-cd16-ec11-a301-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=7faa81c4-cd16-ec11-a301-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: LEXUS -> n/a; Model: HS -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000048",
    "title": "SEV-000048",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=75e379f5-cd16-ec11-a301-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=75e379f5-cd16-ec11-a301-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: Mercedes-Benz -> n/a; Model: E-Class -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000049",
    "title": "SEV-000049",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=97fcd41a-ce16-ec11-a301-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=97fcd41a-ce16-ec11-a301-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: SUZUKI -> n/a; Model: Swift -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000050",
    "title": "SEV-000050",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=9bafa149-ce16-ec11-a301-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=9bafa149-ce16-ec11-a301-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: SUZUKI -> n/a; Model: Alto -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000051",
    "title": "SEV-000051",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=c0bc4e6e-ce16-ec11-a301-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=c0bc4e6e-ce16-ec11-a301-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: Mazda -> n/a; Model: Axela -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000052",
    "title": "SEV-000052",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e3b42693-ce16-ec11-a301-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e3b42693-ce16-ec11-a301-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: NISSAN -> n/a; Model: X-Trail -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000053",
    "title": "SEV-000053",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e2d9d8bc-ce16-ec11-a301-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e2d9d8bc-ce16-ec11-a301-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: Mercedes-Benz -> n/a; Model: GLC-Class -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000054",
    "title": "SEV-000054",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=1c0c90e3-ce16-ec11-a301-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=1c0c90e3-ce16-ec11-a301-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: NISSAN -> n/a; Model: Fairlady Z -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000055",
    "title": "SEV-000055",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e86ee00c-cf16-ec11-a301-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e86ee00c-cf16-ec11-a301-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: Mercedes-Benz -> n/a; Model: s-Class -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000056",
    "title": "SEV-000056",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=2cbf9038-cf16-ec11-a301-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "type": "updated",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=2cbf9038-cf16-ec11-a301-0050569e60b7"
   },
   {
-   "type": "updated",
+   "at": "2026-11-18T03:21:41+00:00",
    "detail": "Make: Mercedes-Benz -> n/a; Model: 213 Series -> n/a; Category: MA - Passenger Vehicle -> n/a",
    "sev": "SEV-000057",
    "title": "SEV-000057",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f4d2b05f-cf16-ec11-a301-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
-  },
-  {
    "type": "updated",
-   "detail": "Make: Toyota -> n/a; Model: Estima -> n/a; Category: NA - Light Goods Vehicle -> n/a",
-   "sev": "SEV-000058",
-   "title": "SEV-000058",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=c6e44a94-cf16-ec11-a301-0050569e60b7",
-   "at": "2026-11-18T03:21:41+00:00"
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f4d2b05f-cf16-ec11-a301-0050569e60b7"
   }
  ],
  "entries": [
@@ -4229,6 +4229,12 @@
    "notes": "Only vehicles with \u20183BD\u2019 chassis prefix (for example, 3BD-DA16T, from within the build date range of 4/2022 onwards, are eligible.",
    "has_report": true,
    "reports": [
+    {
+     "mre": "MRE-001022",
+     "holder": "ORACLE CERTIFICATION PTY. LTD.",
+     "status": "In Force",
+     "website": null
+    },
     {
      "mre": "MRE-000867",
      "holder": "SHUI MIR PTY LTD",
@@ -8635,7 +8641,6 @@
   {
    "sev": "SEV-000709",
    "expiry_iso": "2027-11-25",
-   "under_review": true,
    "status": "in_force",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=cfa2368c-9cab-ef11-b8e9-000d3acbed23",
    "criterion": "Environmental Criterion",
