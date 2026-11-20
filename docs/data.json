@@ -1,18 +1,18 @@
 {
- "generated_at": "2026-11-19T02:58:03+00:00",
- "started_at": "2026-11-19T02:56:39+00:00",
+ "generated_at": "2026-11-20T02:53:18+00:00",
+ "started_at": "2026-11-20T02:51:50+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
  },
  "counts": {
-  "total": 1137,
-  "in_force": 587,
-  "expired": 550,
-  "under_review": 1,
-  "new_recent": 17,
-  "expiring_soon": 36,
-  "with_report": 381,
+  "total": 1138,
+  "in_force": 585,
+  "expired": 553,
+  "under_review": 0,
+  "new_recent": 16,
+  "expiring_soon": 33,
+  "with_report": 379,
   "without_report": 206,
   "model_reports": 1022
  },
@@ -28,12 +28,52 @@
  },
  "recent_events": [
   {
+   "type": "new",
+   "detail": "? - no end date \u00b7 category n/a",
+   "sev": "SEV-001145",
+   "title": "SEV-001145",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=6e112ad8-c9e3-f111-84ea-7ced8da22d99",
+   "at": "2026-11-20T02:53:18+00:00"
+  },
+  {
+   "type": "expired",
+   "detail": "expired 20/11/2026",
+   "sev": "SEV-000553",
+   "title": "SEV-000553",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=59b0a976-ff87-ee11-be36-00224893bb55",
+   "at": "2026-11-20T02:53:18+00:00"
+  },
+  {
+   "type": "expired",
+   "detail": "expired 20/11/2026",
+   "sev": "SEV-000554",
+   "title": "SEV-000554",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=bbcfd20b-0088-ee11-be36-00224893bb55",
+   "at": "2026-11-20T02:53:18+00:00"
+  },
+  {
+   "type": "expired",
+   "detail": "expired 20/11/2026",
+   "sev": "SEV-000555",
+   "title": "SEV-000555",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=6b64606e-0188-ee11-be36-00224893bb55",
+   "at": "2026-11-20T02:53:18+00:00"
+  },
+  {
    "type": "review_cleared",
+   "detail": "review flag cleared",
+   "sev": "SEV-001114",
+   "title": "SEV-001114",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=4bd9ea7a-fec1-f111-aaad-70a8a55633c4",
+   "at": "2026-11-20T02:53:18+00:00"
+  },
+  {
+   "at": "2026-11-19T02:58:03+00:00",
    "detail": "review flag cleared",
    "sev": "SEV-000709",
    "title": "SEV-000709",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=cfa2368c-9cab-ef11-b8e9-000d3acbed23",
-   "at": "2026-11-19T02:58:03+00:00"
+   "type": "review_cleared",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=cfa2368c-9cab-ef11-b8e9-000d3acbed23"
   },
   {
    "at": "2026-11-18T03:21:41+00:00",
@@ -466,49 +506,21 @@
    "title": "SEV-000052",
    "type": "updated",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e3b42693-ce16-ec11-a301-0050569e60b7"
-  },
-  {
-   "at": "2026-11-18T03:21:41+00:00",
-   "detail": "Make: NISSAN -> n/a; Model: X-Trail -> n/a; Category: MA - Passenger Vehicle -> n/a",
-   "sev": "SEV-000053",
-   "title": "SEV-000053",
-   "type": "updated",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e2d9d8bc-ce16-ec11-a301-0050569e60b7"
-  },
-  {
-   "at": "2026-11-18T03:21:41+00:00",
-   "detail": "Make: Mercedes-Benz -> n/a; Model: GLC-Class -> n/a; Category: MA - Passenger Vehicle -> n/a",
-   "sev": "SEV-000054",
-   "title": "SEV-000054",
-   "type": "updated",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=1c0c90e3-ce16-ec11-a301-0050569e60b7"
-  },
-  {
-   "at": "2026-11-18T03:21:41+00:00",
-   "detail": "Make: NISSAN -> n/a; Model: Fairlady Z -> n/a; Category: MA - Passenger Vehicle -> n/a",
-   "sev": "SEV-000055",
-   "title": "SEV-000055",
-   "type": "updated",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e86ee00c-cf16-ec11-a301-0050569e60b7"
-  },
-  {
-   "at": "2026-11-18T03:21:41+00:00",
-   "detail": "Make: Mercedes-Benz -> n/a; Model: s-Class -> n/a; Category: MA - Passenger Vehicle -> n/a",
-   "sev": "SEV-000056",
-   "title": "SEV-000056",
-   "type": "updated",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=2cbf9038-cf16-ec11-a301-0050569e60b7"
-  },
-  {
-   "at": "2026-11-18T03:21:41+00:00",
-   "detail": "Make: Mercedes-Benz -> n/a; Model: 213 Series -> n/a; Category: MA - Passenger Vehicle -> n/a",
-   "sev": "SEV-000057",
-   "title": "SEV-000057",
-   "type": "updated",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=f4d2b05f-cf16-ec11-a301-0050569e60b7"
   }
  ],
  "entries": [
+  {
+   "sev": "SEV-001145",
+   "expiry_iso": "2029-11-18",
+   "status": "in_force",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=6e112ad8-c9e3-f111-84ea-7ced8da22d99",
+   "criterion": "Environmental Criterion",
+   "variant": "ALL",
+   "variant_details": "Mercedes-Benz E300 de / E350 de variants of model code 213016 / 213016C being diesel PHEV drivetrain ONLY",
+   "notes": "This RVSA SEV Register entry is for Mercedes-Benz E300 de / E350 de variants of model code 213016 / 213016C being diesel PHEV drivetrain ONLY",
+   "first_seen": "2026-11-20T02:53:18+00:00",
+   "is_new": true
+  },
   {
    "sev": "SEV-001144",
    "expiry_iso": "2029-11-17",
@@ -703,8 +715,7 @@
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0ec0e1c7-42cc-f111-a05a-70a8a5563ff8",
    "criterion": "Left-Hand Drive Criterion",
    "variant": "ALL",
-   "first_seen": "2026-10-21T00:27:35+00:00",
-   "is_new": true
+   "first_seen": "2026-10-21T00:27:35+00:00"
   },
   {
    "sev": "SEV-001125",
@@ -715,8 +726,7 @@
    "variant": "ALL",
    "variant_details": "Honda Freed GB series factory-fitted with Welfare PWD assistance features.",
    "notes": "This RVSA SEVs Register listing is for Honda GB series Freed vehicles, factory-fitted with Welfare PWD assistance features ONLY.",
-   "first_seen": "2026-10-21T00:27:35+00:00",
-   "is_new": true
+   "first_seen": "2026-10-21T00:27:35+00:00"
   },
   {
    "sev": "SEV-001124",
@@ -818,7 +828,6 @@
   {
    "sev": "SEV-001114",
    "expiry_iso": "2029-10-06",
-   "under_review": true,
    "status": "in_force",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=4bd9ea7a-fec1-f111-aaad-70a8a55633c4",
    "criterion": "Environmental Criterion",
@@ -11648,17 +11657,16 @@
   {
    "sev": "SEV-000555",
    "expiry_iso": "2026-11-20",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=6b64606e-0188-ee11-be36-00224893bb55",
    "criterion": "Rarity Criterion",
    "variant": "ALL",
-   "notes": "The Renner SL is will be manufactured on an ongoing basis. As such, the vehicles will require VINs to be assigned upon completion.",
-   "expiring_soon": true
+   "notes": "The Renner SL is will be manufactured on an ongoing basis. As such, the vehicles will require VINs to be assigned upon completion."
   },
   {
    "sev": "SEV-000554",
    "expiry_iso": "2026-11-20",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=bbcfd20b-0088-ee11-be36-00224893bb55",
    "criterion": "Performance Criterion",
    "variant": "EP3 Civic Type R",
@@ -11671,13 +11679,12 @@
      "status": "In Force",
      "website": "https://www.mdlreports.com.au"
     }
-   ],
-   "expiring_soon": true
+   ]
   },
   {
    "sev": "SEV-000553",
    "expiry_iso": "2026-11-20",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=59b0a976-ff87-ee11-be36-00224893bb55",
    "criterion": "Performance Criterion",
    "variant": "VOLANTE",
@@ -11689,8 +11696,7 @@
      "status": "In Force",
      "website": null
     }
-   ],
-   "expiring_soon": true
+   ]
   },
   {
    "sev": "SEV-000552",
