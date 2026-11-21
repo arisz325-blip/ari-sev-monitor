@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-11-20T02:53:18+00:00",
- "started_at": "2026-11-20T02:51:50+00:00",
+ "generated_at": "2026-11-21T02:59:50+00:00",
+ "started_at": "2026-11-21T02:59:01+00:00",
  "source": {
   "name": "SEVs Register (ROVER)",
   "list_url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVApprovals"
  },
  "counts": {
   "total": 1138,
-  "in_force": 585,
-  "expired": 553,
+  "in_force": 583,
+  "expired": 555,
   "under_review": 0,
   "new_recent": 16,
-  "expiring_soon": 33,
+  "expiring_soon": 31,
   "with_report": 379,
-  "without_report": 206,
+  "without_report": 204,
   "model_reports": 1022
  },
  "makes": [],
@@ -28,44 +28,60 @@
  },
  "recent_events": [
   {
-   "type": "new",
+   "type": "expired",
+   "detail": "expired 21/11/2026",
+   "sev": "SEV-000556",
+   "title": "SEV-000556",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=1f3b68de-ce88-ee11-be36-00224893b6a9",
+   "at": "2026-11-21T02:59:50+00:00"
+  },
+  {
+   "type": "expired",
+   "detail": "expired 21/11/2026",
+   "sev": "SEV-000557",
+   "title": "SEV-000557",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0bd1a3a5-cf88-ee11-be36-002248933665",
+   "at": "2026-11-21T02:59:50+00:00"
+  },
+  {
+   "at": "2026-11-20T02:53:18+00:00",
    "detail": "? - no end date \u00b7 category n/a",
    "sev": "SEV-001145",
    "title": "SEV-001145",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=6e112ad8-c9e3-f111-84ea-7ced8da22d99",
-   "at": "2026-11-20T02:53:18+00:00"
+   "type": "new",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=6e112ad8-c9e3-f111-84ea-7ced8da22d99"
   },
   {
-   "type": "expired",
+   "at": "2026-11-20T02:53:18+00:00",
    "detail": "expired 20/11/2026",
    "sev": "SEV-000553",
    "title": "SEV-000553",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=59b0a976-ff87-ee11-be36-00224893bb55",
-   "at": "2026-11-20T02:53:18+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=59b0a976-ff87-ee11-be36-00224893bb55"
   },
   {
-   "type": "expired",
+   "at": "2026-11-20T02:53:18+00:00",
    "detail": "expired 20/11/2026",
    "sev": "SEV-000554",
    "title": "SEV-000554",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=bbcfd20b-0088-ee11-be36-00224893bb55",
-   "at": "2026-11-20T02:53:18+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=bbcfd20b-0088-ee11-be36-00224893bb55"
   },
   {
-   "type": "expired",
+   "at": "2026-11-20T02:53:18+00:00",
    "detail": "expired 20/11/2026",
    "sev": "SEV-000555",
    "title": "SEV-000555",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=6b64606e-0188-ee11-be36-00224893bb55",
-   "at": "2026-11-20T02:53:18+00:00"
+   "type": "expired",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=6b64606e-0188-ee11-be36-00224893bb55"
   },
   {
-   "type": "review_cleared",
+   "at": "2026-11-20T02:53:18+00:00",
    "detail": "review flag cleared",
    "sev": "SEV-001114",
    "title": "SEV-001114",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=4bd9ea7a-fec1-f111-aaad-70a8a55633c4",
-   "at": "2026-11-20T02:53:18+00:00"
+   "type": "review_cleared",
+   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=4bd9ea7a-fec1-f111-aaad-70a8a55633c4"
   },
   {
    "at": "2026-11-19T02:58:03+00:00",
@@ -490,22 +506,6 @@
    "title": "SEV-000050",
    "type": "updated",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=9bafa149-ce16-ec11-a301-0050569e60b7"
-  },
-  {
-   "at": "2026-11-18T03:21:41+00:00",
-   "detail": "Make: SUZUKI -> n/a; Model: Alto -> n/a; Category: MA - Passenger Vehicle -> n/a",
-   "sev": "SEV-000051",
-   "title": "SEV-000051",
-   "type": "updated",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=c0bc4e6e-ce16-ec11-a301-0050569e60b7"
-  },
-  {
-   "at": "2026-11-18T03:21:41+00:00",
-   "detail": "Make: Mazda -> n/a; Model: Axela -> n/a; Category: MA - Passenger Vehicle -> n/a",
-   "sev": "SEV-000052",
-   "title": "SEV-000052",
-   "type": "updated",
-   "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=e3b42693-ce16-ec11-a301-0050569e60b7"
   }
  ],
  "entries": [
@@ -11637,22 +11637,20 @@
   {
    "sev": "SEV-000557",
    "expiry_iso": "2026-11-21",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=0bd1a3a5-cf88-ee11-be36-002248933665",
    "criterion": "Rarity Criterion",
    "variant": "Mulsanne",
-   "variant_details": "Eligible build date range limited to 1/03/2010 to 20/07/2010 ONLY",
-   "expiring_soon": true
+   "variant_details": "Eligible build date range limited to 1/03/2010 to 20/07/2010 ONLY"
   },
   {
    "sev": "SEV-000556",
    "expiry_iso": "2026-11-21",
-   "status": "in_force",
+   "status": "expired",
    "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/SEVDetails/?id=1f3b68de-ce88-ee11-be36-00224893b6a9",
    "criterion": "Environmental Criterion",
    "variant": "ALL",
-   "notes": "this is for the standard bike",
-   "expiring_soon": true
+   "notes": "this is for the standard bike"
   },
   {
    "sev": "SEV-000555",
